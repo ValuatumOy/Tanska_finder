@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – CreditReports.dk</title>
+  <meta name="description" content="Contact CreditReports.dk. Phone: +358 45 123 0308, Monday–Friday 09:00–16:00 EEST. Powered by Valuatum.">
+  <link rel="canonical" href="https://creditreports.dk/en/contact/">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<div id="site-nav"></div>
+<main>
+
+  <section class="page-hero" style="min-height:clamp(280px,36vw,400px);">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-category">Contact</span>
+      <h1 class="page-hero-title">Get in touch</h1>
+      <p class="page-hero-sub">We're here to help with any questions about the platform, reports, or pricing.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="two-col two-col--start">
+
+        <div>
+          <p class="section-eyebrow reveal">Send a message</p>
+          <h2 class="prose-headline reveal">We will get back to you within one business day</h2>
+          <form class="reveal" style="margin-top:1.5rem;" onsubmit="handleContactSubmit(event)">
+            <div class="form-group"><label for="contactName" class="form-label">Name</label><input type="text" id="contactName" class="form-input" placeholder="Your name" autocomplete="name" required></div>
+            <div class="form-group"><label for="contactEmail" class="form-label">Email <span class="optional">(required)</span></label><input type="email" id="contactEmail" class="form-input" placeholder="you@company.com" autocomplete="email" required></div>
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <select id="contactSubject" class="form-input" style="appearance:auto;">
+                <option value="">Select a topic…</option>
+                <option>Technical support</option>
+                <option>Report question</option>
+                <option>Billing or account</option>
+                <option>Custom pricing</option>
+                <option>AI Credit Report</option>
+                <option>Partnership inquiry</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="contactMessage" class="form-label">Message</label><textarea id="contactMessage" class="form-textarea" placeholder="How can we help?" style="min-height:130px;" required></textarea></div>
+            <button type="submit" class="btn btn-primary btn-large" style="width:100%;justify-content:center;" id="contactSubmitBtn">Send message</button>
+          </form>
+        </div>
+
+        <div class="reveal" data-delay="100">
+          <p class="section-eyebrow">Contact information</p>
+          <div style="margin-top:1.25rem;display:flex;flex-direction:column;gap:2rem;">
+            <div>
+              <p style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-steel);margin-bottom:0.5rem;">Phone</p>
+              <a href="tel:+358451230308" style="font-size:var(--text-xl);font-weight:300;color:var(--charcoal);">+358 45 123 0308</a>
+              <p style="font-size:var(--text-sm);color:var(--gray-steel);margin-top:0.35rem;">Monday–Friday, 09:00–16:00 EEST</p>
+            </div>
+            <div>
+              <p style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-steel);margin-bottom:0.5rem;">Platform login</p>
+              <a href="https://platform.creditreports.dk" target="_blank" rel="noopener" style="font-size:var(--text-base);color:var(--blue);">platform.creditreports.dk ↗</a>
+            </div>
+            <div>
+              <p style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-steel);margin-bottom:0.5rem;">Powered by</p>
+              <a href="https://valuatum.com" target="_blank" rel="noopener" style="font-size:var(--text-base);color:var(--charcoal);">Valuatum Oy · Helsinki, Finland</a>
+              <p style="font-size:var(--text-sm);color:var(--gray-steel);margin-top:0.35rem;">For more information, visit <a href="https://valuatum.com" style="color:var(--blue);">valuatum.com</a></p>
+            </div>
+            <div style="background:var(--blue-faint);border:1px solid rgba(29,111,216,0.15);border-radius:var(--r-lg);padding:1.5rem;">
+              <p style="font-size:0.8125rem;font-weight:600;color:var(--charcoal);margin-bottom:0.5rem;">Feature requests &amp; feedback</p>
+              <p style="font-size:0.8125rem;font-weight:300;color:var(--gray-steel);line-height:1.7;">We welcome requests and feedback from platform users. Please include your organization name and a brief description of the requested feature.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="site-footer"></div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/main.js"></script>
+<script>
+function handleContactSubmit(e) {
+  e.preventDefault();
+  // PLACEHOLDER: connect to backend
+  const btn = document.getElementById('contactSubmitBtn');
+  if (btn) { btn.textContent = 'Message sent — we\'ll be in touch soon'; btn.disabled = true; }
+}
+</script>
+</body>
+</html>

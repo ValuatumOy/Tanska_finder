@@ -1,0 +1,143 @@
+---
+wp_id: "1940"
+type: "page"
+status: "publish"
+old_url: "https://creditreports.dk/support/get-started/"
+old_path: "/support/get-started/"
+suggested_new_route: "/en/support/get-started/"
+modified: "2023-06-28 15:41:28"
+---
+
+# Get Started
+
+## Asset References
+
+- `mapped` change_estimates: /assets/wordpress-media/2020/05/change_estimates.png (source: https://creditreports.dk/wp-content/uploads/sites/9/2020/05/change_estimates.png)
+- `mapped` block-background-background-media-url: /assets/wordpress-media/2020/08/block-background-background-media-url.jpg (source: https://creditreports.dk/wp-content/uploads/sites/9/2020/08/block-background-background-media-url.jpg)
+- `mapped` cv_overview_min: /assets/wordpress-media/2020/08/cv_overview_min.png (source: https://creditreports.dk/wp-content/uploads/sites/9/2020/08/cv_overview_min.png)
+- `mapped` report_front: /assets/wordpress-media/2020/08/report_front.png (source: https://creditreports.dk/wp-content/uploads/sites/9/2020/08/report_front.png)
+- `mapped` search_min: /assets/wordpress-media/2020/08/search_min.png (source: https://creditreports.dk/wp-content/uploads/sites/9/2020/08/search_min.png)
+- `mapped` login: /assets/wordpress-media/2021/07/login.png (source: https://creditreports.dk/wp-content/uploads/sites/9/2021/07/login.png)
+- `mapped` new_register-min_updated: /assets/wordpress-media/2021/07/new_register-min_updated.png (source: https://creditreports.dk/wp-content/uploads/sites/9/2021/07/new_register-min_updated.png)
+
+## Extracted Markdown
+
+### GET STARTED WITH CREDITREPORTS.DK CREDIT REPORTS
+
+Here you will find step-by-step instructions on how to get started with our service and gain access to hundreds of thousands of companies' financial data and credit ratings in just a few minutes. If you have already registered and are looking for support regarding the use of the system, please press the button below to see our support page. You can also [contact us](https://creditreports.dk/contact/) directly.
+
+Support page
+
+## 1. Register to the system
+
+Register by filling the necessary details. After registration you will receive an email and will be directed to the login page. Registration is free and you can start using the system immediately.
+
+Register here
+
+How to
+
+![](/assets/wordpress-media/2021/07/new_register-min_updated.png)
+
+## 2. Log in
+
+After registering you can immediately log in and start improving the quality of your decision-making with free credit reports.
+
+Login page
+
+How to
+
+![After registering you will be automatically redirected to the login page.](/assets/wordpress-media/2021/07/login.png)
+
+## 3. Find data
+
+After logging in, navigate to Company Search tab. Search interface allows you to easily find the company you are looking for and download the financial information into our system where it can be viewed and adjusted as you like.
+
+Search for companies
+
+How to
+
+![](/assets/wordpress-media/2020/08/search_min.png)
+
+## 4. View data and generate estimates
+
+CreditReports.dk platform comes with a feature that allows you to generate automatic estimates based on historical data. Automatic estimates make inputting your own predictions easier.
+
+Read more
+
+How to
+
+![](/assets/wordpress-media/2020/08/cv_overview_min.png)
+
+## 5. Adjust estimates
+
+With our easy-to-use browser tool you can easily adjust system-generated estimates to better reflect future scenarios. You can even re-generate automatic estimates so that they are based on your own inputs.
+
+Read more
+
+How to
+
+![The view when adjusting estimates.](/assets/wordpress-media/2020/05/change_estimates.png)
+
+## 6. Print credit report
+
+Once you are happy with your estimates, you can print a complete credit report with a click of a button. The report includes credit risk, credit rating, and credit limit - all of which are estimated using our state-of-the-art machine-learning model.
+
+Read more
+
+How to
+
+![](/assets/wordpress-media/2020/08/report_front.png)
+
+## Localized HTML
+
+```html
+<!-- wp:ugb/cta {"design":"plain","titleFontFamily":"Poppins","titleFontWeight":"400","buttonSize":"medium","buttonTextColor":"#313131","buttonBackgroundColor":"#7bdcb5","buttonHoverEffect":"lift","buttonBorderRadius":100,"columnFixedBackground":true,"buttonAlign":"center","buttonMobileAlign":"center","uniqueClass":"ugb-44a4a36","paddingRight":0,"paddingLeft":0,"mobilePaddingLeft":0,"blockHeight":400,"blockWidth":60,"blockWidthUnit":"%","blockHorizontalAlign":"flex-start","mobileBlockHorizontalAlign":"flex-start","columnPaddingTop":130,"columnPaddingBottom":130,"showBlockBackground":true,"blockInnerWidth":"wide","align":"full","blockBackgroundBackgroundColor":"#ffffff","blockBackgroundBackgroundMediaUrl":"/assets/wordpress-media/2020/08/block-background-background-media-url.jpg","blockBackgroundMobileBackgroundMediaUrl":"/assets/wordpress-media/2020/08/block-background-background-media-url.jpg","blockBackgroundBackgroundTintStrength":7,"blockBackgroundBackgroundGradientDirection":40,"blockBackgroundFixedBackground":false,"showTopSeparator":false,"contentAlign":"center"} -->
+<style>.ugb-44a4a36 .ugb-cta__title,.ugb-44a4a36 .ugb-cta__description,.ugb-44a4a36 .ugb-button-container{text-align:left !important}.ugb-44a4a36 .ugb-cta__title{font-family:"Poppins",Sans-serif !important;font-weight:400}.ugb-44a4a36 .ugb-button-container{text-align:center !important}.ugb-44a4a36 .ugb-button{background-color:#7bdcb5;border-radius:100px !important}.ugb-44a4a36 .ugb-button .ugb-button--inner,.ugb-44a4a36 .ugb-button svg{color:#313131 !important}.ugb-44a4a36 .ugb-button:before{border-radius:100px !important}.ugb-44a4a36 .ugb-inner-block{text-align:left}.ugb-44a4a36.ugb-cta{padding-right:0px !important;padding-left:0px !important;min-height:400px;justify-content:flex-start;background-color:#ffffff;background-image:url(/assets/wordpress-media/2020/08/block-background-background-media-url.jpg)}.ugb-44a4a36.ugb-cta > .ugb-inner-block{width:60% !important;min-width:auto !important}.ugb-44a4a36.ugb-cta:before{background-color:#ffffff;opacity:0.7}@media screen and (max-width:768px){.ugb-44a4a36 .ugb-button-container{text-align:center !important}.ugb-44a4a36.ugb-cta{padding-left:0px !important;justify-content:flex-start;background-image:url(/assets/wordpress-media/2020/08/block-background-background-media-url.jpg)}.ugb-44a4a36.ugb-cta:before{opacity:0.7}}@media screen and (-ms-high-contrast:active),screen and (-ms-high-contrast:none){.ugb-44a4a36.ugb-cta{height:400px}}</style>
+<h3>GET STARTED WITH CREDITREPORTS.DK CREDIT REPORTS</h3>
+<p>Here you will find step-by-step instructions on how to get started with our service and gain access to hundreds of thousands of companies' financial data and credit ratings in just a few minutes. If you have already registered and are looking for support regarding the use of the system, please press the button below to see our support page. You can also <a href="https://creditreports.dk/contact/">contact us</a> directly.</p>
+<a href="https://creditreports.dk/support/" rel="">Support page</a>
+<!-- /wp:ugb/cta --><!-- wp:html -->
+<style>.ugb-a32d54a .ugb-img{border-radius:7px;width:554px;height:auto !important}.ugb-a32d54a .ugb-feature__title{font-weight:700;color:#21691d}.ugb-a32d54a .ugb-button{background-color:#8da38c;border-radius:100px !important}.ugb-a32d54a .ugb-button .ugb-button--inner,.ugb-a32d54a .ugb-button svg{color:#222222 !important}.ugb-a32d54a .ugb-button:hover{opacity:0.5}.ugb-a32d54a .ugb-button:before{border-radius:100px !important}.ugb-a32d54a .ugb-inner-block{text-align:center}.ugb-a32d54a.ugb-feature{opacity:1 !important;padding-top:35px !important;justify-content:center;background-color:#7bdcb5}.ugb-a32d54a.ugb-feature:before{background-image:linear-gradient(90deg,#7bdcb5 0%,#8ed1fc 100%)}@media screen and (min-width:768px){.ugb-a32d54a .ugb-feature__item{grid-template-columns:0.70fr 1.30fr !important}}</style>
+ 
+<h2>1. Register to the system</h2>
+<p>Register by filling the necessary details. After registration you will receive an email and will be directed to the login page. Registration is free and you can start using the system immediately.</p>
+<a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis" target="_blank" rel="noopener noreferrer">Register here</a> <a href="https://creditreports.dk/support/credit-risk-manual/general/#account_information" target="_blank" rel="noopener noreferrer">How to</a>
+<img src="/assets/wordpress-media/2021/07/new_register-min_updated.png" width="554" height="444" />
+<!-- /wp:html --><!-- wp:html -->
+<style>.ugb-37a54bb .ugb-img{border-radius:7px;width:793px;height:auto !important}.ugb-37a54bb .ugb-feature__title{font-weight:700;color:#21691d}.ugb-37a54bb .ugb-button{background-color:#8da38c;border-radius:100px !important}.ugb-37a54bb .ugb-button .ugb-button--inner,.ugb-37a54bb .ugb-button svg{color:#222222 !important}.ugb-37a54bb .ugb-button:hover{opacity:0.5}.ugb-37a54bb .ugb-button:before{border-radius:100px !important}.ugb-37a54bb .ugb-inner-block{text-align:center}.ugb-37a54bb.ugb-feature{opacity:1 !important;margin-top:-140px !important;margin-bottom:0px !important;padding-top:35px !important;justify-content:center;background-color:#8ed1fc}.ugb-37a54bb.ugb-feature:before{background-image:linear-gradient(90deg,#8ed1fc 0%,#7bdcb5 100%)}@media screen and (min-width:768px){.ugb-37a54bb .ugb-feature__item{grid-template-columns:1.30fr 0.70fr !important}}</style>
+ 
+<h2>2. Log in</h2>
+<p>After registering you can immediately log in and start improving the quality of your decision-making with free credit reports.</p>
+<a href="https://platform.creditreports.dk" target="_blank" rel="noopener noreferrer">Login page</a> <a href="https://creditreports.dk/?page_id=1914" target="_blank" rel="noopener noreferrer">How to</a>
+<img src="/assets/wordpress-media/2021/07/login.png" alt="After registering you will be automatically redirected to the login page." width="793" height="306" />
+<!-- /wp:html --><!-- wp:ugb/feature {"imageColumnWidth":65,"imageUrl":"/assets/wordpress-media/2020/08/search_min.png","imageSize":"full","imageId":1690,"imageWidth":663,"imageHeight":480,"imageBorderRadius":7,"imageSquare":false,"titleFontWeight":"700","titleColor":"#21691d","buttonDesign":"basic","buttonSize":"normal","buttonBackgroundColor":"#8da38c","buttonHoverEffect":"scale-more","buttonHoverOpacity":0.5,"buttonBorderRadius":100,"buttonShadow":0,"uniqueClass":"ugb-8681d5c","blockTag":"div","blockOpacity":1,"marginTop":-140,"paddingTop":35,"blockHeightUnit":"vh","blockHorizontalAlign":"center","showBlockBackground":true,"blockInnerWidth":"wide","align":"full","noPaddings":false,"blockBackgroundBackgroundColorType":"gradient","blockBackgroundBackgroundColor":"#7bdcb5","blockBackgroundBackgroundColor2":"#8ed1fc","showBottomSeparator":true,"bottomSeparatorDesign":"straight-1","bottomSeparatorFlipVertically":false,"contentAlign":"center"} -->
+<style>.ugb-8681d5c .ugb-img{border-radius:7px;width:663px;height:auto !important}.ugb-8681d5c .ugb-feature__title{font-weight:700;color:#21691d}.ugb-8681d5c .ugb-button{background-color:#8da38c;border-radius:100px !important}.ugb-8681d5c .ugb-button .ugb-button--inner,.ugb-8681d5c .ugb-button svg{color:#222222 !important}.ugb-8681d5c .ugb-button:hover{opacity:0.5}.ugb-8681d5c .ugb-button:before{border-radius:100px !important}.ugb-8681d5c .ugb-inner-block{text-align:center}.ugb-8681d5c.ugb-feature{opacity:1 !important;margin-top:-140px !important;padding-top:35px !important;justify-content:center;background-color:#7bdcb5}.ugb-8681d5c.ugb-feature:before{background-image:linear-gradient(90deg,#7bdcb5 0%,#8ed1fc 100%)}@media screen and (min-width:768px){.ugb-8681d5c .ugb-feature__item{grid-template-columns:0.70fr 1.30fr !important}}</style>
+ 
+<h2>3. Find data</h2>
+<p>After logging in, navigate to Company Search tab. Search interface allows you to easily find the company you are looking for and download the financial information into our system where it can be viewed and adjusted as you like.</p>
+<a href="https://creditanalysis.valuatum.com//PPVCompanySearch.action?" target="_blank" rel="noopener noreferrer">Search for companies</a> <a href="https://creditreports.dk/support/credit-risk-manual/general/#data_import" target="_blank" rel="noopener noreferrer">How to</a>
+<img src="/assets/wordpress-media/2020/08/search_min.png" width="663" height="480" />
+<!-- /wp:ugb/feature --><!-- wp:ugb/feature {"imageColumnWidth":65,"invert":true,"imageUrl":"/assets/wordpress-media/2020/08/cv_overview_min.png","imageSize":"full","imageId":1692,"imageWidth":695,"imageHeight":616,"imageBorderRadius":7,"imageSquare":false,"titleFontWeight":"700","titleColor":"#21691d","buttonDesign":"basic","buttonSize":"normal","buttonBackgroundColor":"#8da38c","buttonHoverEffect":"scale-more","buttonHoverOpacity":0.5,"buttonBorderRadius":100,"buttonShadow":0,"uniqueClass":"ugb-3b35eff","blockTag":"div","blockOpacity":1,"marginTop":-140,"paddingTop":35,"blockHeightUnit":"vh","blockHorizontalAlign":"center","showBlockBackground":true,"blockInnerWidth":"wide","align":"full","noPaddings":false,"blockBackgroundBackgroundColorType":"gradient","blockBackgroundBackgroundColor":"#8ed1fc","blockBackgroundBackgroundColor2":"#7bdcb5","showBottomSeparator":true,"bottomSeparatorDesign":"straight-1","bottomSeparatorFlipVertically":false,"contentAlign":"center"} -->
+<style>.ugb-3b35eff .ugb-img{border-radius:7px;width:695px;height:auto !important}.ugb-3b35eff .ugb-feature__title{font-weight:700;color:#21691d}.ugb-3b35eff .ugb-button{background-color:#8da38c;border-radius:100px !important}.ugb-3b35eff .ugb-button .ugb-button--inner,.ugb-3b35eff .ugb-button svg{color:#222222 !important}.ugb-3b35eff .ugb-button:hover{opacity:0.5}.ugb-3b35eff .ugb-button:before{border-radius:100px !important}.ugb-3b35eff .ugb-inner-block{text-align:center}.ugb-3b35eff.ugb-feature{opacity:1 !important;margin-top:-140px !important;padding-top:35px !important;justify-content:center;background-color:#8ed1fc}.ugb-3b35eff.ugb-feature:before{background-image:linear-gradient(90deg,#8ed1fc 0%,#7bdcb5 100%)}@media screen and (min-width:768px){.ugb-3b35eff .ugb-feature__item{grid-template-columns:1.30fr 0.70fr !important}}</style>
+ 
+<h2>4. View data and generate estimates</h2>
+<p>CreditReports.dk platform comes with a feature that allows you to generate automatic estimates based on historical data. Automatic estimates make inputting your own predictions easier.</p>
+<a href="https://www.valuatum.com/estimate-generation/" target="_blank" rel="noopener noreferrer">Read more</a> <a href="https://creditreports.dk/support/credit-risk-manual-company-views/#generate_estimates" rel="noopener noreferrer">How to</a>
+<img src="/assets/wordpress-media/2020/08/cv_overview_min.png" width="695" height="616" />
+<!-- /wp:ugb/feature --><!-- wp:ugb/feature {"imageColumnWidth":65,"imageUrl":"/assets/wordpress-media/2020/05/change_estimates.png","imageSize":"full","imageId":686,"imageWidth":1177,"imageHeight":243,"imageBorderRadius":7,"imageSquare":false,"titleFontWeight":"700","titleColor":"#21691d","buttonDesign":"basic","buttonSize":"normal","buttonBackgroundColor":"#8da38c","buttonHoverEffect":"scale-more","buttonHoverOpacity":0.5,"buttonBorderRadius":100,"buttonShadow":0,"uniqueClass":"ugb-991021c","blockTag":"div","blockOpacity":1,"marginTop":-140,"paddingTop":35,"blockHeightUnit":"vh","blockHorizontalAlign":"center","showBlockBackground":true,"blockInnerWidth":"wide","align":"full","noPaddings":false,"blockBackgroundBackgroundColorType":"gradient","blockBackgroundBackgroundColor":"#7bdcb5","blockBackgroundBackgroundColor2":"#8ed1fc","showBottomSeparator":true,"bottomSeparatorDesign":"straight-1","bottomSeparatorFlipVertically":false,"contentAlign":"center"} -->
+<style>.ugb-991021c .ugb-img{border-radius:7px;width:1177px;height:auto !important}.ugb-991021c .ugb-feature__title{font-weight:700;color:#21691d}.ugb-991021c .ugb-button{background-color:#8da38c;border-radius:100px !important}.ugb-991021c .ugb-button .ugb-button--inner,.ugb-991021c .ugb-button svg{color:#222222 !important}.ugb-991021c .ugb-button:hover{opacity:0.5}.ugb-991021c .ugb-button:before{border-radius:100px !important}.ugb-991021c .ugb-inner-block{text-align:center}.ugb-991021c.ugb-feature{opacity:1 !important;margin-top:-140px !important;padding-top:35px !important;justify-content:center;background-color:#7bdcb5}.ugb-991021c.ugb-feature:before{background-image:linear-gradient(90deg,#7bdcb5 0%,#8ed1fc 100%)}@media screen and (min-width:768px){.ugb-991021c .ugb-feature__item{grid-template-columns:0.70fr 1.30fr !important}}</style>
+ 
+<h2>5. Adjust estimates</h2>
+<p>With our easy-to-use browser tool you can easily adjust system-generated estimates to better reflect future scenarios. You can even re-generate automatic estimates so that they are based on your own inputs.</p>
+<a href="https://www.valuatum.com/support/credit-risk-manual/company-views/" target="_blank" rel="noopener noreferrer">Read more</a> <a href="https://creditreports.dk/support/credit-risk-manual-company-views/#change_estimates" target="_blank" rel="noopener noreferrer">How to</a>
+<img src="/assets/wordpress-media/2020/05/change_estimates.png" alt="The view when adjusting estimates." width="1177" height="243" />
+<!-- /wp:ugb/feature --><!-- wp:ugb/feature {"imageColumnWidth":65,"invert":true,"imageUrl":"/assets/wordpress-media/2020/08/report_front.png","imageSize":"full","imageId":1693,"imageWidth":580,"imageHeight":640,"imageBorderRadius":7,"imageShapeStretch":false,"imageSquare":false,"titleFontWeight":"700","titleColor":"#21691d","buttonDesign":"basic","buttonSize":"normal","buttonBackgroundColor":"#8da38c","buttonHoverEffect":"scale-more","buttonHoverOpacity":0.5,"buttonBorderRadius":100,"buttonShadow":0,"uniqueClass":"ugb-f08eb24","blockTag":"div","blockOpacity":1,"marginTop":-140,"paddingTop":35,"paddingBottom":35,"blockHeightUnit":"vh","blockHorizontalAlign":"center","showBlockBackground":true,"blockInnerWidth":"wide","align":"full","noPaddings":false,"blockBackgroundBackgroundColorType":"gradient","blockBackgroundBackgroundColor":"#8ed1fc","blockBackgroundBackgroundColor2":"#7bdcb5","showBottomSeparator":false,"bottomSeparatorDesign":"straight-1","bottomSeparatorFlipVertically":false,"contentAlign":"center"} -->
+<style>.ugb-f08eb24 .ugb-img{border-radius:7px;width:580px;height:auto !important}.ugb-f08eb24 .ugb-feature__title{font-weight:700;color:#21691d}.ugb-f08eb24 .ugb-button{background-color:#8da38c;border-radius:100px !important}.ugb-f08eb24 .ugb-button .ugb-button--inner,.ugb-f08eb24 .ugb-button svg{color:#222222 !important}.ugb-f08eb24 .ugb-button:hover{opacity:0.5}.ugb-f08eb24 .ugb-button:before{border-radius:100px !important}.ugb-f08eb24 .ugb-inner-block{text-align:center}.ugb-f08eb24.ugb-feature{opacity:1 !important;margin-top:-140px !important;padding-top:35px !important;padding-bottom:35px !important;justify-content:center;background-color:#8ed1fc}.ugb-f08eb24.ugb-feature:before{background-image:linear-gradient(90deg,#8ed1fc 0%,#7bdcb5 100%)}@media screen and (min-width:768px){.ugb-f08eb24 .ugb-feature__item{grid-template-columns:1.30fr 0.70fr !important}}</style>
+<h2>6. Print credit report</h2>
+<p>Once you are happy with your estimates, you can print a complete credit report with a click of a button. The report includes credit risk, credit rating, and credit limit - all of which are estimated using our state-of-the-art machine-learning model.</p>
+<a href="https://www.creditreports.dk/product/" target="_blank" rel="noopener noreferrer">Read more </a> <a href="https://creditreports.dk/support/credit-risk-manual-company-views/#generate_reports" target="_blank" rel="noopener noreferrer">How to </a>
+<img src="/assets/wordpress-media/2020/08/report_front.png" width="580" height="640" />
+<!-- /wp:ugb/feature --><!-- wp:paragraph -->
+<p> </p>
+<!-- /wp:paragraph -->
+```

@@ -1,0 +1,51 @@
+---
+wp_id: "2835"
+type: "page"
+status: "publish"
+old_url: "https://creditreports.dk/contact/"
+old_path: "/contact/"
+suggested_new_route: "/en/contact/"
+modified: "2024-12-02 12:40:40"
+---
+
+# Contact us
+
+## Asset References
+
+- `mapped` image: /assets/wordpress-media/2024/12/image-3.png (source: https://creditreports.dk/wp-content/uploads/sites/9/2024/12/image-3.png)
+
+## Extracted Markdown
+
+**Contact information**
+
+![](/assets/wordpress-media/2024/12/image-3.png)
+
+- + 358 45 123 0308 (Mo-Fr 09:00 - 16.00 EEST)
+
+CreditReports.dk utilizes Valuatum credit risk platform. For more information, visit [www.valuatum.com](http://www.valuatum.com).
+
+## Localized HTML
+
+```html
+<!-- wp:paragraph {"align":"left"} -->
+<p class="has-text-align-left"><strong>Contact information</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2842,"width":"200px","height":"30px","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="/assets/wordpress-media/2024/12/image-3.png" alt="" class="wp-image-2842" style="object-fit:cover;width:200px;height:30px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:stackable/icon-list {"uniqueId":"3071c72","blockMargin":{"bottom":27}} -->
+<div class="wp-block-stackable-icon-list stk-block-icon-list stk-block stk-3071c72" data-block-id="3071c72"><style>.stk-3071c72{margin-bottom:27px !important}</style><svg style="display:none"><defs><g id="stk-icon-list__icon-svg-def-3071c72"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 190"><polygon points="173.8,28.4 60.4,141.8 15.7,97.2 5.1,107.8 60.4,163 184.4,39 173.8,28.4"/></svg></g></defs></svg><ul class="stk-block-icon-list__ul stk-block-icon-list--column"><!-- wp:stackable/icon-list-item {"uniqueId":"c9a7f0f","icon":"\u003csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 viewBox=\u00220 0 512 512\u0022\u003e\u003cpath d=\u0022M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z\u0022/\u003e\u003c/svg\u003e","parentUniqueId":"3071c72"} -->
+<li class="wp-block-stackable-icon-list-item stk-block-icon-list-item stk-block stk-c9a7f0f" data-block-id="c9a7f0f"><div class="stk-block-icon-list-item__content"><span class="stk--svg-wrapper"><div class="stk--inner-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" width="32" height="32"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg></div></span><span class="stk-block-icon-list-item__text">+ 358 45 123 0308 (Mo-Fr 09:00 - 16.00 EEST)</span></div></li>
+<!-- /wp:stackable/icon-list-item --></ul></div>
+<!-- /wp:stackable/icon-list -->
+
+<!-- wp:paragraph -->
+<p>CreditReports.dk utilizes Valuatum credit risk platform. For more information, visit <a href="http://www.valuatum.com" title="www.valuatum.com">www.valuatum.com</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+```

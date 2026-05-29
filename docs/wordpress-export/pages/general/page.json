@@ -1,0 +1,143 @@
+{
+  "id": "1914",
+  "type": "page",
+  "title": "General",
+  "slug": "general",
+  "unique_slug": "general",
+  "status": "publish",
+  "author": "valuatum",
+  "date": "2021-06-11 09:06:15",
+  "modified": "2021-06-11 09:06:17",
+  "parent": "1825",
+  "menu_order": "0",
+  "link": "https://creditreports.dk/support/credit-risk-manualold/general/",
+  "old_path": "/support/credit-risk-manualold/general/",
+  "suggested_new_route": "/en/support/credit-risk-manualold/general/",
+  "content_length": 3104,
+  "asset_urls": [],
+  "image_urls": [],
+  "asset_refs": [],
+  "excerpt": "",
+  "metas": {
+    "apvc_active_counter": [
+      "Yes"
+    ],
+    "count_start_from": [
+      ""
+    ],
+    "widget_label": [
+      ""
+    ],
+    "_edit_last": [
+      "1"
+    ],
+    "page_header": [
+      "normal"
+    ],
+    "page_title": [
+      "normal"
+    ],
+    "page_footer": [
+      "normal"
+    ],
+    "saswp_custom_schema_field": [
+      ""
+    ],
+    "itemlist_item_1490": [
+      "a:0:{}"
+    ],
+    "music_composer_1490": [
+      "a:0:{}"
+    ],
+    "movie_actor_1490": [
+      "a:0:{}"
+    ],
+    "article_items_1490": [
+      "a:0:{}"
+    ],
+    "image_object_exif_data_1490": [
+      "a:0:{}"
+    ],
+    "blogposting_items_1490": [
+      "a:0:{}"
+    ],
+    "newsarticle_items_1490": [
+      "a:0:{}"
+    ],
+    "tech_article_items_1490": [
+      "a:0:{}"
+    ],
+    "product_reviews_1490": [
+      "a:0:{}"
+    ],
+    "feed_element_1490": [
+      "a:0:{}"
+    ],
+    "faq_question_1490": [
+      "a:0:{}"
+    ],
+    "performer_1490": [
+      "a:0:{}"
+    ],
+    "organizer_1490": [
+      "a:0:{}"
+    ],
+    "accepted_answer_1490": [
+      "a:0:{}"
+    ],
+    "suggested_answer_1490": [
+      "a:0:{}"
+    ],
+    "howto_supply_1490": [
+      "a:0:{}"
+    ],
+    "howto_tool_1490": [
+      "a:0:{}"
+    ],
+    "howto_step_1490": [
+      "a:0:{}"
+    ],
+    "announcement_location_1490": [
+      "a:0:{}"
+    ],
+    "music_playlist_track_1490": [
+      "a:0:{}"
+    ],
+    "music_album_track_1490": [
+      "a:0:{}"
+    ],
+    "apartment_amenities_1490": [
+      "a:0:{}"
+    ],
+    "additional_property_1490": [
+      "a:0:{}"
+    ],
+    "mc_cause_1490": [
+      "a:0:{}"
+    ],
+    "mc_symptom_1490": [
+      "a:0:{}"
+    ],
+    "mc_risk_factor_1490": [
+      "a:0:{}"
+    ],
+    "tvseries_actor_1490": [
+      "a:0:{}"
+    ],
+    "tvseries_season_1490": [
+      "a:0:{}"
+    ],
+    "trip_itinerary_1490": [
+      "a:0:{}"
+    ],
+    "saswp_product_schema_enable_rating_1490": [
+      "0"
+    ],
+    "_yoast_wpseo_content_score": [
+      "60"
+    ]
+  },
+  "raw_html": "<!-- wp:heading -->\n<h2>Account information</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>You can create an account by filling in <a rel=\"noreferrer noopener\" href=\"https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis\" target=\"_blank\">this form</a>. The account is immediately ready to use. You will get a confirmation email after creating the account.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can login to the system via <a rel=\"noreferrer noopener\" href=\"https://platform.creditreports.dk/Index.action\" target=\"_blank\">this page.</a> </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Your password can be reset via <a rel=\"noreferrer noopener\" href=\"https://platform.creditreports.dk/ForgotPassword.action\" target=\"_blank\">this page</a>. This page can also be found via the login page, by pressing \"I forgot my password\".  You can reset your password with the help of your email or your username. You will receive an email with a link for resetting the password by filling in either one of these. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>Introduction to the system</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Navigate to different sections of the system via the menu on the top. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li><a rel=\"noreferrer noopener\" href=\"https://creditreports.dk/support/credit-risk-manual-company-views/\" target=\"_blank\">Company views</a> - you will find here the financial and credit risk information of the companies of your choice. </li><li><a rel=\"noreferrer noopener\" href=\"https://creditreports.dk/support/comparisons/\" target=\"_blank\">Comparisons </a>- you can compare different groups of companies, either in graphs or in lists</li><li>Company search - you can import companies information via this page</li><li><a rel=\"noreferrer noopener\" href=\"https://creditreports.dk/pricing/\" target=\"_blank\">Buy Company Packages</a> - you can buy a subscription via this page<strong>. Note: in beta phase you have access to a nearly unlimited amount of companies. </strong></li><li>Personal information - view your account information</li><li>Help - link to the support page. </li><li><a rel=\"noreferrer noopener\" href=\"https://creditreports.dk/pricing/\" target=\"_blank\">Companies left </a>- informs you about how many companies you can import. </li></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2>Data Import </h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>You need to import the data to the system to gain access to the information about the company. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Start by searching for the company either via the main page or by the \"Company Search\" tab.</li><li>You will get a list of companies that match your search word. Click download to import the data of the wished company. </li><li>Once the import is done the site will redirect you to the company's page.</li><li>Now you are ready to analyze the company's credit risk and financial situation. </li></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+  "localized_html": "<!-- wp:heading -->\n<h2>Account information</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>You can create an account by filling in <a rel=\"noreferrer noopener\" href=\"https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis\" target=\"_blank\">this form</a>. The account is immediately ready to use. You will get a confirmation email after creating the account.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can login to the system via <a rel=\"noreferrer noopener\" href=\"https://platform.creditreports.dk/Index.action\" target=\"_blank\">this page.</a> </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Your password can be reset via <a rel=\"noreferrer noopener\" href=\"https://platform.creditreports.dk/ForgotPassword.action\" target=\"_blank\">this page</a>. This page can also be found via the login page, by pressing \"I forgot my password\".  You can reset your password with the help of your email or your username. You will receive an email with a link for resetting the password by filling in either one of these. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>Introduction to the system</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Navigate to different sections of the system via the menu on the top. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li><a rel=\"noreferrer noopener\" href=\"https://creditreports.dk/support/credit-risk-manual-company-views/\" target=\"_blank\">Company views</a> - you will find here the financial and credit risk information of the companies of your choice. </li><li><a rel=\"noreferrer noopener\" href=\"https://creditreports.dk/support/comparisons/\" target=\"_blank\">Comparisons </a>- you can compare different groups of companies, either in graphs or in lists</li><li>Company search - you can import companies information via this page</li><li><a rel=\"noreferrer noopener\" href=\"https://creditreports.dk/pricing/\" target=\"_blank\">Buy Company Packages</a> - you can buy a subscription via this page<strong>. Note: in beta phase you have access to a nearly unlimited amount of companies. </strong></li><li>Personal information - view your account information</li><li>Help - link to the support page. </li><li><a rel=\"noreferrer noopener\" href=\"https://creditreports.dk/pricing/\" target=\"_blank\">Companies left </a>- informs you about how many companies you can import. </li></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2>Data Import </h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>You need to import the data to the system to gain access to the information about the company. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Start by searching for the company either via the main page or by the \"Company Search\" tab.</li><li>You will get a list of companies that match your search word. Click download to import the data of the wished company. </li><li>Once the import is done the site will redirect you to the company's page.</li><li>Now you are ready to analyze the company's credit risk and financial situation. </li></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+  "markdown": "## Account information\n\nYou can create an account by filling in [this form](https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis). The account is immediately ready to use. You will get a confirmation email after creating the account.\n\nYou can login to the system via [this page.](https://platform.creditreports.dk/Index.action)\n\nYour password can be reset via [this page](https://platform.creditreports.dk/ForgotPassword.action). This page can also be found via the login page, by pressing \"I forgot my password\". You can reset your password with the help of your email or your username. You will receive an email with a link for resetting the password by filling in either one of these.\n\n## Introduction to the system\n\nNavigate to different sections of the system via the menu on the top.\n\n- Company views\n- Comparisons\n- Company search - you can import companies information via this page\n- Buy Company Packages\n  . Note: in beta phase you have access to a nearly unlimited amount of companies.\n- Personal information - view your account information\n- Help - link to the support page.\n- Companies left\n\n## Data Import\n\nYou need to import the data to the system to gain access to the information about the company.\n\n- Start by searching for the company either via the main page or by the \"Company Search\" tab.\n- You will get a list of companies that match your search word. Click download to import the data of the wished company.\n- Once the import is done the site will redirect you to the company's page.\n- Now you are ready to analyze the company's credit risk and financial situation."
+}

@@ -1,0 +1,108 @@
+{
+  "title": "Home",
+  "wp_id": "2971",
+  "status": "draft",
+  "old_url": "https://creditreports.dk/?page_id=2971",
+  "old_path": "/",
+  "suggested_new_route": "/en/",
+  "modified": "2026-05-28 14:06:08",
+  "content_markdown": ".crdk-home{\n--cr-accent: #0947c2;\n--cr-accent-strong: #073aa0;\n--cr-accent-ink: #ffffff;\n--cr-accent-tint: #eef4fb;\n--cr-surface: #ffffff;\n--cr-border: #e3e8ef;\n--cr-text: #14202e;\n--cr-muted: #5b6b7d;\n--cr-radius: 16px;\n--cr-radius-sm: 11px;\ncolor:var(--cr-text);\nfont-family:\"Lato\", Arial, sans-serif;\nline-height:1.55;\nmax-width:1080px;\nmargin:0 auto;\n}\n.crdk-home *{ box-sizing:border-box; }\n.crdk-home a{ color:var(--cr-accent); text-decoration:none; }\n.crdk-home a:hover{ text-decoration:underline; }\n.crdk-home .btn{\ndisplay:inline-flex;\nalign-items:center;\ngap:8px;\nfont-family:\"Lato\", Arial, sans-serif;\nfont-weight:700;\nfont-size:15px;\nline-height:1.2;\npadding:13px 22px;\nborder-radius:var(--cr-radius-sm);\nborder:1px solid transparent;\ncursor:pointer;\ntransition:background .15s,border-color .15s,color .15s;\ntext-decoration:none;\n}\n.crdk-home .btn:hover{ text-decoration:none; }\n.crdk-home .btn-primary{ background:var(--cr-accent); color:var(--cr-accent-ink); }\n.crdk-home .btn-primary:hover{ background:var(--cr-accent-strong); }\n.crdk-home .btn-ghost{ background:var(--cr-surface); color:var(--cr-text); border-color:var(--cr-border); }\n.crdk-home .btn-ghost:hover{ border-color:var(--cr-accent); color:var(--cr-accent); }\n.crdk-home .btn-onaccent{ background:#fff; color:var(--cr-accent-strong); }\n.crdk-home .btn-onaccent:hover{ background:#f3f7fc; }\n.crdk-home .hero{\ntext-align:center;\npadding:8px 8px 4px;\nmax-width:760px;\nmargin:0 auto;\n}\n.crdk-home h1{\nfont-size:clamp(28px,4.2vw,44px);\nline-height:1.1;\nletter-spacing:-.015em;\nfont-weight:700;\nmargin:18px 0 0;\n}\n.crdk-home .sub{\nfont-size:clamp(15px,1.8vw,18px);\ncolor:var(--cr-muted);\nmargin:16px auto 0;\nmax-width:60ch;\n}\n.crdk-home .proof{\ndisplay:inline-block;\nmargin-top:20px;\nfont-size:13.5px;\nline-height:1.5;\ncolor:var(--cr-text);\nbackground:var(--cr-accent-tint);\nborder:1px solid var(--cr-border);\nborder-radius:12px;\npadding:11px 18px;\nmax-width:58ch;\ntext-align:center;\ntext-wrap:balance;\n}\n.crdk-home .proof b{\ncolor:var(--cr-accent-strong);\nfont-weight:700;\n}\n.crdk-home .proof .sep{\nmargin:0 9px;\ncolor:var(--cr-muted);\n}\n.crdk-home .proof .cmp{ white-space:nowrap; }\n.crdk-home .proof a{ font-weight:600; white-space:nowrap; }\n.crdk-home .hero-ctas{\ndisplay:flex;\nflex-wrap:wrap;\ngap:12px;\njustify-content:center;\nmargin-top:24px;\n}\n.crdk-home .props{\ndisplay:grid;\ngrid-template-columns:repeat(3,1fr);\ngap:16px;\nmargin-top:38px;\n}\n@media (max-width:760px){\n.crdk-home .props{ grid-template-columns:1fr; }\n}\n.crdk-home .prop{\nbackground:var(--cr-surface);\nborder:1px solid var(--cr-border);\nborder-radius:var(--cr-radius);\npadding:20px;\n}\n.crdk-home .prop .ic{\nwidth:38px;\nheight:38px;\nborder-radius:10px;\nbackground:var(--cr-accent-tint);\ndisplay:flex;\nalign-items:center;\njustify-content:center;\ncolor:var(--cr-accent);\nmargin-bottom:12px;\n}\n.crdk-home .prop h3{\nmargin:0 0 6px;\nfont-size:16px;\nfont-weight:700;\n}\n.crdk-home .prop p{\nmargin:0;\nfont-size:14px;\ncolor:var(--cr-muted);\n}\n.crdk-home .banner{\nmargin-top:34px;\nbackground:var(--cr-accent);\ncolor:var(--cr-accent-ink);\nborder-radius:var(--cr-radius);\npadding:clamp(22px,3vw,32px);\ndisplay:flex;\nflex-wrap:wrap;\nalign-items:center;\ngap:20px 28px;\njustify-content:space-between;\nbackground-image:linear-gradient(135deg, var(--cr-accent) 0%, var(--cr-accent-strong) 100%);\n}\n.crdk-home .banner .b-text{\nflex:1 1 340px;\nmin-width:280px;\n}\n.crdk-home .banner .b-tag{\nfont-size:11.5px;\nfont-weight:600;\nletter-spacing:.08em;\ntext-transform:uppercase;\nopacity:.85;\n}\n.crdk-home .banner h2{\nmargin:8px 0 6px;\nfont-size:clamp(20px,2.6vw,27px);\nfont-weight:700;\nline-height:1.15;\n}\n.crdk-home .banner p{\nmargin:0;\nfont-size:14.5px;\nopacity:.92;\nmax-width:52ch;\n}\n.crdk-home .banner .b-actions{\ndisplay:flex;\nflex-direction:column;\ngap:10px;\nalign-items:flex-start;\n}\n.crdk-home .banner .b-actions .sub-link{\ncolor:#fff;\nopacity:.9;\nfont-size:13px;\ntext-decoration:underline;\n}\n.crdk-home .ai{\nmargin-top:34px;\nbackground:var(--cr-surface);\nborder:1px solid var(--cr-border);\nborder-radius:var(--cr-radius);\npadding:clamp(22px,3vw,34px);\n}\n.crdk-home .ai .new{\ndisplay:inline-flex;\nalign-items:center;\ngap:7px;\nfont-size:11.5px;\nfont-weight:700;\nletter-spacing:.06em;\ntext-transform:uppercase;\ncolor:var(--cr-accent);\nbackground:var(--cr-accent-tint);\nborder-radius:999px;\npadding:6px 13px;\n}\n.crdk-home .ai h2{\nfont-size:clamp(22px,3vw,30px);\nline-height:1.15;\nfont-weight:700;\nletter-spacing:-.01em;\nmargin:16px 0 0;\nmax-width:24ch;\n}\n.crdk-home .ai .intro{\nfont-size:15px;\ncolor:var(--cr-muted);\nmargin:12px 0 0;\nmax-width:64ch;\n}\n.crdk-home .steps{\ndisplay:grid;\ngrid-template-columns:repeat(3,1fr);\ngap:16px;\nmargin:24px 0 0;\n}\n@media (max-width:760px){\n.crdk-home .steps{ grid-template-columns:1fr; }\n}\n.crdk-home .step{\nborder:1px solid var(--cr-border);\nborder-radius:var(--cr-radius-sm);\npadding:16px;\n}\n.crdk-home .step .n{\nfont-weight:700;\nfont-size:12px;\ncolor:var(--cr-accent);\nfont-variant-numeric:tabular-nums;\n}\n.crdk-home .step b{\ndisplay:block;\nmargin:6px 0 4px;\nfont-size:14.5px;\n}\n.crdk-home .step p{\nmargin:0;\nfont-size:13px;\ncolor:var(--cr-muted);\n}\n.crdk-home .ai-note{\nmargin:20px 0 0;\nfont-size:13.5px;\ncolor:var(--cr-text);\nbackground:var(--cr-accent-tint);\nborder:1px solid var(--cr-border);\nborder-left:3px solid var(--cr-accent);\nborder-radius:var(--cr-radius-sm);\npadding:12px 15px;\n}\n.crdk-home .ai-ctas{\ndisplay:flex;\nflex-wrap:wrap;\ngap:12px;\nmargin-top:20px;\n}\n.crdk-home .ai .pricing{\nmargin:14px 0 0;\nfont-size:12px;\ncolor:var(--cr-muted);\n}\n/* Match new buttons with old Stackable buttons */\n.crdk-home .btn,\n.ugb-c553d17 .ugb-button {\nmin-height: 58px !important;\npadding: 16px 28px !important;\nborder-radius: 14px !important;\nfont-family: \"Lato\", Arial, sans-serif !important;\nfont-size: 18px !important;\nfont-weight: 700 !important;\nline-height: 1.2 !important;\ndisplay: inline-flex !important;\nalign-items: center !important;\njustify-content: center !important;\n}\n.crdk-home .btn,\n.ugb-c553d17 .ugb-button--inner {\nfont-family: \"Lato\", Arial, sans-serif !important;\nfont-size: 18px !important;\nfont-weight: 700 !important;\nline-height: 1.2 !important;\n}\n\n# Make better credit decisions — and know what a company is worth.\n\nThe most accurate company credit ratings and credit risk reports in Denmark, available instantly to support your risk management.\n\nOur ML rating model cuts credit losses by\n\nalmost 70%\n\nvs. traditional rating models.  ·\n\nSee the comparison ↗\n\n★\n\n### Accurate credit risk reports\n\nBankruptcy risk, credit rating, score and a credit-limit recommendation — generated instantly from official data.\n\n€\n\n### Company valuations\n\nValuation reports you can fine-tune with your own estimates and re-print in seconds.\n\n✓\n\n### Free during beta\n\nFree access to 1,000 companies per month during beta, from 400,000+ Danish companies.\n\nBusiness directory\n\n## Browse the full Danish business directory\n\nLook up any of 400,000+ Danish companies — ratings, key figures and reports — then jump straight into the full system for deeper analysis.\n\nOpen the company directory →\n\nSee Jysk A/S as an example ↗\n\n✦ New · November 2025\n\n## AI-powered valuations & credit risk reports — for any company in the world\n\nHave a company's financial statements as a PDF? Drop them in and get a full, professional analysis automatically in about 2 minutes. Works with English, Swedish or Finnish statements; more languages are available on request.\n\n01\n\nUpload your PDF\n\nDrop in the company's financial statements in PDF format.\n\n02\n\nAI builds the model\n\nCredit score, default probability, key metrics and forecasts — automatically, in about 2 minutes.\n\n03\n\nEdit & print\n\nAdjust the estimates in seconds and print your own report.\n\nThis tool is for **non-Danish companies** — every Danish company is already available in the directory above.\n\nCompany Valuations →\n\nCredit Risk Reports →\n\nCurrent launch offer: first report free for new users, additional reports from €1 per company. Pricing may change.\n\nTry the System\n\nSample Report Credit Risk\n\nSample Report Valuation\n\nCreate Account\n\n## **CreditReports.dk**\n\nCreditReports.dk offers comprehensive and precise credit risk and valuation reports on companies based in Denmark. Our Credit Risk Reports help you make confident decisions regarding credit risk management by utilizing bankruptcy risk analysis, company credit rating, and a credit limit recommendation. Our valuation reports help you in all situations involving ownership changes as well as scenario analysis. Read more about our products and their features from the **[Products](https://www.creditreports.dk/product/)** menu.\n\nOur reports are available for almost any Danish company and uses official data from the [**Danish Central Business Register**](https://datacvr.virk.dk/data/). Our models have been developed using sophisticated machine learning methods and a large amount of financial data, ensuring an accurate estimate of the credit risk. You can read more about the method from the page [**Credit Risk Assessment Methods**](https://www.creditreports.dk/credit-risk-assessment-methods/). Company valuation methods are explained on **[Valuation Methods](https://company-valuation.com/valuation-methods)** page.\n\n## Key Features of the CreditReports.dk Product\n\n- Bankruptcy risk\n- Credit limit suggestion\n- Company overview\n- Financial statements\n- Credit rating and score\n- Company valuation tools\n- Key financial ratios\n- Credit rating history\n- Industry comparison\n\n![](/assets/wordpress-media/2021/08/collage_new-min_updated3-1024x539.png)\n\nExamples from the Online Platform and Credit Risk Report\n\nCreate Account\n\nTry the System\n\nThe CreditReports.dk Report platform is in beta phase, during which we will offer full access to the system free of charge. You will get access to the online platform and unlimited free credit risk and valuation reports each month after you sign up for the system.\n\nAfter the beta phase, we will offer a freemium model for the sale of our credit risk and valuation reports. You will get access to three companies of your choice for free each month, or you can easily purchase one of our subscription plans to access more companies.\n\nAlternatively, you can buy individual companies. For any company you have access to, you can easily create your own scenarios and print unlimited credit risk reports. You can read more about our upcoming pricing models from [**the pricing page**](https://www.creditreports.dk/pricing/). To sign up, click the button above.\n\n## What Makes Us Different?\n\n### **State-of-the**-**art risk models**\n\nWe utilize modern machine-learning algorithms in evaluation of credit risk. Read more about our models the **[Credit Risk Assessment Methods](https://www.creditreports.dk/product/credit-risk-assessment-methods/)** page.\n\n### **Automated and editable forecasts**\n\nWhen obtaining your reports, you will automatically have computer-generated forecasts for the future development of a company’s financials. All estimates can be finetuned manually.\n\n### **Transparency**\n\nWe inform you of our bankruptcy risk calculation methods so that you understand the factors behind a given bankruptcy risk.\n\n### Flexible pricing plans\n\nAfter the beta phase, you will get access to three companies of your choice every month. In case you need more, you can easily upgrade your subscription or buy individual companies depending on your needs.\n\n## How Does It Work?\n\n#### Register\n\n[REGISTER HERE](https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true)\n\n#### Select company\n\n[READ MORE](https://www.creditreports.dk/support/get-started/)\n\n#### Print report\n\n[VIEW SAMPLE](/assets/wordpress-media/2021/08/Credit_Risk_Report_Demo.pdf)",
+  "media_placements": [
+    {
+      "order": 1,
+      "type": "pdf link",
+      "section": "Make better credit decisions — and know what a company is worth.",
+      "context": "-label=\"CreditReports.dk overview\"> Make better credit decisions — and know what a company is worth. The most accurate company credit ratings and credit risk reports in Denmark, available instantly to support your ris...",
+      "link_label": "See the comparison ↗",
+      "local_url": "/assets/wordpress-media/2024/07/Tanska_creditrisk_comparisons_PDF_v5.pdf",
+      "local_path": "assets/wordpress-media/2024/07/Tanska_creditrisk_comparisons_PDF_v5.pdf",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2024/07/Tanska_creditrisk_comparisons_PDF_v5.pdf",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 2,
+      "type": "pdf link",
+      "section": "AI-powered valuations & credit risk reports — for any company in the world",
+      "context": ".ugb-c553d17 .ugb-button4 .ugb-button--inner,.ugb-c553d17 .ugb-button4 svg{color:#ffffff !important}.ugb-c553d17 .ugb-button4:before{border-radius:14px !important}.ugb-c553d17.ugb-button-wrapper{margin-top:30px !impor...",
+      "link_label": "Sample Report Credit Risk",
+      "local_url": "/assets/wordpress-media/2023/06/Credit_Risk_Report_Demo.pdf",
+      "local_path": "assets/wordpress-media/2023/06/Credit_Risk_Report_Demo.pdf",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2023/06/Credit_Risk_Report_Demo.pdf",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 3,
+      "type": "pdf link",
+      "section": "AI-powered valuations & credit risk reports — for any company in the world",
+      "context": "dius:14px !important}.ugb-c553d17.ugb-button-wrapper{margin-top:30px !important} Try the System Sample Report Credit Risk Sample Report Valuation Create Account Cr",
+      "link_label": "Sample Report Valuation",
+      "local_url": "/assets/wordpress-media/2020/08/valuation_report_demo.pdf",
+      "local_path": "assets/wordpress-media/2020/08/valuation_report_demo.pdf",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/08/valuation_report_demo.pdf",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 4,
+      "type": "inline image",
+      "section": "Key Features of the CreditReports.dk Product",
+      "context": "imit suggestion Company overview Financial statements Credit rating and score Company valuation tools Key financial ratios Credit rating history Industry comparison Examples from the Online Platform and Credit Risk Re...",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2021/08/collage_new-min_updated3-1024x539.png",
+      "local_path": "assets/wordpress-media/2021/08/collage_new-min_updated3-1024x539.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/08/collage_new-min_updated3-1024x539.png",
+      "status": "mapped",
+      "markdown_position": 9466
+    },
+    {
+      "order": 5,
+      "type": "background/section image",
+      "section": "Flexible pricing plans",
+      "context": "nth. In case you need more, you can easily upgrade your subscription or buy individual companies depending on your needs. .ugb-5996ab5 .ugb-image-box__item{height:239px !important;justify-content:center !important}.ug...",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2021/07/new_register-min_updated.png",
+      "local_path": "assets/wordpress-media/2021/07/new_register-min_updated.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/07/new_register-min_updated.png",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 6,
+      "type": "background/section image",
+      "section": "Flexible pricing plans",
+      "context": "eature-grid --> .ugb-5996ab5 .ugb-image-box__item{height:239px !important;justify-content:center !important}.ugb-5996ab5 .ugb-image-box__item1 .ugb-image-box__image{background-image:url(/assets/wordpress-media/2021/07...",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2020/07/search-min.png",
+      "local_path": "assets/wordpress-media/2020/07/search-min.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/07/search-min.png",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 7,
+      "type": "background/section image",
+      "section": "Flexible pricing plans",
+      "context": "rtant}.ugb-5996ab5 .ugb-image-box__item1 .ugb-image-box__image{background-image:url(/assets/wordpress-media/2021/07/new_register-min_updated.png)}.ugb-5996ab5 .ugb-image-box__item2 .ugb-image-box__image{background-ima...",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2020/07/new_report_page2-min.png",
+      "local_path": "assets/wordpress-media/2020/07/new_report_page2-min.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/07/new_report_page2-min.png",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 8,
+      "type": "pdf link",
+      "section": "Print report",
+      "context": "h2>How Does It Work? Register REGISTER HERE Select company READ MORE Print report VIEW SAMPLE",
+      "link_label": "VIEW SAMPLE",
+      "local_url": "/assets/wordpress-media/2021/08/Credit_Risk_Report_Demo.pdf",
+      "local_path": "assets/wordpress-media/2021/08/Credit_Risk_Report_Demo.pdf",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/08/Credit_Risk_Report_Demo.pdf",
+      "status": "mapped",
+      "markdown_position": 11662
+    }
+  ]
+}

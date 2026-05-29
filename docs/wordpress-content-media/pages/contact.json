@@ -1,0 +1,24 @@
+{
+  "title": "Contact us",
+  "wp_id": "2835",
+  "status": "publish",
+  "old_url": "https://creditreports.dk/contact/",
+  "old_path": "/contact/",
+  "suggested_new_route": "/en/contact/",
+  "modified": "2024-12-02 12:40:40",
+  "content_markdown": "**Contact information**\n\n![](/assets/wordpress-media/2024/12/image-3.png)\n\n- + 358 45 123 0308 (Mo-Fr 09:00 - 16.00 EEST)\n\nCreditReports.dk utilizes Valuatum credit risk platform. For more information, visit [www.valuatum.com](http://www.valuatum.com).",
+  "media_placements": [
+    {
+      "order": 1,
+      "type": "inline image",
+      "section": "",
+      "context": "Contact information <styl",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2024/12/image-3.png",
+      "local_path": "assets/wordpress-media/2024/12/image-3.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2024/12/image-3.png",
+      "status": "mapped",
+      "markdown_position": 29
+    }
+  ]
+}

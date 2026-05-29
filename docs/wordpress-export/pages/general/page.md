@@ -1,0 +1,95 @@
+---
+wp_id: "1914"
+type: "page"
+status: "publish"
+old_url: "https://creditreports.dk/support/credit-risk-manualold/general/"
+old_path: "/support/credit-risk-manualold/general/"
+suggested_new_route: "/en/support/credit-risk-manualold/general/"
+modified: "2021-06-11 09:06:17"
+---
+
+# General
+
+## Asset References
+
+No asset references found.
+
+## Extracted Markdown
+
+## Account information
+
+You can create an account by filling in [this form](https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis). The account is immediately ready to use. You will get a confirmation email after creating the account.
+
+You can login to the system via [this page.](https://platform.creditreports.dk/Index.action)
+
+Your password can be reset via [this page](https://platform.creditreports.dk/ForgotPassword.action). This page can also be found via the login page, by pressing "I forgot my password". You can reset your password with the help of your email or your username. You will receive an email with a link for resetting the password by filling in either one of these.
+
+## Introduction to the system
+
+Navigate to different sections of the system via the menu on the top.
+
+- Company views
+- Comparisons
+- Company search - you can import companies information via this page
+- Buy Company Packages
+  . Note: in beta phase you have access to a nearly unlimited amount of companies.
+- Personal information - view your account information
+- Help - link to the support page.
+- Companies left
+
+## Data Import
+
+You need to import the data to the system to gain access to the information about the company.
+
+- Start by searching for the company either via the main page or by the "Company Search" tab.
+- You will get a list of companies that match your search word. Click download to import the data of the wished company.
+- Once the import is done the site will redirect you to the company's page.
+- Now you are ready to analyze the company's credit risk and financial situation.
+
+## Localized HTML
+
+```html
+<!-- wp:heading -->
+<h2>Account information</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You can create an account by filling in <a rel="noreferrer noopener" href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis" target="_blank">this form</a>. The account is immediately ready to use. You will get a confirmation email after creating the account.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You can login to the system via <a rel="noreferrer noopener" href="https://platform.creditreports.dk/Index.action" target="_blank">this page.</a> </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Your password can be reset via <a rel="noreferrer noopener" href="https://platform.creditreports.dk/ForgotPassword.action" target="_blank">this page</a>. This page can also be found via the login page, by pressing "I forgot my password".  You can reset your password with the help of your email or your username. You will receive an email with a link for resetting the password by filling in either one of these. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Introduction to the system</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Navigate to different sections of the system via the menu on the top. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li><a rel="noreferrer noopener" href="https://creditreports.dk/support/credit-risk-manual-company-views/" target="_blank">Company views</a> - you will find here the financial and credit risk information of the companies of your choice. </li><li><a rel="noreferrer noopener" href="https://creditreports.dk/support/comparisons/" target="_blank">Comparisons </a>- you can compare different groups of companies, either in graphs or in lists</li><li>Company search - you can import companies information via this page</li><li><a rel="noreferrer noopener" href="https://creditreports.dk/pricing/" target="_blank">Buy Company Packages</a> - you can buy a subscription via this page<strong>. Note: in beta phase you have access to a nearly unlimited amount of companies. </strong></li><li>Personal information - view your account information</li><li>Help - link to the support page. </li><li><a rel="noreferrer noopener" href="https://creditreports.dk/pricing/" target="_blank">Companies left </a>- informs you about how many companies you can import. </li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Data Import </h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You need to import the data to the system to gain access to the information about the company. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Start by searching for the company either via the main page or by the "Company Search" tab.</li><li>You will get a list of companies that match your search word. Click download to import the data of the wished company. </li><li>Once the import is done the site will redirect you to the company's page.</li><li>Now you are ready to analyze the company's credit risk and financial situation. </li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+```

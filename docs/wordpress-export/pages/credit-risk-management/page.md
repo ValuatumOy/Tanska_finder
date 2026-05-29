@@ -1,0 +1,77 @@
+---
+wp_id: "1770"
+type: "page"
+status: "publish"
+old_url: "https://creditreports.dk/support/credit-risk-management/"
+old_path: "/support/credit-risk-management/"
+suggested_new_route: "/en/support/credit-risk-management/"
+modified: "2020-12-22 11:08:44"
+---
+
+# Credit Risk Management
+
+## Asset References
+
+- `mapped` credit-risk-management: /assets/wordpress-media/2020/09/credit-risk-management-1024x576.jpg (source: https://creditreports.dk/wp-content/uploads/sites/9/2020/09/credit-risk-management-1024x576.jpg)
+- `mapped` block-background-background-media-url: /assets/wordpress-media/2020/08/block-background-background-media-url.jpg (source: https://d3gt1urn7320t9.cloudfront.net/library/block-cta-elevate-call-to-action/block-background-background-media-url.jpg)
+- `mapped` block-background-background-media-url: /assets/wordpress-media/2020/08/block-background-background-media-url.jpg (source: https://d3gt1urn7320t9.cloudfront.net/library/block-header-header-1/block-background-background-media-url.jpg)
+
+## Extracted Markdown
+
+# MANAGING CREDIT RISKS
+
+This page explains how our tools can be used to support companies' risk management.
+
+## Credit Risk Management
+
+Credit risk refers to the likelihood of customer’s or borrower’s failure to comply with the terms of the credit contract. Level of risk is affected by both internal and external factors. Internal factors include solvency, profitability and liquidity. These are factors the company can influence itself. External factors relate to shocks the company cannot influence or changes in the whole industry or macroeconomic environment. More information about risk assessment is presented on the [methods](https://creditreports.dk/product/credit-risk-assessment-methods/) page.
+
+Credit risk management refers to individual company’s processes to manage its receivables and borrowers. This is the core business of banks and credit institutions, but relevant to all companies selling on credit. Our service focuses on estimating credit risk of other companies and producing the relevant information most efficiently to support seller’s credit risk management in B2B business.
+
+Typically, the scope of credit risk management depends on the number and variety of customers sold to on credit. Small- or medium-sized company selling to a few clients might do well just by checking clients’ company credit ratings and some financials from the credit report. Our service offers three reports for free each month and users can quickly check ratings history, proposed credit limit and comparison within industry. Larger companies usually create processes based on the credit amount so that after the amount is greater than certain limit, say 10 000 DKK or 100 000 DKK, a more thorough evaluation must be performed. Our reports provide comprehensive information about the company as well as possibility to create your own estimates, allowing thorough credit risk evaluation and sensitivity analysis.
+
+![](/assets/wordpress-media/2020/09/credit-risk-management-1024x576.jpg)
+
+The picture above describes one example of credit risk management in practice. A medium-size company has three levels of approval for their credit decisions on accounts receivables. If the invoice amount is small enough, an individual sales agent can make the decisions after a quick check on rating and credit limit. For larger amounts, the credit decision is made by the risk manager or controller at finance department. Largest credits are approved by the CEO or CFO. Creditreports.dk offers a variety of different tools for each level of risk assessment.
+
+## Localized HTML
+
+```html
+<!-- wp:ugb/header {"design":"plain","shadow":0,"columnBackgroundColorOpacity":0,"columnBackgroundTintStrength":1,"titleTag":"h1","titleFontFamily":"Poppins","titleFontWeight":"500","titleLetterSpacing":0.5,"titleFontSize":56,"showButton":false,"buttonSize":"small","buttonBackgroundColor":"#313131","buttonHoverEffect":"lift","buttonBorderRadius":100,"button2Design":"ghost","button2Size":"small","button2BackgroundColor":"#313131","button2HoverEffect":"lift","button2BorderRadius":100,"button2HoverGhostToNormal":false,"uniqueClass":"ugb-e1d0201","mobileBlockHeight":50,"mobileBlockHeightUnit":"vh","blockWidth":906,"blockHorizontalAlign":"flex-start","columnHeight":650,"columnContentVerticalAlign":"center","showBlockBackground":true,"blockInnerWidth":"wide","align":"full","noPaddings":false,"blockBackgroundBackgroundColor":"#ffffff","blockBackgroundBackgroundColor2":"#ffb20b","blockBackgroundBackgroundMediaUrl":"/assets/wordpress-media/2020/08/block-background-background-media-url.jpg","blockBackgroundBackgroundTintStrength":9,"blockBackgroundBackgroundGradientDirection":40,"contentAlign":"left"} -->
+<div class="alignfull wp-block-ugb-header ugb-header ugb-e1d0201 ugb-header ugb-header--v3 ugb-header--design-plain ugb-main-block ugb-main-block--inner-wide ugb--has-block-background ugb--has-background-overlay" id=""><style>.ugb-e1d0201 .ugb-header__title{font-family:"Poppins",Sans-serif !important;font-size:56px;font-weight:500;letter-spacing:0.5px;text-align:left !important}.ugb-e1d0201 .ugb-inner-block{text-align:left}.ugb-e1d0201.ugb-header{justify-content:flex-start;background-color:#ffffff;background-image:url(/assets/wordpress-media/2020/08/block-background-background-media-url.jpg)}.ugb-e1d0201.ugb-header > .ugb-inner-block{width:906px !important;min-width:auto !important}.ugb-e1d0201.ugb-header:before{background-color:#ffffff;opacity:0.9}@media screen and (max-width:768px){.ugb-e1d0201.ugb-header{min-height:50vh !important}}</style><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-header__item"><div class="ugb-content-wrapper"><h1 class="ugb-header__title">MANAGING CREDIT RISKS</h1><p class="ugb-header__subtitle">This page explains how our tools can be used to support companies' risk management.</p></div></div></div></div></div>
+<!-- /wp:ugb/header -->
+
+<!-- wp:ugb/container {"contentWidth":65,"contentMobileWidth":100,"contentHorizontalAlign":"center","borderRadius":0,"shadow":0,"uniqueClass":"ugb-8ab9bd5","paddingRight":0,"paddingLeft":0,"showBlockBackground":true,"blockInnerWidth":"full","align":"full","noPaddings":true} -->
+<div class="alignfull wp-block-ugb-container ugb-container ugb-8ab9bd5 ugb-container--v2 ugb-container--design-basic ugb-main-block ugb-main-block--inner-full ugb--has-block-background" id=""><style>.ugb-8ab9bd5-wrapper.ugb-container__wrapper{border-radius:0px !important}.ugb-8ab9bd5-wrapper > .ugb-container__side{align-items:center !important}.ugb-8ab9bd5-content-wrapper.ugb-container__content-wrapper{width:65% !important}.ugb-8ab9bd5.ugb-container{padding-right:0px !important;padding-left:0px !important}.ugb-8ab9bd5{padding:0 !important}@media screen and (max-width:768px){.ugb-8ab9bd5-content-wrapper.ugb-container__content-wrapper{width:100% !important}}</style><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-container__wrapper ugb-8ab9bd5-wrapper ugb--shadow-0"><div class="ugb-container__side"><div class="ugb-container__content-wrapper ugb-8ab9bd5-content-wrapper"><!-- wp:heading -->
+<h2>Credit Risk Management</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Credit risk refers to the likelihood of customer’s or borrower’s failure to comply with the terms of the credit contract. Level of risk is affected by both internal and external factors. Internal factors include solvency, profitability and liquidity. These are factors the company can influence itself. External factors relate to shocks the company cannot influence or changes in the whole industry or macroeconomic environment. More information about risk assessment is presented on the <a href="https://creditreports.dk/product/credit-risk-assessment-methods/">methods</a> page.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Credit risk management refers to individual company’s processes to manage its receivables and borrowers. This is the core business of banks and credit institutions, but relevant to all companies selling on credit. Our service focuses on estimating credit risk of other companies and producing the relevant information most efficiently to support seller’s credit risk management in B2B business.<br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Typically, the scope of credit risk management depends on the number and variety of customers sold to on credit. Small- or medium-sized company selling to a few clients might do well just by checking clients’ company credit ratings and some financials from the credit report. Our service offers three reports for free each month and users can quickly check ratings history, proposed credit limit and comparison within industry. Larger companies usually create processes based on the credit amount so that after the amount is greater than certain limit, say 10 000 DKK or 100 000 DKK, a more thorough evaluation must be performed. Our reports provide comprehensive information about the company as well as possibility to create your own estimates, allowing thorough credit risk evaluation and sensitivity analysis.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":1790,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="/assets/wordpress-media/2020/09/credit-risk-management-1024x576.jpg" alt="" class="wp-image-1790"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>The picture above describes one example of credit risk management in practice. A medium-size company has three levels of approval for their credit decisions on accounts receivables. If the invoice amount is small enough, an individual sales agent can make the decisions after a quick check on rating and credit limit. For larger amounts, the credit decision is made by the risk manager or controller at finance department. Largest credits are approved by the CEO or CFO. Creditreports.dk offers a variety of different tools for each level of risk assessment.</p>
+<!-- /wp:paragraph --></div></div></div></div></div></div>
+<!-- /wp:ugb/container -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+```

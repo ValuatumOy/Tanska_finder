@@ -1,0 +1,35 @@
+{
+  "id": "2251",
+  "type": "wp_block",
+  "title": "Fin.data table",
+  "slug": "untitled-reusable-block-3",
+  "unique_slug": "untitled-reusable-block-3",
+  "status": "publish",
+  "author": "valuatum",
+  "date": "2021-10-12 11:41:35",
+  "modified": "2021-10-12 15:26:38",
+  "parent": "0",
+  "menu_order": "0",
+  "link": "https://creditreports.dk/2021/10/12/untitled-reusable-block-3/",
+  "old_path": "/2021/10/12/untitled-reusable-block-3/",
+  "suggested_new_route": "",
+  "content_length": 532,
+  "asset_urls": [],
+  "image_urls": [],
+  "asset_refs": [],
+  "excerpt": "",
+  "metas": {
+    "apvc_active_counter": [
+      "Yes"
+    ],
+    "count_start_from": [
+      ""
+    ],
+    "widget_label": [
+      ""
+    ]
+  },
+  "raw_html": "<!-- wp:table {\"className\":\"is-style-stripes\"} -->\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td></td><td>2018</td><td>2019</td></tr><tr><td>Gross Profit</td><td>{gross_profit_Y-3}</td><td>{gross_profit_Y-2}</td></tr><tr><td>EBIT</td><td>{ebit_Y-3}</td><td>{ebit_Y-2}</td></tr><tr><td>Net earnings</td><td>{cr_net_earnings_Y-3}</td><td>{cr_net_earnings_Y-2}</td></tr><tr><td>Balance sheet total</td><td>{bs_total_assets_Y-3}</td><td>{bs_total_assets_Y-2}</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+  "localized_html": "<!-- wp:table {\"className\":\"is-style-stripes\"} -->\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td></td><td>2018</td><td>2019</td></tr><tr><td>Gross Profit</td><td>{gross_profit_Y-3}</td><td>{gross_profit_Y-2}</td></tr><tr><td>EBIT</td><td>{ebit_Y-3}</td><td>{ebit_Y-2}</td></tr><tr><td>Net earnings</td><td>{cr_net_earnings_Y-3}</td><td>{cr_net_earnings_Y-2}</td></tr><tr><td>Balance sheet total</td><td>{bs_total_assets_Y-3}</td><td>{bs_total_assets_Y-2}</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+  "markdown": "|  | 2018 | 2019 |\n| --- | --- | --- |\n| Gross Profit | {gross_profit_Y-3} | {gross_profit_Y-2} |\n| EBIT | {ebit_Y-3} | {ebit_Y-2} |\n| Net earnings | {cr_net_earnings_Y-3} | {cr_net_earnings_Y-2} |\n| Balance sheet total | {bs_total_assets_Y-3} | {bs_total_assets_Y-2} |"
+}

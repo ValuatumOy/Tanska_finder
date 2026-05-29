@@ -1,0 +1,120 @@
+{
+  "title": "Product",
+  "wp_id": "15",
+  "status": "publish",
+  "old_url": "https://creditreports.dk/product/",
+  "old_path": "/product/",
+  "suggested_new_route": "/en/product/",
+  "modified": "2024-04-17 10:02:34",
+  "content_markdown": "# CREDIT RISK TOOL\n\nCreditReports.dk Platform comes with several modern features, such as accurate bankruptcy risk estimates and company credit rating, fully editable financial statement models, and extensive credit risk reports. With our product you can easily take your credit risk analysis to the next level.\n\n## **Features**\n\nThe CreditReports.dk platform provides credit risk assessments of Danish companies. Our credit reports provide you with an estimation of bankruptcy risk and credit rating of companies, along with analysis of financial figures to aid you with credit decisions. The assessment is based on the financial statements of the company, and currently credit risk assessments are available for more than 300 000 Danish businesses. For more information about the method used in our credit assessment, visit the [Credit Risk Assessment Method page](https://creditreports.dk/product/credit-risk-assessment-methods/).\n\nIn addition to the Credit Risk Report, we also provide an online platform which is an easy-to-use interface to view and modify the financial data of companies. You can use the online platform for example to view computer-generated forecasts for companies. It is also possible to modify these forecasts manually to see how different scenarios would impact the credit score of a business.\n\nWe offer a freemium model for the sale of our credit reports. You will get access to the online platform and three free reports each month after you sign up for the system. After this, you can easily upgrade your subscription to obtain more reports every month or alternatively buy individual reports. You can read more about our pricing from [the pricing page](https://www.creditreports.dk/pricing/).\n\nAt the moment, CreditReports.dk is in beta phase, during which we will offer full access to the system free of charge. Register now and start making better credit decisions.\n\n### **What information does the report offer?**\n\n- Credit Score\n- Credit Score History\n- Company Credit Rating\n- Bankruptcy Risk\n- Credit Limit Suggestion\n- Industry Comparison & Average Score\n- Financial Statement & Key Ratios\n- Company Overview\n\n## **Credit Risk Report Features**\n\nOur Credit Risk Report offers a fast and easy way of viewing a company’s financial situation and credit risk. Our report’s main features include:\n\n#### Company Credit Rating & Score\n\nThe Credit Risk Report offers a Company [Credit Rating and Score](https://creditreports.dk/en/support/faq/#creditrating) that summarize the company’s credit risk. The credit score is presented in percentage and the credit rating in grade letter form for each year. We provide these for up to five historical years.\n\n#### Bankruptcy Risk\n\nThe fore mentioned credit rating and credit scores are based on a company’s [bankruptcy risk](https://creditreports.dk/en/support/faq/#bankruptcyrisk), which is also included in the report. The bankruptcy risk is the probability of the company going bankrupt during the next two years.\n\n#### Credit Limit\n\nThe report offers a [credit limit](https://creditreports.dk/en/support/faq/#creditlimit) recommendation which is a suggested maximum limit of credit for a company based on its credit risk profile. The credit limit is calculated based on the company’s gross profit, equity, and liquid assets. It is also scaled using the company’s bankruptcy risk.\n\n#### Industry Comparisons\n\nThe report contains charts which compare the key figures of your company with its industry peers. This is an easy way to see how the company has performed relative to similar companies, providing an effective summary of the company with a relevant comparison group.\n\n#### Financial Statements and Key Figures\n\nThe report contains income statements and balance sheets for the past five years, so that you can get an in-depth understanding of any company’s situation. Additionally, all the important key figures are calculated automatically and visible on the report.\n\n![The Credit Risk Report containing the Bankruptycy Risk as well as Credit Rating, Credit Score and Credit Limit.](/assets/wordpress-media/2020/07/new_front_page-min.png)\n\n![The background information and Credit History shown on the report.](/assets/wordpress-media/2020/07/new_report_page2-min.png)\n\nTo see what our credit risk report looks like in detail, you can view the sample credit risk report by clicking the button below. You can also sign up by clicking the button below to receive your free reports.\n\nSign up\n\nSample report\n\n## **CreditReports.dk Credit Risk Platform**\n\nIn addition to the credit risk reports, our solution includes an online platform. On the platform you are able to view historical figures and automatically or manually generate future estimates of any company. The bankruptcy risk and credit score of a company are calculated using these estimates, which make the estimate generation tools very powerful. You can also use the online platform to compare key figures of companies in the same industry in scatter plots and graphs. The online platform’s main features include:\n\n#### Automatically generated estimates\n\nOur system automatically generates estimates for a company’s financials using the historical data available. This is a good starting point to analyze a company’s future performance and credit risk. You can read more about automatic estimate generation on the [Estimate Generation](https://creditreports.dk/en/support/estimate-generation/) page of the Credit Risk Manual.\n\n#### Easy-to-use tools to change estimates\n\nThe platform provides easy and simple tools to manually edit these automatic estimates. This is a powerful feature, which can be used for example for to easily analyze different possible future scenarios of a company and to see what the company’s credit risk is like in each scenario. Another important use case is sensitivity analysis: you can easily modify key variables of your choice and see how the company’s credit risk reacts to these changes. You can read more about changing estimates from the Change Estimates section on the [Company Views](https://creditreports.dk/en/support/credit-risk-manual-company-views/#change_estimates) page of the Credit Risk Manual.\n\n#### Comparisons\n\nYou can use the online platform to compare key figures of companies. These figures can be viewed as numbers or as different graphs, such as scatter plots and line graphs. You can read more about comparisons on the [Comparisons](https://creditreports.dk/en/support/comparisons/) page of the Credit Risk Manual.\n\n#### Report Integration\n\nThe credit risk reports are downloaded from our online platform, and any changes you make to the figures on the platform will be carried over to the report. You can read more about generating reports from the Generate reports section on the [Company Views](https://creditreports.dk/en/support/credit-risk-manual-company-views/#generate_reports) page of our Credit Risk Manual.\n\n### **Key Features**\n\n- Automatically generated estimates and credit risk reports\n- Easy-to-use tools for analyzing and modifying your own scenarios\n- Wide range of credit risk assessment methods\n\n![](/assets/wordpress-media/2021/07/cv_overview_changeestimates_comparison_2-min_update2-1024x755.png)\n\nSamples of the default page, change estimates and comparisons features\n\nTo explore our online platform, you can view the tutorial video below. Alternatively, you can sign up for free by clicking the Create Account button on the top right to get access to our online platform.\n\nAt the moment, information of payment behavior is not provided in our product. The CreditReports.dk Risk Report focuses more on medium-term (1-2 years) creditworthiness and therefore can not take into account if there has been something surprising in the company over the recent months. If the company has begun to pay the invoices with a very long delay at short notice, for example, it does not affect the current risk assessment.\n\nCurrently we do not support the IFRS accounting standard. This means that companies that report their financials using this standard are not available on the Platform: they cannot be viewed in the online platform and credit risk reports cannot be created for these companies.\n\n## **Explore how this credit risk tool works**\n\nVideo is provided by Valuatum, the software company behind this platform.",
+  "media_placements": [
+    {
+      "order": 1,
+      "type": "background/section image",
+      "section": "",
+      "context": "Background image in old WordPress section/block.",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2024/04/background_image_productpage.jpg",
+      "local_path": "assets/wordpress-media/2024/04/background_image_productpage.jpg",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2024/04/background_image_productpage.jpg",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 2,
+      "type": "background/section image",
+      "section": "",
+      "context": "Background image in old WordPress section/block.",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2024/04/background_image_productpage.jpg",
+      "local_path": "assets/wordpress-media/2024/04/background_image_productpage.jpg",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2024/04/background_image_productpage.jpg",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 3,
+      "type": "image link",
+      "section": "Financial Statements and Key Figures",
+      "context": "er-block\"> </figure",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2020/07/new_front_page-min.png",
+      "local_path": "assets/wordpress-media/2020/07/new_front_page-min.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/07/new_front_page-min.png",
+      "status": "mapped",
+      "markdown_position": 4069
+    },
+    {
+      "order": 4,
+      "type": "inline image",
+      "section": "Financial Statements and Key Figures",
+      "context": "-0\"> <!-- wp:image {\"id\":1465,\"width\":\"413px\",\"height\":\"585px\",\"sizeSlug\":\"full\",\"linkDesti",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2020/07/new_front_page-min.png",
+      "local_path": "assets/wordpress-media/2020/07/new_front_page-min.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/07/new_front_page-min.png",
+      "status": "mapped",
+      "markdown_position": 4069
+    },
+    {
+      "order": 5,
+      "type": "image link",
+      "section": "Financial Statements and Key Figures",
+      "context": "Risk as well as Credit Rating, Credit Score and Credit Limit.\" class=\"wp-image-1467\" style=\"width:413px;height:585px\"/> </d",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2020/07/new_report_page2-min.png",
+      "local_path": "assets/wordpress-media/2020/07/new_report_page2-min.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/07/new_report_page2-min.png",
+      "status": "mapped",
+      "markdown_position": 4196
+    },
+    {
+      "order": 6,
+      "type": "inline image",
+      "section": "Financial Statements and Key Figures",
+      "context": ":585px\"/> T",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2020/07/new_report_page2-min.png",
+      "local_path": "assets/wordpress-media/2020/07/new_report_page2-min.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/07/new_report_page2-min.png",
+      "status": "mapped",
+      "markdown_position": 4196
+    },
+    {
+      "order": 7,
+      "type": "pdf link",
+      "section": "Financial Statements and Key Figures",
+      "context": "b-button ugb-button--size-medium\" href=\"https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" title=\"\"> Sign up Sample repor...",
+      "link_label": "Sample report",
+      "local_url": "/assets/wordpress-media/2020/09/DemoReport.pdf",
+      "local_path": "assets/wordpress-media/2020/09/DemoReport.pdf",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/09/DemoReport.pdf",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 8,
+      "type": "image link",
+      "section": "Key Features",
+      "context": "risk reports Easy-to-use tools for analyzing and modifying your own scenarios Wide range of credit risk assessment methods Samples of the default page, change",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2021/07/cv_overview_changeestimates_comparison_2-min_update2.png",
+      "local_path": "assets/wordpress-media/2021/07/cv_overview_changeestimates_comparison_2-min_update2.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/07/cv_overview_changeestimates_comparison_2-min_update2.png",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 9,
+      "type": "inline image",
+      "section": "Key Features",
+      "context": "> Samples of the default page, change estimates and comparisons features <",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2021/07/cv_overview_changeestimates_comparison_2-min_update2-1024x755.png",
+      "local_path": "assets/wordpress-media/2021/07/cv_overview_changeestimates_comparison_2-min_update2-1024x755.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/07/cv_overview_changeestimates_comparison_2-min_update2-1024x755.png",
+      "status": "mapped",
+      "markdown_position": 7120
+    }
+  ]
+}

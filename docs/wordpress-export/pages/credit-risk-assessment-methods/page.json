@@ -1,0 +1,203 @@
+{
+  "id": "99",
+  "type": "page",
+  "title": "Credit Risk Assessment Methods",
+  "slug": "credit-risk-assessment-methods",
+  "unique_slug": "credit-risk-assessment-methods",
+  "status": "publish",
+  "author": "valuatum",
+  "date": "2018-06-21 10:05:23",
+  "modified": "2020-12-17 17:30:35",
+  "parent": "15",
+  "menu_order": "0",
+  "link": "https://creditreports.dk/product/credit-risk-assessment-methods/",
+  "old_path": "/product/credit-risk-assessment-methods/",
+  "suggested_new_route": "/en/products/credit-risk-assessment-methods/",
+  "content_length": 9864,
+  "asset_urls": [
+    "https://cr.valuatum.com/wp-content/uploads/sites/9/2020/06/ml_models.png",
+    "https://creditreports.dk/wp-content/uploads/sites/9/2020/06/ml_models.png",
+    "https://d3gt1urn7320t9.cloudfront.net/library/block-cta-elevate-call-to-action/block-background-background-media-url.jpg",
+    "https://d3gt1urn7320t9.cloudfront.net/library/block-header-header-1/block-background-background-media-url.jpg"
+  ],
+  "image_urls": [
+    "https://cr.valuatum.com/wp-content/uploads/sites/9/2020/06/ml_models.png",
+    "https://creditreports.dk/wp-content/uploads/sites/9/2020/06/ml_models.png",
+    "https://d3gt1urn7320t9.cloudfront.net/library/block-cta-elevate-call-to-action/block-background-background-media-url.jpg",
+    "https://d3gt1urn7320t9.cloudfront.net/library/block-header-header-1/block-background-background-media-url.jpg"
+  ],
+  "asset_refs": [
+    {
+      "url": "https://cr.valuatum.com/wp-content/uploads/sites/9/2020/06/ml_models.png",
+      "local_url": "/assets/wordpress-media/2020/06/ml_models.png",
+      "local_path": "assets/wordpress-media/2020/06/ml_models.png",
+      "title": "ml_models",
+      "status": "mapped"
+    },
+    {
+      "url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/06/ml_models.png",
+      "local_url": "/assets/wordpress-media/2020/06/ml_models.png",
+      "local_path": "assets/wordpress-media/2020/06/ml_models.png",
+      "title": "ml_models",
+      "status": "mapped"
+    },
+    {
+      "url": "https://d3gt1urn7320t9.cloudfront.net/library/block-cta-elevate-call-to-action/block-background-background-media-url.jpg",
+      "local_url": "/assets/wordpress-media/2020/08/block-background-background-media-url.jpg",
+      "local_path": "assets/wordpress-media/2020/08/block-background-background-media-url.jpg",
+      "title": "block-background-background-media-url",
+      "status": "mapped"
+    },
+    {
+      "url": "https://d3gt1urn7320t9.cloudfront.net/library/block-header-header-1/block-background-background-media-url.jpg",
+      "local_url": "/assets/wordpress-media/2020/08/block-background-background-media-url.jpg",
+      "local_path": "assets/wordpress-media/2020/08/block-background-background-media-url.jpg",
+      "title": "block-background-background-media-url",
+      "status": "mapped"
+    }
+  ],
+  "excerpt": "",
+  "metas": {
+    "_edit_last": [
+      "1"
+    ],
+    "_wp_page_template": [
+      "default"
+    ],
+    "_yoast_wpseo_content_score": [
+      "60"
+    ],
+    "layout_sidebar": [
+      "default"
+    ],
+    "page_header": [
+      "normal"
+    ],
+    "page_title": [
+      "none"
+    ],
+    "page_footer": [
+      "normal"
+    ],
+    "page_full": [
+      "1"
+    ],
+    "_elementor_template_type": [
+      "wp-page"
+    ],
+    "_elementor_version": [
+      "2.9.11"
+    ],
+    "_yoast_wpseo_metadesc": [
+      "The process behind our credit risk reports and ratings, with machine-learning and financial, industry and company information at the core."
+    ],
+    "_yoast_wpseo_title": [
+      "Credit risk models using machine learning %%sep%% %%sitename%%"
+    ],
+    "_yoast_wpseo_focuskw": [
+      "credit risk"
+    ],
+    "_yoast_wpseo_linkdex": [
+      "80"
+    ],
+    "saswp_custom_schema_field": [
+      ""
+    ],
+    "itemlist_item_1490": [
+      "a:0:{}"
+    ],
+    "music_composer_1490": [
+      "a:0:{}"
+    ],
+    "movie_actor_1490": [
+      "a:0:{}"
+    ],
+    "article_items_1490": [
+      "a:0:{}"
+    ],
+    "image_object_exif_data_1490": [
+      "a:0:{}"
+    ],
+    "blogposting_items_1490": [
+      "a:0:{}"
+    ],
+    "newsarticle_items_1490": [
+      "a:0:{}"
+    ],
+    "tech_article_items_1490": [
+      "a:0:{}"
+    ],
+    "product_reviews_1490": [
+      "a:0:{}"
+    ],
+    "feed_element_1490": [
+      "a:0:{}"
+    ],
+    "faq_question_1490": [
+      "a:0:{}"
+    ],
+    "performer_1490": [
+      "a:0:{}"
+    ],
+    "organizer_1490": [
+      "a:0:{}"
+    ],
+    "accepted_answer_1490": [
+      "a:0:{}"
+    ],
+    "suggested_answer_1490": [
+      "a:0:{}"
+    ],
+    "howto_supply_1490": [
+      "a:0:{}"
+    ],
+    "howto_tool_1490": [
+      "a:0:{}"
+    ],
+    "howto_step_1490": [
+      "a:0:{}"
+    ],
+    "announcement_location_1490": [
+      "a:0:{}"
+    ],
+    "music_playlist_track_1490": [
+      "a:0:{}"
+    ],
+    "music_album_track_1490": [
+      "a:0:{}"
+    ],
+    "apartment_amenities_1490": [
+      "a:0:{}"
+    ],
+    "additional_property_1490": [
+      "a:0:{}"
+    ],
+    "mc_cause_1490": [
+      "a:0:{}"
+    ],
+    "mc_symptom_1490": [
+      "a:0:{}"
+    ],
+    "mc_risk_factor_1490": [
+      "a:0:{}"
+    ],
+    "tvseries_actor_1490": [
+      "a:0:{}"
+    ],
+    "tvseries_season_1490": [
+      "a:0:{}"
+    ],
+    "trip_itinerary_1490": [
+      "a:0:{}"
+    ],
+    "saswp_product_schema_enable_rating_1490": [
+      "0"
+    ],
+    "_trp_translated_slug_da_DK": [
+      "kreditrisikovurdering"
+    ]
+  },
+  "raw_html": "<!-- wp:ugb/header {\"design\":\"plain\",\"shadow\":0,\"columnBackgroundColorOpacity\":0,\"columnBackgroundTintStrength\":1,\"titleTag\":\"h1\",\"titleFontFamily\":\"Poppins\",\"titleFontWeight\":\"500\",\"titleLetterSpacing\":0.5,\"titleFontSize\":56,\"showButton\":false,\"buttonSize\":\"small\",\"buttonBackgroundColor\":\"#313131\",\"buttonHoverEffect\":\"lift\",\"buttonBorderRadius\":100,\"button2Design\":\"ghost\",\"button2Size\":\"small\",\"button2BackgroundColor\":\"#313131\",\"button2HoverEffect\":\"lift\",\"button2BorderRadius\":100,\"button2HoverGhostToNormal\":false,\"uniqueClass\":\"ugb-f542533\",\"mobileBlockHeight\":50,\"mobileBlockHeightUnit\":\"vh\",\"blockWidth\":906,\"blockHorizontalAlign\":\"flex-start\",\"columnHeight\":650,\"columnContentVerticalAlign\":\"center\",\"showBlockBackground\":true,\"blockInnerWidth\":\"wide\",\"align\":\"full\",\"noPaddings\":false,\"blockBackgroundBackgroundColor\":\"#ffffff\",\"blockBackgroundBackgroundColor2\":\"#ffb20b\",\"blockBackgroundBackgroundMediaUrl\":\"https://d3gt1urn7320t9.cloudfront.net/library/block-header-header-1/block-background-background-media-url.jpg\",\"blockBackgroundBackgroundTintStrength\":9,\"blockBackgroundBackgroundGradientDirection\":40,\"contentAlign\":\"left\"} -->\n<div class=\"alignfull wp-block-ugb-header ugb-header ugb-f542533 ugb-header ugb-header--v3 ugb-header--design-plain ugb-main-block ugb-main-block--inner-wide ugb--has-block-background ugb--has-background-overlay\" id=\"\"><style>.ugb-f542533 .ugb-header__title{font-family:\"Poppins\",Sans-serif !important;font-size:56px;font-weight:500;letter-spacing:0.5px;text-align:left !important}.ugb-f542533 .ugb-inner-block{text-align:left}.ugb-f542533.ugb-header{justify-content:flex-start;background-color:#ffffff;background-image:url(https://d3gt1urn7320t9.cloudfront.net/library/block-cta-elevate-call-to-action/block-background-background-media-url.jpg)}.ugb-f542533.ugb-header > .ugb-inner-block{width:906px !important;min-width:auto !important}.ugb-f542533.ugb-header:before{background-color:#ffffff;opacity:0.9}@media screen and (max-width:768px){.ugb-f542533.ugb-header{min-height:50vh !important}}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-header__item\"><div class=\"ugb-content-wrapper\"><h1 class=\"ugb-header__title\">OUR CREDIT RISK MODEL</h1><p class=\"ugb-header__subtitle\">Behind the technical implementation of CreditReports.dk are people with long history in bankruptcy risk estimation and credit risk analysis. As a result of thorough research we have been able to develop modern machine learning models that predict credit risk with great precision and generate easy to understand company credit ratings and scores.</p></div></div></div></div></div>\n<!-- /wp:ugb/header -->\n\n<!-- wp:ugb/container {\"contentWidth\":65,\"contentMobileWidth\":100,\"contentHorizontalAlign\":\"center\",\"borderRadius\":0,\"shadow\":0,\"uniqueClass\":\"ugb-6835083\",\"paddingRight\":0,\"paddingLeft\":0,\"showBlockBackground\":true,\"blockInnerWidth\":\"full\",\"align\":\"full\",\"noPaddings\":true} -->\n<div class=\"alignfull wp-block-ugb-container ugb-container ugb-6835083 ugb-container--v2 ugb-container--design-basic ugb-main-block ugb-main-block--inner-full ugb--has-block-background\" id=\"\"><style>.ugb-6835083-wrapper.ugb-container__wrapper{border-radius:0px !important}.ugb-6835083-wrapper > .ugb-container__side{align-items:center !important}.ugb-6835083-content-wrapper.ugb-container__content-wrapper{width:65% !important}.ugb-6835083.ugb-container{padding-right:0px !important;padding-left:0px !important}.ugb-6835083{padding:0 !important}@media screen and (max-width:768px){.ugb-6835083-content-wrapper.ugb-container__content-wrapper{width:100% !important}}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-container__wrapper ugb-6835083-wrapper ugb--shadow-0\"><div class=\"ugb-container__side\"><div class=\"ugb-container__content-wrapper ugb-6835083-content-wrapper\"><!-- wp:heading -->\n<h2>The core of credit risk assessment</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>To determine the chosen company's credit risk we use as main inputs in our assessment financial information as well as industry and company characteristics. Our credit risk report presents the results in detail but also with the help of intuitive company credit ratings and scores.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Below explained some of the key parameters for our credit risk assessment:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Solidity is the most important factor. Solidity can be described for example with <strong>Equity Ratio</strong>, the ratio between equity and total balance sheet.</li><li>Profitability is the foundation of business. If a company cannot make profit, it becomes harder to pay back its liabilities. However, profitability can fluctuate due to natural reasons, so history and trend are also important. Profitability can be described for example with <strong>Return on Assets (ROA)</strong>, the ratio between EBIT and total assets.</li><li>Liquidity describes the company’s ability to meet its daily obligations. Obviously, this is interesting for debtors. Liquidity can be described with <strong>Quick Ratio</strong>, the ratio between liquid assets (cash etc.) and short-term liabilities.</li><li>The <strong>industry</strong> a company operates in also affects credit risk. Some industries are more affected by the macroeconomic changes than other, more defensive industries.</li><li><strong>Company size</strong> matters: large size is typically an indicator of past success, but more importantly, large companies have better resources to survive external shocks.</li></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2>Why and how we use machine learning</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The current model uses machine learning. First, we have used our knowledge and experience to select parameters that best and comprehensively correlate with bankruptcy probability. Second, the model is formed and “trained” using machine learning algorithms. This means that the computer is given a large historical data about selected parameters and bankruptcies. By processing the data, algorithm identifies correlations between input variables (parameters) and selected outcome (bankruptcy).<br></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"align\":\"right\",\"id\":951,\"width\":365,\"height\":171,\"sizeSlug\":\"large\",\"linkDestination\":\"media\"} -->\n<div class=\"wp-block-image\"><figure class=\"alignright size-large is-resized\"><a href=\"https://creditreports.dk/wp-content/uploads/sites/9/2020/06/ml_models.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://cr.valuatum.com/wp-content/uploads/sites/9/2020/06/ml_models.png\" alt=\"A simplified illustration of how credit risk models operate showing some inputs, the model and its output.\" class=\"wp-image-951\" width=\"365\" height=\"171\" title=\"A simplified illustration of how credit risk models operate.\"/></a><figcaption>A simplified illustration of how credit risk models operate. The model itself is built based on large amount of historical data using machine learning algorithms.  </figcaption></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>The second part above, done by machine learning algorithms, is something that no human could perform manually. Furthermore, the algorithm is able to adjust the weights of parameters for each individual company based on other parameters. For example, the weight on liquidity is much higher for companies making losses than profitable ones. This is the reason machine learning makes the model as precise as possible, given the information available.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our models have been developed in cooperation with Valuatum and you can read more about the models on the <a rel=\"noreferrer noopener\" href=\"https://www.valuatum.com/credit-risk/bankruptcy-risk/\" target=\"_blank\">Valuatum website</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>Payment behavior data and default information</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Our model is focused on the medium to long term probability of default, and it is based on the full year financial statements of the last few years. However, the financial situation of a company may suddenly deteriorate after the last full year financial statements have been published. This is rare, but could happen because of a sudden big and tremendous change, such as bankruptcy of major supplier or client, withdrawal of major import supplier or major change in health condition of the entrepreneur in a small enterprise.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Because of this, payment behavior data and default information should be used in parallel with our model, or alternatively, the situation of the company should otherwise be known. Payment behavior data shows how many days the company takes to pay its invoices. Therefore, recurring prolonged invoice payment time is usually an indicator of difficulties to make payments. Small delays in payments, however, do not necessarily lead to default events very quickly. Thus, increases in payment times might be seen as an early warning. Hence, payment behavior data is more comprehensive than default information. This information can be used to complement and update the company view gained from the financial statements.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>CreditReports.dk is currently in a beta phase and under development. As such, it does not contain payment behavior data. We are looking for possibilities to integrate this data in our report or partners whose data we could sell.</p>\n<!-- /wp:paragraph --></div></div></div></div></div></div>\n<!-- /wp:ugb/container -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+  "localized_html": "<!-- wp:ugb/header {\"design\":\"plain\",\"shadow\":0,\"columnBackgroundColorOpacity\":0,\"columnBackgroundTintStrength\":1,\"titleTag\":\"h1\",\"titleFontFamily\":\"Poppins\",\"titleFontWeight\":\"500\",\"titleLetterSpacing\":0.5,\"titleFontSize\":56,\"showButton\":false,\"buttonSize\":\"small\",\"buttonBackgroundColor\":\"#313131\",\"buttonHoverEffect\":\"lift\",\"buttonBorderRadius\":100,\"button2Design\":\"ghost\",\"button2Size\":\"small\",\"button2BackgroundColor\":\"#313131\",\"button2HoverEffect\":\"lift\",\"button2BorderRadius\":100,\"button2HoverGhostToNormal\":false,\"uniqueClass\":\"ugb-f542533\",\"mobileBlockHeight\":50,\"mobileBlockHeightUnit\":\"vh\",\"blockWidth\":906,\"blockHorizontalAlign\":\"flex-start\",\"columnHeight\":650,\"columnContentVerticalAlign\":\"center\",\"showBlockBackground\":true,\"blockInnerWidth\":\"wide\",\"align\":\"full\",\"noPaddings\":false,\"blockBackgroundBackgroundColor\":\"#ffffff\",\"blockBackgroundBackgroundColor2\":\"#ffb20b\",\"blockBackgroundBackgroundMediaUrl\":\"/assets/wordpress-media/2020/08/block-background-background-media-url.jpg\",\"blockBackgroundBackgroundTintStrength\":9,\"blockBackgroundBackgroundGradientDirection\":40,\"contentAlign\":\"left\"} -->\n<div class=\"alignfull wp-block-ugb-header ugb-header ugb-f542533 ugb-header ugb-header--v3 ugb-header--design-plain ugb-main-block ugb-main-block--inner-wide ugb--has-block-background ugb--has-background-overlay\" id=\"\"><style>.ugb-f542533 .ugb-header__title{font-family:\"Poppins\",Sans-serif !important;font-size:56px;font-weight:500;letter-spacing:0.5px;text-align:left !important}.ugb-f542533 .ugb-inner-block{text-align:left}.ugb-f542533.ugb-header{justify-content:flex-start;background-color:#ffffff;background-image:url(/assets/wordpress-media/2020/08/block-background-background-media-url.jpg)}.ugb-f542533.ugb-header > .ugb-inner-block{width:906px !important;min-width:auto !important}.ugb-f542533.ugb-header:before{background-color:#ffffff;opacity:0.9}@media screen and (max-width:768px){.ugb-f542533.ugb-header{min-height:50vh !important}}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-header__item\"><div class=\"ugb-content-wrapper\"><h1 class=\"ugb-header__title\">OUR CREDIT RISK MODEL</h1><p class=\"ugb-header__subtitle\">Behind the technical implementation of CreditReports.dk are people with long history in bankruptcy risk estimation and credit risk analysis. As a result of thorough research we have been able to develop modern machine learning models that predict credit risk with great precision and generate easy to understand company credit ratings and scores.</p></div></div></div></div></div>\n<!-- /wp:ugb/header -->\n\n<!-- wp:ugb/container {\"contentWidth\":65,\"contentMobileWidth\":100,\"contentHorizontalAlign\":\"center\",\"borderRadius\":0,\"shadow\":0,\"uniqueClass\":\"ugb-6835083\",\"paddingRight\":0,\"paddingLeft\":0,\"showBlockBackground\":true,\"blockInnerWidth\":\"full\",\"align\":\"full\",\"noPaddings\":true} -->\n<div class=\"alignfull wp-block-ugb-container ugb-container ugb-6835083 ugb-container--v2 ugb-container--design-basic ugb-main-block ugb-main-block--inner-full ugb--has-block-background\" id=\"\"><style>.ugb-6835083-wrapper.ugb-container__wrapper{border-radius:0px !important}.ugb-6835083-wrapper > .ugb-container__side{align-items:center !important}.ugb-6835083-content-wrapper.ugb-container__content-wrapper{width:65% !important}.ugb-6835083.ugb-container{padding-right:0px !important;padding-left:0px !important}.ugb-6835083{padding:0 !important}@media screen and (max-width:768px){.ugb-6835083-content-wrapper.ugb-container__content-wrapper{width:100% !important}}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-container__wrapper ugb-6835083-wrapper ugb--shadow-0\"><div class=\"ugb-container__side\"><div class=\"ugb-container__content-wrapper ugb-6835083-content-wrapper\"><!-- wp:heading -->\n<h2>The core of credit risk assessment</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>To determine the chosen company's credit risk we use as main inputs in our assessment financial information as well as industry and company characteristics. Our credit risk report presents the results in detail but also with the help of intuitive company credit ratings and scores.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Below explained some of the key parameters for our credit risk assessment:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Solidity is the most important factor. Solidity can be described for example with <strong>Equity Ratio</strong>, the ratio between equity and total balance sheet.</li><li>Profitability is the foundation of business. If a company cannot make profit, it becomes harder to pay back its liabilities. However, profitability can fluctuate due to natural reasons, so history and trend are also important. Profitability can be described for example with <strong>Return on Assets (ROA)</strong>, the ratio between EBIT and total assets.</li><li>Liquidity describes the company’s ability to meet its daily obligations. Obviously, this is interesting for debtors. Liquidity can be described with <strong>Quick Ratio</strong>, the ratio between liquid assets (cash etc.) and short-term liabilities.</li><li>The <strong>industry</strong> a company operates in also affects credit risk. Some industries are more affected by the macroeconomic changes than other, more defensive industries.</li><li><strong>Company size</strong> matters: large size is typically an indicator of past success, but more importantly, large companies have better resources to survive external shocks.</li></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2>Why and how we use machine learning</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The current model uses machine learning. First, we have used our knowledge and experience to select parameters that best and comprehensively correlate with bankruptcy probability. Second, the model is formed and “trained” using machine learning algorithms. This means that the computer is given a large historical data about selected parameters and bankruptcies. By processing the data, algorithm identifies correlations between input variables (parameters) and selected outcome (bankruptcy).<br></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"align\":\"right\",\"id\":951,\"width\":365,\"height\":171,\"sizeSlug\":\"large\",\"linkDestination\":\"media\"} -->\n<div class=\"wp-block-image\"><figure class=\"alignright size-large is-resized\"><a href=\"/assets/wordpress-media/2020/06/ml_models.png\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"/assets/wordpress-media/2020/06/ml_models.png\" alt=\"A simplified illustration of how credit risk models operate showing some inputs, the model and its output.\" class=\"wp-image-951\" width=\"365\" height=\"171\" title=\"A simplified illustration of how credit risk models operate.\"/></a><figcaption>A simplified illustration of how credit risk models operate. The model itself is built based on large amount of historical data using machine learning algorithms.  </figcaption></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph -->\n<p>The second part above, done by machine learning algorithms, is something that no human could perform manually. Furthermore, the algorithm is able to adjust the weights of parameters for each individual company based on other parameters. For example, the weight on liquidity is much higher for companies making losses than profitable ones. This is the reason machine learning makes the model as precise as possible, given the information available.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our models have been developed in cooperation with Valuatum and you can read more about the models on the <a rel=\"noreferrer noopener\" href=\"https://www.valuatum.com/credit-risk/bankruptcy-risk/\" target=\"_blank\">Valuatum website</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>Payment behavior data and default information</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Our model is focused on the medium to long term probability of default, and it is based on the full year financial statements of the last few years. However, the financial situation of a company may suddenly deteriorate after the last full year financial statements have been published. This is rare, but could happen because of a sudden big and tremendous change, such as bankruptcy of major supplier or client, withdrawal of major import supplier or major change in health condition of the entrepreneur in a small enterprise.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Because of this, payment behavior data and default information should be used in parallel with our model, or alternatively, the situation of the company should otherwise be known. Payment behavior data shows how many days the company takes to pay its invoices. Therefore, recurring prolonged invoice payment time is usually an indicator of difficulties to make payments. Small delays in payments, however, do not necessarily lead to default events very quickly. Thus, increases in payment times might be seen as an early warning. Hence, payment behavior data is more comprehensive than default information. This information can be used to complement and update the company view gained from the financial statements.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>CreditReports.dk is currently in a beta phase and under development. As such, it does not contain payment behavior data. We are looking for possibilities to integrate this data in our report or partners whose data we could sell.</p>\n<!-- /wp:paragraph --></div></div></div></div></div></div>\n<!-- /wp:ugb/container -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+  "markdown": "# OUR CREDIT RISK MODEL\n\nBehind the technical implementation of CreditReports.dk are people with long history in bankruptcy risk estimation and credit risk analysis. As a result of thorough research we have been able to develop modern machine learning models that predict credit risk with great precision and generate easy to understand company credit ratings and scores.\n\n## The core of credit risk assessment\n\nTo determine the chosen company's credit risk we use as main inputs in our assessment financial information as well as industry and company characteristics. Our credit risk report presents the results in detail but also with the help of intuitive company credit ratings and scores.\n\nBelow explained some of the key parameters for our credit risk assessment:\n\n- Equity Ratio\n- Return on Assets (ROA)\n- Quick Ratio\n- industry\n- Company size\n\n## Why and how we use machine learning\n\nThe current model uses machine learning. First, we have used our knowledge and experience to select parameters that best and comprehensively correlate with bankruptcy probability. Second, the model is formed and “trained” using machine learning algorithms. This means that the computer is given a large historical data about selected parameters and bankruptcies. By processing the data, algorithm identifies correlations between input variables (parameters) and selected outcome (bankruptcy).\n\n![A simplified illustration of how credit risk models operate showing some inputs, the model and its output.](/assets/wordpress-media/2020/06/ml_models.png)\n\nA simplified illustration of how credit risk models operate. The model itself is built based on large amount of historical data using machine learning algorithms.\n\nThe second part above, done by machine learning algorithms, is something that no human could perform manually. Furthermore, the algorithm is able to adjust the weights of parameters for each individual company based on other parameters. For example, the weight on liquidity is much higher for companies making losses than profitable ones. This is the reason machine learning makes the model as precise as possible, given the information available.\n\nOur models have been developed in cooperation with Valuatum and you can read more about the models on the [Valuatum website](https://www.valuatum.com/credit-risk/bankruptcy-risk/).\n\n## Payment behavior data and default information\n\nOur model is focused on the medium to long term probability of default, and it is based on the full year financial statements of the last few years. However, the financial situation of a company may suddenly deteriorate after the last full year financial statements have been published. This is rare, but could happen because of a sudden big and tremendous change, such as bankruptcy of major supplier or client, withdrawal of major import supplier or major change in health condition of the entrepreneur in a small enterprise.\n\nBecause of this, payment behavior data and default information should be used in parallel with our model, or alternatively, the situation of the company should otherwise be known. Payment behavior data shows how many days the company takes to pay its invoices. Therefore, recurring prolonged invoice payment time is usually an indicator of difficulties to make payments. Small delays in payments, however, do not necessarily lead to default events very quickly. Thus, increases in payment times might be seen as an early warning. Hence, payment behavior data is more comprehensive than default information. This information can be used to complement and update the company view gained from the financial statements.\n\nCreditReports.dk is currently in a beta phase and under development. As such, it does not contain payment behavior data. We are looking for possibilities to integrate this data in our report or partners whose data we could sell."
+}

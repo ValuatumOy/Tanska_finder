@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danish Company Search – CreditReports.dk</title>
+  <meta name="description" content="Search 400,000+ Danish companies. Access company profiles, financials, credit risk indicators, and order credit risk reports.">
+  <meta property="og:title" content="Danish Company Search – CreditReports.dk">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://companies.creditreports.dk/en/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .company-search-hero {
+      background: var(--navy);
+      padding: calc(var(--nav-h) + 4rem) 0 4rem;
+    }
+    .company-search-hero-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--page-x);
+      text-align: center;
+    }
+    .company-search-hero h1 {
+      font-size: var(--text-hero);
+      font-weight: 300;
+      color: var(--white);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .company-search-hero p {
+      font-size: var(--text-lg);
+      font-weight: 300;
+      color: rgba(255,255,255,0.65);
+      max-width: 580px;
+      margin: 0 auto 2.5rem;
+    }
+    .company-search-hero .search-bar-form {
+      max-width: 680px;
+      margin: 0 auto 1.5rem;
+    }
+    .company-search-hero .search-bar {
+      background: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.22);
+    }
+    .company-search-hero .search-input {
+      color: var(--white);
+    }
+    .company-search-hero .search-input::placeholder { color: rgba(255,255,255,0.48); }
+    .company-search-hero .search-icon { color: rgba(255,255,255,0.48); }
+    .company-search-hero .search-bar:focus-within {
+      border-color: var(--blue-light);
+      box-shadow: 0 0 0 3px rgba(91,159,232,0.2);
+    }
+    .hero-sublinks {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .hero-sublink {
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.55);
+      transition: color var(--trs);
+    }
+    .hero-sublink:hover { color: rgba(255,255,255,0.90); }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CreditReports.dk Company Directory",
+    "url": "https://companies.creditreports.dk/en/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://companies.creditreports.dk/en/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAVIGATION (company subdomain variant) -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="https://creditreports.dk/en/" class="nav-logo" aria-label="CreditReports.dk home">
+      <div class="nav-logo-icon" aria-hidden="true">CR</div>
+      <span class="nav-logo-wordmark">CreditReports.dk</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="https://companies.creditreports.dk/en/" class="nav-link nav-link--active">Company Search</a>
+      <a href="https://creditreports.dk/en/product/" class="nav-link">Product</a>
+      <a href="https://creditreports.dk/en/ai-credit-report/" class="nav-link">AI Credit Report</a>
+      <a href="https://creditreports.dk/en/pricing/" class="nav-link">Pricing</a>
+      <a href="https://creditreports.dk/en/support/" class="nav-link">Support</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="nav-login">Login</a>
+      <a href="#" class="nav-cta">Create Account</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="https://companies.creditreports.dk/en/" class="nav-mobile-link">Company Search</a>
+    <a href="https://creditreports.dk/en/product/" class="nav-mobile-link">Product</a>
+    <a href="https://creditreports.dk/en/ai-credit-report/" class="nav-mobile-link">AI Credit Report</a>
+    <a href="https://creditreports.dk/en/pricing/" class="nav-mobile-link">Pricing</a>
+    <a href="https://creditreports.dk/en/support/" class="nav-mobile-link">Support</a>
+    <a href="#" class="nav-mobile-link nav-mobile-cta">Create Account</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO / SEARCH -->
+  <section class="company-search-hero" aria-labelledby="directory-heading">
+    <div class="company-search-hero-inner">
+      <p class="hero-eyebrow" style="margin-bottom:1.25rem;opacity:1;transform:none;">Danish company intelligence</p>
+      <h1 id="directory-heading">Explore 400,000+<br>Danish companies</h1>
+      <p>Search Danish companies and access company profiles, financials, credit risk indicators, and report options.</p>
+
+      <form class="search-bar-form" role="search" aria-label="Company search"
+            data-search-base="https://companies.creditreports.dk/en/">
+        <div class="search-bar">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M14 14l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <input class="search-input" type="search" name="q"
+                 placeholder="Search by company name or CVR number"
+                 aria-label="Search Danish companies" autocomplete="off">
+          <button type="submit" class="search-btn">Search</button>
+        </div>
+      </form>
+
+      <div class="hero-sublinks">
+        <a href="https://creditreports.dk/en/product/" class="hero-sublink">Learn about reports</a>
+        <a href="https://creditreports.dk/en/ai-credit-report/" class="hero-sublink">AI Credit Report</a>
+        <a href="https://creditreports.dk/en/pricing/" class="hero-sublink">Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK EXPLANATION -->
+  <section class="content-section" aria-labelledby="explain-heading">
+    <div class="container">
+      <p class="section-eyebrow reveal" style="text-align:center;">How it works</p>
+      <h2 class="section-headline reveal" style="text-align:center;max-width:560px;margin-left:auto;margin-right:auto;" id="explain-heading">
+        From search to report in three steps
+      </h2>
+      <div class="cards-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 15.5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3 class="feature-title">1. Free company view</h3>
+          <p class="feature-body">
+            Start with company-level information and key financial indicators, available for every company in the database — no account required.
+          </p>
+        </div>
+        <div class="feature-card reveal" data-delay="80">
+          <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 18V9m4 9V5m4 13V8m4 10V3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3 class="feature-title">2. Credit Risk Report</h3>
+          <p class="feature-body">
+            Order a structured report with credit rating, bankruptcy risk, financial ratios, and credit limit recommendation — automatically generated as a PDF.
+          </p>
+          <a href="https://creditreports.dk/en/product/" class="feature-link">Learn more <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="feature-card reveal" data-delay="160">
+          <div class="feature-icon" style="background:var(--blue);color:var(--white);">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 3a8 8 0 110 16A8 8 0 0111 3z" stroke="currentColor" stroke-width="1.6"/><path d="M8 11l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="17" cy="5" r="2.5" fill="currentColor"/></svg>
+          </div>
+          <div class="badge badge--new" style="margin-bottom:0.75rem;display:inline-flex;"><span class="badge-dot" aria-hidden="true"></span>New</div>
+          <h3 class="feature-title">3. AI Credit Report</h3>
+          <p class="feature-body">
+            Add AI-assisted written analysis and qualitative observations to the same core financial and credit risk data. One-off purchase.
+          </p>
+          <a href="https://creditreports.dk/en/ai-credit-report/" class="feature-link">Learn more <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY HIGHLIGHTS -->
+  <section class="content-section content-section--alt" aria-labelledby="highlights-heading">
+    <div class="container">
+      <p class="section-eyebrow reveal">Company highlights</p>
+      <h2 class="section-headline reveal" id="highlights-heading">Explore Danish companies by performance</h2>
+
+      <div class="highlights-grid">
+
+        <!-- Fastest growing -->
+        <div class="highlight-card reveal">
+          <p class="highlight-card-eyebrow">Growth</p>
+          <h3 class="highlight-card-title">Fastest growing</h3>
+          <p class="highlight-card-metric-def">Measured by net sales growth (latest vs. prior year)</p>
+          <div class="highlight-list">
+            <!-- PLACEHOLDER: Replace with real backend data -->
+            <a href="/en/companies/34567890/vestergaard-biotech-aps/" class="highlight-item">
+              <span class="highlight-rank">#1</span>
+              <span class="highlight-name">VESTERGAARD BIOTECH ApS</span>
+              <span class="highlight-value">+42.0%</span>
+            </a>
+            <a href="/en/companies/12345678/lowenco-as/" class="highlight-item">
+              <span class="highlight-rank">#2</span>
+              <span class="highlight-name">LOWENCO A/S</span>
+              <span class="highlight-value">+12.1%</span>
+            </a>
+            <a href="/en/companies/23456789/nordic-freight-group-as/" class="highlight-item">
+              <span class="highlight-rank">#3</span>
+              <span class="highlight-name">NORDIC FREIGHT GROUP A/S</span>
+              <span class="highlight-value">+8.5%</span>
+            </a>
+            <a href="#" class="highlight-item">
+              <span class="highlight-rank">#4</span>
+              <span class="highlight-name">DANSALON HOLDING A/S</span>
+              <span class="highlight-value">+7.9%</span>
+            </a>
+            <a href="#" class="highlight-item">
+              <span class="highlight-rank">#5</span>
+              <span class="highlight-name">GREEN ENERGY SYSTEMS A/S</span>
+              <span class="highlight-value">+6.3%</span>
+            </a>
+          </div>
+          <div class="highlight-card-footer">
+            <a href="#" class="btn-ghost" style="font-size:var(--text-sm);">See full list <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <!-- Most profitable -->
+        <div class="highlight-card reveal" data-delay="100">
+          <p class="highlight-card-eyebrow">Profitability</p>
+          <h3 class="highlight-card-title">Most profitable</h3>
+          <p class="highlight-card-metric-def">Measured by return on investment (ROI)</p>
+          <div class="highlight-list">
+            <a href="/en/companies/12345678/lowenco-as/" class="highlight-item">
+              <span class="highlight-rank">#1</span>
+              <span class="highlight-name">LOWENCO A/S</span>
+              <span class="highlight-value">14.8% ROI</span>
+            </a>
+            <a href="/en/companies/23456789/nordic-freight-group-as/" class="highlight-item">
+              <span class="highlight-rank">#2</span>
+              <span class="highlight-name">NORDIC FREIGHT GROUP A/S</span>
+              <span class="highlight-value">8.0% ROI</span>
+            </a>
+            <a href="#" class="highlight-item">
+              <span class="highlight-rank">#3</span>
+              <span class="highlight-name">DANPORT LOGISTICS ApS</span>
+              <span class="highlight-value">7.4% ROI</span>
+            </a>
+            <a href="#" class="highlight-item">
+              <span class="highlight-rank">#4</span>
+              <span class="highlight-name">SCANDINAVIAN MEDIA A/S</span>
+              <span class="highlight-value">6.1% ROI</span>
+            </a>
+            <a href="#" class="highlight-item">
+              <span class="highlight-rank">#5</span>
+              <span class="highlight-name">BALTIC TRADE GROUP A/S</span>
+              <span class="highlight-value">5.8% ROI</span>
+            </a>
+          </div>
+          <div class="highlight-card-footer">
+            <a href="#" class="btn-ghost" style="font-size:var(--text-sm);">See full list <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <!-- Top value creators -->
+        <div class="highlight-card reveal" data-delay="200">
+          <p class="highlight-card-eyebrow">Value creation</p>
+          <h3 class="highlight-card-title">Top value creators</h3>
+          <p class="highlight-card-metric-def">Measured by EVA (Economic Value Added)</p>
+          <div class="highlight-list">
+            <a href="/en/companies/23456789/nordic-freight-group-as/" class="highlight-item">
+              <span class="highlight-rank">#1</span>
+              <span class="highlight-name">NORDIC FREIGHT GROUP A/S</span>
+              <span class="highlight-value">DKK 12.4M</span>
+            </a>
+            <a href="/en/companies/12345678/lowenco-as/" class="highlight-item">
+              <span class="highlight-rank">#2</span>
+              <span class="highlight-name">LOWENCO A/S</span>
+              <span class="highlight-value">DKK 8.1M</span>
+            </a>
+            <a href="#" class="highlight-item">
+              <span class="highlight-rank">#3</span>
+              <span class="highlight-name">FJORD CAPITAL A/S</span>
+              <span class="highlight-value">DKK 6.7M</span>
+            </a>
+            <a href="#" class="highlight-item">
+              <span class="highlight-rank">#4</span>
+              <span class="highlight-name">NEXGEN HEALTH ApS</span>
+              <span class="highlight-value">DKK 3.2M</span>
+            </a>
+            <a href="#" class="highlight-item">
+              <span class="highlight-rank">#5</span>
+              <span class="highlight-name">BLUE OCEAN TECH A/S</span>
+              <span class="highlight-value">DKK 2.9M</span>
+            </a>
+          </div>
+          <div class="highlight-card-footer">
+            <a href="#" class="btn-ghost" style="font-size:var(--text-sm);">See full list <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+      </div>
+      <p class="reveal" style="margin-top:1.5rem;font-size:0.8125rem;color:var(--gray-mid);font-style:italic;">
+        Company rankings are based on the most recently available annual financial data and are updated as new filings become available.
+      </p>
+    </div>
+  </section>
+
+  <!-- AI CREDIT REPORT BANNER -->
+  <section class="content-section" aria-labelledby="ai-banner-heading">
+    <div class="container">
+      <div class="ai-banner reveal">
+        <div>
+          <div class="badge badge--blue" style="margin-bottom:1rem;display:inline-flex;"><span class="badge-dot" aria-hidden="true"></span>New</div>
+          <h2 class="ai-banner-title" id="ai-banner-heading">Need more than numbers?</h2>
+          <p class="ai-banner-body">
+            Order an AI Credit Report for any Danish company and get a clearer written analysis built on financial and credit risk data. One-off purchase — no subscription required.
+          </p>
+        </div>
+        <div class="ai-banner-actions">
+          <a href="https://creditreports.dk/en/ai-credit-report/" class="btn btn-primary btn-large">Learn about AI Credit Report</a>
+          <a href="/sample-reports/ai-credit-report-sample.pdf" class="btn btn-outline btn-large" target="_blank" rel="noopener">View sample report</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-wordmark">CreditReports.dk</span>
+        <p class="footer-tagline">Danish company credit risk data and financial analysis.</p>
+        <a href="https://valuatum.com" class="footer-valuatum-link" target="_blank" rel="noopener">Powered by Valuatum ↗</a>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <span class="footer-col-label">Directory</span>
+          <a href="https://companies.creditreports.dk/en/" class="footer-link">Company search</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-label">Product</span>
+          <a href="https://creditreports.dk/en/product/" class="footer-link">Credit Risk Report</a>
+          <a href="https://creditreports.dk/en/ai-credit-report/" class="footer-link">AI Credit Report</a>
+          <a href="https://creditreports.dk/en/pricing/" class="footer-link">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-label">Support</span>
+          <a href="https://creditreports.dk/en/support/" class="footer-link">Support</a>
+          <a href="https://creditreports.dk/en/contact/" class="footer-link">Contact</a>
+          <a href="https://creditreports.dk/en/privacy/" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-label">Account</span>
+          <a href="#" class="footer-link">Login</a>
+          <a href="#" class="footer-link">Create Account</a>
+          <a href="https://valuatum.com" class="footer-link" target="_blank" rel="noopener">Valuatum.com</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 CreditReports.dk. All rights reserved.</p>
+      <p class="footer-reg">Powered by Valuatum · Helsinki, Finland</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../../js/main.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../mock/companies.js"></script>
+</body>
+</html>

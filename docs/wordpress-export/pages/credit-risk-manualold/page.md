@@ -1,0 +1,87 @@
+---
+wp_id: "1825"
+type: "page"
+status: "draft"
+old_url: "https://creditreports.dk/?page_id=1825"
+old_path: "/"
+suggested_new_route: "/en/"
+modified: "2021-06-11 09:41:12"
+---
+
+# Credit Risk Manual
+
+## Asset References
+
+No asset references found.
+
+## Extracted Markdown
+
+# Credit Risk Platform Manual
+
+Below you will find the categories of our Credit Risk Platform support portal. Please follow the links below. If you do not find an answer to your question, don't hesitate to [contact us.](https://creditreports.dk/contact/)
+
+### [Company Views](https://creditreports.dk/support/credit-risk-manual-company-views/)
+
+- Tabs
+- Estimate generation
+- Saving scenarios
+- Changing estimates
+- Report generation
+- Formula display
+
+### [Comparisons](https://creditreports.dk/support/comparisons/)
+
+- Dynamic XY scatters
+- Dynamic ranking lists
+
+### [Automatic estimates](https://creditreports.dk/support/estimate-generation/)
+
+- Net sales growth estimation
+- EBIT-% and ROA-% estimation
+- Balance sheet parameters
+
+## Localized HTML
+
+```html
+<!-- wp:ugb/columns {"columns":4,"columns1":25,"columns2":25,"columns3":25,"columns4":25,"uniqueClass":"ugb-bcfab4b","showBlockBackground":true,"blockInnerWidth":"full","align":"full","noPaddings":false,"showBlockTitle":true,"blockTitleTag":"h1","showBlockDescription":true,"contentAlign":"left"} -->
+<div class="alignfull wp-block-ugb-columns ugb-columns ugb-bcfab4b ugb-columns--design-plain ugb-columns--columns-4 ugb-main-block ugb-main-block--inner-full ugb--has-block-background" id=""><style>.ugb-bcfab4b .ugb-inner-block{text-align:left}</style><div class="ugb-inner-block"><h1 class="ugb-block-title ugb-block-title--with-subtitle">Credit Risk Platform Manual</h1><p class="ugb-block-description">Below you will find the categories of our Credit Risk Platform support portal. Please follow the links below. If you do not find an answer to your question, don't hesitate to <a href="https://creditreports.dk/contact/">contact us.</a></p><div class="ugb-block-content"><div class="ugb-columns__item ugb-bcfab4b-content-wrapper"><!-- wp:ugb/column {"uniqueClass":"ugb-2225f86","contentAlign":"center"} -->
+<div class="wp-block-ugb-column ugb-column ugb-2225f86 ugb-column--design-plain ugb-main-block" id=""><style>.ugb-2225f86 .ugb-inner-block{text-align:center}</style><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-column__item ugb-2225f86-column-wrapper"><div class="ugb-column__content-wrapper"><!-- wp:heading {"level":3} -->
+<h3><a href="https://creditreports.dk/support/credit-risk-manual-company-views/">Company Views</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:ugb/icon-list {"columns":1,"uniqueClass":"ugb-8e64f3a","contentAlign":"left"} -->
+<div class="wp-block-ugb-icon-list ugb-icon-list ugb-8e64f3a ugb-icon-list--v2 ugb-icon--icon-check ugb-main-block" id=""><style>.ugb-8e64f3a li{--icon-size:20px;margin-bottom:16px !important}.ugb-8e64f3a li::before{height:20px !important;width:20px !important;background-image:url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkwIDE5MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTczLjggMjguNEw2MC40IDE0MS44IDE1LjcgOTcuMiA1LjEgMTA3LjggNjAuNCAxNjNsMTI0LTEyNC0xMC42LTEwLjZ6Ij48L3BhdGg+PC9zdmc+')}.ugb-8e64f3a li ul{margin-bottom:16px !important}.ugb-8e64f3a.ugb-icon-list ul{columns:1}.ugb-8e64f3a .ugb-inner-block{text-align:left}</style><div class="ugb-inner-block"><div class="ugb-block-content"><ul><li><a href="https://creditreports.dk/support/credit-risk-manual-company-views/#tabs">Tabs</a></li><li><a href="https://creditreports.dk/support/credit-risk-manual-company-views/#generate_estimates">Estimate generation</a></li><li><a href="https://creditreports.dk/support/credit-risk-manual-company-views/#scenarios">Saving scenarios</a></li><li><a href="https://creditreports.dk/support/credit-risk-manual-company-views/#change_estimates">Changing estimates</a></li><li><a href="https://creditreports.dk/support/credit-risk-manual-company-views/#generate_reports">Report generation</a></li><li><a href="https://creditreports.dk/support/credit-risk-manual-company-views/#formula_display">Formula display</a></li></ul></div></div></div>
+<!-- /wp:ugb/icon-list --></div></div></div></div></div>
+<!-- /wp:ugb/column -->
+
+<!-- wp:ugb/column {"uniqueClass":"ugb-50d0497","contentAlign":"center"} -->
+<div class="wp-block-ugb-column ugb-column ugb-50d0497 ugb-column--design-plain ugb-main-block" id=""><style>.ugb-50d0497 .ugb-inner-block{text-align:center}</style><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-column__item ugb-50d0497-column-wrapper"><div class="ugb-column__content-wrapper"><!-- wp:heading {"level":3} -->
+<h3><a href="https://creditreports.dk/support/comparisons/">Comparisons</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:ugb/icon-list {"columns":1,"uniqueClass":"ugb-f134905","contentAlign":"left"} -->
+<div class="wp-block-ugb-icon-list ugb-icon-list ugb-f134905 ugb-icon-list--v2 ugb-icon--icon-check ugb-main-block" id=""><style>.ugb-f134905 li{--icon-size:20px;margin-bottom:16px !important}.ugb-f134905 li::before{height:20px !important;width:20px !important;background-image:url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkwIDE5MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTczLjggMjguNEw2MC40IDE0MS44IDE1LjcgOTcuMiA1LjEgMTA3LjggNjAuNCAxNjNsMTI0LTEyNC0xMC42LTEwLjZ6Ij48L3BhdGg+PC9zdmc+')}.ugb-f134905 li ul{margin-bottom:16px !important}.ugb-f134905.ugb-icon-list ul{columns:1}.ugb-f134905 .ugb-inner-block{text-align:left}</style><div class="ugb-inner-block"><div class="ugb-block-content"><ul><li><a href="https://creditreports.dk/support/comparisons/#dynamic_scatter">Dynamic XY scatters</a></li><li><a href="https://creditreports.dk/support/comparisons/#dynamic_rankings">Dynamic ranking lists</a></li></ul></div></div></div>
+<!-- /wp:ugb/icon-list --></div></div></div></div></div>
+<!-- /wp:ugb/column -->
+
+<!-- wp:ugb/column {"uniqueClass":"ugb-7e8a3d8","contentAlign":"center"} -->
+<div class="wp-block-ugb-column ugb-column ugb-7e8a3d8 ugb-column--design-plain ugb-main-block" id=""><style>.ugb-7e8a3d8 .ugb-inner-block{text-align:center}</style><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-column__item ugb-7e8a3d8-column-wrapper"><div class="ugb-column__content-wrapper"><!-- wp:heading {"level":3} -->
+<h3><a href="https://creditreports.dk/support/estimate-generation/">Automatic estimates</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:ugb/icon-list {"columns":1,"uniqueClass":"ugb-3282308","contentAlign":"left"} -->
+<div class="wp-block-ugb-icon-list ugb-icon-list ugb-3282308 ugb-icon-list--v2 ugb-icon--icon-check ugb-main-block" id=""><style>.ugb-3282308 li{--icon-size:20px;margin-bottom:16px !important}.ugb-3282308 li::before{height:20px !important;width:20px !important;background-image:url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkwIDE5MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTczLjggMjguNEw2MC40IDE0MS44IDE1LjcgOTcuMiA1LjEgMTA3LjggNjAuNCAxNjNsMTI0LTEyNC0xMC42LTEwLjZ6Ij48L3BhdGg+PC9zdmc+')}.ugb-3282308 li ul{margin-bottom:16px !important}.ugb-3282308.ugb-icon-list ul{columns:1}.ugb-3282308 .ugb-inner-block{text-align:left}</style><div class="ugb-inner-block"><div class="ugb-block-content"><ul><li><a href="https://creditreports.dk/support/estimate-generation/#ns_growth">Net sales growth estimation</a></li><li><a href="https://creditreports.dk/support/estimate-generation/#ebit_roi">EBIT-% and ROA-% estimation</a></li><li><a href="https://creditreports.dk/support/estimate-generation/#other_items">Balance sheet parameters</a></li></ul></div></div></div>
+<!-- /wp:ugb/icon-list --></div></div></div></div></div>
+<!-- /wp:ugb/column -->
+
+<!-- wp:ugb/column {"uniqueClass":"ugb-72316c9","contentAlign":"center"} -->
+<div class="wp-block-ugb-column ugb-column ugb-72316c9 ugb-column--design-plain ugb-main-block" id=""><style>.ugb-72316c9 .ugb-inner-block{text-align:center}</style><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-column__item ugb-72316c9-column-wrapper"><div class="ugb-column__content-wrapper"><!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph --></div></div></div></div></div>
+<!-- /wp:ugb/column --></div></div></div></div>
+<!-- /wp:ugb/columns -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+```

@@ -1,0 +1,208 @@
+{
+  "id": "2477",
+  "type": "page",
+  "title": "ANPARTSSELSKABET AF 28. AUGUST 2014, 34703604",
+  "slug": "anpartsselskabet-af-28-august-2014",
+  "unique_slug": "anpartsselskabet-af-28-august-2014",
+  "status": "publish",
+  "author": "valuatum",
+  "date": "2021-10-12 15:40:04",
+  "modified": "2021-10-12 15:40:04",
+  "parent": "0",
+  "menu_order": "0",
+  "link": "https://creditreports.dk/anpartsselskabet-af-28-august-2014/",
+  "old_path": "/anpartsselskabet-af-28-august-2014/",
+  "suggested_new_route": "/en/anpartsselskabet-af-28-august-2014/",
+  "content_length": 9150,
+  "asset_urls": [
+    "https://creditreports.dk/wp-content/uploads/sites/9/2021/08/Credit_Risk_Report_Demo.pdf",
+    "https://creditreports.dk/wp-content/uploads/sites/9/2021/10/luottoraporttitanska.png"
+  ],
+  "image_urls": [
+    "https://creditreports.dk/wp-content/uploads/sites/9/2021/10/luottoraporttitanska.png"
+  ],
+  "asset_refs": [
+    {
+      "url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/08/Credit_Risk_Report_Demo.pdf",
+      "local_url": "/assets/wordpress-media/2021/08/Credit_Risk_Report_Demo.pdf",
+      "local_path": "assets/wordpress-media/2021/08/Credit_Risk_Report_Demo.pdf",
+      "title": "Credit_Risk_Report_Demo",
+      "status": "mapped"
+    },
+    {
+      "url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/10/luottoraporttitanska.png",
+      "local_url": "/assets/wordpress-media/2021/10/luottoraporttitanska.png",
+      "local_path": "assets/wordpress-media/2021/10/luottoraporttitanska.png",
+      "title": "luottoraporttitanska",
+      "status": "mapped"
+    }
+  ],
+  "excerpt": "",
+  "metas": {
+    "apvc_active_counter": [
+      "Yes"
+    ],
+    "count_start_from": [
+      ""
+    ],
+    "widget_label": [
+      ""
+    ],
+    "_page_generator_pro_group": [
+      "2026"
+    ],
+    "_page_generator_pro_index": [
+      "10"
+    ],
+    "_wp_page_template": [
+      "default"
+    ],
+    "company_name": [
+      "ANPARTSSELSKABET AF 28. AUGUST 2014"
+    ],
+    "cvr": [
+      "34703604"
+    ],
+    "gross_profit_y-3": [
+      "0"
+    ],
+    "gross_profit_y-2": [
+      "0"
+    ],
+    "ebit_y-3": [
+      "0"
+    ],
+    "ebit_y-2": [
+      "0"
+    ],
+    "cr_net_earnings_y-3": [
+      "0"
+    ],
+    "cr_net_earnings_y-2": [
+      "0"
+    ],
+    "bs_total_assets_y-3": [
+      "0"
+    ],
+    "bs_total_assets_y-2": [
+      "0"
+    ],
+    "page_header": [
+      "normal"
+    ],
+    "page_title": [
+      "normal"
+    ],
+    "page_footer": [
+      "normal"
+    ],
+    "saswp_custom_schema_field": [
+      ""
+    ],
+    "itemlist_item_1490": [
+      "a:0:{}"
+    ],
+    "music_composer_1490": [
+      "a:0:{}"
+    ],
+    "movie_actor_1490": [
+      "a:0:{}"
+    ],
+    "article_items_1490": [
+      "a:0:{}"
+    ],
+    "image_object_exif_data_1490": [
+      "a:0:{}"
+    ],
+    "blogposting_items_1490": [
+      "a:0:{}"
+    ],
+    "newsarticle_items_1490": [
+      "a:0:{}"
+    ],
+    "tech_article_items_1490": [
+      "a:0:{}"
+    ],
+    "product_reviews_1490": [
+      "a:0:{}"
+    ],
+    "feed_element_1490": [
+      "a:0:{}"
+    ],
+    "faq_question_1490": [
+      "a:0:{}"
+    ],
+    "performer_1490": [
+      "a:0:{}"
+    ],
+    "organizer_1490": [
+      "a:0:{}"
+    ],
+    "accepted_answer_1490": [
+      "a:0:{}"
+    ],
+    "suggested_answer_1490": [
+      "a:0:{}"
+    ],
+    "howto_supply_1490": [
+      "a:0:{}"
+    ],
+    "howto_tool_1490": [
+      "a:0:{}"
+    ],
+    "howto_step_1490": [
+      "a:0:{}"
+    ],
+    "announcement_location_1490": [
+      "a:0:{}"
+    ],
+    "music_playlist_track_1490": [
+      "a:0:{}"
+    ],
+    "music_album_track_1490": [
+      "a:0:{}"
+    ],
+    "apartment_amenities_1490": [
+      "a:0:{}"
+    ],
+    "additional_property_1490": [
+      "a:0:{}"
+    ],
+    "mc_cause_1490": [
+      "a:0:{}"
+    ],
+    "mc_symptom_1490": [
+      "a:0:{}"
+    ],
+    "mc_risk_factor_1490": [
+      "a:0:{}"
+    ],
+    "tvseries_actor_1490": [
+      "a:0:{}"
+    ],
+    "tvseries_season_1490": [
+      "a:0:{}"
+    ],
+    "trip_itinerary_1490": [
+      "a:0:{}"
+    ],
+    "saswp_product_schema_enable_rating_1490": [
+      "0"
+    ],
+    "_elementor_edit_mode": [
+      "builder"
+    ],
+    "_elementor_template_type": [
+      "wp-post"
+    ],
+    "_elementor_version": [
+      "2.9.11"
+    ],
+    "_elementor_page_assets": [
+      "a:0:{}"
+    ]
+  },
+  "raw_html": "<!-- wp:group -->\n<div class=\"wp-block-group\"><div class=\"wp-block-group__inner-container\"><!-- wp:group -->\n<div class=\"wp-block-group\"><div class=\"wp-block-group__inner-container\"><!-- wp:group -->\n<div class=\"wp-block-group\"><div class=\"wp-block-group__inner-container\"><!-- wp:ugb/container {\"uniqueClass\":\"ugb-1dde8ae\"} -->\n<div class=\"wp-block-ugb-container ugb-container ugb-1dde8ae ugb-container--v2 ugb-container--design-basic ugb-container--width-small ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-container__wrapper ugb-1dde8ae-wrapper\"><div class=\"ugb-container__side\"><div class=\"ugb-container__content-wrapper ugb-1dde8ae-content-wrapper\"><!-- wp:heading {\"level\":4} -->\n<h4>ANPARTSSELSKABET AF 28. AUGUST 2014</h4>\n<!-- /wp:heading -->\n\n<!-- wp:ugb/columns {\"uniqueClass\":\"ugb-ade713f\"} -->\n<div class=\"wp-block-ugb-columns ugb-columns ugb-ade713f ugb-columns--design-plain ugb-columns--columns-2 ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-columns__item ugb-ade713f-content-wrapper\"><!-- wp:ugb/column {\"uniqueClass\":\"ugb-7158c64\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-7158c64 ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-7158c64-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:paragraph -->\n<p>CVR: 34703604</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Founded: {text_start_date}</p>\n<!-- /wp:paragraph --></div></div></div></div></div>\n<!-- /wp:ugb/column -->\n\n<!-- wp:ugb/column {\"uniqueClass\":\"ugb-a601b3e\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-a601b3e ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-a601b3e-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:paragraph -->\n<p>Address: {text_address}</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Website: {text_website}</p>\n<!-- /wp:paragraph --></div></div></div></div></div>\n<!-- /wp:ugb/column --></div></div></div></div>\n<!-- /wp:ugb/columns --></div></div></div></div></div></div>\n<!-- /wp:ugb/container --></div></div>\n<!-- /wp:group --></div></div>\n<!-- /wp:group --></div></div>\n<!-- /wp:group -->\n\n<!-- wp:ugb/container {\"uniqueClass\":\"ugb-4a683da\"} -->\n<div class=\"wp-block-ugb-container ugb-container ugb-4a683da ugb-container--v2 ugb-container--design-basic ugb-container--width-small ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-container__wrapper ugb-4a683da-wrapper\"><div class=\"ugb-container__side\"><div class=\"ugb-container__content-wrapper ugb-4a683da-content-wrapper\"><!-- wp:ugb/columns {\"columns1\":67,\"columns2\":33,\"uniqueClass\":\"ugb-5cebe49\"} -->\n<div class=\"wp-block-ugb-columns ugb-columns ugb-5cebe49 ugb-columns--design-plain ugb-columns--columns-2 ugb-main-block\" id=\"\"><style>.ugb-5cebe49 > .ugb-inner-block > .ugb-block-content > .ugb-columns__item{grid-template-columns:1.34fr 0.66fr !important}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-columns__item ugb-5cebe49-content-wrapper\"><!-- wp:ugb/column {\"uniqueClass\":\"ugb-6978e63\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-6978e63 ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-6978e63-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:table {\"className\":\"is-style-stripes\"} -->\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td></td><td>2018</td><td>2019</td></tr><tr><td>Gross Profit</td><td>0</td><td>0</td></tr><tr><td>EBIT</td><td>0</td><td>0</td></tr><tr><td>Net earnings</td><td>0</td><td>0</td></tr><tr><td>Balance sheet total</td><td>0</td><td>0</td></tr></tbody></table></figure>\n<!-- /wp:table --></div></div></div></div></div>\n<!-- /wp:ugb/column -->\n\n<!-- wp:ugb/column {\"uniqueClass\":\"ugb-5fe0ddb\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-5fe0ddb ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-5fe0ddb-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:paragraph -->\n<p>[wpcharts type=\"barchart\" bgcolor=\"red:gray:yellow,blue:gray:yellow,random:gray:yellow,purple:gray:yellow\" min=\"0\" legend=\"true\" titles=\"2018,2019\" values=\"0,0\"]</p>\n<!-- /wp:paragraph --></div></div></div></div></div>\n<!-- /wp:ugb/column --></div></div></div></div>\n<!-- /wp:ugb/columns -->\n\n<!-- wp:paragraph -->\n<p>Register to our platform via creditreports.dk for full financial statements and generated estimates. </p>\n<!-- /wp:paragraph --></div></div></div></div></div></div>\n<!-- /wp:ugb/container -->\n\n<!-- wp:ugb/container {\"uniqueClass\":\"ugb-afb6444\"} -->\n<div class=\"wp-block-ugb-container ugb-container ugb-afb6444 ugb-container--v2 ugb-container--design-basic ugb-container--width-small ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-container__wrapper ugb-afb6444-wrapper\"><div class=\"ugb-container__side\"><div class=\"ugb-container__content-wrapper ugb-afb6444-content-wrapper\"><!-- wp:ugb/columns {\"uniqueClass\":\"ugb-1581e58\"} -->\n<div class=\"wp-block-ugb-columns ugb-columns ugb-1581e58 ugb-columns--design-plain ugb-columns--columns-2 ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-columns__item ugb-1581e58-content-wrapper\"><!-- wp:ugb/column {\"uniqueClass\":\"ugb-ee351c0\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-ee351c0 ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-ee351c0-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:image {\"id\":2432,\"width\":364,\"height\":515,\"sizeSlug\":\"full\"} -->\n<figure class=\"wp-block-image size-full is-resized\"><img src=\"https://creditreports.dk/wp-content/uploads/sites/9/2021/10/luottoraporttitanska.png\" alt=\"\" class=\"wp-image-2432\" width=\"364\" height=\"515\"/></figure>\n<!-- /wp:image --></div></div></div></div></div>\n<!-- /wp:ugb/column -->\n\n<!-- wp:ugb/column {\"uniqueClass\":\"ugb-6e2ff15\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-6e2ff15 ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-6e2ff15-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:paragraph -->\n<p>For more comprehensive information about the credit information of ANPARTSSELSKABET AF 28. AUGUST 2014, register <a rel=\"noreferrer noopener\" href=\"https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis\" target=\"_blank\">here </a>to our website. You can download a comprehensive credit report via the website. An example of the report can be found <a rel=\"noreferrer noopener\" href=\"https://creditreports.dk/wp-content/uploads/sites/9/2021/08/Credit_Risk_Report_Demo.pdf\" target=\"_blank\">here</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:ugb/button {\"design\":\"fullwidth\",\"uniqueClass\":\"ugb-128ecf0\"} -->\n<div class=\"wp-block-ugb-button ugb-button-wrapper ugb-128ecf0 ugb-button--design-fullwidth ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-button-container\"><a class=\"ugb-button1 ugb-button ugb-button--size-normal\" href=\"https://creditreports.dk/en/support/get-started/\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"ugb-button--inner\">Get started</span></a></div></div></div></div>\n<!-- /wp:ugb/button -->\n\n<!-- wp:ugb/button {\"design\":\"fullwidth\",\"uniqueClass\":\"ugb-1763859\"} -->\n<div class=\"wp-block-ugb-button ugb-button-wrapper ugb-1763859 ugb-button--design-fullwidth ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-button-container\"><a class=\"ugb-button1 ugb-button ugb-button--size-normal\" href=\"https://platform.creditreports.dk/CompanyViews.action?&amp;forwardAction=CompanyViews\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"ugb-button--inner\">System demo</span></a></div></div></div></div>\n<!-- /wp:ugb/button -->\n\n<!-- wp:ugb/button {\"design\":\"fullwidth\",\"uniqueClass\":\"ugb-ae26026\"} -->\n<div class=\"wp-block-ugb-button ugb-button-wrapper ugb-ae26026 ugb-button--design-fullwidth ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-button-container\"><a class=\"ugb-button1 ugb-button ugb-button--size-normal\" href=\"https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"ugb-button--inner\">Register</span></a></div></div></div></div>\n<!-- /wp:ugb/button -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div></div></div></div>\n<!-- /wp:ugb/column --></div></div></div></div>\n<!-- /wp:ugb/columns --></div></div></div></div></div></div>\n<!-- /wp:ugb/container -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+  "localized_html": "<!-- wp:group -->\n<div class=\"wp-block-group\"><div class=\"wp-block-group__inner-container\"><!-- wp:group -->\n<div class=\"wp-block-group\"><div class=\"wp-block-group__inner-container\"><!-- wp:group -->\n<div class=\"wp-block-group\"><div class=\"wp-block-group__inner-container\"><!-- wp:ugb/container {\"uniqueClass\":\"ugb-1dde8ae\"} -->\n<div class=\"wp-block-ugb-container ugb-container ugb-1dde8ae ugb-container--v2 ugb-container--design-basic ugb-container--width-small ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-container__wrapper ugb-1dde8ae-wrapper\"><div class=\"ugb-container__side\"><div class=\"ugb-container__content-wrapper ugb-1dde8ae-content-wrapper\"><!-- wp:heading {\"level\":4} -->\n<h4>ANPARTSSELSKABET AF 28. AUGUST 2014</h4>\n<!-- /wp:heading -->\n\n<!-- wp:ugb/columns {\"uniqueClass\":\"ugb-ade713f\"} -->\n<div class=\"wp-block-ugb-columns ugb-columns ugb-ade713f ugb-columns--design-plain ugb-columns--columns-2 ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-columns__item ugb-ade713f-content-wrapper\"><!-- wp:ugb/column {\"uniqueClass\":\"ugb-7158c64\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-7158c64 ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-7158c64-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:paragraph -->\n<p>CVR: 34703604</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Founded: {text_start_date}</p>\n<!-- /wp:paragraph --></div></div></div></div></div>\n<!-- /wp:ugb/column -->\n\n<!-- wp:ugb/column {\"uniqueClass\":\"ugb-a601b3e\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-a601b3e ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-a601b3e-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:paragraph -->\n<p>Address: {text_address}</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Website: {text_website}</p>\n<!-- /wp:paragraph --></div></div></div></div></div>\n<!-- /wp:ugb/column --></div></div></div></div>\n<!-- /wp:ugb/columns --></div></div></div></div></div></div>\n<!-- /wp:ugb/container --></div></div>\n<!-- /wp:group --></div></div>\n<!-- /wp:group --></div></div>\n<!-- /wp:group -->\n\n<!-- wp:ugb/container {\"uniqueClass\":\"ugb-4a683da\"} -->\n<div class=\"wp-block-ugb-container ugb-container ugb-4a683da ugb-container--v2 ugb-container--design-basic ugb-container--width-small ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-container__wrapper ugb-4a683da-wrapper\"><div class=\"ugb-container__side\"><div class=\"ugb-container__content-wrapper ugb-4a683da-content-wrapper\"><!-- wp:ugb/columns {\"columns1\":67,\"columns2\":33,\"uniqueClass\":\"ugb-5cebe49\"} -->\n<div class=\"wp-block-ugb-columns ugb-columns ugb-5cebe49 ugb-columns--design-plain ugb-columns--columns-2 ugb-main-block\" id=\"\"><style>.ugb-5cebe49 > .ugb-inner-block > .ugb-block-content > .ugb-columns__item{grid-template-columns:1.34fr 0.66fr !important}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-columns__item ugb-5cebe49-content-wrapper\"><!-- wp:ugb/column {\"uniqueClass\":\"ugb-6978e63\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-6978e63 ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-6978e63-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:table {\"className\":\"is-style-stripes\"} -->\n<figure class=\"wp-block-table is-style-stripes\"><table><tbody><tr><td></td><td>2018</td><td>2019</td></tr><tr><td>Gross Profit</td><td>0</td><td>0</td></tr><tr><td>EBIT</td><td>0</td><td>0</td></tr><tr><td>Net earnings</td><td>0</td><td>0</td></tr><tr><td>Balance sheet total</td><td>0</td><td>0</td></tr></tbody></table></figure>\n<!-- /wp:table --></div></div></div></div></div>\n<!-- /wp:ugb/column -->\n\n<!-- wp:ugb/column {\"uniqueClass\":\"ugb-5fe0ddb\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-5fe0ddb ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-5fe0ddb-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:paragraph -->\n<p>[wpcharts type=\"barchart\" bgcolor=\"red:gray:yellow,blue:gray:yellow,random:gray:yellow,purple:gray:yellow\" min=\"0\" legend=\"true\" titles=\"2018,2019\" values=\"0,0\"]</p>\n<!-- /wp:paragraph --></div></div></div></div></div>\n<!-- /wp:ugb/column --></div></div></div></div>\n<!-- /wp:ugb/columns -->\n\n<!-- wp:paragraph -->\n<p>Register to our platform via creditreports.dk for full financial statements and generated estimates. </p>\n<!-- /wp:paragraph --></div></div></div></div></div></div>\n<!-- /wp:ugb/container -->\n\n<!-- wp:ugb/container {\"uniqueClass\":\"ugb-afb6444\"} -->\n<div class=\"wp-block-ugb-container ugb-container ugb-afb6444 ugb-container--v2 ugb-container--design-basic ugb-container--width-small ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-container__wrapper ugb-afb6444-wrapper\"><div class=\"ugb-container__side\"><div class=\"ugb-container__content-wrapper ugb-afb6444-content-wrapper\"><!-- wp:ugb/columns {\"uniqueClass\":\"ugb-1581e58\"} -->\n<div class=\"wp-block-ugb-columns ugb-columns ugb-1581e58 ugb-columns--design-plain ugb-columns--columns-2 ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-columns__item ugb-1581e58-content-wrapper\"><!-- wp:ugb/column {\"uniqueClass\":\"ugb-ee351c0\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-ee351c0 ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-ee351c0-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:image {\"id\":2432,\"width\":364,\"height\":515,\"sizeSlug\":\"full\"} -->\n<figure class=\"wp-block-image size-full is-resized\"><img src=\"/assets/wordpress-media/2021/10/luottoraporttitanska.png\" alt=\"\" class=\"wp-image-2432\" width=\"364\" height=\"515\"/></figure>\n<!-- /wp:image --></div></div></div></div></div>\n<!-- /wp:ugb/column -->\n\n<!-- wp:ugb/column {\"uniqueClass\":\"ugb-6e2ff15\"} -->\n<div class=\"wp-block-ugb-column ugb-column ugb-6e2ff15 ugb-column--design-plain ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-column__item ugb-6e2ff15-column-wrapper\"><div class=\"ugb-column__content-wrapper\"><!-- wp:paragraph -->\n<p>For more comprehensive information about the credit information of ANPARTSSELSKABET AF 28. AUGUST 2014, register <a rel=\"noreferrer noopener\" href=\"https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis\" target=\"_blank\">here </a>to our website. You can download a comprehensive credit report via the website. An example of the report can be found <a rel=\"noreferrer noopener\" href=\"/assets/wordpress-media/2021/08/Credit_Risk_Report_Demo.pdf\" target=\"_blank\">here</a>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:ugb/button {\"design\":\"fullwidth\",\"uniqueClass\":\"ugb-128ecf0\"} -->\n<div class=\"wp-block-ugb-button ugb-button-wrapper ugb-128ecf0 ugb-button--design-fullwidth ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-button-container\"><a class=\"ugb-button1 ugb-button ugb-button--size-normal\" href=\"https://creditreports.dk/en/support/get-started/\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"ugb-button--inner\">Get started</span></a></div></div></div></div>\n<!-- /wp:ugb/button -->\n\n<!-- wp:ugb/button {\"design\":\"fullwidth\",\"uniqueClass\":\"ugb-1763859\"} -->\n<div class=\"wp-block-ugb-button ugb-button-wrapper ugb-1763859 ugb-button--design-fullwidth ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-button-container\"><a class=\"ugb-button1 ugb-button ugb-button--size-normal\" href=\"https://platform.creditreports.dk/CompanyViews.action?&amp;forwardAction=CompanyViews\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"ugb-button--inner\">System demo</span></a></div></div></div></div>\n<!-- /wp:ugb/button -->\n\n<!-- wp:ugb/button {\"design\":\"fullwidth\",\"uniqueClass\":\"ugb-ae26026\"} -->\n<div class=\"wp-block-ugb-button ugb-button-wrapper ugb-ae26026 ugb-button--design-fullwidth ugb-main-block\" id=\"\"><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-button-container\"><a class=\"ugb-button1 ugb-button ugb-button--size-normal\" href=\"https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis\" target=\"_blank\" rel=\"noopener noreferrer\"><span class=\"ugb-button--inner\">Register</span></a></div></div></div></div>\n<!-- /wp:ugb/button -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div></div></div></div>\n<!-- /wp:ugb/column --></div></div></div></div>\n<!-- /wp:ugb/columns --></div></div></div></div></div></div>\n<!-- /wp:ugb/container -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+  "markdown": "#### ANPARTSSELSKABET AF 28. AUGUST 2014\n\nCVR: 34703604\n\nFounded: {text_start_date}\n\nAddress: {text_address}\n\nWebsite: {text_website}\n\n|  | 2018 | 2019 |\n| --- | --- | --- |\n| Gross Profit | 0 | 0 |\n| EBIT | 0 | 0 |\n| Net earnings | 0 | 0 |\n| Balance sheet total | 0 | 0 |\n\n[wpcharts type=\"barchart\" bgcolor=\"red:gray:yellow,blue:gray:yellow,random:gray:yellow,purple:gray:yellow\" min=\"0\" legend=\"true\" titles=\"2018,2019\" values=\"0,0\"]\n\nRegister to our platform via creditreports.dk for full financial statements and generated estimates.\n\n![](/assets/wordpress-media/2021/10/luottoraporttitanska.png)\n\nFor more comprehensive information about the credit information of ANPARTSSELSKABET AF 28. AUGUST 2014, register [here](https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis)to our website. You can download a comprehensive credit report via the website. An example of the report can be found [here](/assets/wordpress-media/2021/08/Credit_Risk_Report_Demo.pdf).\n\nGet started\n\nSystem demo\n\nRegister"
+}

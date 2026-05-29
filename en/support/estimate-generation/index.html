@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estimate Generation – Credit Risk Manual – CreditReports.dk</title>
+  <meta name="description" content="How automatic estimate generation works in the CreditReports.dk platform — net sales growth, EBIT, and other key financial forecasts.">
+  <link rel="canonical" href="https://creditreports.dk/en/support/estimate-generation/">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+<div id="site-nav"></div>
+<main>
+
+  <section class="page-hero" style="min-height:clamp(260px,32vw,360px);">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-category"><a href="/en/support/" style="color:rgba(255,255,255,0.6);text-decoration:none;">Support</a> › <a href="/en/support/credit-risk-manual/" style="color:rgba(255,255,255,0.6);text-decoration:none;">Manual</a> › Estimate Generation</span>
+      <h1 class="page-hero-title">Estimate Generation</h1>
+      <p class="page-hero-sub">How the platform automatically generates financial forecasts and how to work with them.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div style="max-width:800px;margin:0 auto;">
+
+        <div class="reveal">
+          <p class="prose-body">Estimate generation is a component that creates financial forecasts for a company model. The power of the Valuatum system lies in automatic estimate generation combined with the ability to adjust those estimates freely. It is essential to generate estimates before creating a report — automatic estimates provide a good starting point for more accurate manual inputs.</p>
+          <p class="prose-body">Estimate generation uses historical financial figures to create forecasts for following years based on predetermined rules. The most important estimates are <strong>Net sales growth</strong> and <strong>EBIT-%</strong>. The rules can be modified in the superadmin page. You can find a <a href="/en/support/platform-tutorials/#howtovalue" style="color:var(--blue);">video tutorial on using the valuation tool</a> on our Platform Tutorials page.</p>
+        </div>
+
+        <nav style="margin:2rem 0;padding:1.5rem;background:var(--blue-faint);border-radius:var(--r-lg);border:1px solid rgba(29,111,216,0.15);" class="reveal">
+          <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);margin-bottom:0.75rem;">Contents</p>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.4rem;">
+            <li><a href="#net-sales-growth" style="color:var(--charcoal);text-decoration:none;font-size:0.875rem;">→ Net sales growth in estimate generation</a></li>
+            <li><a href="#ebit-roi" style="color:var(--charcoal);text-decoration:none;font-size:0.875rem;">→ EBIT and ROI in estimate generation</a></li>
+            <li><a href="#other-items" style="color:var(--charcoal);text-decoration:none;font-size:0.875rem;">→ Other items</a></li>
+          </ul>
+        </nav>
+
+        <!-- Net sales growth -->
+        <div id="net-sales-growth" style="margin-top:3rem;" class="reveal">
+          <p class="section-eyebrow">Section 1</p>
+          <h2 class="prose-headline">Net sales growth in estimate generation</h2>
+          <p class="prose-body">Net sales growth-% is arguably the most important estimate. It is calculated by averaging growth from previous years, then gradually converging toward 3% — a sensible upper bound for long-term growth — during estimate years.</p>
+
+          <div style="display:flex;flex-direction:column;gap:2rem;margin-top:2rem;">
+
+            <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);overflow:hidden;">
+              <div style="padding:1.5rem 2rem;">
+                <h3 style="font-size:var(--text-base);font-weight:600;color:var(--charcoal);margin-bottom:0.4rem;">Case 1 — Moderate growth</h3>
+                <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">For a company with reasonably positive net sales growth, the first estimate years will show positive growth that gradually converges to a more conservative long-term rate.</p>
+              </div>
+              <figure style="margin:0;border-top:1px solid var(--color-border);">
+                <img src="/assets/wordpress-media/external-www-valuatum-com/sites/10/2020/05/ns_growth_1.png" alt="Estimate generation for company experiencing moderate growth" style="width:100%;display:block;">
+                <figcaption style="padding:0.6rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Case 1: Estimate generation for company with moderate historical growth</figcaption>
+              </figure>
+            </div>
+
+            <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);overflow:hidden;">
+              <div style="padding:1.5rem 2rem;">
+                <h3 style="font-size:var(--text-base);font-weight:600;color:var(--charcoal);margin-bottom:0.4rem;">Case 2 — High and volatile growth</h3>
+                <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">A company with very high but also volatile growth including negative years. Averaging past growth prevents unreasonably high estimates, and the estimate automatically converges toward a realistic long-term rate.</p>
+              </div>
+              <figure style="margin:0;border-top:1px solid var(--color-border);">
+                <img src="/assets/wordpress-media/external-www-valuatum-com/sites/10/2020/05/ns_growth_2.png" alt="Estimate generation for company experiencing rapid growth" style="width:100%;display:block;">
+                <figcaption style="padding:0.6rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Case 2: Estimate generation for company with high historical growth</figcaption>
+              </figure>
+            </div>
+
+            <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);overflow:hidden;">
+              <div style="padding:1.5rem 2rem;">
+                <h3 style="font-size:var(--text-base);font-weight:600;color:var(--charcoal);margin-bottom:0.4rem;">Case 3 — Declining or negative growth</h3>
+                <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">A company that has struggled to grow. Following standard valuation practice, the estimated growth rate still converges to a reasonable long-term level.</p>
+              </div>
+              <figure style="margin:0;border-top:1px solid var(--color-border);">
+                <img src="/assets/wordpress-media/external-www-valuatum-com/sites/10/2020/06/ns_growth_3.png" alt="Estimate generation for company experiencing negative net sales growth" style="width:100%;display:block;">
+                <figcaption style="padding:0.6rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Case 3: Estimate generation for company with negative historical growth</figcaption>
+              </figure>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EBIT and ROI -->
+        <div id="ebit-roi" style="margin-top:4rem;padding-top:3rem;border-top:1px solid var(--color-border);" class="reveal">
+          <p class="section-eyebrow">Section 2</p>
+          <h2 class="prose-headline">EBIT and ROI in estimate generation</h2>
+          <p class="prose-body">EBIT-% is estimated from the average of historical values, while simultaneously targeting a reasonable ROI-% at which the business would be sensible to continue operating. The EBIT-% converges toward this target level during the estimate period.</p>
+
+          <div style="display:flex;flex-direction:column;gap:2rem;margin-top:2rem;">
+
+            <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);overflow:hidden;">
+              <div style="padding:1.5rem 2rem;">
+                <h3 style="font-size:var(--text-base);font-weight:600;color:var(--charcoal);margin-bottom:0.4rem;">Case 1 — Highly profitable company</h3>
+                <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">A company with strong historical profitability. The historical average influences the first estimate years, then the percentage gradually converges to a level where ROI-% is on a reasonable long-term basis.</p>
+              </div>
+              <figure style="margin:0;border-top:1px solid var(--color-border);">
+                <img src="/assets/wordpress-media/external-www-valuatum-com/sites/10/2020/05/ebit_roi_1.png" alt="Automatic estimates for highly profitable company" style="width:100%;display:block;">
+                <figcaption style="padding:0.6rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Case 1: EBIT/ROI estimates for highly profitable company</figcaption>
+              </figure>
+            </div>
+
+            <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);overflow:hidden;">
+              <div style="padding:1.5rem 2rem;">
+                <h3 style="font-size:var(--text-base);font-weight:600;color:var(--charcoal);margin-bottom:0.4rem;">Case 2 — Extremely profitable company</h3>
+                <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">A company with extraordinary profitability that cannot be sustained long-term. The profitability estimates decline to a more economically reasonable level automatically.</p>
+              </div>
+              <figure style="margin:0;border-top:1px solid var(--color-border);">
+                <img src="/assets/wordpress-media/external-www-valuatum-com/sites/10/2020/05/ebit_roi_2.png" alt="Automatic estimates for extremely profitable company" style="width:100%;display:block;">
+                <figcaption style="padding:0.6rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Case 2: EBIT/ROI estimates for company with unsustainable profitability</figcaption>
+              </figure>
+            </div>
+
+            <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);overflow:hidden;">
+              <div style="padding:1.5rem 2rem;">
+                <h3 style="font-size:var(--text-base);font-weight:600;color:var(--charcoal);margin-bottom:0.4rem;">Case 3 — Unprofitable company</h3>
+                <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">A company currently making losses. The automatic EBIT-% estimation converges to the ROI-% level at which the business would be viable to continue operating.</p>
+              </div>
+              <figure style="margin:0;border-top:1px solid var(--color-border);">
+                <img src="/assets/wordpress-media/external-www-valuatum-com/sites/10/2020/06/ebit_roi_3.png" alt="Automatic estimates for unprofitable company" style="width:100%;display:block;">
+                <figcaption style="padding:0.6rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Case 3: EBIT/ROI estimates for unprofitable company</figcaption>
+              </figure>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Other items -->
+        <div id="other-items" style="margin-top:4rem;padding-top:3rem;border-top:1px solid var(--color-border);" class="reveal">
+          <p class="section-eyebrow">Section 3</p>
+          <h2 class="prose-headline">Other items</h2>
+          <p class="prose-body">Depreciation, financial items, and balance sheet items are mainly estimated by calculating the ratio to some other item. For example, it is reasonable to assume that working capital items scale with net sales, since those are related to the scale of the business.</p>
+          <p class="prose-body">For payout ratio, the latest historical figure is used. The same applies to depreciation: the depreciation percentage is calculated from the latest year and applied to estimate year assets.</p>
+        </div>
+
+        <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--color-border);display:flex;gap:1rem;flex-wrap:wrap;align-items:center;" class="reveal">
+          <a href="/en/support/credit-risk-manual/" class="btn-ghost">← Back to Manual</a>
+          <a href="/en/support/credit-risk-manual-company-views/" class="btn btn-outline-dark btn-sm">Company Views</a>
+          <a href="/en/support/comparisons/" class="btn btn-outline-dark btn-sm">Comparisons</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="site-footer"></div>
+<script src="../../../js/nav.js"></script>
+<script src="../../../js/main.js"></script>
+</body>
+</html>

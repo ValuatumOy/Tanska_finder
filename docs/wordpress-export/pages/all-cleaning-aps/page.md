@@ -1,0 +1,143 @@
+---
+wp_id: "2473"
+type: "page"
+status: "publish"
+old_url: "https://creditreports.dk/all-cleaning-aps/"
+old_path: "/all-cleaning-aps/"
+suggested_new_route: "/en/all-cleaning-aps/"
+modified: "2021-10-12 15:40:03"
+---
+
+# All Cleaning ApS, 35831894
+
+## Asset References
+
+- `mapped` Credit_Risk_Report_Demo: /assets/wordpress-media/2021/08/Credit_Risk_Report_Demo.pdf (source: https://creditreports.dk/wp-content/uploads/sites/9/2021/08/Credit_Risk_Report_Demo.pdf)
+- `mapped` luottoraporttitanska: /assets/wordpress-media/2021/10/luottoraporttitanska.png (source: https://creditreports.dk/wp-content/uploads/sites/9/2021/10/luottoraporttitanska.png)
+
+## Extracted Markdown
+
+#### All Cleaning ApS
+
+CVR: 35831894
+
+Founded: {text_start_date}
+
+Address: {text_address}
+
+Website: {text_website}
+
+|  | 2018 | 2019 |
+| --- | --- | --- |
+| Gross Profit | 0.423386 | 1.0569 |
+| EBIT | -0.046009 | 0.171214 |
+| Net earnings | -0.046009 | 0.138313 |
+| Balance sheet total | 0.108949 | 0.4995 |
+
+[wpcharts type="barchart" bgcolor="red:gray:yellow,blue:gray:yellow,random:gray:yellow,purple:gray:yellow" min="0" legend="true" titles="2018,2019" values="0.423386,1.0569"]
+
+Register to our platform via creditreports.dk for full financial statements and generated estimates.
+
+![](/assets/wordpress-media/2021/10/luottoraporttitanska.png)
+
+For more comprehensive information about the credit information of All Cleaning ApS, register [here](https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis)to our website. You can download a comprehensive credit report via the website. An example of the report can be found [here](/assets/wordpress-media/2021/08/Credit_Risk_Report_Demo.pdf).
+
+Get started
+
+System demo
+
+Register
+
+## Localized HTML
+
+```html
+<!-- wp:group -->
+<div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:group -->
+<div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:group -->
+<div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:ugb/container {"uniqueClass":"ugb-1dde8ae"} -->
+<div class="wp-block-ugb-container ugb-container ugb-1dde8ae ugb-container--v2 ugb-container--design-basic ugb-container--width-small ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-container__wrapper ugb-1dde8ae-wrapper"><div class="ugb-container__side"><div class="ugb-container__content-wrapper ugb-1dde8ae-content-wrapper"><!-- wp:heading {"level":4} -->
+<h4>All Cleaning ApS</h4>
+<!-- /wp:heading -->
+
+<!-- wp:ugb/columns {"uniqueClass":"ugb-ade713f"} -->
+<div class="wp-block-ugb-columns ugb-columns ugb-ade713f ugb-columns--design-plain ugb-columns--columns-2 ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-columns__item ugb-ade713f-content-wrapper"><!-- wp:ugb/column {"uniqueClass":"ugb-7158c64"} -->
+<div class="wp-block-ugb-column ugb-column ugb-7158c64 ugb-column--design-plain ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-column__item ugb-7158c64-column-wrapper"><div class="ugb-column__content-wrapper"><!-- wp:paragraph -->
+<p>CVR: 35831894</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Founded: {text_start_date}</p>
+<!-- /wp:paragraph --></div></div></div></div></div>
+<!-- /wp:ugb/column -->
+
+<!-- wp:ugb/column {"uniqueClass":"ugb-a601b3e"} -->
+<div class="wp-block-ugb-column ugb-column ugb-a601b3e ugb-column--design-plain ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-column__item ugb-a601b3e-column-wrapper"><div class="ugb-column__content-wrapper"><!-- wp:paragraph -->
+<p>Address: {text_address}</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Website: {text_website}</p>
+<!-- /wp:paragraph --></div></div></div></div></div>
+<!-- /wp:ugb/column --></div></div></div></div>
+<!-- /wp:ugb/columns --></div></div></div></div></div></div>
+<!-- /wp:ugb/container --></div></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:group -->
+
+<!-- wp:ugb/container {"uniqueClass":"ugb-4a683da"} -->
+<div class="wp-block-ugb-container ugb-container ugb-4a683da ugb-container--v2 ugb-container--design-basic ugb-container--width-small ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-container__wrapper ugb-4a683da-wrapper"><div class="ugb-container__side"><div class="ugb-container__content-wrapper ugb-4a683da-content-wrapper"><!-- wp:ugb/columns {"columns1":67,"columns2":33,"uniqueClass":"ugb-5cebe49"} -->
+<div class="wp-block-ugb-columns ugb-columns ugb-5cebe49 ugb-columns--design-plain ugb-columns--columns-2 ugb-main-block" id=""><style>.ugb-5cebe49 > .ugb-inner-block > .ugb-block-content > .ugb-columns__item{grid-template-columns:1.34fr 0.66fr !important}</style><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-columns__item ugb-5cebe49-content-wrapper"><!-- wp:ugb/column {"uniqueClass":"ugb-6978e63"} -->
+<div class="wp-block-ugb-column ugb-column ugb-6978e63 ugb-column--design-plain ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-column__item ugb-6978e63-column-wrapper"><div class="ugb-column__content-wrapper"><!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table><tbody><tr><td></td><td>2018</td><td>2019</td></tr><tr><td>Gross Profit</td><td>0.423386</td><td>1.0569</td></tr><tr><td>EBIT</td><td>-0.046009</td><td>0.171214</td></tr><tr><td>Net earnings</td><td>-0.046009</td><td>0.138313</td></tr><tr><td>Balance sheet total</td><td>0.108949</td><td>0.4995</td></tr></tbody></table></figure>
+<!-- /wp:table --></div></div></div></div></div>
+<!-- /wp:ugb/column -->
+
+<!-- wp:ugb/column {"uniqueClass":"ugb-5fe0ddb"} -->
+<div class="wp-block-ugb-column ugb-column ugb-5fe0ddb ugb-column--design-plain ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-column__item ugb-5fe0ddb-column-wrapper"><div class="ugb-column__content-wrapper"><!-- wp:paragraph -->
+<p>[wpcharts type="barchart" bgcolor="red:gray:yellow,blue:gray:yellow,random:gray:yellow,purple:gray:yellow" min="0" legend="true" titles="2018,2019" values="0.423386,1.0569"]</p>
+<!-- /wp:paragraph --></div></div></div></div></div>
+<!-- /wp:ugb/column --></div></div></div></div>
+<!-- /wp:ugb/columns -->
+
+<!-- wp:paragraph -->
+<p>Register to our platform via creditreports.dk for full financial statements and generated estimates. </p>
+<!-- /wp:paragraph --></div></div></div></div></div></div>
+<!-- /wp:ugb/container -->
+
+<!-- wp:ugb/container {"uniqueClass":"ugb-afb6444"} -->
+<div class="wp-block-ugb-container ugb-container ugb-afb6444 ugb-container--v2 ugb-container--design-basic ugb-container--width-small ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-container__wrapper ugb-afb6444-wrapper"><div class="ugb-container__side"><div class="ugb-container__content-wrapper ugb-afb6444-content-wrapper"><!-- wp:ugb/columns {"uniqueClass":"ugb-1581e58"} -->
+<div class="wp-block-ugb-columns ugb-columns ugb-1581e58 ugb-columns--design-plain ugb-columns--columns-2 ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-columns__item ugb-1581e58-content-wrapper"><!-- wp:ugb/column {"uniqueClass":"ugb-ee351c0"} -->
+<div class="wp-block-ugb-column ugb-column ugb-ee351c0 ugb-column--design-plain ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-column__item ugb-ee351c0-column-wrapper"><div class="ugb-column__content-wrapper"><!-- wp:image {"id":2432,"width":364,"height":515,"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full is-resized"><img src="/assets/wordpress-media/2021/10/luottoraporttitanska.png" alt="" class="wp-image-2432" width="364" height="515"/></figure>
+<!-- /wp:image --></div></div></div></div></div>
+<!-- /wp:ugb/column -->
+
+<!-- wp:ugb/column {"uniqueClass":"ugb-6e2ff15"} -->
+<div class="wp-block-ugb-column ugb-column ugb-6e2ff15 ugb-column--design-plain ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-column__item ugb-6e2ff15-column-wrapper"><div class="ugb-column__content-wrapper"><!-- wp:paragraph -->
+<p>For more comprehensive information about the credit information of All Cleaning ApS, register <a rel="noreferrer noopener" href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis" target="_blank">here </a>to our website. You can download a comprehensive credit report via the website. An example of the report can be found <a rel="noreferrer noopener" href="/assets/wordpress-media/2021/08/Credit_Risk_Report_Demo.pdf" target="_blank">here</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:ugb/button {"design":"fullwidth","uniqueClass":"ugb-128ecf0"} -->
+<div class="wp-block-ugb-button ugb-button-wrapper ugb-128ecf0 ugb-button--design-fullwidth ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-button-container"><a class="ugb-button1 ugb-button ugb-button--size-normal" href="https://creditreports.dk/en/support/get-started/" target="_blank" rel="noopener noreferrer"><span class="ugb-button--inner">Get started</span></a></div></div></div></div>
+<!-- /wp:ugb/button -->
+
+<!-- wp:ugb/button {"design":"fullwidth","uniqueClass":"ugb-1763859"} -->
+<div class="wp-block-ugb-button ugb-button-wrapper ugb-1763859 ugb-button--design-fullwidth ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-button-container"><a class="ugb-button1 ugb-button ugb-button--size-normal" href="https://platform.creditreports.dk/CompanyViews.action?&amp;forwardAction=CompanyViews" target="_blank" rel="noopener noreferrer"><span class="ugb-button--inner">System demo</span></a></div></div></div></div>
+<!-- /wp:ugb/button -->
+
+<!-- wp:ugb/button {"design":"fullwidth","uniqueClass":"ugb-ae26026"} -->
+<div class="wp-block-ugb-button ugb-button-wrapper ugb-ae26026 ugb-button--design-fullwidth ugb-main-block" id=""><div class="ugb-inner-block"><div class="ugb-block-content"><div class="ugb-button-container"><a class="ugb-button1 ugb-button ugb-button--size-normal" href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis" target="_blank" rel="noopener noreferrer"><span class="ugb-button--inner">Register</span></a></div></div></div></div>
+<!-- /wp:ugb/button -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph --></div></div></div></div></div>
+<!-- /wp:ugb/column --></div></div></div></div>
+<!-- /wp:ugb/columns --></div></div></div></div></div></div>
+<!-- /wp:ugb/container -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+```

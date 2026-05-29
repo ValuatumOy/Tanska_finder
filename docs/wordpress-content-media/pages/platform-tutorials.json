@@ -1,0 +1,60 @@
+{
+  "title": "Platform Tutorials",
+  "wp_id": "2611",
+  "status": "publish",
+  "old_url": "https://creditreports.dk/support/platform-tutorials/",
+  "old_path": "/support/platform-tutorials/",
+  "suggested_new_route": "/en/support/platform-tutorials/",
+  "modified": "2024-10-09 16:30:54",
+  "content_markdown": "# Platform Tutorials\n\nOn this page, you can find both video and text tutorials on how to use our [platform](https://platform.creditreports.dk/Index.action).\n\n## Contents\n\n- How to download the credit risk or the valuation report\n  - Video instructions\n  - Text instructions\n- What to do if you can't find a company\n  - Video instructions\n  - Text instructions\n- How to use the Valuation tool\n  - DCF valuation\n    - Video instructions\n    - Text instructions\n\n## How to download the credit risk report or a valuation report\n\n**Video instructions**\n\n**Text instructions**\nFrom the platform of creditreports.dk, the user is able to download an automated credit risk report or valuation report based on the company’s financial information. The credit report displays the financial state of the company with text and visualizations.\n\n- Registration/Login:\n  Log in\n  register\n- After login, the user is redirected to the Main page\n- Click “Search” and after that choose “Download”\n  - If the data of the already downloaded company has been updated, the user will also have the option “Update” next to the “Go to company” text box. The user may press it to get the latest information.\n- Confirm the download\n- Now the data is imported\n- To get a full report\n\n## What to do if you can't find a company\n\n**Video instructions**\n\n**Text instructions**\n\nOur platform includes financial data from every Danish company that has registered their financial data in XBRL-form to Danish Business Registry (CVR). Thus, these instructions should not be needed anymore. However, if you cannot find the company you are looking for, you can try to manually download the financial information through our system from the [CVR](https://datacvr.virk.dk/). Please, first make sure that the company in question has registered their data in XBRL form to the CVR. Follow these steps to manually import the company:\n\n- Registration/Login:\n  Log in\n  register\n- Searching for a company:\n- Downloading Information:\n- Explore our pages:\n\n## How to use the Valuation tool\n\nOur system provides a valuation tool that can be accessed as follows:\n\n- Registration/Login:\n  Log in\n  register\n- Download and explore company information:\n  What to do if you can't find a company\n- Explore our Valuation tool:\n\nBelow you will find instructions on how to use the Valuation tool and its different aspects in text and video form.\n\n### DCF Valuation\n\n**Video instructions**\n\n**Text instructions**\n\nOne of the valuation methods we use is the DCF method (Discounted cash flow method), which estimates all the company's future cash flows and discounts them to the current value to produce an estimated value of the company. For a more comprehensive explanation on how to interpret and use the DCF method, please refer to, e.g., Prof. Damodaran's [lecture notes on DCF valuation](https://pages.stern.nyu.edu/~adamodar/pdfiles/eqnotes/dcfallOld.pdf) or see the article [Valuation using discounted cash flows](https://en.wikipedia.org/wiki/Valuation_using_discounted_cash_flows) on Wikipedia.\n\n**Doing your own valuation:**\n\n- Estimate generation:\n  Generate Estimates\n- Making your own estimations in the 'Valuation' tab:\n  Change estimates\n  10,230\n- Making your own estimations in the 'Financial Statements' tab\n- Final adjustments:\n  Generate estimates\n- Saving your estimates:\n  Save...\n  Save\n- Downloading a valuation report:\n  Generate report\n\nBack to top",
+  "media_placements": [
+    {
+      "order": 1,
+      "type": "video",
+      "section": "How to download the credit risk report or a valuation report",
+      "context": "!-- /wp:heading --> Video instructions Text instructions From the platform of creditreports.dk, the user is able to download an automated credit risk report or valuation report based on the company’s fi",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2024/01/raporttiohje_V3.mp4",
+      "local_path": "assets/wordpress-media/2024/01/raporttiohje_V3.mp4",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2024/01/raporttiohje_V3.mp4",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 2,
+      "type": "video",
+      "section": "What to do if you can't find a company",
+      "context": "annotfindcompany\">What to do if you can't find a company Video instructions Text instructions Our platform includes financial data from every Danish compan",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2024/01/didnt_find_V3.mp4",
+      "local_path": "assets/wordpress-media/2024/01/didnt_find_V3.mp4",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2024/01/didnt_find_V3.mp4",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 3,
+      "type": "video",
+      "section": "DCF Valuation",
+      "context": "-- wp:heading {\"level\":3} --> DCF Valuation Video instructions Text instructions One of the valuation methods we use is the DCF method (Discounted",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2024/02/howtovaluation_compressed-1.mp4",
+      "local_path": "assets/wordpress-media/2024/02/howtovaluation_compressed-1.mp4",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2024/02/howtovaluation_compressed-1.mp4",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 4,
+      "type": "pdf link",
+      "section": "DCF Valuation",
+      "context": "of the valuation methods we use is the DCF method (Discounted cash flow method), which estimates all the company's future cash flows and discounts them to the current value to produce an estimated value of the company...",
+      "link_label": "lecture notes on DCF valuation",
+      "local_url": "",
+      "local_path": "",
+      "source_url": "https://pages.stern.nyu.edu/~adamodar/pdfiles/eqnotes/dcfallOld.pdf",
+      "status": "external",
+      "markdown_position": 2830
+    }
+  ]
+}

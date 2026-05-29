@@ -1,0 +1,48 @@
+{
+  "title": "Pricing",
+  "wp_id": "715",
+  "status": "publish",
+  "old_url": "https://creditreports.dk/pricing/",
+  "old_path": "/pricing/",
+  "suggested_new_route": "/en/pricing/",
+  "modified": "2023-10-19 10:26:44",
+  "content_markdown": "## Unlimited reports for free\n\nCreditReports.dk platform is in beta phase, during which we will offer full access to the system free of charge. Register now and start making better credit decisions!\n\nRegister now\n\n![](/assets/wordpress-media/2021/07/new_computer_report_collage_updated.png)\n\nassignment_late\n\nDuring the beta phase you will have access to unlimited credit reports free of charge. All you have to do is register and you are good to go!\nIn the future we will introduce several subscription plans as well as an option to purchase individual reports. However, even then **you will always receive three reports for free each month!**\n\nWe appreciate all the feedback we can get so please contact us if you encounter any issues or have feature requests!\n\nContact us\n\nView sample report\n\n## **Future pricing plans**\n\nAfter the beta phase we will introduce affordable pricing plans. We have designed several options so that everyone's needs will be met. However, if you would like a customized plan, don't hesitate to [contact us](https://creditreports.dk/contact/). We would be happy to negotiate a solution that is satisfactory to you.\n\n## Individual companies\n\n## 3 companies\n\n€\n\n0\n\n.00\n\nEvery month\n\nEvery month you will receive access to three companies of your choosing **for free.**\n\n## Extra companies\n\n€\n\n8\n\n.00\n\nper company\n\nIn addition to three free monthly companies, you have the option to purchase access to individual companies.\n\n## 30-day plans\n\n## 30 companies\n\n€\n\n150\n\n.00\n\nValid for 30 days\n\nDownload data for 30 companies over a running 30-day period.\n\n## 60 companies\n\n€\n\n250\n\n.00\n\nValid for 30 days\n\nDownload data for 60 companies over a running 30-day period.\n\n## Unlimited\n\n€\n\n500\n\n.00\n\nvalid for 30 days\n\nUnlimited access to the system for 30 days.",
+  "media_placements": [
+    {
+      "order": 1,
+      "type": "background/section image",
+      "section": "",
+      "context": "Background image in old WordPress section/block.",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2021/07/new_computer_report_collage_updated.png",
+      "local_path": "assets/wordpress-media/2021/07/new_computer_report_collage_updated.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/07/new_computer_report_collage_updated.png",
+      "status": "mapped",
+      "markdown_position": 218
+    },
+    {
+      "order": 2,
+      "type": "inline image",
+      "section": "Unlimited reports for free",
+      "context": "t-scale\" href=\"https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"\"> Register now <!-- wp:ugb/container {\"design\":\"plain\",\"...",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2021/07/new_computer_report_collage_updated.png",
+      "local_path": "assets/wordpress-media/2021/07/new_computer_report_collage_updated.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/07/new_computer_report_collage_updated.png",
+      "status": "mapped",
+      "markdown_position": 218
+    },
+    {
+      "order": 3,
+      "type": "pdf link",
+      "section": "Unlimited reports for free",
+      "context": "inner-block\"> Contact us View sample report <!-- wp:ugb/container {\"columnBackgroundColor\":\"#eeeeee\",\"uniqueClass\"",
+      "link_label": "View sample report",
+      "local_url": "/assets/wordpress-media/2020/07/new_sample_report.pdf",
+      "local_path": "assets/wordpress-media/2020/07/new_sample_report.pdf",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/07/new_sample_report.pdf",
+      "status": "mapped",
+      "markdown_position": -1
+    }
+  ]
+}

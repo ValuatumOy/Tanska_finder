@@ -1,0 +1,422 @@
+[
+  {
+    "title": "Allegiant Backup Settings",
+    "wp_id": "4",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/allegiant-backup-settings.md",
+    "structured_file": "pages/allegiant-backup-settings.json",
+    "media_count": 0
+  },
+  {
+    "title": "What Is Credit Risk?",
+    "wp_id": "13",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/what-is-credit-risk.md",
+    "structured_file": "pages/what-is-credit-risk.json",
+    "media_count": 0
+  },
+  {
+    "title": "About us",
+    "wp_id": "19",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/about-us.md",
+    "structured_file": "pages/about-us.json",
+    "media_count": 2
+  },
+  {
+    "title": "Prices",
+    "wp_id": "48",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/prices.md",
+    "structured_file": "pages/prices.json",
+    "media_count": 0
+  },
+  {
+    "title": "Credit Risk Manual",
+    "wp_id": "1825",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/credit-risk-manualold.md",
+    "structured_file": "pages/credit-risk-manualold.json",
+    "media_count": 0
+  },
+  {
+    "title": "HomeOLD",
+    "wp_id": "11",
+    "status": "publish",
+    "old_path": "/home222/",
+    "suggested_new_route": "/en/home222/",
+    "content_file": "pages/home222.md",
+    "structured_file": "pages/home222.json",
+    "media_count": 10
+  },
+  {
+    "title": "Product",
+    "wp_id": "15",
+    "status": "publish",
+    "old_path": "/product/",
+    "suggested_new_route": "/en/product/",
+    "content_file": "pages/product.md",
+    "structured_file": "pages/product.json",
+    "media_count": 9
+  },
+  {
+    "title": "Credit Risk Assessment Methods",
+    "wp_id": "99",
+    "status": "publish",
+    "old_path": "/product/credit-risk-assessment-methods/",
+    "suggested_new_route": "/en/products/credit-risk-assessment-methods/",
+    "content_file": "pages/credit-risk-assessment-methods.md",
+    "structured_file": "pages/credit-risk-assessment-methods.json",
+    "media_count": 8
+  },
+  {
+    "title": "Allegiant Pro Backup Settings",
+    "wp_id": "169",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/allegiant-pro-backup-settings.md",
+    "structured_file": "pages/allegiant-pro-backup-settings.json",
+    "media_count": 0
+  },
+  {
+    "title": "Contact us",
+    "wp_id": "553",
+    "status": "publish",
+    "old_path": "/contactold/",
+    "suggested_new_route": "/en/contact/",
+    "content_file": "pages/contactold.md",
+    "structured_file": "pages/contactold.json",
+    "media_count": 0
+  },
+  {
+    "title": "Pricing",
+    "wp_id": "715",
+    "status": "publish",
+    "old_path": "/pricing/",
+    "suggested_new_route": "/en/pricing/",
+    "content_file": "pages/pricing.md",
+    "structured_file": "pages/pricing.json",
+    "media_count": 3
+  },
+  {
+    "title": "Privacy Policy",
+    "wp_id": "1042",
+    "status": "publish",
+    "old_path": "/privacy-policy/",
+    "suggested_new_route": "/en/privacy-policy/",
+    "content_file": "pages/privacy-policy.md",
+    "structured_file": "pages/privacy-policy.json",
+    "media_count": 0
+  },
+  {
+    "title": "Company Valuation Tool",
+    "wp_id": "1586",
+    "status": "publish",
+    "old_path": "/product/company-valuation-tool/",
+    "suggested_new_route": "/en/products/company-valuation-tool/",
+    "content_file": "pages/company-valuation-tool.md",
+    "structured_file": "pages/company-valuation-tool.json",
+    "media_count": 8
+  },
+  {
+    "title": "Credit Risk Management",
+    "wp_id": "1770",
+    "status": "publish",
+    "old_path": "/support/credit-risk-management/",
+    "suggested_new_route": "/en/support/credit-risk-management/",
+    "content_file": "pages/credit-risk-management.md",
+    "structured_file": "pages/credit-risk-management.json",
+    "media_count": 5
+  },
+  {
+    "title": "Company Views",
+    "wp_id": "1826",
+    "status": "publish",
+    "old_path": "/support/credit-risk-manual-company-views/",
+    "suggested_new_route": "/en/support/credit-risk-manual-company-views/",
+    "content_file": "pages/credit-risk-manual-company-views.md",
+    "structured_file": "pages/credit-risk-manual-company-views.json",
+    "media_count": 49
+  },
+  {
+    "title": "Comparisons",
+    "wp_id": "1828",
+    "status": "publish",
+    "old_path": "/support/comparisons/",
+    "suggested_new_route": "/en/support/comparisons/",
+    "content_file": "pages/comparisons.md",
+    "structured_file": "pages/comparisons.json",
+    "media_count": 2
+  },
+  {
+    "title": "Estimate Generation",
+    "wp_id": "1830",
+    "status": "publish",
+    "old_path": "/support/estimate-generation/",
+    "suggested_new_route": "/en/support/estimate-generation/",
+    "content_file": "pages/estimate-generation.md",
+    "structured_file": "pages/estimate-generation.json",
+    "media_count": 12
+  },
+  {
+    "title": "General",
+    "wp_id": "1914",
+    "status": "publish",
+    "old_path": "/support/credit-risk-manualold/general/",
+    "suggested_new_route": "/en/support/credit-risk-manualold/general/",
+    "content_file": "pages/general.md",
+    "structured_file": "pages/general.json",
+    "media_count": 0
+  },
+  {
+    "title": "Credit Risk Manual",
+    "wp_id": "1924",
+    "status": "publish",
+    "old_path": "/support/credit-risk-manual/",
+    "suggested_new_route": "/en/support/credit-risk-manual/",
+    "content_file": "pages/credit-risk-manual.md",
+    "structured_file": "pages/credit-risk-manual.json",
+    "media_count": 0
+  },
+  {
+    "title": "Home",
+    "wp_id": "1966",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/home.md",
+    "structured_file": "pages/home.json",
+    "media_count": 7
+  },
+  {
+    "title": "Home",
+    "wp_id": "2512",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/home-2.md",
+    "structured_file": "pages/home-2.json",
+    "media_count": 9
+  },
+  {
+    "title": "Home",
+    "wp_id": "2565",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/home-3.md",
+    "structured_file": "pages/home-3.json",
+    "media_count": 9
+  },
+  {
+    "title": "Home",
+    "wp_id": "2675",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/home-4.md",
+    "structured_file": "pages/home-4.json",
+    "media_count": 9
+  },
+  {
+    "title": "Home",
+    "wp_id": "2849",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/home-5.md",
+    "structured_file": "pages/home-5.json",
+    "media_count": 7
+  },
+  {
+    "title": "Home",
+    "wp_id": "2971",
+    "status": "draft",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/home-6.md",
+    "structured_file": "pages/home-6.json",
+    "media_count": 8
+  },
+  {
+    "title": "Support",
+    "wp_id": "17",
+    "status": "publish",
+    "old_path": "/support/",
+    "suggested_new_route": "/en/support/",
+    "content_file": "pages/support.md",
+    "structured_file": "pages/support.json",
+    "media_count": 6
+  },
+  {
+    "title": "Get Started",
+    "wp_id": "559",
+    "status": "trash",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/get-startedold-trashed.md",
+    "structured_file": "pages/get-startedold-trashed.json",
+    "media_count": 16
+  },
+  {
+    "title": "Get Started",
+    "wp_id": "1940",
+    "status": "publish",
+    "old_path": "/support/get-started/",
+    "suggested_new_route": "/en/support/get-started/",
+    "content_file": "pages/get-started.md",
+    "structured_file": "pages/get-started.json",
+    "media_count": 14
+  },
+  {
+    "title": "All Cleaning ApS, 35831894",
+    "wp_id": "2473",
+    "status": "publish",
+    "old_path": "/all-cleaning-aps/",
+    "suggested_new_route": "/en/all-cleaning-aps/",
+    "content_file": "pages/all-cleaning-aps.md",
+    "structured_file": "pages/all-cleaning-aps.json",
+    "media_count": 2
+  },
+  {
+    "title": "ALLAN STEEN HANSEN TØMRER- OG ENTREPRENØRFIRMA ApS, 33356455",
+    "wp_id": "2474",
+    "status": "publish",
+    "old_path": "/allan-steen-hansen-tomrer-og-entreprenorfirma-aps/",
+    "suggested_new_route": "/en/allan-steen-hansen-tomrer-og-entreprenorfirma-aps/",
+    "content_file": "pages/allan-steen-hansen-tomrer-og-entreprenorfirma-aps.md",
+    "structured_file": "pages/allan-steen-hansen-tomrer-og-entreprenorfirma-aps.json",
+    "media_count": 2
+  },
+  {
+    "title": "ANDERS BRØNDUM EJENDOMME III ApS, 25566769",
+    "wp_id": "2475",
+    "status": "publish",
+    "old_path": "/anders-brondum-ejendomme-iii-aps/",
+    "suggested_new_route": "/en/anders-brondum-ejendomme-iii-aps/",
+    "content_file": "pages/anders-brondum-ejendomme-iii-aps.md",
+    "structured_file": "pages/anders-brondum-ejendomme-iii-aps.json",
+    "media_count": 2
+  },
+  {
+    "title": "ANKERHUS INVEST ApS, 30509315",
+    "wp_id": "2476",
+    "status": "publish",
+    "old_path": "/ankerhus-invest-aps/",
+    "suggested_new_route": "/en/ankerhus-invest-aps/",
+    "content_file": "pages/ankerhus-invest-aps.md",
+    "structured_file": "pages/ankerhus-invest-aps.json",
+    "media_count": 2
+  },
+  {
+    "title": "ANPARTSSELSKABET AF 28. AUGUST 2014, 34703604",
+    "wp_id": "2477",
+    "status": "publish",
+    "old_path": "/anpartsselskabet-af-28-august-2014/",
+    "suggested_new_route": "/en/anpartsselskabet-af-28-august-2014/",
+    "content_file": "pages/anpartsselskabet-af-28-august-2014.md",
+    "structured_file": "pages/anpartsselskabet-af-28-august-2014.json",
+    "media_count": 2
+  },
+  {
+    "title": "FAQ",
+    "wp_id": "2541",
+    "status": "publish",
+    "old_path": "/support/faq-old/",
+    "suggested_new_route": "/en/support/credit-risk-faq/",
+    "content_file": "pages/faq-old.md",
+    "structured_file": "pages/faq-old.json",
+    "media_count": 3
+  },
+  {
+    "title": "Platform Tutorials",
+    "wp_id": "2611",
+    "status": "publish",
+    "old_path": "/support/platform-tutorials/",
+    "suggested_new_route": "/en/support/platform-tutorials/",
+    "content_file": "pages/platform-tutorials.md",
+    "structured_file": "pages/platform-tutorials.json",
+    "media_count": 4
+  },
+  {
+    "title": "Support",
+    "wp_id": "2682",
+    "status": "publish",
+    "old_path": "/support-2/",
+    "suggested_new_route": "/en/support/",
+    "content_file": "pages/support-2.md",
+    "structured_file": "pages/support-2.json",
+    "media_count": 6
+  },
+  {
+    "title": "Credit Risk Model Overview",
+    "wp_id": "2772",
+    "status": "publish",
+    "old_path": "/support/credit-risk-model-overview-3/",
+    "suggested_new_route": "/en/support/credit-risk-model-overview-3/",
+    "content_file": "pages/credit-risk-model-overview-3.md",
+    "structured_file": "pages/credit-risk-model-overview-3.json",
+    "media_count": 12
+  },
+  {
+    "title": "Contact us",
+    "wp_id": "2835",
+    "status": "publish",
+    "old_path": "/contact/",
+    "suggested_new_route": "/en/contact/",
+    "content_file": "pages/contact.md",
+    "structured_file": "pages/contact.json",
+    "media_count": 1
+  },
+  {
+    "title": "Credit Risk Model Overview",
+    "wp_id": "2864",
+    "status": "publish",
+    "old_path": "/support/credit-risk-model-overview/",
+    "suggested_new_route": "/en/support/credit-risk-model-overview/",
+    "content_file": "pages/credit-risk-model-overview.md",
+    "structured_file": "pages/credit-risk-model-overview.json",
+    "media_count": 14
+  },
+  {
+    "title": "Home",
+    "wp_id": "2931",
+    "status": "publish",
+    "old_path": "/",
+    "suggested_new_route": "/en/",
+    "content_file": "pages/home-7.md",
+    "structured_file": "pages/home-7.json",
+    "media_count": 9
+  },
+  {
+    "title": "Credit Risk FAQ",
+    "wp_id": "2953",
+    "status": "publish",
+    "old_path": "/support/credit-risk-faq/",
+    "suggested_new_route": "/en/support/credit-risk-faq/",
+    "content_file": "pages/credit-risk-faq.md",
+    "structured_file": "pages/credit-risk-faq.json",
+    "media_count": 3
+  },
+  {
+    "title": "Home Preview testi",
+    "wp_id": "2973",
+    "status": "publish",
+    "old_path": "/crdk-preview-x7k92/",
+    "suggested_new_route": "/en/crdk-preview-x7k92/",
+    "content_file": "pages/crdk-preview-x7k92.md",
+    "structured_file": "pages/crdk-preview-x7k92.json",
+    "media_count": 8
+  }
+]

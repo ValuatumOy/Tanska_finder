@@ -1,0 +1,120 @@
+{
+  "title": "Home",
+  "wp_id": "2512",
+  "status": "draft",
+  "old_url": "https://creditreports.dk/?page_id=2512",
+  "old_path": "/",
+  "suggested_new_route": "/en/",
+  "modified": "2023-06-06 10:20:05",
+  "content_markdown": "Credit_Risk_Report_Demo\n\n## IMPROVE THE QUALITY OF YOUR CREDIT DECISIONS OR FIND OUT YOUR COMPANY VALUE\n\nCompany credit rating and credit risk reports available instantly to support your risk management\nCompany valuation reports with the possibility to apply your own estimates\nFree access to three companies per month from the database of over 300 000 Danish companies ***(currently free access to 1000 companies per month during beta phase)***\n\nTry the System\n\nSample Report Credit Risk\n\nSample Report Valuation\n\nCreate Account\n\n## **CreditReports.dk**\n\nCreditReports.dk offers comprehensive and precise credit risk and valuation reports on companies based in Denmark. Our Credit Risk Reports help you make confident decisions regarding credit risk management by utilizing bankruptcy risk analysis, company credit rating, and a credit limit recommendation. Our valuation reports help you in all situations involving ownership changes as well as scenario analysis. Read more about our products and their features from the **[Products](https://www.creditreports.dk/product/)** menu.\n\nOur reports are available for almost any Danish company and uses official data from the [**Danish Central Business Register**](https://datacvr.virk.dk/data/). Our models have been developed using sophisticated machine learning methods and a large amount of financial data, ensuring an accurate estimate of the credit risk. You can read more about the method from the page [**Credit Risk Assessment Methods**](https://www.creditreports.dk/credit-risk-assessment-methods/). Company valuation is explained on [**What is Valuation**](https://company-valuation.com/valuation-methods/) page.\n\n## Key Features of the CreditReports.dk Product\n\n- Bankruptcy risk\n- Credit limit suggestion\n- Company overview\n- Financial statements\n- Credit rating and score\n- Company valuation tools\n- Key financial ratios\n- Credit rating history\n- Industry comparison\n\n![](/assets/wordpress-media/2021/08/collage_new-min_updated3-1024x539.png)\n\nExamples from the Online Platform and Credit Risk Report\n\nCreate Account\n\nTry the System\n\nThe CreditReports.dk Report platform is in beta phase, during which we will offer full access to the system free of charge. You will get access to the online platform and unlimited free credit risk and valuation reports each month after you sign up for the system.\n\nAfter the beta phase, we will offer a freemium model for the sale of our credit risk and valuation reports. You will get access to three companies of your choice for free each month, or you can easily purchase one of our subscription plans to access more companies.\n\nAlternatively, you can buy individual companies. For any company you have access to, you can easily create your own scenarios and print unlimited credit risk reports. You can read more about our pricing models from [**the pricing page**](https://www.creditreports.dk/pricing/). To sign up, click the button above.\n\n## What Makes Us Different?\n\n### Flexible pricing plans\n\nAfter the beta phase, you will get access to three companies of your choice every month. In case you need more, you can easily upgrade your subscription or buy individual companies depending on your needs.\n\n### **State-of-the**-**art risk models**\n\nWe utilize modern machine-learning algorithms in evaluation of credit risk. Read more about our models the **[Credit Risk Assessment Methods](https://www.creditreports.dk/product/credit-risk-assessment-methods/)** page.\n\n### **Automated and editable forecasts**\n\nWhen obtaining your reports, you will automatically have computer-generated forecasts for the future development of a company’s financials. All estimates can be finetuned manually.\n\n### **Transparency**\n\nWe inform you of our bankruptcy risk calculation methods so that you understand the factors behind a given bankruptcy risk.\n\n## How Does It Work?\n\n#### Register\n\nREGISTER HERE\n\n#### Select company\n\nREAD MORE\n\n#### Print report\n\nVIEW SAMPLE",
+  "media_placements": [
+    {
+      "order": 1,
+      "type": "background/section image",
+      "section": "",
+      "context": "Background image in old WordPress section/block.",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2020/08/block-background-background-media-url.jpg",
+      "local_path": "assets/wordpress-media/2020/08/block-background-background-media-url.jpg",
+      "source_url": "https://d3gt1urn7320t9.cloudfront.net/library/block-cta-elevate-call-to-action/block-background-background-media-url.jpg",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 2,
+      "type": "pdf link",
+      "section": "",
+      "context": "var(u002du002dstk-global-color-58632, #ffffff)\",\"blockBackgroundBackgroundMediaUrl\":\"/assets/wordpress-media/2020/08/block-background-background-media-url.jpg\",\"blockBackgroundBackgroundTintStrength\":7,\"blockBackgroun...",
+      "link_label": "Credit_Risk_Report_Demo",
+      "local_url": "/assets/wordpress-media/2023/06/Credit_Risk_Report_Demo.pdf",
+      "local_path": "assets/wordpress-media/2023/06/Credit_Risk_Report_Demo.pdf",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2023/06/Credit_Risk_Report_Demo.pdf",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 3,
+      "type": "background/section image",
+      "section": "",
+      "context": "Background image in old WordPress section/block.",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2020/08/block-background-background-media-url.jpg",
+      "local_path": "assets/wordpress-media/2020/08/block-background-background-media-url.jpg",
+      "source_url": "https://d3gt1urn7320t9.cloudfront.net/library/block-cta-elevate-call-to-action/block-background-background-media-url.jpg",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 4,
+      "type": "pdf link",
+      "section": "IMPROVE THE QUALITY OF YOUR CREDIT DECISIONS OR FIND OUT YOUR COMPANY VALUE",
+      "context": "gb-c553d17 .ugb-button4 .ugb-button--inner,.ugb-c553d17 .ugb-button4 svg{color:#ffffff !important}.ugb-c553d17 .ugb-button4:before{border-radius:14px !important}.ugb-c553d17.ugb-button-wrapper{margin-top:-145px !impor...",
+      "link_label": "Sample Report Credit Risk",
+      "local_url": "/assets/wordpress-media/2023/05/Credit_Risk_Report_Demo.pdf",
+      "local_path": "assets/wordpress-media/2023/05/Credit_Risk_Report_Demo.pdf",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2023/05/Credit_Risk_Report_Demo.pdf",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 5,
+      "type": "pdf link",
+      "section": "IMPROVE THE QUALITY OF YOUR CREDIT DECISIONS OR FIND OUT YOUR COMPANY VALUE",
+      "context": "us:14px !important}.ugb-c553d17.ugb-button-wrapper{margin-top:-145px !important} Try the System Sample Report Credit Risk Sample Report Valuation Create Account CreditReports.dk</",
+      "link_label": "Sample Report Valuation",
+      "local_url": "/assets/wordpress-media/2020/08/valuation_report_demo.pdf",
+      "local_path": "assets/wordpress-media/2020/08/valuation_report_demo.pdf",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/08/valuation_report_demo.pdf",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 6,
+      "type": "inline image",
+      "section": "Key Features of the CreditReports.dk Product",
+      "context": "limit suggestion Company overview Financial statements Credit rating and score Company valuation tools Key financial ratios Credit rating history Industry comparison Examples from the Online Platform and Credit Risk R...",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2021/08/collage_new-min_updated3-1024x539.png",
+      "local_path": "assets/wordpress-media/2021/08/collage_new-min_updated3-1024x539.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/08/collage_new-min_updated3-1024x539.png",
+      "status": "mapped",
+      "markdown_position": 1932
+    },
+    {
+      "order": 7,
+      "type": "background/section image",
+      "section": "Transparency",
+      "context": "e inform you of our bankruptcy risk calculation methods so that you understand the factors behind a given bankruptcy risk. .ugb-5996ab5 .ugb-image-box__item{height:239px !important;justify-content:center !important}.u...",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2021/07/new_register-min_updated.png",
+      "local_path": "assets/wordpress-media/2021/07/new_register-min_updated.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2021/07/new_register-min_updated.png",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 8,
+      "type": "background/section image",
+      "section": "Transparency",
+      "context": "feature-grid --> .ugb-5996ab5 .ugb-image-box__item{height:239px !important;justify-content:center !important}.ugb-5996ab5 .ugb-image-box__item1 .ugb-image-box__image{background-image:url(/assets/wordpress-media/2021/0...",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2020/07/search-min.png",
+      "local_path": "assets/wordpress-media/2020/07/search-min.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/07/search-min.png",
+      "status": "mapped",
+      "markdown_position": -1
+    },
+    {
+      "order": 9,
+      "type": "background/section image",
+      "section": "Transparency",
+      "context": "rtant}.ugb-5996ab5 .ugb-image-box__item1 .ugb-image-box__image{background-image:url(/assets/wordpress-media/2021/07/new_register-min_updated.png)}.ugb-5996ab5 .ugb-image-box__item2 .ugb-image-box__image{background-ima...",
+      "link_label": "",
+      "local_url": "/assets/wordpress-media/2020/07/new_report_page2-min.png",
+      "local_path": "assets/wordpress-media/2020/07/new_report_page2-min.png",
+      "source_url": "https://creditreports.dk/wp-content/uploads/sites/9/2020/07/new_report_page2-min.png",
+      "status": "mapped",
+      "markdown_position": -1
+    }
+  ]
+}

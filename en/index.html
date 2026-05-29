@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreditReports.dk – Credit Risk Reports and Company Valuation for Danish Companies</title>
+  <meta name="description" content="The most accurate company credit ratings and credit risk reports available instantly. Access 300,000+ Danish companies. Powered by Valuatum.">
+  <meta property="og:title" content="CreditReports.dk – Credit Risk and Valuation for Danish Companies">
+  <meta property="og:description" content="Improve the quality of your credit decisions. Access credit ratings, bankruptcy risk, financial analysis and AI-powered reports for 300,000+ Danish companies.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://creditreports.dk/en/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .hero {
+      background: var(--navy);
+      background-image:
+        linear-gradient(rgba(11,31,58,0.80), rgba(11,31,58,0.88)),
+        url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+    }
+    .hero-grid {
+      position:absolute;inset:0;z-index:0;
+      background-image: linear-gradient(rgba(29,111,216,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(29,111,216,0.04) 1px,transparent 1px);
+      background-size:56px 56px;
+    }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"CreditReports.dk","url":"https://creditreports.dk/en/","potentialAction":{"@type":"SearchAction","target":"https://companies.creditreports.dk/en/?q={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+</head>
+<body>
+
+<div id="site-nav"></div>
+
+<main>
+
+  <!-- ══ HERO ══════════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Danish Company Intelligence · 300,000+ companies</p>
+      <h1 class="hero-headline">
+        Improve the quality of<br>your credit decisions
+      </h1>
+      <p class="hero-sub">
+        The most accurate company credit ratings and credit risk reports available instantly — to support your risk management and company valuation decisions. Powered by Valuatum's machine-learning models.
+      </p>
+
+      <div class="hero-search">
+        <form class="search-bar-form" role="search" aria-label="Company search"
+              data-search-base="https://companies.creditreports.dk/en/">
+          <div class="search-bar">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 14l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <input class="search-input" type="search" name="q"
+                   placeholder="Search by company name or CVR number"
+                   aria-label="Search Danish companies" autocomplete="off">
+            <button type="submit" class="search-btn">Search</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="hero-actions">
+        <a href="https://platform.creditreports.dk/CompanyViews.action?&forwardAction=CompanyViews" class="btn btn-primary btn-large" target="_blank" rel="noopener">Try the system — it's free</a>
+        <a href="/assets/wordpress-media/2023/06/Credit_Risk_Report_Demo.pdf" class="btn btn-outline btn-large" target="_blank" rel="noopener">View sample report</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ WHAT WE OFFER ══════════════════════════════════════ -->
+  <section class="content-section" aria-labelledby="offers-heading">
+    <div class="container">
+      <p class="section-eyebrow reveal" style="text-align:center;">Our products</p>
+      <h2 class="section-headline reveal" style="text-align:center;" id="offers-heading">
+        Credit risk and company valuation<br>for Danish companies
+      </h2>
+      <div class="cards-grid">
+
+        <article class="product-card reveal">
+          <div class="feature-icon" style="margin-bottom:1rem;">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 18V9m4 9V5m4 13V8m4 10V3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="product-card-title">Credit Risk Tool</h3>
+          <p class="product-card-body">
+            The most accurate credit rating and bankruptcy risk estimates for Danish companies, powered by XGBoost machine-learning models. Includes credit score, credit rating, credit limit suggestion, financial statements, and industry comparison.
+          </p>
+          <ul class="product-card-features">
+            <li>Credit score and credit rating (AAA–C)</li>
+            <li>Bankruptcy risk estimate (24 months)</li>
+            <li>Credit limit suggestion</li>
+            <li>Financial statements &amp; key ratios</li>
+            <li>Industry comparison</li>
+          </ul>
+          <div class="product-card-cta">
+            <a href="/en/products/credit-risk-tool/" class="btn btn-primary">Learn more</a>
+            <a href="/assets/wordpress-media/2023/06/Credit_Risk_Report_Demo.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">Sample report</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-delay="80">
+          <div class="feature-icon" style="margin-bottom:1rem;">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="3" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 11h8M7 7h5M7 15h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="product-card-title">Company Valuation Tool</h3>
+          <p class="product-card-body">
+            Reliable company value estimates with automatically generated forecasts and editable scenarios. Understand business value for ownership changes, partnerships, and funding decisions.
+          </p>
+          <ul class="product-card-features">
+            <li>Automated financial forecasts</li>
+            <li>Editable estimates and scenarios</li>
+            <li>Multiple valuation methods</li>
+            <li>Comparative data from 300,000+ companies</li>
+          </ul>
+          <div class="product-card-cta">
+            <a href="/en/products/company-valuation-tool/" class="btn btn-primary">Learn more</a>
+            <a href="/assets/wordpress-media/2020/08/valuation_report_demo.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">Sample report</a>
+          </div>
+        </article>
+
+        <article class="product-card product-card--featured reveal" data-delay="160">
+          <div class="badge badge--new" style="margin-bottom:1rem;display:inline-flex;">
+            <span class="badge-dot" aria-hidden="true"></span>
+            New — AI Credit Report
+          </div>
+          <h3 class="product-card-title">AI Credit Report</h3>
+          <p class="product-card-body">
+            Same credit risk data as the standard report, plus AI-assisted written analysis, qualitative business observations, and a decision-ready summary. One-off purchase — no subscription required.
+          </p>
+          <ul class="product-card-features">
+            <li>Full financial &amp; credit risk data</li>
+            <li>AI-assisted written analysis</li>
+            <li>Qualitative business observations</li>
+            <li>Decision-ready narrative summary</li>
+            <li>€3 / report — one-off payment</li>
+          </ul>
+          <div class="product-card-cta">
+            <a href="mailto:info@creditreports.dk" class="btn btn-primary">Order AI Credit Report</a>
+            <a href="/sample-reports/JYSK_A_S_luottomuistio.pdf" class="btn btn-outline" target="_blank" rel="noopener">Sample report</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ COMPANY SEARCH / BUSINESS DIRECTORY ═══════════════ -->
+  <section class="content-section content-section--alt" aria-labelledby="search-heading">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <p class="section-eyebrow reveal">Danish business directory</p>
+          <h2 class="prose-headline reveal" id="search-heading">
+            Search 300,000+ Danish companies — start for free
+          </h2>
+          <p class="prose-body reveal">
+            Access company financial data, credit ratings, and risk indicators directly from the Danish Central Business Register. During beta, the platform is available with full free access.
+          </p>
+          <p class="prose-body reveal">
+            Also see <a href="https://companies.creditreports.dk/en/companies/133268/" style="color:var(--blue);" target="_blank" rel="noopener">Jysk A/S as an example</a> of our business directory — from there you can easily access the full system for credit risk and valuation analysis.
+          </p>
+          <div class="sol-features reveal">
+            <div class="sol-feature"><svg class="sol-feature-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Free company view for every company in the database</div>
+            <div class="sol-feature"><svg class="sol-feature-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Key financial indicators and credit risk summary</div>
+            <div class="sol-feature"><svg class="sol-feature-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>3 free reports per month after beta</div>
+            <div class="sol-feature"><svg class="sol-feature-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Order detailed reports directly from company pages</div>
+          </div>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem;" class="reveal">
+            <a href="https://companies.creditreports.dk/en/" class="btn btn-primary btn-large" target="_blank" rel="noopener">Search Danish companies</a>
+            <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-outline-dark btn-large" target="_blank" rel="noopener">Create free account</a>
+          </div>
+        </div>
+        <div class="reveal" data-delay="100">
+          <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);padding:2rem;box-shadow:0 8px 32px rgba(11,31,58,0.07);">
+            <p style="font-size:var(--text-sm);font-weight:500;color:var(--charcoal);margin-bottom:1rem;">Search by company name or CVR number</p>
+            <form class="search-bar-form" role="search" data-search-base="https://companies.creditreports.dk/en/">
+              <div class="search-bar" style="border-radius:var(--r-md);">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M14 14l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <input class="search-input" type="search" name="q" placeholder="e.g. Jysk A/S or 12345678" aria-label="Search" autocomplete="off">
+                <button type="submit" class="search-btn">Search</button>
+              </div>
+            </form>
+            <div style="margin-top:1.5rem;padding:1.25rem;background:var(--blue-faint);border-radius:var(--r-lg);border:1px solid rgba(29,111,216,0.12);">
+              <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:0.6rem;">Beta access — currently free</p>
+              <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.6;">During beta, you receive unlimited credit reports free of charge. After beta, 3 free reports per month are guaranteed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ AI CREDIT REPORT ════════════════════════════════════ -->
+  <section class="content-section" id="ai-credit-report" aria-labelledby="ai-heading" style="background-image:linear-gradient(rgba(255,255,255,0.96),rgba(255,255,255,0.96)),url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1920&q=80');background-size:cover;background-position:center;">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <div class="badge badge--new reveal" style="margin-bottom:1.25rem;display:inline-flex;">
+            <span class="badge-dot" aria-hidden="true"></span>
+            New — November 2025
+          </div>
+          <h2 class="prose-headline reveal" id="ai-heading">
+            AI Credit Report<br>The same credit risk figures, stronger AI analysis.
+          </h2>
+          <p class="prose-body reveal">
+            The AI Credit Report includes the same financial and credit risk data as the standard Credit Risk Report, but adds AI-assisted written analysis, web-search-supported observations, and a clearer decision-support summary — all in one PDF. Ideal for larger credit decisions where numbers alone are not enough.
+          </p>
+          <ul class="report-features reveal" style="margin-bottom:1.5rem;">
+            <li>Same financial statements, ratios, credit rating &amp; bankruptcy risk</li>
+            <li>AI-generated written analysis of the company</li>
+            <li>Qualitative business and operating environment observations</li>
+            <li>Decision-ready narrative summary</li>
+            <li>One-off purchase — no subscription required</li>
+          </ul>
+          <p class="reveal" style="font-size:0.875rem;color:var(--gray-steel);margin-bottom:1.5rem;">
+            Price: <strong style="color:var(--charcoal);">€3 / report</strong> · Order by email — we respond within one business day
+          </p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;" class="reveal">
+            <a href="mailto:info@creditreports.dk" class="btn btn-primary">Order AI Credit Report →</a>
+            <a href="/sample-reports/JYSK_A_S_luottomuistio.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">View sample report</a>
+            <a href="/en/ai-credit-report/" class="btn btn-outline-dark">Learn more</a>
+          </div>
+        </div>
+        <div class="reveal" data-delay="120">
+          <div style="background:var(--navy);border-radius:var(--r-xl);padding:2.5rem;position:relative;overflow:hidden;">
+            <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue);"></div>
+            <div class="badge badge--blue" style="margin-bottom:1.25rem;display:inline-flex;"><span class="badge-dot" aria-hidden="true"></span>AI Credit Report — €3</div>
+            <p style="font-size:1.1rem;font-weight:300;color:var(--white);margin-bottom:2rem;line-height:1.4;">
+              Structured AI analysis for<br>any Danish company
+            </p>
+            <div style="display:flex;flex-direction:column;gap:0.6rem;">
+              <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:rgba(255,255,255,0.06);border-radius:var(--r-md);">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--blue-light);flex-shrink:0;"></div>
+                <span style="font-size:0.8125rem;color:rgba(255,255,255,0.75);">Company overview + financial statements</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:rgba(255,255,255,0.06);border-radius:var(--r-md);">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--blue-light);flex-shrink:0;"></div>
+                <span style="font-size:0.8125rem;color:rgba(255,255,255,0.75);">Credit score, rating &amp; bankruptcy risk</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:rgba(29,111,216,0.25);border-radius:var(--r-md);border:1px solid rgba(91,159,232,0.3);">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--blue-light);flex-shrink:0;"></div>
+                <span style="font-size:0.8125rem;color:rgba(255,255,255,0.9);font-weight:500;">AI-assisted written analysis</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:rgba(29,111,216,0.25);border-radius:var(--r-md);border:1px solid rgba(91,159,232,0.3);">
+                <div style="width:6px;height:6px;border-radius:50%;background:var(--blue-light);flex-shrink:0;"></div>
+                <span style="font-size:0.8125rem;color:rgba(255,255,255,0.9);font-weight:500;">Decision-ready narrative summary</span>
+              </div>
+            </div>
+            <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.1);">
+              <a href="mailto:info@creditreports.dk" class="btn btn-primary" style="width:100%;justify-content:center;">Order — €3 per report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ HOW IT WORKS ══════════════════════════════════════ -->
+  <section class="content-section content-section--alt" aria-labelledby="how-heading" style="background-image:linear-gradient(rgba(248,250,255,0.94),rgba(248,250,255,0.94)),url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&q=80');background-size:cover;background-position:center;">
+    <div class="container">
+      <p class="section-eyebrow reveal" style="text-align:center;">How it works</p>
+      <h2 class="section-headline reveal" style="text-align:center;max-width:560px;margin:0 auto var(--gap-lg);" id="how-heading">From registration to report in minutes</h2>
+      <div class="steps-grid">
+        <div class="step reveal">
+          <div class="step-number" aria-hidden="true">01</div>
+          <h3 class="step-title">Register to the system</h3>
+          <p class="step-body">Fill in your details and receive a confirmation email. Access is free — no payment required during beta. <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" style="color:var(--blue);" target="_blank" rel="noopener">Register here →</a></p>
+        </div>
+        <div class="step reveal" data-delay="100">
+          <div class="step-number" aria-hidden="true">02</div>
+          <h3 class="step-title">Select a company</h3>
+          <p class="step-body">Navigate to the company search, find any of 300,000+ Danish companies, and view financial data and credit risk indicators.</p>
+        </div>
+        <div class="step reveal" data-delay="200">
+          <div class="step-number" aria-hidden="true">03</div>
+          <h3 class="step-title">Download your report</h3>
+          <p class="step-body">Generate a complete credit risk report including credit rating, bankruptcy risk, credit limit recommendation, and financial analysis — powered by machine-learning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WHY OUR MODEL ══════════════════════════════════════ -->
+  <section style="position:relative;padding:var(--section-py) 0;background:var(--navy);overflow:hidden;background-image:linear-gradient(rgba(11,31,58,0.88),rgba(11,31,58,0.88)),url('https://images.unsplash.com/photo-1644088379091-d574269d422f?auto=format&fit=crop&w=1920&q=80');background-size:cover;background-position:center;" aria-labelledby="why-heading">
+    <div class="container" style="position:relative;z-index:1;">
+      <p class="section-eyebrow section-eyebrow--light reveal">Why CreditReports.dk</p>
+      <h2 style="font-size:var(--text-3xl);font-weight:300;color:var(--white);line-height:1.2;letter-spacing:-0.025em;margin-bottom:2rem;max-width:640px;" class="reveal" id="why-heading">
+        State-of-the-art machine learning for better credit decisions
+      </h2>
+      <p style="font-size:var(--text-md);font-weight:300;color:rgba(255,255,255,0.60);line-height:1.75;max-width:600px;margin-bottom:3rem;" class="reveal">
+        Our XGBoost model is trained on extensive historical financial data and bankruptcy outcomes. Unlike traditional fixed-weight models, it dynamically adjusts variable importance based on each company's individual circumstances — consistently outperforming alternatives.
+      </p>
+      <div class="pillars-grid">
+        <div class="pillar pillar--dark reveal">
+          <div class="pillar-number">63%</div>
+          <h4 class="pillar-title">Credit loss reduction</h4>
+          <p class="pillar-body">Our ML model reduced credit losses by up to 63% compared to traditional logistic regression in Finnish market testing on 200,000 companies.</p>
+        </div>
+        <div class="pillar pillar--dark reveal" data-delay="100">
+          <div class="pillar-number">94%</div>
+          <h4 class="pillar-title">Bankruptcy prediction accuracy</h4>
+          <p class="pillar-body">Over 94% of bankruptcies occurred in the bottom 50% of companies by our credit score — 280× higher default rate in the lowest decile vs. highest.</p>
+        </div>
+        <div class="pillar pillar--dark reveal" data-delay="200">
+          <div class="pillar-number">30+</div>
+          <h4 class="pillar-title">Dynamic financial variables</h4>
+          <p class="pillar-body">The model evaluates over 30 financial indicators — solvency, profitability, liquidity, industry risk, size — adjusting weights for each individual company.</p>
+        </div>
+      </div>
+      <div style="margin-top:3rem;" class="reveal">
+        <a href="/en/products/credit-risk-assessment-methods/" class="btn btn-primary">Read about our model</a>
+        <a href="/assets/wordpress-media/2024/07/Tanska_creditrisk_comparisons_PDF_v5.pdf" class="btn btn-outline" style="margin-left:1rem;" target="_blank" rel="noopener">Comparison study (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CREDIT RISK TOOL SECTION ═══════════════════════════ -->
+  <section class="content-section" aria-labelledby="crr-heading">
+    <div class="container">
+      <div class="two-col">
+        <div class="reveal">
+          <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);padding:2.5rem;box-shadow:0 8px 32px rgba(11,31,58,0.07);">
+            <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue);margin-bottom:1rem;">Credit Risk Report</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem;">
+              <div style="background:var(--blue-faint);border:1px solid rgba(29,111,216,0.12);border-radius:var(--r-md);padding:1rem;">
+                <p style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray-steel);margin-bottom:0.35rem;">Credit Rating</p>
+                <p style="font-size:1.75rem;font-weight:300;color:var(--charcoal);">BB+</p>
+              </div>
+              <div style="background:var(--blue-faint);border:1px solid rgba(29,111,216,0.12);border-radius:var(--r-md);padding:1rem;">
+                <p style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray-steel);margin-bottom:0.35rem;">Credit Score</p>
+                <p style="font-size:1.75rem;font-weight:300;color:var(--charcoal);">68/100</p>
+              </div>
+              <div style="background:var(--blue-faint);border:1px solid rgba(29,111,216,0.12);border-radius:var(--r-md);padding:1rem;">
+                <p style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray-steel);margin-bottom:0.35rem;">Bankruptcy Risk</p>
+                <p style="font-size:1.75rem;font-weight:300;color:var(--charcoal);">4.5%</p>
+              </div>
+              <div style="background:var(--blue-faint);border:1px solid rgba(29,111,216,0.12);border-radius:var(--r-md);padding:1rem;">
+                <p style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--gray-steel);margin-bottom:0.35rem;">Credit Limit</p>
+                <p style="font-size:1.75rem;font-weight:300;color:var(--charcoal);">DKK 2.4M</p>
+              </div>
+            </div>
+            <p style="font-size:0.75rem;color:var(--gray-mid);font-style:italic;">Illustrative example. Not real company data.</p>
+          </div>
+        </div>
+        <div>
+          <p class="section-eyebrow reveal">Credit Risk Tool</p>
+          <h2 class="prose-headline reveal" id="crr-heading">
+            Accurate credit risk reports based on official Danish financial data
+          </h2>
+          <p class="prose-body reveal">
+            The CreditReports.dk platform provides assessments for over 300,000 Danish businesses, based on financial statements from the Danish Central Business Register. Includes an online interface for viewing and modifying financial data with computer-generated forecasts.
+          </p>
+          <ul class="report-features reveal" style="margin-bottom:2rem;">
+            <li>Credit score and rating history (up to 5 years)</li>
+            <li>Bankruptcy risk for next 24 months</li>
+            <li>Credit limit suggestion based on equity and cash</li>
+            <li>Industry comparison and average scores</li>
+            <li>Financial statements with automatic key ratios</li>
+            <li>Company overview and basic information</li>
+          </ul>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;" class="reveal">
+            <a href="/en/products/credit-risk-tool/" class="btn btn-primary">Explore Credit Risk Tool</a>
+            <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-outline-dark" target="_blank" rel="noopener">Create free account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ NEW SERVICES ════════════════════════════════════════ -->
+  <section class="content-section content-section--alt" aria-labelledby="news-heading">
+    <div class="container">
+      <p class="section-eyebrow reveal">Recent updates</p>
+      <h2 class="section-headline reveal" id="news-heading">New services</h2>
+      <div class="cards-grid">
+        <article class="feature-card reveal">
+          <div style="background:var(--blue-mist);color:var(--blue);border-radius:var(--r-pill);padding:0.3em 0.8em;font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;display:inline-block;margin-bottom:1rem;">November 2025</div>
+          <h3 class="feature-title">AI Credit Report</h3>
+          <p class="feature-body">AI-powered credit risk reports combining financial data with written AI analysis. Available for any Danish company. €3 per report — order by email.</p>
+          <a href="mailto:info@creditreports.dk" class="feature-link">Order AI Credit Report <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="feature-card reveal" data-delay="80">
+          <div style="background:var(--blue-mist);color:var(--blue);border-radius:var(--r-pill);padding:0.3em 0.8em;font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;display:inline-block;margin-bottom:1rem;">May 2026</div>
+          <h3 class="feature-title">Finnish Credit Risk Service</h3>
+          <p class="feature-body">Luottoriskit.fi — the same credit risk platform now available for Finnish company evaluation. Covering Finnish companies with the same XGBoost models.</p>
+          <a href="https://luottoriskit.fi" class="feature-link" target="_blank" rel="noopener">Luottoriskit.fi <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="feature-card reveal" data-delay="160">
+          <div style="background:var(--blue-mist);color:var(--blue);border-radius:var(--r-pill);padding:0.3em 0.8em;font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;display:inline-block;margin-bottom:1rem;">AI-Powered Tool</div>
+          <h3 class="feature-title">Separate AI PDF tools for non-Danish companies</h3>
+          <p class="feature-body">Upload any PDF financial statement and receive an instant valuation or credit risk report in under 2 minutes. For companies outside Denmark — supports English, Finnish, and Swedish. Available at valuation.valuatum.com.</p>
+          <a href="https://valuation.valuatum.com" class="feature-link" target="_blank" rel="noopener">Try it now <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PRICING PREVIEW ════════════════════════════════════ -->
+  <section class="content-section" aria-labelledby="pricing-heading">
+    <div class="container">
+      <p class="section-eyebrow reveal">Pricing</p>
+      <h2 class="section-headline reveal" id="pricing-heading">Transparent, flexible pricing</h2>
+      <div class="pricing-grid">
+
+        <div class="pricing-card reveal">
+          <p class="pricing-card-label">Always free</p>
+          <h3 class="pricing-card-title">3 reports / month</h3>
+          <div class="pricing-price"><span class="pricing-amount">€0</span></div>
+          <p class="pricing-period">3 free company reports every month — guaranteed</p>
+          <ul class="pricing-features">
+            <li><span class="pricing-check" aria-label="✓"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l2 2 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Full credit risk report</li>
+            <li><span class="pricing-check" aria-label="✓"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l2 2 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Platform access included</li>
+          </ul>
+          <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-outline-dark" target="_blank" rel="noopener">Create free account</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal" data-delay="80">
+          <p class="pricing-card-label">Beta — currently active</p>
+          <h3 class="pricing-card-title">Unlimited free access</h3>
+          <div class="pricing-price"><span class="pricing-amount" style="font-size:clamp(1.5rem,3vw,2rem);">Unlimited</span></div>
+          <p class="pricing-period">Full free access during beta phase</p>
+          <ul class="pricing-features">
+            <li><span class="pricing-check" aria-label="✓"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l2 2 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Unlimited credit risk reports</li>
+            <li><span class="pricing-check" aria-label="✓"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l2 2 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Full platform tools</li>
+            <li><span class="pricing-check" aria-label="✓"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l2 2 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Company valuation access</li>
+          </ul>
+          <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-primary" target="_blank" rel="noopener">Register — it's free</a>
+        </div>
+
+        <div class="pricing-card pricing-card--ai reveal" data-delay="160">
+          <div class="badge badge--blue" style="margin-bottom:1rem;display:inline-flex;"><span class="badge-dot" aria-hidden="true"></span>New</div>
+          <p class="pricing-card-label">One-off purchase</p>
+          <h3 class="pricing-card-title">AI Credit Report</h3>
+          <div class="pricing-price">
+            <span class="pricing-amount">€3</span>
+          </div>
+          <p class="pricing-period">per report · Order by email</p>
+          <ul class="pricing-features">
+            <li><span class="pricing-check" aria-label="✓"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l2 2 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Full credit risk data</li>
+            <li><span class="pricing-check" aria-label="✓"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l2 2 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>AI written analysis</li>
+            <li><span class="pricing-check" aria-label="✓"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l2 2 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Decision-ready PDF</li>
+          </ul>
+          <a href="mailto:info@creditreports.dk" class="btn btn-primary">Order by email</a>
+        </div>
+
+      </div>
+      <p class="reveal" style="text-align:center;margin-top:2rem;">
+        <a href="/en/pricing/" class="btn-ghost">View full pricing — extra reports from €8 <span class="btn-arrow" aria-hidden="true">→</span></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ CTA ═══════════════════════════════════════════════ -->
+  <section class="content-section content-section--alt">
+    <div class="container">
+      <div style="max-width:600px;margin:0 auto;text-align:center;">
+        <p class="section-eyebrow reveal">Get started today</p>
+        <h2 class="section-headline reveal">Start for free — no payment required</h2>
+        <p class="reveal" style="font-size:var(--text-lg);font-weight:300;color:var(--gray-steel);margin-bottom:2.5rem;">Register and gain immediate access to 300,000+ Danish companies during beta.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="reveal">
+          <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-primary btn-large" target="_blank" rel="noopener">Create account — it's free</a>
+          <a href="/en/contact/" class="btn btn-outline-dark btn-large">Contact us</a>
+        </div>
+        <p class="reveal" style="margin-top:1.5rem;font-size:var(--text-xs);color:var(--gray-steel);">Powered by Valuatum · Helsinki, Finland</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="../js/nav.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/search.js"></script>
+</body>
+</html>

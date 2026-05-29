@@ -1,0 +1,11 @@
+{
+  "title": "Credit Risk Manual",
+  "wp_id": "1924",
+  "status": "publish",
+  "old_url": "https://creditreports.dk/support/credit-risk-manual/",
+  "old_path": "/support/credit-risk-manual/",
+  "suggested_new_route": "/en/support/credit-risk-manual/",
+  "modified": "2021-06-11 09:42:02",
+  "content_markdown": "# Credit Risk Platform Manual\n\nBelow you will find the categories of our Credit Risk Platform support portal. Please follow the links below. If you do not find an answer to your question, don't hesitate to [contact us.](https://creditreports.dk/contact/)\n\n### [General](https://creditreports.dk/support/credit-risk-manual/general/)\n\n- Account information\n- Introduction to the system\n- Data import\n\n### [Company Views](https://creditreports.dk/support/credit-risk-manual-company-views/)\n\n- Tabs\n- Estimate generation\n- Saving scenarios\n- Changing estimates\n- Report generation\n- Formula display\n\n### [Comparisons](https://creditreports.dk/support/comparisons/)\n\n- Dynamic XY scatters\n- Dynamic ranking lists\n\n### [Automatic estimates](https://creditreports.dk/support/estimate-generation/)\n\n- Net sales growth estimation\n- EBIT-% and ROA-% estimation\n- Balance sheet parameters",
+  "media_placements": []
+}

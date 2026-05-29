@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Risk Model Overview – CreditReports.dk</title>
+  <meta name="description" content="Technical overview of the XGBoost machine-learning model used by CreditReports.dk. Empirical results, methodology, and comparison with traditional approaches.">
+  <link rel="canonical" href="https://creditreports.dk/en/support/credit-risk-model-overview/">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+<div id="site-nav"></div>
+<main>
+
+  <section class="page-hero" style="min-height:clamp(260px,36vw,420px);">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-category"><a href="/en/support/" style="color:rgba(255,255,255,0.6);text-decoration:none;">Support</a> › Model Overview</span>
+      <h1 class="page-hero-title">Credit Risk Model Overview</h1>
+      <p class="page-hero-sub">How our XGBoost machine-learning model works, why it outperforms traditional methods, and empirical performance results.</p>
+    </div>
+  </section>
+
+  <!-- Key stats -->
+  <section style="background:var(--blue-faint);border-bottom:1px solid rgba(29,111,216,0.15);padding:2.5rem 0;">
+    <div class="container">
+      <div class="stat-strip">
+        <div class="stat-item"><span class="stat-number" style="color:var(--blue);">63%</span><span class="stat-label">Credit loss reduction vs. logistic regression</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-number" style="color:var(--blue);">94%+</span><span class="stat-label">Bankruptcies concentrated in bottom 50% of companies</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-number" style="color:var(--blue);">280×</span><span class="stat-label">Higher default rate: lowest vs. highest decile</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-number" style="color:var(--blue);">30+</span><span class="stat-label">Dynamic financial variables assessed</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div style="max-width:840px;margin:0 auto;">
+
+        <!-- Intro -->
+        <div class="reveal">
+          <p class="prose-body">In today's volatile financial environment, assessing corporate credit risk with precision is more crucial than ever. Our AI-driven credit risk platform sets a new market standard by delivering unmatched accuracy, explainability, and reliability. Built on the award-winning XGBoost machine-learning framework, our model enables businesses and financial institutions to make smarter, faster, and more profitable credit decisions.</p>
+          <p class="prose-body">Unlike traditional models that rely on fixed formulas and limited variables, our solution evaluates each company based on over 30 dynamic financial indicators, detecting subtle risk patterns invisible to standard tools. This enables clients to <strong>reduce credit losses by up to 60%</strong>, while confidently identifying high-risk companies <strong>before</strong> problems arise.</p>
+        </div>
+
+        <!-- Table of contents -->
+        <nav style="margin:2rem 0;padding:1.5rem;background:var(--blue-faint);border-radius:var(--r-lg);border:1px solid rgba(29,111,216,0.15);" class="reveal">
+          <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);margin-bottom:0.75rem;">Contents</p>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.4rem;">
+            <li><a href="#visual-proof" style="color:var(--charcoal);text-decoration:none;font-size:0.875rem;">→ Visual proof of predictive power</a></li>
+            <li><a href="#xgboost-model" style="color:var(--charcoal);text-decoration:none;font-size:0.875rem;">→ 1. The XGBoost model</a></li>
+            <li><a href="#theoretical-motivation" style="color:var(--charcoal);text-decoration:none;font-size:0.875rem;">→ 2. Theoretical motivation behind XGBoost</a></li>
+            <li><a href="#empirical-results" style="color:var(--charcoal);text-decoration:none;font-size:0.875rem;">→ 3. Empirical results of XGBoost model</a></li>
+            <li><a href="#calculation-methods" style="color:var(--charcoal);text-decoration:none;font-size:0.875rem;">→ 4. Calculation methods of our parameters</a></li>
+          </ul>
+        </nav>
+
+        <!-- Visual proof -->
+        <div id="visual-proof" style="margin-top:3rem;" class="reveal">
+          <p class="section-eyebrow">Visual proof of predictive power</p>
+          <h2 class="prose-headline">Model performance at a glance</h2>
+          <p class="prose-body">The charts below offer clear visual validation of our model's predictive strength. Companies are divided into ten equally-sized decile groups (10% each) ranked by assessed credit risk, from riskiest (bottom) to safest (top).</p>
+
+          <figure style="margin:2rem 0;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--color-border);">
+            <img src="/assets/wordpress-media/2025/07/percentage_of_bankruptcy_denmark.png" alt="Bankruptcy concentration by credit rating decile — shows over 94% in bottom 50%" style="width:100%;display:block;">
+            <figcaption style="padding:0.75rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Image 1: Bankruptcy concentration by credit rating decile. Over <strong>94% of bankruptcies</strong> occurred in the bottom 50% of companies — clear evidence the model places risk where it belongs.</figcaption>
+          </figure>
+
+          <figure style="margin:2rem 0;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--color-border);">
+            <img src="/assets/wordpress-media/2025/07/percentage_of_all_denmark.png" alt="Relative bankruptcy rate by decile — shows 280x higher rate in lowest vs highest decile" style="width:100%;display:block;">
+            <figcaption style="padding:0.75rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Image 2: Relative bankruptcy rate by decile (equal number of companies per decile). In the lowest decile (score 0–10), <strong>2.81% of companies went bankrupt</strong> — over 280 times more than in the top deciles (80–100), where the rate is effectively zero.</figcaption>
+          </figure>
+
+          <p class="prose-body">This dramatic drop-off from one decile to the next confirms the model's ability to sharply distinguish between risky and stable companies. Traditional models do not achieve similar predictive accuracy — as demonstrated in Section 3 below.</p>
+        </div>
+
+        <!-- XGBoost model -->
+        <div id="xgboost-model" style="margin-top:4rem;padding-top:3rem;border-top:1px solid var(--color-border);" class="reveal">
+          <p class="section-eyebrow">Section 1</p>
+          <h2 class="prose-headline">The XGBoost model</h2>
+          <p class="prose-body">The XGBoost model (eXtreme Gradient Boosting) is a machine-learning algorithm widely recognized for superior performance in predictive modeling, particularly in credit risk assessment. XGBoost is built on decision trees — data is split at various points starting from a single root and branching out based on specific conditions. For example, the first decision might be "Is net sales > 30 million DKK?" Each decision splits the data into smaller, more specific groups, eventually reaching leaf nodes with final predictions.</p>
+
+          <figure style="margin:2rem 0;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--color-border);">
+            <img src="/assets/wordpress-media/2024/08/Decision_tree_image-2.png" alt="Simplistic visualization of a decision tree algorithm" style="width:100%;display:block;">
+            <figcaption style="padding:0.75rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Simplistic visualization of a decision tree algorithm</figcaption>
+          </figure>
+
+          <p class="prose-body">In XGBoost, instead of relying on a single decision tree, the algorithm builds an entire "forest" of trees where each new tree is designed to correct errors made by the previous ones. This ensemble approach allows XGBoost to make very accurate predictions by learning from its mistakes and refining decisions at each step.</p>
+
+          <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);padding:2rem;margin:2rem 0;">
+            <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);margin-bottom:1.25rem;">Key financial variables used</p>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
+              <div style="padding:1rem;background:var(--blue-faint);border-radius:var(--r-md);"><p style="font-size:0.8125rem;font-weight:600;color:var(--charcoal);margin-bottom:0.3rem;">Equity Ratio</p><p style="font-size:0.75rem;color:var(--gray-steel);">Proportion of assets financed by shareholder equity</p></div>
+              <div style="padding:1rem;background:var(--blue-faint);border-radius:var(--r-md);"><p style="font-size:0.8125rem;font-weight:600;color:var(--charcoal);margin-bottom:0.3rem;">ROA %</p><p style="font-size:0.75rem;color:var(--gray-steel);">Return on Assets — efficiency in generating profit</p></div>
+              <div style="padding:1rem;background:var(--blue-faint);border-radius:var(--r-md);"><p style="font-size:0.8125rem;font-weight:600;color:var(--charcoal);margin-bottom:0.3rem;">Quick Ratio</p><p style="font-size:0.75rem;color:var(--gray-steel);">Ability to meet short-term obligations with liquid assets</p></div>
+              <div style="padding:1rem;background:var(--off-white);border-radius:var(--r-md);"><p style="font-size:0.8125rem;font-weight:500;color:var(--gray-steel);">+ Profitability indicators</p></div>
+              <div style="padding:1rem;background:var(--off-white);border-radius:var(--r-md);"><p style="font-size:0.8125rem;font-weight:500;color:var(--gray-steel);">+ Liquidity measures</p></div>
+              <div style="padding:1rem;background:var(--off-white);border-radius:var(--r-md);"><p style="font-size:0.8125rem;font-weight:500;color:var(--gray-steel);">+ Solvency &amp; size variables</p></div>
+            </div>
+          </div>
+
+          <p class="prose-body">Our models have been developed in collaboration with <a href="https://www.valuatum.com/" style="color:var(--blue);" target="_blank" rel="noopener">Valuatum</a>. Additional resources:</p>
+          <ul style="font-size:var(--text-sm);color:var(--gray-steel);line-height:1.9;padding-left:1.25rem;margin:0.75rem 0;">
+            <li><a href="https://www.valuatum.com/credit-risk/industrial-credit-risk-platform/" style="color:var(--blue);" target="_blank" rel="noopener">Our solution in a nutshell</a></li>
+            <li><a href="https://www.valuatum.com/credit-risk/industrial-credit-risk-platform/#faq" style="color:var(--blue);" target="_blank" rel="noopener">Bankruptcy risk overview</a></li>
+            <li><a href="/assets/wordpress-media/2024/01/bankruptcy_whitepaper_valuatum.pdf" style="color:var(--blue);" target="_blank" rel="noopener">Whitepaper (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Theoretical motivation -->
+        <div id="theoretical-motivation" style="margin-top:4rem;padding-top:3rem;border-top:1px solid var(--color-border);" class="reveal">
+          <p class="section-eyebrow">Section 2</p>
+          <h2 class="prose-headline">Theoretical motivation behind XGBoost</h2>
+          <p class="prose-body">Compared to older, traditional methods, XGBoost consistently outperforms due to several key differences in design.</p>
+
+          <div style="display:flex;flex-direction:column;gap:1.5rem;margin:2rem 0;">
+            <div style="display:flex;gap:1.25rem;">
+              <div style="width:40px;height:40px;background:var(--blue-mist);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--blue);flex-shrink:0;font-weight:700;font-size:0.875rem;">1</div>
+              <div><h4 style="font-size:var(--text-base);font-weight:600;color:var(--charcoal);margin-bottom:0.35rem;">Dynamic variable weights</h4><p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">Traditional models apply fixed formulas uniformly. XGBoost adjusts variable importance based on individual company circumstances — for example, liquidity matters more for unprofitable firms versus profitable ones. Logistic regression has constant weights and cannot account for these firm-specific characteristics.</p></div>
+            </div>
+
+            <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);overflow:hidden;margin-left:3.25rem;">
+              <div style="padding:1rem 1.25rem;background:var(--blue-faint);border-bottom:1px solid var(--color-border);">
+                <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);">Example 1 — Dynamic variable weights</p>
+              </div>
+              <figure style="margin:0;">
+                <img src="/assets/wordpress-media/2024/10/VariableViz1-1.png" alt="Companies plotted by profitability and solvency, colored by credit risk — showing why dynamic weights matter" style="width:100%;display:block;">
+                <figcaption style="padding:0.6rem 1rem;font-size:0.75rem;color:var(--gray-steel);">A random sample of companies arranged by profitability (x-axis) and solvency (y-axis). Color indicates creditworthiness: red = highest risk, dark green = lowest risk. Company A (upper-right) doesn't need strong liquidity; Company B (lower-left, unprofitable) depends critically on it.</figcaption>
+              </figure>
+            </div>
+
+            <div style="display:flex;gap:1.25rem;">
+              <div style="width:40px;height:40px;background:var(--blue-mist);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--blue);flex-shrink:0;font-weight:700;font-size:0.875rem;">2</div>
+              <div><h4 style="font-size:var(--text-base);font-weight:600;color:var(--charcoal);margin-bottom:0.35rem;">Number of model variables</h4><p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">XGBoost handles large variable sets without losing predictability. Traditional regression models risk overfitting with many variables, forcing selection of only key indicators and potentially omitting important signals — such as rising receivables per net sales, which can indicate future credit risk.</p></div>
+            </div>
+
+            <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);overflow:hidden;margin-left:3.25rem;">
+              <div style="padding:1rem 1.25rem;background:var(--blue-faint);border-bottom:1px solid var(--color-border);">
+                <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);">Example 2 — Number of model variables</p>
+              </div>
+              <figure style="margin:0;">
+                <img src="/assets/wordpress-media/2024/10/VariableViz2-2.png" alt="Highlighted company with excellent financials but rising receivables — a risk signal only AI catches" style="width:100%;display:block;">
+                <figcaption style="padding:0.6rem 1rem;font-size:0.75rem;color:var(--gray-steel);">The highlighted company has excellent profitability and high equity ratio. A traditional model would rate it highly creditworthy. However, our AI model detects rising sales receivables per net sales — a hidden risk indicator that could significantly impact actual profitability.</figcaption>
+              </figure>
+            </div>
+
+            <div style="display:flex;gap:1.25rem;">
+              <div style="width:40px;height:40px;background:var(--blue-mist);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--blue);flex-shrink:0;font-weight:700;font-size:0.875rem;">3</div>
+              <div><h4 style="font-size:var(--text-base);font-weight:600;color:var(--charcoal);margin-bottom:0.35rem;">Explainability</h4><p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">Unlike some ML approaches that are "black boxes," the platform provides clear visualizations and auto-generated plain-language summaries that explain why a company received its rating — including specific identified weaknesses.</p></div>
+            </div>
+
+            <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);overflow:hidden;margin-left:3.25rem;">
+              <div style="padding:1rem 1.25rem;background:var(--blue-faint);border-bottom:1px solid var(--color-border);">
+                <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);">Example 3 — Visualization &amp; automatic text</p>
+              </div>
+              <div style="padding:1.25rem;background:var(--off-white);border-bottom:1px solid var(--color-border);">
+                <p style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--gray-steel);margin-bottom:0.75rem;">Auto-generated explanation (example)</p>
+                <p style="font-size:0.8125rem;color:var(--charcoal);line-height:1.7;margin-bottom:0.75rem;">The highlighted company (Company X) has excellent profitability and solvency — ROA 23.1%, equity ratio 81.7%, net sales €845k (+13.1% growth). Despite these strong figures, the credit risk model has rated it lower than similar companies due to identified weaknesses:</p>
+                <ol style="font-size:0.8125rem;color:var(--gray-steel);line-height:1.9;padding-left:1.25rem;margin:0;">
+                  <li><strong style="color:var(--charcoal);">Increasing current loans receivable:</strong> From €22k to €186k (2016–2020), indicating potential bad debt risk</li>
+                  <li><strong style="color:var(--charcoal);">Low cash and cash equivalents:</strong> Only €5k in cash at end of 2020, limiting short-term resilience</li>
+                  <li><strong style="color:var(--charcoal);">High non-interest-bearing liabilities:</strong> €68k in 2020, putting pressure on liquidity</li>
+                </ol>
+                <p style="font-size:0.8125rem;color:var(--gray-steel);margin-top:0.75rem;">Based on the above, the model assessed a bankruptcy risk of <strong>0.947%</strong>, corresponding to a credit rating of <strong>BB (poor)</strong>.</p>
+              </div>
+              <figure style="margin:0;border-top:1px solid var(--color-border);">
+                <img src="/assets/wordpress-media/2024/10/VariableViz2-3.png" alt="Company X highlighted with excellent financials but identified specific risk factors" style="width:100%;display:block;">
+                <figcaption style="padding:0.6rem 1rem;font-size:0.75rem;color:var(--gray-steel);">Company X plotted among peers — highlighted despite excellent surface financials due to hidden risk factors detected by the model.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Empirical results -->
+        <div id="empirical-results" style="margin-top:4rem;padding-top:3rem;border-top:1px solid var(--color-border);" class="reveal">
+          <p class="section-eyebrow">Section 3</p>
+          <h2 class="prose-headline">Empirical results of XGBoost model</h2>
+          <p class="prose-body">The real proof of any model's effectiveness is how well it performs in practice. Here we present empirical results that showcase the accuracy and reliability of our XGBoost model — including academic studies and our own tests.</p>
+
+          <h3 style="font-size:var(--text-lg);font-weight:500;color:var(--charcoal);margin:2.5rem 0 1rem;">3.1. Academic results</h3>
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div style="padding:1.25rem 1.5rem;background:var(--off-white);border-radius:var(--r-lg);border:1px solid var(--color-border);">
+              <p style="font-size:0.875rem;font-weight:500;color:var(--charcoal);margin-bottom:0.25rem;">Jabeur et al. (2023)</p>
+              <p style="font-size:0.8125rem;font-weight:300;color:var(--gray-steel);">"Bankruptcy Prediction using the XGBoost Algorithm and Variable Importance Feature Engineering" — <em>Computational Economics</em>. Found XGBoost significantly outperformed logistic regression, with particular strength in handling imbalanced data. <a href="https://roderic.uv.es/rest/api/core/bitstreams/e531eb35-8e15-4866-9b8f-9b3b2c8bb441/content" style="color:var(--blue);" target="_blank" rel="noopener">Read article →</a></p>
+            </div>
+            <div style="padding:1.25rem 1.5rem;background:var(--off-white);border-radius:var(--r-lg);border:1px solid var(--color-border);">
+              <p style="font-size:0.875rem;font-weight:500;color:var(--charcoal);margin-bottom:0.25rem;">Xia et al. (2017)</p>
+              <p style="font-size:0.8125rem;font-weight:300;color:var(--gray-steel);">"A Boosted Decision Tree Approach Using Bayesian Hyper-Parameter Optimization for Credit Scoring" — <em>Expert Systems with Applications</em>. Demonstrated Bayesian optimization enhanced XGBoost performance in accuracy, AUC, and Brier score. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417417301008" style="color:var(--blue);" target="_blank" rel="noopener">Read article →</a></p>
+            </div>
+            <div style="padding:1.25rem 1.5rem;background:var(--off-white);border-radius:var(--r-lg);border:1px solid var(--color-border);">
+              <p style="font-size:0.875rem;font-weight:500;color:var(--charcoal);margin-bottom:0.25rem;">Robisco &amp; Martinez (2022)</p>
+              <p style="font-size:0.8125rem;font-weight:300;color:var(--gray-steel);">"Measuring the Model Risk-Adjusted Performance of Machine Learning Algorithms in Credit Default Prediction" — <em>Financial Innovation</em>. Confirmed XGBoost superiority over support vector machines and logistic regression, with SHAP-based interpretability. <a href="https://link.springer.com/content/pdf/10.1186/s40854-022-00366-1.pdf" style="color:var(--blue);" target="_blank" rel="noopener">Read article →</a></p>
+            </div>
+          </div>
+
+          <h3 style="font-size:var(--text-lg);font-weight:500;color:var(--charcoal);margin:2.5rem 0 1rem;">3.2. Own test results — AI rating vs. logistic regression</h3>
+          <p class="prose-body">We calculated bankruptcy risk for ~200,000 Finnish companies using 2021 financial statements with both our AI model and a traditional logistic regression model. Companies were divided into ten equally-weighted risk groups and tracked against actual 2023 bankruptcies.</p>
+
+          <figure style="margin:2rem 0;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--color-border);">
+            <img src="/assets/wordpress-media/2024/08/Finnish_bankruptcies.png" alt="Comparison of AI rating vs logistic regression in identifying Finnish bankruptcies" style="width:100%;display:block;">
+            <figcaption style="padding:0.75rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Both models concentrate bankrupt companies in the riskiest decile. Our AI model identifies over 200 more bankrupt companies in the "Bottom 10%" than logistic regression.</figcaption>
+          </figure>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2rem 0;">
+            <div style="background:var(--status-red-bg);border:1px solid rgba(192,57,43,0.15);border-radius:var(--r-xl);padding:2rem;">
+              <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--status-red);margin-bottom:1rem;">Logistic Regression</p>
+              <p style="font-size:2.5rem;font-weight:300;color:var(--charcoal);letter-spacing:-0.02em;line-height:1;">65</p>
+              <p style="font-size:0.875rem;color:var(--gray-steel);margin-top:0.35rem;">bankrupt companies in top 30% (most creditworthy)</p>
+              <p style="font-size:0.875rem;font-weight:600;color:var(--status-red);margin-top:1rem;">~€25M projected losses on €10B issued</p>
+            </div>
+            <div style="background:var(--status-green-bg);border:1px solid rgba(46,125,94,0.15);border-radius:var(--r-xl);padding:2rem;">
+              <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--status-green);margin-bottom:1rem;">Our AI Model</p>
+              <p style="font-size:2.5rem;font-weight:300;color:var(--charcoal);letter-spacing:-0.02em;line-height:1;">24</p>
+              <p style="font-size:0.875rem;color:var(--gray-steel);margin-top:0.35rem;">bankrupt companies in top 30% (most creditworthy)</p>
+              <p style="font-size:0.875rem;font-weight:600;color:var(--status-green);margin-top:1rem;">~€9.2M projected losses — <strong>63.1% reduction</strong></p>
+            </div>
+          </div>
+
+          <h3 style="font-size:var(--text-lg);font-weight:500;color:var(--charcoal);margin:2.5rem 0 1rem;">Expanding to Danish data</h3>
+          <p class="prose-body">The following analysis extends the comparison to Danish bankrupt companies assessed using our AI model. The y-axis shows percentages to account for dataset size differences.</p>
+
+          <figure style="margin:2rem 0;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--color-border);">
+            <img src="/assets/wordpress-media/2024/08/Finnish_vs_Danish.png" alt="Comparison of Finnish vs Danish bankruptcies by credit risk category" style="width:100%;display:block;">
+            <figcaption style="padding:0.75rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">A smaller percentage of Danish companies in the Top 30% went bankrupt (1.21%) versus Finnish companies (1.72%), underscoring the model's strong accuracy with Danish data.</figcaption>
+          </figure>
+
+          <h3 style="font-size:var(--text-lg);font-weight:500;color:var(--charcoal);margin:2.5rem 0 1rem;">Performance evaluation</h3>
+          <p class="prose-body">We compared our model against several benchmark models: XGBoost, random forest, artificial neural networks, an ensemble method, and logistic regression — using ROC-AUC as the evaluation metric. Approximately 170,000 Finnish companies and 30 input variables were used, with data split evenly for training and testing.</p>
+
+          <figure style="margin:2rem 0;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--color-border);">
+            <img src="/assets/wordpress-media/2024/08/Performance_table.png" alt="Performance comparison table showing XGBoost outperforming all benchmark models" style="width:100%;display:block;">
+            <figcaption style="padding:0.75rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">ROC-AUC performance results. Our XGBoost model achieved the highest score across all benchmark models. The table also shows potential for further improvement by adding payment behavior data.</figcaption>
+          </figure>
+
+          <div style="background:var(--off-white);border:1px solid var(--color-border);border-radius:var(--r-lg);padding:1.5rem;margin-top:1.5rem;">
+            <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-steel);margin-bottom:0.5rem;">Reference</p>
+            <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">For additional context, we compare with results reported by <a href="https://pdfs.semanticscholar.org/257c/b4227101b4da636e90b323736c68c0653a4f.pdf" style="color:var(--blue);" target="_blank" rel="noopener">Altman et al. (2014)</a>. ROC-AUC scores closer to 1 indicate stronger predictive ability; a score of 0.5 equals random guessing.</p>
+          </div>
+        </div>
+
+        <!-- Calculation methods -->
+        <div id="calculation-methods" style="margin-top:4rem;padding-top:3rem;border-top:1px solid var(--color-border);" class="reveal">
+          <p class="section-eyebrow">Section 4</p>
+          <h2 class="prose-headline">Calculation methods of our parameters</h2>
+          <p class="prose-body">Understanding how we calculate credit ratings, bankruptcy risk, and credit limits is crucial to appreciating the value of our model.</p>
+
+          <h3 style="font-size:var(--text-lg);font-weight:500;color:var(--charcoal);margin:2rem 0 0.75rem;">Credit rating &amp; score</h3>
+          <p class="prose-body"><strong>Credit rating</strong> classifies companies into larger groups based on their assessed bankruptcy risk. We use a standard seven-tier scale from AAA to C, where AAA represents the lowest bankruptcy risk and C the highest. For example, companies at or above the 98.7th percentile (top 1.3%) receive a 'AAA' rating, while those between the 33.4th and 66.6th percentiles are rated 'BBB'.</p>
+          <p class="prose-body"><strong>Credit score</strong> (0–100) is the company's risk percentile relative to all other companies. A score of 78 means the company has lower risk than 78% of all companies in that year — supplementing the broader rating class.</p>
+
+          <figure style="margin:2rem 0;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--color-border);">
+            <img src="/assets/wordpress-media/2024/07/credit_rating_distribution_4_en.png" alt="Distribution of companies across credit rating categories AAA to C" style="width:100%;display:block;">
+            <figcaption style="padding:0.75rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Distribution of companies across the seven credit rating categories</figcaption>
+          </figure>
+
+          <div style="overflow-x:auto;margin:1.5rem 0;">
+            <table class="financial-table">
+              <thead><tr><th scope="col" style="text-align:left;">Rating</th><th scope="col">Percentile range</th><th scope="col">Risk level</th></tr></thead>
+              <tbody>
+                <tr><td><strong>AAA</strong></td><td>≥ 98.7th (top 1.3%)</td><td style="color:var(--status-green);">Lowest risk</td></tr>
+                <tr><td><strong>AA</strong></td><td>93.4–98.6th</td><td style="color:var(--status-green);">Very low risk</td></tr>
+                <tr><td><strong>A</strong></td><td>80.0–93.3rd</td><td style="color:var(--status-green);">Low risk</td></tr>
+                <tr><td><strong>BBB</strong></td><td>66.7–79.9th</td><td style="color:var(--gray-steel);">Moderate</td></tr>
+                <tr><td><strong>BB</strong></td><td>53.4–66.6th</td><td style="color:var(--status-amber);">Elevated</td></tr>
+                <tr><td><strong>B</strong></td><td>33.4–53.3rd</td><td style="color:var(--status-amber);">High risk</td></tr>
+                <tr><td><strong>C</strong></td><td>Below 33.4th</td><td style="color:var(--status-red);">Highest risk</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 style="font-size:var(--text-lg);font-weight:500;color:var(--charcoal);margin:2rem 0 0.75rem;">Bankruptcy risk</h3>
+          <p class="prose-body">Our <strong>bankruptcy risk</strong> probability assesses the likelihood of a company failing to meet its financial obligations and declaring bankruptcy within the next <strong>24 months</strong>. The model uses XGBoost with approximately 30 explanatory variables. In our evaluations, XGBoost has consistently outperformed alternative approaches including random forest and logistic regression.</p>
+
+          <h3 style="font-size:var(--text-lg);font-weight:500;color:var(--charcoal);margin:2rem 0 0.75rem;">Credit limit</h3>
+          <p class="prose-body">We provide a preliminary estimate for a potential credit limit, determined by a company-specific maximum and its bankruptcy risk. The maximum limit calculation accounts for factors including shareholders' equity and available cash. This maximum is then adjusted based on bankruptcy risk as illustrated below.</p>
+
+          <figure style="margin:2rem 0;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--color-border);">
+            <img src="/assets/wordpress-media/2024/04/CreditLimitFAQ.png" alt="Graph showing how credit limit is adjusted based on bankruptcy risk" style="width:100%;display:block;">
+            <figcaption style="padding:0.75rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">How credit limit is adjusted based on company-specific bankruptcy risk. The graph uses a sample maximum limit of 10,000 for illustration — in practice, larger companies may qualify for significantly higher limits.</figcaption>
+          </figure>
+
+          <div style="background:var(--off-white);border:1px solid var(--color-border);border-radius:var(--r-lg);padding:1.5rem;margin-top:1rem;">
+            <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-steel);margin-bottom:0.5rem;">Important note</p>
+            <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.7;">The credit limit we provide is an estimate based on a limited set of variables and bankruptcy risk assessment. We strongly recommend conducting a comprehensive evaluation of the company's financial status before making any decisions regarding the loan amount.</p>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div style="background:var(--navy);border-radius:var(--r-xl);padding:3rem;margin:4rem 0;" class="reveal">
+          <h3 style="font-size:var(--text-xl);font-weight:300;color:var(--white);margin-bottom:0.75rem;">Summary &amp; Strategic Advantage</h3>
+          <p style="font-size:var(--text-sm);font-weight:300;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:1.5rem;">Reliable, transparent, and intelligently optimized, our AI-powered credit risk model represents the next generation in corporate risk assessment. Whether you're aiming to reduce credit losses, make faster loan decisions, or conduct more accurate B2B analyses, our solution delivers measurable value and a true competitive edge. It's time to move beyond outdated models and toward data-driven credit intelligence.</p>
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="/en/create-account/" class="btn btn-primary">Get started free</a>
+            <a href="/assets/wordpress-media/2024/07/Tanska_creditrisk_comparisons_PDF_v5.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download comparison study</a>
+          </div>
+        </div>
+
+        <div style="padding-top:2rem;border-top:1px solid var(--color-border);display:flex;gap:1rem;flex-wrap:wrap;align-items:center;" class="reveal">
+          <a href="/en/support/" class="btn-ghost">← Back to Support hub</a>
+          <a href="/en/products/credit-risk-assessment-methods/" class="btn btn-outline-dark btn-sm">Assessment Methods</a>
+          <a href="/en/support/credit-risk-faq/" class="btn btn-outline-dark btn-sm">Credit Risk FAQ</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="site-footer"></div>
+<script src="../../../js/nav.js"></script>
+<script src="../../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "id": "48",
+  "type": "page",
+  "title": "Prices",
+  "slug": "prices",
+  "unique_slug": "prices",
+  "status": "draft",
+  "author": "valuatum",
+  "date": "2018-06-14 12:07:08",
+  "modified": "2020-07-15 11:37:59",
+  "parent": "0",
+  "menu_order": "0",
+  "link": "https://creditreports.dk/?page_id=48",
+  "old_path": "/",
+  "suggested_new_route": "/en/",
+  "content_length": 2330,
+  "asset_urls": [],
+  "image_urls": [],
+  "asset_refs": [],
+  "excerpt": "",
+  "metas": {
+    "_edit_last": [
+      "1"
+    ],
+    "spacious_page_layout": [
+      "default_layout"
+    ],
+    "_wp_page_template": [
+      "default"
+    ],
+    "_yoast_wpseo_content_score": [
+      "90"
+    ],
+    "layout_sidebar": [
+      "none"
+    ],
+    "page_header": [
+      "normal"
+    ],
+    "page_title": [
+      "none"
+    ],
+    "page_footer": [
+      "normal"
+    ]
+  },
+  "raw_html": "<h1 style=\"text-align: center;\"><strong>Credit Report For Business Credit Decisions</strong></h1>\n<h4 style=\"text-align: center;\">Choose your plan. No hidden fees.</h4>\n&nbsp;\n\n[su_row]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"3 Reports\" subtitle=\"Per Month\" price=\"0\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#353535\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"30 Reports\" subtitle=\"Per Month\" price=\"150\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"60 Reports\" subtitle=\"Per Month\" price=\"300\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"Unlimited\" subtitle=\"Per Month\" price=\"500\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"Extra Report\" subtitle=\"Per Report\" price=\"8\" before=\"\" after=\"€\" description=\"Per Report\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[/su_row]\n\n&nbsp;\n\n[su_row]\n[su_column size=\"1/4\"]\n\n&nbsp;\n\n[/su_column]\n\n[su_column size=\"1/4\"]\n\n[su_button name=\"button\" url=\"https://creditreports.valuatum.com/AspAndUserCreation.action?templateAspQueryKey=CRTemplate\" target=\"blank\" background=\"#4cb300\" color=\"#ffffff\" size=\"10\" center=\"yes\" radius=\"10\" icon_color=\"#D7FF83\" class=\"btn-order\"]Create account[/su_button]\n\n[/su_column]\n[su_column size=\"1/4\"]\n\n[su_button name=\"button\" url=\"http://cr.valuatum.com/product/\" target=\"blank\" background=\"#4cb300\" color=\"#ffffff\" size=\"10\" center=\"yes\" radius=\"10\" icon_color=\"#D7FF83\" class=\"btn-order\"]View a sample report[/su_button]\n\n[/su_column]\n[su_column size=\"1/4\"]\n\n&nbsp;\n\n[/su_column]\n[/su_row]\n\nBy singing up for the system, you will get three free reports each month and access to the Valuatum platform. In case you need more credit risk reports,&nbsp;you can easily upgrade your subscription or purchase individual reports depending on your need. For details on the features and functionality of the Credit Risk Report and the Valuatum Platform, that you will receive access to by signing up, see the <a href=\"https://cr.valuatum.com/product/\">Product</a> page.\n\n&nbsp;",
+  "localized_html": "<h1 style=\"text-align: center;\"><strong>Credit Report For Business Credit Decisions</strong></h1>\n<h4 style=\"text-align: center;\">Choose your plan. No hidden fees.</h4>\n&nbsp;\n\n[su_row]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"3 Reports\" subtitle=\"Per Month\" price=\"0\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#353535\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"30 Reports\" subtitle=\"Per Month\" price=\"150\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"60 Reports\" subtitle=\"Per Month\" price=\"300\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"Unlimited\" subtitle=\"Per Month\" price=\"500\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"Extra Report\" subtitle=\"Per Report\" price=\"8\" before=\"\" after=\"€\" description=\"Per Report\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[/su_row]\n\n&nbsp;\n\n[su_row]\n[su_column size=\"1/4\"]\n\n&nbsp;\n\n[/su_column]\n\n[su_column size=\"1/4\"]\n\n[su_button name=\"button\" url=\"https://creditreports.valuatum.com/AspAndUserCreation.action?templateAspQueryKey=CRTemplate\" target=\"blank\" background=\"#4cb300\" color=\"#ffffff\" size=\"10\" center=\"yes\" radius=\"10\" icon_color=\"#D7FF83\" class=\"btn-order\"]Create account[/su_button]\n\n[/su_column]\n[su_column size=\"1/4\"]\n\n[su_button name=\"button\" url=\"http://cr.valuatum.com/product/\" target=\"blank\" background=\"#4cb300\" color=\"#ffffff\" size=\"10\" center=\"yes\" radius=\"10\" icon_color=\"#D7FF83\" class=\"btn-order\"]View a sample report[/su_button]\n\n[/su_column]\n[su_column size=\"1/4\"]\n\n&nbsp;\n\n[/su_column]\n[/su_row]\n\nBy singing up for the system, you will get three free reports each month and access to the Valuatum platform. In case you need more credit risk reports,&nbsp;you can easily upgrade your subscription or purchase individual reports depending on your need. For details on the features and functionality of the Credit Risk Report and the Valuatum Platform, that you will receive access to by signing up, see the <a href=\"https://cr.valuatum.com/product/\">Product</a> page.\n\n&nbsp;",
+  "markdown": "# **Credit Report For Business Credit Decisions**\n\n#### Choose your plan. No hidden fees.\n\n[su_row]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"3 Reports\" subtitle=\"Per Month\" price=\"0\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#353535\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"30 Reports\" subtitle=\"Per Month\" price=\"150\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"60 Reports\" subtitle=\"Per Month\" price=\"300\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"Unlimited\" subtitle=\"Per Month\" price=\"500\" before=\"\" after=\"€\" description=\"Per Month\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[su_column size=\"1/5.1\"]\n\n[ct_pricing title=\"Extra Report\" subtitle=\"Per Report\" price=\"8\" before=\"\" after=\"€\" description=\"Per Report\" color=\"#bdbdbd\" type=\"normal\" ][/ct_pricing]\n\n[/su_column]\n[/su_row]\n\n \n\n[su_row]\n[su_column size=\"1/4\"]\n\n \n\n[/su_column]\n\n[su_column size=\"1/4\"]\n\n[su_button name=\"button\" url=\"https://creditreports.valuatum.com/AspAndUserCreation.action?templateAspQueryKey=CRTemplate\" target=\"blank\" background=\"#4cb300\" color=\"#ffffff\" size=\"10\" center=\"yes\" radius=\"10\" icon_color=\"#D7FF83\" class=\"btn-order\"]Create account[/su_button]\n\n[/su_column]\n[su_column size=\"1/4\"]\n\n[su_button name=\"button\" url=\"http://cr.valuatum.com/product/\" target=\"blank\" background=\"#4cb300\" color=\"#ffffff\" size=\"10\" center=\"yes\" radius=\"10\" icon_color=\"#D7FF83\" class=\"btn-order\"]View a sample report[/su_button]\n\n[/su_column]\n[su_column size=\"1/4\"]\n\n \n\n[/su_column]\n[/su_row]\n\nBy singing up for the system, you will get three free reports each month and access to the Valuatum platform. In case you need more credit risk reports, you can easily upgrade your subscription or purchase individual reports depending on your need. For details on the features and functionality of the Credit Risk Report and the Valuatum Platform, that you will receive access to by signing up, see the\n\nProduct\n\npage."
+}

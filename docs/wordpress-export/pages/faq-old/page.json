@@ -1,0 +1,229 @@
+{
+  "id": "2541",
+  "type": "page",
+  "title": "FAQ",
+  "slug": "faq-old",
+  "unique_slug": "faq-old",
+  "status": "publish",
+  "author": "valuatum",
+  "date": "2023-09-06 13:00:29",
+  "modified": "2025-08-01 12:59:17",
+  "parent": "17",
+  "menu_order": "0",
+  "link": "https://creditreports.dk/support/faq-old/",
+  "old_path": "/support/faq-old/",
+  "suggested_new_route": "/en/support/credit-risk-faq/",
+  "content_length": 7810,
+  "asset_urls": [
+    "http://files.valuatum.com/bankruptcy_whitepaper_valuatum.pdf",
+    "https://creditreports.dk/wp-content/uploads/sites/9/2024/04/CreditLimitFAQ.png",
+    "https://creditreports.dk/wp-content/uploads/sites/9/2024/07/credit_rating_distribution_4_en.png"
+  ],
+  "image_urls": [
+    "https://creditreports.dk/wp-content/uploads/sites/9/2024/04/CreditLimitFAQ.png",
+    "https://creditreports.dk/wp-content/uploads/sites/9/2024/07/credit_rating_distribution_4_en.png"
+  ],
+  "asset_refs": [
+    {
+      "url": "http://files.valuatum.com/bankruptcy_whitepaper_valuatum.pdf",
+      "local_url": "/assets/wordpress-media/2024/01/bankruptcy_whitepaper_valuatum.pdf",
+      "local_path": "assets/wordpress-media/2024/01/bankruptcy_whitepaper_valuatum.pdf",
+      "title": "bankruptcy_whitepaper_valuatum",
+      "status": "mapped"
+    },
+    {
+      "url": "https://creditreports.dk/wp-content/uploads/sites/9/2024/04/CreditLimitFAQ.png",
+      "local_url": "/assets/wordpress-media/2024/04/CreditLimitFAQ.png",
+      "local_path": "assets/wordpress-media/2024/04/CreditLimitFAQ.png",
+      "title": "CreditLimitFAQ",
+      "status": "mapped"
+    },
+    {
+      "url": "https://creditreports.dk/wp-content/uploads/sites/9/2024/07/credit_rating_distribution_4_en.png",
+      "local_url": "/assets/wordpress-media/2024/07/credit_rating_distribution_4_en.png",
+      "local_path": "assets/wordpress-media/2024/07/credit_rating_distribution_4_en.png",
+      "title": "credit_rating_distribution_4_en",
+      "status": "mapped"
+    }
+  ],
+  "excerpt": "",
+  "metas": {
+    "stackable_optimized_css": [
+      ""
+    ],
+    "stackable_optimized_css_raw": [
+      "a:0:{}"
+    ],
+    "apvc_active_counter": [
+      "Yes"
+    ],
+    "count_start_from": [
+      ""
+    ],
+    "widget_label": [
+      ""
+    ],
+    "page_header": [
+      "normal"
+    ],
+    "page_title": [
+      "normal"
+    ],
+    "page_footer": [
+      "normal"
+    ],
+    "itemlist_item_1490": [
+      "a:0:{}"
+    ],
+    "music_composer_1490": [
+      "a:0:{}"
+    ],
+    "movie_actor_1490": [
+      "a:0:{}"
+    ],
+    "article_items_1490": [
+      "a:0:{}"
+    ],
+    "image_object_exif_data_1490": [
+      "a:0:{}"
+    ],
+    "blogposting_items_1490": [
+      "a:0:{}"
+    ],
+    "newsarticle_items_1490": [
+      "a:0:{}"
+    ],
+    "tech_article_items_1490": [
+      "a:0:{}"
+    ],
+    "product_reviews_1490": [
+      "a:0:{}"
+    ],
+    "feed_element_1490": [
+      "a:0:{}"
+    ],
+    "faq_question_1490": [
+      "a:0:{}"
+    ],
+    "performer_1490": [
+      "a:0:{}"
+    ],
+    "organizer_1490": [
+      "a:0:{}"
+    ],
+    "accepted_answer_1490": [
+      "a:0:{}"
+    ],
+    "suggested_answer_1490": [
+      "a:0:{}"
+    ],
+    "howto_supply_1490": [
+      "a:0:{}"
+    ],
+    "howto_tool_1490": [
+      "a:0:{}"
+    ],
+    "howto_step_1490": [
+      "a:0:{}"
+    ],
+    "announcement_location_1490": [
+      "a:0:{}"
+    ],
+    "music_playlist_track_1490": [
+      "a:0:{}"
+    ],
+    "music_album_track_1490": [
+      "a:0:{}"
+    ],
+    "apartment_amenities_1490": [
+      "a:0:{}"
+    ],
+    "additional_property_1490": [
+      "a:0:{}"
+    ],
+    "mc_cause_1490": [
+      "a:0:{}"
+    ],
+    "mc_symptom_1490": [
+      "a:0:{}"
+    ],
+    "mc_risk_factor_1490": [
+      "a:0:{}"
+    ],
+    "tvseries_actor_1490": [
+      "a:0:{}"
+    ],
+    "tvseries_season_1490": [
+      "a:0:{}"
+    ],
+    "trip_itinerary_1490": [
+      "a:0:{}"
+    ],
+    "_yoast_wpseo_content_score": [
+      "30"
+    ],
+    "_dp_original": [
+      "1828"
+    ],
+    "_edit_last": [
+      "1"
+    ],
+    "_aioseo_title": [
+      ""
+    ],
+    "_aioseo_description": [
+      ""
+    ],
+    "_aioseo_keywords": [
+      "a:0:{}"
+    ],
+    "_aioseo_og_title": [
+      ""
+    ],
+    "_aioseo_og_description": [
+      ""
+    ],
+    "_aioseo_og_article_section": [
+      ""
+    ],
+    "_aioseo_og_article_tags": [
+      "a:0:{}"
+    ],
+    "_aioseo_twitter_title": [
+      ""
+    ],
+    "_aioseo_twitter_description": [
+      ""
+    ],
+    "_yoast_wpseo_estimated-reading-time-minutes": [
+      "3"
+    ],
+    "_yoast_wpseo_wordproof_timestamp": [
+      ""
+    ],
+    "footnotes": [
+      ""
+    ],
+    "om_disable_all_campaigns": [
+      ""
+    ],
+    "advgb_blocks_editor_width": [
+      ""
+    ],
+    "advgb_blocks_columns_visual_guide": [
+      ""
+    ],
+    "_monsterinsights_skip_tracking": [
+      ""
+    ],
+    "_monsterinsights_sitenote_active": [
+      ""
+    ],
+    "_wp_page_template": [
+      "default"
+    ]
+  },
+  "raw_html": "<!-- wp:heading {\"level\":1} -->\n<h1 class=\"wp-block-heading\" id=\"top\">FAQ</h1>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>On this page, you can find details on how we calculate specific variables featured on our <a href=\"https://creditreports.dk/en/support/get-started/\">credit risk platform's</a> Overview page.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\" id=\"creditrating\">Contents</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li><a href=\"#creditrating\">Credit rating &amp; score</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"#bankruptcyrisk\">Bankruptcy risk</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"#creditlimit\">Credit limit</a></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><span id=\"dynamic_scatter\"></span>Credit rating &amp; score</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong><span style=\"color: #000000;\" class=\"stk-highlight\">Credit rating</span></strong> is a way to classify companies into larger groups, making it easy to quickly compare a given company to all the others in our database. In our system, <strong>the credit rating is based on <a href=\"#bankruptcyrisk\" title=\"the bankruptcy risk\">the bankruptcy risk</a> of a company</strong>. The companies with higher risks have lower credit ratings and the low-risk companies have high ratings. We use the standard seven rating categories that range from AAA-C where AAA is the category containing companies with the lowest bankruptcy risks and C is the category containing companies with the highest bankruptcy risks. The picture below depicts the distribution of our credit ratings. For example, the top 1.3% of companies (or companies at or above the 987th permille) will receive a 'AAA' rating and companies whose bankruptcy risk falls between the 334th and 667th permilles will receive a 'BBB' rating.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong><span style=\"color: #000000;\" class=\"stk-highlight\">The credit score</span></strong> refers to a company's risk relative to other companies. The value ranges from 0 to 100, and the higher the score the lower the risk. For example, a credit score of 78 means that the company in question has a lower risk than 78 % of all companies. A credit score is showed in addition to the rating, as some rating classes can cover a wide range of credit scores.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:ugb/container {\"contentWidth\":67,\"borderRadius\":0,\"shadow\":0,\"uniqueClass\":\"ugb-401cd69\",\"contentAlign\":\"center\",\"className\":\"ugb-container\\u002d\\u002dwidth-small\"} -->\n<div class=\"wp-block-ugb-container ugb-container ugb-container--width-small ugb-401cd69 ugb-container--v2 ugb-container--design-basic ugb-main-block\" id=\"bankruptcyrisk\"><style>.ugb-401cd69-wrapper.ugb-container__wrapper{border-radius:0px !important}.ugb-401cd69 .ugb-inner-block{text-align:center}@media screen and (min-width:768px){.ugb-401cd69-content-wrapper.ugb-container__content-wrapper{width:67% !important}}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-container__wrapper ugb-401cd69-wrapper ugb--shadow-0\"><div class=\"ugb-container__side\"><div class=\"ugb-container__content-wrapper ugb-401cd69-content-wrapper\"><!-- wp:image {\"scale\":\"cover\",\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://creditreports.dk/wp-content/uploads/sites/9/2024/07/credit_rating_distribution_4_en.png\" alt=\"\" style=\"object-fit:cover\"/></figure>\n<!-- /wp:image --></div></div></div></div></div></div>\n<!-- /wp:ugb/container -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\" id=\"bankruptcyrisk\">Bankruptcy risk</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Our <strong>bankruptcy risk</strong> probability assesses the likelihood of a company failing to meet its financial obligations and declaring bankruptcy within the next 24 months. Our current methodology involves the utilization of the XGBoost machine learning model, which incorporates approximately 30 explanatory variables for risk estimation. In our evaluations, XGBoost has consistently outperformed alternative approaches, including random forest. Notably, academic studies have also demonstrated the superior performance of machine learning models when compared to conventional logistic regression-based models.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our models have been developed in collaboration with <a href=\"https://www.valuatum.com/\">Valuatum</a>. You can find more detailed information about them on the Valuatum website:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul id=\"creditlimit\"><!-- wp:list-item -->\n<li><a href=\"https://www.valuatum.com/credit-risk/bankruptcy-risk/our-solution-in-a-nutshell/\">Our solution in a nutshell</a> - highlights the advantages of using machine learning methods and outlines our approach to address the lack of explainability in model decisions</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.valuatum.com/credit-risk/bankruptcy-risk/\">Bankruptcy risk overview</a> - provides insight into the architecture of our model, the variables used, its training process, and more</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"http://files.valuatum.com/bankruptcy_whitepaper_valuatum.pdf\">Whitepaper</a> - detailed technical explanation of our model</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Credit limit</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>We offer a preliminary estimate for a potential credit limit, determined by a company-specific maximum limit and its associated bankruptcy risk. Our maximum limit calculation takes into account various factors, such as shareholder's equity and available cash. This initial maximum limit is then adjusted based on the company's bankruptcy risk, as illustrated in the graph below. <strong>Maximum limit has been set to 10 000 only as an illustrative example</strong> – <strong>larger companies can have distinctive and a lot higher limit compared to smaller companies.</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Please be advised that the credit limit we offer is an estimate based on a limited set of variables and bankruptcy risk assessment. We strongly recommend conducting a comprehensive evaluation of the company's financial status before making any decisions regarding the loan amount.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":2732,\"sizeSlug\":\"full\",\"linkDestination\":\"none\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full\"><img src=\"https://creditreports.dk/wp-content/uploads/sites/9/2024/04/CreditLimitFAQ.png\" alt=\"\" class=\"wp-image-2732\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:ugb/button {\"button1BackgroundColor\":\"#abb8c3\",\"button1HoverEffect\":\"lift\",\"button1BorderRadius\":35,\"uniqueClass\":\"ugb-b25e48e\",\"contentAlign\":\"left\"} -->\n<div class=\"wp-block-ugb-button ugb-button-wrapper ugb-b25e48e ugb-main-block\"><style>.ugb-b25e48e .ugb-block-content{justify-content:flex-start !important}.ugb-b25e48e .ugb-button1{background-color:#abb8c3;border-radius:35px !important}.ugb-b25e48e .ugb-button1 .ugb-button--inner,.ugb-b25e48e .ugb-button1 svg:not(.ugb-custom-icon){color:#222222 !important}.ugb-b25e48e .ugb-button1:before{border-radius:35px !important}.ugb-b25e48e .ugb-inner-block{text-align:left}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-button-container\"><a class=\"ugb-button1 ugb-button ugb-button--size-normal ugb--hover-effect-lift\" href=\"#top\" rel=\"\" title=\"\"><span class=\"ugb-button--inner\">Back to top</span></a></div></div></div></div>\n<!-- /wp:ugb/button -->",
+  "localized_html": "<!-- wp:heading {\"level\":1} -->\n<h1 class=\"wp-block-heading\" id=\"top\">FAQ</h1>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>On this page, you can find details on how we calculate specific variables featured on our <a href=\"https://creditreports.dk/en/support/get-started/\">credit risk platform's</a> Overview page.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\" id=\"creditrating\">Contents</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li><a href=\"#creditrating\">Credit rating &amp; score</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"#bankruptcyrisk\">Bankruptcy risk</a></li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"#creditlimit\">Credit limit</a></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><span id=\"dynamic_scatter\"></span>Credit rating &amp; score</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong><span style=\"color: #000000;\" class=\"stk-highlight\">Credit rating</span></strong> is a way to classify companies into larger groups, making it easy to quickly compare a given company to all the others in our database. In our system, <strong>the credit rating is based on <a href=\"#bankruptcyrisk\" title=\"the bankruptcy risk\">the bankruptcy risk</a> of a company</strong>. The companies with higher risks have lower credit ratings and the low-risk companies have high ratings. We use the standard seven rating categories that range from AAA-C where AAA is the category containing companies with the lowest bankruptcy risks and C is the category containing companies with the highest bankruptcy risks. The picture below depicts the distribution of our credit ratings. For example, the top 1.3% of companies (or companies at or above the 987th permille) will receive a 'AAA' rating and companies whose bankruptcy risk falls between the 334th and 667th permilles will receive a 'BBB' rating.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong><span style=\"color: #000000;\" class=\"stk-highlight\">The credit score</span></strong> refers to a company's risk relative to other companies. The value ranges from 0 to 100, and the higher the score the lower the risk. For example, a credit score of 78 means that the company in question has a lower risk than 78 % of all companies. A credit score is showed in addition to the rating, as some rating classes can cover a wide range of credit scores.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:ugb/container {\"contentWidth\":67,\"borderRadius\":0,\"shadow\":0,\"uniqueClass\":\"ugb-401cd69\",\"contentAlign\":\"center\",\"className\":\"ugb-container\\u002d\\u002dwidth-small\"} -->\n<div class=\"wp-block-ugb-container ugb-container ugb-container--width-small ugb-401cd69 ugb-container--v2 ugb-container--design-basic ugb-main-block\" id=\"bankruptcyrisk\"><style>.ugb-401cd69-wrapper.ugb-container__wrapper{border-radius:0px !important}.ugb-401cd69 .ugb-inner-block{text-align:center}@media screen and (min-width:768px){.ugb-401cd69-content-wrapper.ugb-container__content-wrapper{width:67% !important}}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-container__wrapper ugb-401cd69-wrapper ugb--shadow-0\"><div class=\"ugb-container__side\"><div class=\"ugb-container__content-wrapper ugb-401cd69-content-wrapper\"><!-- wp:image {\"scale\":\"cover\",\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"/assets/wordpress-media/2024/07/credit_rating_distribution_4_en.png\" alt=\"\" style=\"object-fit:cover\"/></figure>\n<!-- /wp:image --></div></div></div></div></div></div>\n<!-- /wp:ugb/container -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\" id=\"bankruptcyrisk\">Bankruptcy risk</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Our <strong>bankruptcy risk</strong> probability assesses the likelihood of a company failing to meet its financial obligations and declaring bankruptcy within the next 24 months. Our current methodology involves the utilization of the XGBoost machine learning model, which incorporates approximately 30 explanatory variables for risk estimation. In our evaluations, XGBoost has consistently outperformed alternative approaches, including random forest. Notably, academic studies have also demonstrated the superior performance of machine learning models when compared to conventional logistic regression-based models.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our models have been developed in collaboration with <a href=\"https://www.valuatum.com/\">Valuatum</a>. You can find more detailed information about them on the Valuatum website:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul id=\"creditlimit\"><!-- wp:list-item -->\n<li><a href=\"https://www.valuatum.com/credit-risk/bankruptcy-risk/our-solution-in-a-nutshell/\">Our solution in a nutshell</a> - highlights the advantages of using machine learning methods and outlines our approach to address the lack of explainability in model decisions</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"https://www.valuatum.com/credit-risk/bankruptcy-risk/\">Bankruptcy risk overview</a> - provides insight into the architecture of our model, the variables used, its training process, and more</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li><a href=\"/assets/wordpress-media/2024/01/bankruptcy_whitepaper_valuatum.pdf\">Whitepaper</a> - detailed technical explanation of our model</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Credit limit</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>We offer a preliminary estimate for a potential credit limit, determined by a company-specific maximum limit and its associated bankruptcy risk. Our maximum limit calculation takes into account various factors, such as shareholder's equity and available cash. This initial maximum limit is then adjusted based on the company's bankruptcy risk, as illustrated in the graph below. <strong>Maximum limit has been set to 10 000 only as an illustrative example</strong> – <strong>larger companies can have distinctive and a lot higher limit compared to smaller companies.</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Please be advised that the credit limit we offer is an estimate based on a limited set of variables and bankruptcy risk assessment. We strongly recommend conducting a comprehensive evaluation of the company's financial status before making any decisions regarding the loan amount.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":2732,\"sizeSlug\":\"full\",\"linkDestination\":\"none\",\"align\":\"center\"} -->\n<figure class=\"wp-block-image aligncenter size-full\"><img src=\"/assets/wordpress-media/2024/04/CreditLimitFAQ.png\" alt=\"\" class=\"wp-image-2732\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:ugb/button {\"button1BackgroundColor\":\"#abb8c3\",\"button1HoverEffect\":\"lift\",\"button1BorderRadius\":35,\"uniqueClass\":\"ugb-b25e48e\",\"contentAlign\":\"left\"} -->\n<div class=\"wp-block-ugb-button ugb-button-wrapper ugb-b25e48e ugb-main-block\"><style>.ugb-b25e48e .ugb-block-content{justify-content:flex-start !important}.ugb-b25e48e .ugb-button1{background-color:#abb8c3;border-radius:35px !important}.ugb-b25e48e .ugb-button1 .ugb-button--inner,.ugb-b25e48e .ugb-button1 svg:not(.ugb-custom-icon){color:#222222 !important}.ugb-b25e48e .ugb-button1:before{border-radius:35px !important}.ugb-b25e48e .ugb-inner-block{text-align:left}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><div class=\"ugb-button-container\"><a class=\"ugb-button1 ugb-button ugb-button--size-normal ugb--hover-effect-lift\" href=\"#top\" rel=\"\" title=\"\"><span class=\"ugb-button--inner\">Back to top</span></a></div></div></div></div>\n<!-- /wp:ugb/button -->",
+  "markdown": "# FAQ\n\nOn this page, you can find details on how we calculate specific variables featured on our [credit risk platform's](https://creditreports.dk/en/support/get-started/) Overview page.\n\n## Contents\n\n- Credit rating & score\n- Bankruptcy risk\n- Credit limit\n\n## Credit rating & score\n\n**Credit rating** is a way to classify companies into larger groups, making it easy to quickly compare a given company to all the others in our database. In our system, **the credit rating is based on [the bankruptcy risk](#bankruptcyrisk) of a company**. The companies with higher risks have lower credit ratings and the low-risk companies have high ratings. We use the standard seven rating categories that range from AAA-C where AAA is the category containing companies with the lowest bankruptcy risks and C is the category containing companies with the highest bankruptcy risks. The picture below depicts the distribution of our credit ratings. For example, the top 1.3% of companies (or companies at or above the 987th permille) will receive a 'AAA' rating and companies whose bankruptcy risk falls between the 334th and 667th permilles will receive a 'BBB' rating.\n\n**The credit score** refers to a company's risk relative to other companies. The value ranges from 0 to 100, and the higher the score the lower the risk. For example, a credit score of 78 means that the company in question has a lower risk than 78 % of all companies. A credit score is showed in addition to the rating, as some rating classes can cover a wide range of credit scores.\n\n![](/assets/wordpress-media/2024/07/credit_rating_distribution_4_en.png)\n\n## Bankruptcy risk\n\nOur **bankruptcy risk** probability assesses the likelihood of a company failing to meet its financial obligations and declaring bankruptcy within the next 24 months. Our current methodology involves the utilization of the XGBoost machine learning model, which incorporates approximately 30 explanatory variables for risk estimation. In our evaluations, XGBoost has consistently outperformed alternative approaches, including random forest. Notably, academic studies have also demonstrated the superior performance of machine learning models when compared to conventional logistic regression-based models.\n\nOur models have been developed in collaboration with [Valuatum](https://www.valuatum.com/). You can find more detailed information about them on the Valuatum website:\n\n- Our solution in a nutshell\n- Bankruptcy risk overview\n- Whitepaper\n\n## Credit limit\n\nWe offer a preliminary estimate for a potential credit limit, determined by a company-specific maximum limit and its associated bankruptcy risk. Our maximum limit calculation takes into account various factors, such as shareholder's equity and available cash. This initial maximum limit is then adjusted based on the company's bankruptcy risk, as illustrated in the graph below. **Maximum limit has been set to 10 000 only as an illustrative example** – **larger companies can have distinctive and a lot higher limit compared to smaller companies.**\n\nPlease be advised that the credit limit we offer is an estimate based on a limited set of variables and bankruptcy risk assessment. We strongly recommend conducting a comprehensive evaluation of the company's financial status before making any decisions regarding the loan amount.\n\n![](/assets/wordpress-media/2024/04/CreditLimitFAQ.png)\n\nBack to top"
+}

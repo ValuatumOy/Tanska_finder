@@ -1,0 +1,35 @@
+{
+  "id": "1920",
+  "type": "wp_block",
+  "title": "general",
+  "slug": "untitled-reusable-block-2",
+  "unique_slug": "untitled-reusable-block-2",
+  "status": "publish",
+  "author": "valuatum",
+  "date": "2021-06-04 15:03:34",
+  "modified": "2021-06-04 15:05:51",
+  "parent": "0",
+  "menu_order": "0",
+  "link": "https://creditreports.dk/2021/06/04/untitled-reusable-block-2/",
+  "old_path": "/2021/06/04/untitled-reusable-block-2/",
+  "suggested_new_route": "",
+  "content_length": 1004,
+  "asset_urls": [],
+  "image_urls": [],
+  "asset_refs": [],
+  "excerpt": "",
+  "metas": {
+    "apvc_active_counter": [
+      "Yes"
+    ],
+    "count_start_from": [
+      ""
+    ],
+    "widget_label": [
+      ""
+    ]
+  },
+  "raw_html": "<!-- wp:ugb/icon-list {\"columns\":1,\"uniqueClass\":\"ugb-25a9c63\",\"contentAlign\":\"left\"} -->\n<div class=\"wp-block-ugb-icon-list ugb-icon-list ugb-25a9c63 ugb-icon-list--v2 ugb-icon--icon-check ugb-main-block\" id=\"\"><style>.ugb-25a9c63 li{--icon-size:20px;margin-bottom:16px !important}.ugb-25a9c63 li::before{height:20px !important;width:20px !important;background-image:url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkwIDE5MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTczLjggMjguNEw2MC40IDE0MS44IDE1LjcgOTcuMiA1LjEgMTA3LjggNjAuNCAxNjNsMTI0LTEyNC0xMC42LTEwLjZ6Ij48L3BhdGg+PC9zdmc+')}.ugb-25a9c63 li ul{margin-bottom:16px !important}.ugb-25a9c63.ugb-icon-list ul{columns:1}.ugb-25a9c63 .ugb-inner-block{text-align:left}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><ul><li>Account information</li><li>Introduction to the system</li><li>Data Import</li></ul></div></div></div>\n<!-- /wp:ugb/icon-list -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+  "localized_html": "<!-- wp:ugb/icon-list {\"columns\":1,\"uniqueClass\":\"ugb-25a9c63\",\"contentAlign\":\"left\"} -->\n<div class=\"wp-block-ugb-icon-list ugb-icon-list ugb-25a9c63 ugb-icon-list--v2 ugb-icon--icon-check ugb-main-block\" id=\"\"><style>.ugb-25a9c63 li{--icon-size:20px;margin-bottom:16px !important}.ugb-25a9c63 li::before{height:20px !important;width:20px !important;background-image:url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkwIDE5MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTczLjggMjguNEw2MC40IDE0MS44IDE1LjcgOTcuMiA1LjEgMTA3LjggNjAuNCAxNjNsMTI0LTEyNC0xMC42LTEwLjZ6Ij48L3BhdGg+PC9zdmc+')}.ugb-25a9c63 li ul{margin-bottom:16px !important}.ugb-25a9c63.ugb-icon-list ul{columns:1}.ugb-25a9c63 .ugb-inner-block{text-align:left}</style><div class=\"ugb-inner-block\"><div class=\"ugb-block-content\"><ul><li>Account information</li><li>Introduction to the system</li><li>Data Import</li></ul></div></div></div>\n<!-- /wp:ugb/icon-list -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+  "markdown": "- Account information\n- Introduction to the system\n- Data Import"
+}
