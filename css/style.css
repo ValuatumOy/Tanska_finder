@@ -648,6 +648,8 @@ body::before {
 }
 
 .hero-search {
+  position: relative;
+  z-index: 3;
   margin-bottom: 2rem;
   max-width: 680px;
   opacity: 0;
@@ -656,6 +658,8 @@ body::before {
 }
 
 .hero-actions {
+  position: relative;
+  z-index: 2;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -740,6 +744,9 @@ body::before {
    7. SEARCH BAR
 ===================================================== */
 .search-bar-form {
+  --search-dropdown-offset: 0.55rem;
+  --search-dropdown-height: 4.25rem;
+  position: relative;
   width: 100%;
 }
 
@@ -794,6 +801,58 @@ body::before {
 }
 
 .search-btn:hover { background: var(--blue-deep); }
+
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + var(--search-dropdown-offset));
+  left: 0;
+  right: 0;
+  z-index: 30;
+  min-height: var(--search-dropdown-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border: 1px solid var(--gray-light);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.search-dropdown[hidden] {
+  display: none;
+}
+
+.search-dropdown-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4.25rem;
+}
+
+.search-dropdown-spinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid rgba(29,111,216,0.18);
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: search-spinner 0.75s linear infinite;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes search-spinner {
+  to { transform: rotate(360deg); }
+}
 
 /* Search on dark background */
 .search-bar--dark {
