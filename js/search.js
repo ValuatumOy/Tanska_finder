@@ -112,6 +112,67 @@
         return `${COMPANY_BASE_URL}${encodeURIComponent(result.followedModelId)}/${encodeURIComponent(result.nameSlug)}/`;
     }
 
+    function buildResultLink(result, index, dropdownId) {
+        const link = document.createElement('a');
+        link.className = 'search-dropdown-link';
+        link.href = buildCompanyUrl(result);
+        link.id = `${dropdownId}-result-${index}`;
+        link.setAttribute('role', 'option');
+        link.setAttribute('aria-selected', 'false');
+        link.tabIndex = -1;
+
+        const company = document.createElement('span');
+        company.className = 'search-dropdown-company';
+        company.textContent = result.companyName;
+
+        const meta = document.createElement('span');
+        meta.className = 'search-dropdown-meta';
+        const companyCode = formatCompanyCode(result.companyCode);
+        meta.textContent = companyCode ? `CVR: ${companyCode}` : 'Company profile';
+
+        link.append(company, meta);
+        return link;
+    }
+
+    function buildBuyResultButton(result, index, dropdownId) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'search-dropdown-link';
+        button.id = `${dropdownId}-result-${index}`;
+        button.setAttribute('role', 'option');
+        button.setAttribute('aria-selected', 'false');
+        button.tabIndex = -1;
+
+        const companyCode = formatCompanyCode(result.companyCode);
+        button.dataset.companyName = result.companyName;
+        button.dataset.businessId = companyCode;
+        button.dataset.fid = result.followedModelId;
+
+        const company = document.createElement('span');
+        company.className = 'search-dropdown-company';
+        company.textContent = result.companyName;
+
+        const meta = document.createElement('span');
+        meta.className = 'search-dropdown-meta';
+        meta.textContent = companyCode
+            ? `CVR: ${companyCode} · Buy AI Credit Report — €3`
+            : 'Buy AI Credit Report — €3';
+
+        button.append(company, meta);
+
+        button.addEventListener('click', () => {
+            if (window.CRCheckout && typeof window.CRCheckout.open === 'function') {
+                window.CRCheckout.open({
+                    companyName: button.dataset.companyName,
+                    businessId: button.dataset.businessId,
+                    fid: button.dataset.fid,
+                });
+            }
+        });
+
+        return button;
+    }
+
     function getResultLinks(dropdown) {
         return Array.from(dropdown.querySelectorAll('.search-dropdown-link'));
     }
@@ -145,7 +206,7 @@
         setExpanded(input, dropdown, true);
     }
 
-    function renderResults(input, dropdown, state, results) {
+    function renderResults(input, dropdown, state, results, isOrderMode) {
         clearDropdown(dropdown);
         state.activeResultIndex = -1;
 
@@ -160,26 +221,10 @@
         results.forEach((result, index) => {
             const item = document.createElement('li');
             item.className = 'search-dropdown-item';
-
-            const link = document.createElement('a');
-            link.className = 'search-dropdown-link';
-            link.href = buildCompanyUrl(result);
-            link.id = `${dropdown.id}-result-${index}`;
-            link.setAttribute('role', 'option');
-            link.setAttribute('aria-selected', 'false');
-            link.tabIndex = -1;
-
-            const company = document.createElement('span');
-            company.className = 'search-dropdown-company';
-            company.textContent = result.companyName;
-
-            const meta = document.createElement('span');
-            meta.className = 'search-dropdown-meta';
-            const companyCode = formatCompanyCode(result.companyCode);
-            meta.textContent = companyCode ? `CVR: ${companyCode}` : 'Company profile';
-
-            link.append(company, meta);
-            item.appendChild(link);
+            const resultEl = isOrderMode
+                ? buildBuyResultButton(result, index, dropdown.id)
+                : buildResultLink(result, index, dropdown.id);
+            item.appendChild(resultEl);
             list.appendChild(item);
         });
 
@@ -221,7 +266,7 @@
         return form.contains(document.activeElement);
     }
 
-    function scheduleSearch(form, input, dropdown, state) {
+    function scheduleSearch(form, input, dropdown, state, isOrderMode) {
         const query = input.value.trim();
         clearPendingSearch(state);
         abortActiveRequest(state);
@@ -255,7 +300,7 @@
                 state.latestQuery = searchQuery;
                 state.latestResults = results.slice(0, MAX_RESULTS);
                 if (shouldRenderForCurrentFocus(form)) {
-                    renderResults(input, dropdown, state, state.latestResults);
+                    renderResults(input, dropdown, state, state.latestResults, isOrderMode);
                 }
             } catch (error) {
                 if (controller.signal.aborted || requestId !== state.requestSeq) return;
@@ -280,6 +325,8 @@
     function initSearchForm(form, index) {
         const input = form.querySelector('.search-input');
         if (!input) return;
+
+        const isOrderMode = form.dataset.searchAction === 'order';
 
         const state = {
             debounceId: null,
@@ -316,7 +363,7 @@
         });
 
         input.addEventListener('input', () => {
-            scheduleSearch(form, input, dropdown, state);
+            scheduleSearch(form, input, dropdown, state, isOrderMode);
         });
 
         input.addEventListener('focus', () => {
@@ -327,11 +374,11 @@
             }
 
             if (state.latestQuery === query && state.latestResults.length) {
-                renderResults(input, dropdown, state, state.latestResults);
+                renderResults(input, dropdown, state, state.latestResults, isOrderMode);
                 return;
             }
 
-            scheduleSearch(form, input, dropdown, state);
+            scheduleSearch(form, input, dropdown, state, isOrderMode);
         });
 
         input.addEventListener('keydown', (event) => {
@@ -348,7 +395,7 @@
             if (event.key === 'ArrowDown' && state.latestResults.length) {
                 event.preventDefault();
                 if (dropdown.hidden) {
-                    renderResults(input, dropdown, state, state.latestResults);
+                    renderResults(input, dropdown, state, state.latestResults, isOrderMode);
                 }
                 focusResult(input, dropdown, state, 0);
             }
