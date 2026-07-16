@@ -74,6 +74,7 @@
                 reportType: REPORT_TYPE,
                 fid: current.fid || '',
                 businessId: current.businessId || '',
+                fiscalYear: current.fiscalYear || '',
                 companyName: current.companyName || '',
                 lang: LANG,
                 cancelPath: window.location.pathname,
@@ -90,6 +91,16 @@
                 })
                 .then((data) => {
                     if (!data || !data.url) throw new Error('No checkout URL returned');
+                    try {
+                        if (typeof window.gtag === 'function') {
+                            window.gtag('event', 'ai_report_checkout_redirect', {
+                                report_type: payload.reportType,
+                                business_id: payload.businessId,
+                            });
+                        }
+                    } catch (e) {
+                        /* analytics must never break checkout */
+                    }
                     window.location.href = data.url;
                 })
                 .catch((err) => {

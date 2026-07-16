@@ -1,4 +1,5 @@
 const http = require('http');
+const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
@@ -19,10 +20,38 @@ const MIME = {
 
 const BASE = __dirname;
 const ASSETS_BASE = path.join(__dirname, '..', 'Tanska_sivujen_content_ja_media');
+const API_PROXY_HOST = 'sis0e9wy90.execute-api.eu-west-1.amazonaws.com';
 const PORT = 8080;
 
 http.createServer((req, res) => {
   let urlPath = req.url.split('?')[0];
+
+  if (urlPath.startsWith('/api/')) {
+    const proxyReq = https.request(
+      {
+        hostname: API_PROXY_HOST,
+        path: req.url,
+        method: req.method,
+        headers: {
+          ...req.headers,
+          host: API_PROXY_HOST
+        }
+      },
+      (proxyRes) => {
+        res.writeHead(proxyRes.statusCode || 502, proxyRes.headers);
+        proxyRes.pipe(res);
+      }
+    );
+
+    proxyReq.on('error', () => {
+      res.writeHead(502, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify({ error: 'API proxy failed' }));
+    });
+
+    req.pipe(proxyReq);
+    return;
+  }
+
   if (urlPath.endsWith('/')) urlPath += 'index.html';
 
   const ext = path.extname(urlPath).toLowerCase();

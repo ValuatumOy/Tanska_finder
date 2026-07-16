@@ -147,6 +147,7 @@
         button.dataset.companyName = result.companyName;
         button.dataset.businessId = companyCode;
         button.dataset.fid = result.followedModelId;
+        button.dataset.fiscalYear = result.fiscalYear || '';
 
         const company = document.createElement('span');
         company.className = 'search-dropdown-company';
@@ -166,6 +167,7 @@
                     companyName: button.dataset.companyName,
                     businessId: button.dataset.businessId,
                     fid: button.dataset.fid,
+                    fiscalYear: button.dataset.fiscalYear,
                 });
             }
         });

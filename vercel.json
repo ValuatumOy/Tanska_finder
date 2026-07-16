@@ -7,7 +7,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://REPLACE_WITH_APIGW_DOMAIN.execute-api.eu-west-1.amazonaws.com/api/:path*"
+      "destination": "https://sis0e9wy90.execute-api.eu-west-1.amazonaws.com/api/:path*"
     }
   ],
   "headers": [
