@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order AI Credit Report – CreditReports.dk</title>
+  <meta name="description" content="Search any Danish company and order its AI Credit Report — €3, one-off payment. The report is generated after payment and emailed to you as a PDF.">
+  <meta property="og:title" content="Order AI Credit Report – CreditReports.dk">
+  <meta property="og:description" content="Search a Danish company, pay €3, and receive an AI-assisted credit risk report by email.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://creditreports.dk/en/ai-credit-report/order/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+
+<div id="site-nav"></div>
+
+<main>
+
+  <!-- PAGE HERO WITH SEARCH -->
+  <section class="page-hero" aria-label="Order AI Credit Report">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-category">AI Credit Report · €3 per report</span>
+      <h1 class="page-hero-title">Order an AI Credit Report<br>for any Danish company</h1>
+      <p class="page-hero-sub">
+        Search a company below, confirm the order, and pay securely with Stripe. We generate the report after payment and email you the PDF.
+      </p>
+      <div style="max-width:560px;margin-top:2rem;">
+        <form class="search-bar-form" role="search" aria-label="Search a company to order its AI Credit Report"
+              data-search-action="order">
+          <div class="search-bar">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 14l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <input class="search-input" type="search" name="q"
+                   placeholder="Search by company name or CVR number"
+                   aria-label="Search Danish companies" autocomplete="off">
+            <button type="submit" class="search-btn">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="content-section" aria-labelledby="how-it-works-heading">
+    <div class="container">
+      <p class="section-eyebrow reveal" style="text-align:center;">How it works</p>
+      <h2 class="section-headline reveal" style="text-align:center;max-width:560px;margin-left:auto;margin-right:auto;" id="how-it-works-heading">
+        From search to PDF in three steps
+      </h2>
+      <div class="report-sections-grid reveal">
+        <div class="report-section-item">
+          <span class="report-section-num">01</span>
+          <div>
+            <p class="report-section-title">Search the company</p>
+            <p class="report-section-desc">Find any Danish company by name or CVR number using the search above.</p>
+          </div>
+        </div>
+        <div class="report-section-item">
+          <span class="report-section-num">02</span>
+          <div>
+            <p class="report-section-title">Pay €3 with Stripe</p>
+            <p class="report-section-desc">Confirm the company and complete a secure, one-off payment — no subscription or account required.</p>
+          </div>
+        </div>
+        <div class="report-section-item">
+          <span class="report-section-num">03</span>
+          <div>
+            <p class="report-section-title">Receive the PDF by email</p>
+            <p class="report-section-desc">The AI Credit Report is generated after payment and emailed to the address you enter at checkout.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<!-- ORDER CONFIRMATION MODAL -->
+<div class="modal-overlay" id="orderModalOverlay" aria-hidden="true"></div>
+<div class="modal-container" id="orderConfirmModal" role="dialog" aria-labelledby="orderConfirmTitle" aria-modal="true" tabindex="-1">
+  <div class="modal-header">
+    <div>
+      <span class="badge badge--blue" style="margin-bottom:0.5rem;display:inline-flex;">AI Credit Report</span>
+      <h2 class="modal-title" id="orderConfirmTitle">Buy AI Credit Report</h2>
+    </div>
+    <button type="button" class="modal-close" id="orderConfirmClose" aria-label="Close">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="modal-price-display">
+      <span class="modal-price-label">Company</span>
+      <span class="modal-price-value" id="orderConfirmCompany">—</span>
+    </div>
+    <div class="modal-price-display">
+      <span class="modal-price-label">Price</span>
+      <span class="modal-price-value">€3 / report</span>
+    </div>
+    <p style="font-size:var(--text-sm);color:var(--gray-steel);line-height:1.65;">
+      After payment, we generate an AI-assisted credit risk report for this company and email the PDF to the address you enter at checkout — typically within a few minutes.
+    </p>
+    <p class="modal-error" id="orderConfirmError" hidden
+       style="margin-top:1rem;padding:0.75rem 1rem;border-radius:var(--r-md);background:#fdecec;border:1px solid #f5c2c2;color:#a1262d;font-size:var(--text-xs);"></p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="modal-submit" id="orderConfirmSubmit">Continue to payment</button>
+  </div>
+</div>
+
+<script src="../../../js/main.js"></script>
+<script src="../../../js/nav.js"></script>
+<script src="../../../js/search.js"></script>
+<script src="../../../js/checkout.js"></script>
+</body>
+</html>

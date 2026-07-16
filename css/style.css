@@ -843,11 +843,21 @@ body::before {
 
 .search-dropdown-link {
   display: block;
+  width: 100%;
   padding: 0.85rem 1rem;
   border-bottom: 1px solid var(--color-border);
   color: var(--charcoal);
   outline: none;
   transition: background var(--trs), color var(--trs);
+}
+
+button.search-dropdown-link {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  font-family: var(--font);
+  cursor: pointer;
 }
 
 .search-dropdown-item:last-child .search-dropdown-link {
