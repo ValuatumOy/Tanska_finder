@@ -27,10 +27,13 @@ http.createServer((req, res) => {
   let urlPath = req.url.split('?')[0];
 
   if (urlPath.startsWith('/api/')) {
+    const proxyPath = urlPath === '/api/create-checkout/'
+      ? req.url.replace('/api/create-checkout/', '/api/create-checkout')
+      : req.url;
     const proxyReq = https.request(
       {
         hostname: API_PROXY_HOST,
-        path: req.url,
+        path: proxyPath,
         method: req.method,
         headers: {
           ...req.headers,

@@ -80,7 +80,7 @@
                 cancelPath: window.location.pathname,
             };
 
-            fetch('/api/create-checkout', {
+            fetch('/api/create-checkout/', {
                 method: 'POST',
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(payload),

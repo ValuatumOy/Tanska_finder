@@ -685,6 +685,11 @@ body::before {
   background: var(--navy);
 }
 
+.page-hero--search {
+  overflow: visible;
+  z-index: 3;
+}
+
 .page-hero-bg {
   position: absolute;
   inset: 0;
@@ -809,7 +814,7 @@ body::before {
   top: calc(100% + var(--search-dropdown-offset));
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 20;
   max-height: var(--search-dropdown-max-height);
   display: block;
   background: var(--white);
