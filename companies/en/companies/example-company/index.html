@@ -200,41 +200,103 @@
       <p class="section-eyebrow reveal">Standard product</p>
       <h2 class="prose-headline reveal" id="crr-heading">Credit Risk Report</h2>
       <div class="reveal">
-        <div class="report-cta-section">
-          <div class="report-cta-header">
-            <div class="report-cta-icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-                <path d="M14 2v6h6M8 13h6M8 17h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
+        <div class="report-cta-section report-cta-section--standard">
+          <div class="report-sales-grid">
             <div>
-              <h3 class="report-cta-title">Credit Risk Report</h3>
-              <p class="report-cta-subtitle">A structured report for basic credit risk assessment</p>
+              <div class="report-cta-header">
+                <div class="report-cta-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    <path d="M14 2v6h6M8 13h6M8 17h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="report-cta-title">Credit Risk Report</h3>
+                  <p class="report-cta-subtitle">A structured PDF for basic credit risk assessment</p>
+                </div>
+              </div>
+              <p class="report-cta-body">
+                Check a company's creditworthiness before extending credit. The Credit Risk Report combines financial statements, key ratios, credit score, credit rating, bankruptcy risk, and credit limit recommendation into an automatically generated PDF.
+              </p>
+              <ul class="report-features">
+                <li>Financial statements and key ratios</li>
+                <li>Credit score and credit rating</li>
+                <li>Bankruptcy risk assessment</li>
+                <li>Credit limit recommendation</li>
+                <li>Industry comparison</li>
+                <li>Automated analysis summary</li>
+              </ul>
+              <div class="report-cta-actions">
+                <a href="/assets/wordpress-media/2023/06/Credit_Risk_Report_Demo.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">View sample report</a>
+              </div>
+            </div>
+
+            <div class="report-preview-card" aria-hidden="true">
+              <div class="report-preview-sheet">
+                <div class="report-preview-bar"></div>
+                <div class="report-preview-title"></div>
+                <div class="report-preview-metrics">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="report-preview-chart"></div>
+                <div class="report-preview-lines">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <span class="report-preview-stamp">Sample PDF</span>
             </div>
           </div>
-          <p class="report-cta-body">
-            Check a company's creditworthiness before extending credit. The Credit Risk Report combines financial statements, key ratios, credit score, credit rating, bankruptcy risk, and credit limit recommendation into an automatically generated PDF.
-          </p>
-          <ul class="report-features">
-            <li>Financial statements and key ratios</li>
-            <li>Credit score and credit rating</li>
-            <li>Bankruptcy risk assessment</li>
-            <li>Credit limit recommendation</li>
-            <li>Industry comparison</li>
-            <li>Automated analysis summary</li>
-          </ul>
-          <div class="report-cta-actions">
-            <button class="btn btn-primary"
-                    data-order-type="standard-credit-risk-report"
-                    data-company-name="LOWENCO A/S"
-                    data-company-id="12345678">
-              Order Credit Risk Report
-            </button>
-            <a href="/assets/wordpress-media/2023/06/Credit_Risk_Report_Demo.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">View sample report</a>
+
+          <div class="standard-pricing-grid" aria-label="Credit Risk Report pricing options">
+            <article class="standard-pricing-card">
+              <p class="standard-pricing-label">Single report</p>
+              <h4 class="standard-pricing-title">1 report</h4>
+              <div class="standard-pricing-price"><span>&euro;1</span></div>
+              <p class="standard-pricing-note">One company-specific PDF report.</p>
+              <button class="btn btn-primary standard-pricing-button"
+                      data-order-type="standard-credit-risk-report"
+                      data-order-plan="single"
+                      data-order-price="&euro;1 / report"
+                      data-company-name="LOWENCO A/S"
+                      data-company-id="12345678">
+                Buy 1 report
+              </button>
+            </article>
+
+            <article class="standard-pricing-card">
+              <p class="standard-pricing-label">Bundle</p>
+              <h4 class="standard-pricing-title">3 reports</h4>
+              <div class="standard-pricing-price"><span>&euro;2</span></div>
+              <p class="standard-pricing-note">Three reports for quick checks across several companies.</p>
+              <button class="btn btn-primary standard-pricing-button"
+                      data-order-type="standard-credit-risk-report"
+                      data-order-plan="bundle"
+                      data-order-price="&euro;2 / 3 reports"
+                      data-company-name="LOWENCO A/S"
+                      data-company-id="12345678">
+                Buy 3 reports
+              </button>
+            </article>
+
+            <article class="standard-pricing-card standard-pricing-card--featured">
+              <div class="standard-pricing-ribbon">Recommended</div>
+              <p class="standard-pricing-label">Monthly access</p>
+              <h4 class="standard-pricing-title">System subscription</h4>
+              <div class="standard-pricing-price"><span>&euro;20</span><small>/ month</small></div>
+              <p class="standard-pricing-note">Continuous access to the system at launch pricing.</p>
+              <button class="btn btn-primary standard-pricing-button"
+                      data-order-type="standard-credit-risk-report"
+                      data-order-plan="monthly"
+                      data-order-price="&euro;20 / month"
+                      data-company-name="LOWENCO A/S"
+                      data-company-id="12345678">
+                Start monthly access
+              </button>
+            </article>
           </div>
+
           <p class="report-disclaimer">
-            Reports are intended to support credit risk assessment. Final credit decisions and further due diligence remain the user's responsibility.
+            Reports are intended to support credit risk assessment. Final credit decisions and further due diligence remain the user's responsibility. One-off purchases do not create a subscription.
           </p>
         </div>
       </div>
@@ -561,11 +623,11 @@
       </div>
       <div class="form-group">
         <label for="modalEmail" class="form-label">Your email <span class="optional">(required)</span></label>
-        <input type="email" id="modalEmail" class="form-input" placeholder="you@company.com" required>
+        <input type="email" id="modalEmail" class="form-input" placeholder="you@company.com" autocomplete="email" required>
       </div>
       <div class="form-group">
         <label for="modalBillingEmail" class="form-label">Billing email <span class="optional">(if different)</span></label>
-        <input type="email" id="modalBillingEmail" class="form-input" placeholder="billing@company.com">
+        <input type="email" id="modalBillingEmail" class="form-input" placeholder="billing@company.com" autocomplete="billing email">
       </div>
       <div class="form-group">
         <label for="modalMessage" class="form-label">Message <span class="optional">(optional)</span></label>

@@ -23,7 +23,7 @@
     <nav class="nav-links" aria-label="Main navigation">
 
       <div class="nav-item">
-        <a href="/en/product/" class="nav-link nav-link--has-dropdown${prodActive}">Products ${CHEVRON}</a>
+        <a href="/en/product/" class="nav-link nav-link--has-dropdown${prodActive}" aria-haspopup="true" aria-expanded="false">Products ${CHEVRON}</a>
         <div class="nav-dropdown" role="menu">
           <div class="nav-dropdown-inner">
           <a href="/en/product/" class="nav-dropdown-link" role="menuitem">All Products</a>
@@ -42,7 +42,7 @@
       <a href="${COMP}" class="nav-link">Company Search</a>
 
       <div class="nav-item">
-        <a href="/en/support/" class="nav-link nav-link--has-dropdown${suppActive}">Support ${CHEVRON}</a>
+        <a href="/en/support/" class="nav-link nav-link--has-dropdown${suppActive}" aria-haspopup="true" aria-expanded="false">Support ${CHEVRON}</a>
         <div class="nav-dropdown" role="menu">
           <div class="nav-dropdown-inner">
           <a href="/en/support/" class="nav-dropdown-link" role="menuitem">Support Hub</a>
@@ -63,29 +63,112 @@
       <a href="${LOGIN}" class="nav-login" target="_blank" rel="noopener">Login</a>
       <a href="${SIGNUP}" class="nav-cta">Create Account</a>
     </div>
-    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+    <button class="nav-hamburger" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="nav-mobile-menu" id="mobileMenu" aria-hidden="true">
-    <a href="/en/product/" class="nav-mobile-link">Products</a>
-    <a href="/en/products/credit-risk-tool/" class="nav-mobile-link" style="padding-left:1.5rem;font-size:0.9rem;">Credit Risk Tool</a>
-    <a href="/en/products/company-valuation-tool/" class="nav-mobile-link" style="padding-left:1.5rem;font-size:0.9rem;">Company Valuation Tool</a>
-    <a href="/en/products/credit-risk-assessment-methods/" class="nav-mobile-link" style="padding-left:1.5rem;font-size:0.9rem;">Assessment Methods</a>
-    <a href="/en/ai-credit-report/" class="nav-mobile-link" style="padding-left:1.5rem;font-size:0.9rem;">AI Credit Report</a>
-    <a href="/en/pricing/" class="nav-mobile-link">Pricing</a>
-    <a href="${COMP}" class="nav-mobile-link">Company Search</a>
-    <a href="/en/support/" class="nav-mobile-link">Support</a>
-    <a href="/en/support/get-started/" class="nav-mobile-link" style="padding-left:1.5rem;font-size:0.9rem;">Get Started</a>
-    <a href="/en/support/platform-tutorials/" class="nav-mobile-link" style="padding-left:1.5rem;font-size:0.9rem;">Platform Tutorials</a>
-    <a href="/en/support/credit-risk-faq/" class="nav-mobile-link" style="padding-left:1.5rem;font-size:0.9rem;">FAQ</a>
-    <a href="/en/support/credit-risk-manual/" class="nav-mobile-link" style="padding-left:1.5rem;font-size:0.9rem;">Manual</a>
-    <a href="/en/support/credit-risk-model-overview/" class="nav-mobile-link" style="padding-left:1.5rem;font-size:0.9rem;">Model Overview</a>
-    <a href="/en/contact/" class="nav-mobile-link">Contact</a>
-    <a href="${LOGIN}" class="nav-mobile-link" target="_blank" rel="noopener">Login</a>
-    <a href="${SIGNUP}" class="nav-mobile-link nav-mobile-cta">Create Account</a>
+    <nav class="nav-mobile-nav" aria-label="Mobile navigation">
+      <ul class="nav-mobile-list">
+        <li class="nav-mobile-group">
+          <a href="/en/product/" class="nav-mobile-link">Products</a>
+          <ul class="nav-mobile-sublist">
+            <li><a href="/en/products/credit-risk-tool/" class="nav-mobile-link nav-mobile-link--sub">Credit Risk Tool</a></li>
+            <li><a href="/en/products/company-valuation-tool/" class="nav-mobile-link nav-mobile-link--sub">Company Valuation Tool</a></li>
+            <li><a href="/en/products/credit-risk-assessment-methods/" class="nav-mobile-link nav-mobile-link--sub">Assessment Methods</a></li>
+            <li><a href="/en/ai-credit-report/" class="nav-mobile-link nav-mobile-link--sub">AI Credit Report</a></li>
+          </ul>
+        </li>
+        <li><a href="/en/pricing/" class="nav-mobile-link">Pricing</a></li>
+        <li><a href="${COMP}" class="nav-mobile-link">Company Search</a></li>
+        <li class="nav-mobile-group">
+          <a href="/en/support/" class="nav-mobile-link">Support</a>
+          <ul class="nav-mobile-sublist">
+            <li><a href="/en/support/get-started/" class="nav-mobile-link nav-mobile-link--sub">Get Started</a></li>
+            <li><a href="/en/support/platform-tutorials/" class="nav-mobile-link nav-mobile-link--sub">Platform Tutorials</a></li>
+            <li><a href="/en/support/credit-risk-faq/" class="nav-mobile-link nav-mobile-link--sub">FAQ</a></li>
+            <li><a href="/en/support/credit-risk-manual/" class="nav-mobile-link nav-mobile-link--sub">Manual</a></li>
+            <li><a href="/en/support/credit-risk-model-overview/" class="nav-mobile-link nav-mobile-link--sub">Model Overview</a></li>
+          </ul>
+        </li>
+        <li><a href="/en/contact/" class="nav-mobile-link">Contact</a></li>
+        <li><a href="${LOGIN}" class="nav-mobile-link" target="_blank" rel="noopener">Login</a></li>
+        <li><a href="${SIGNUP}" class="nav-mobile-link nav-mobile-cta">Create Account</a></li>
+      </ul>
+    </nav>
   </div>
 </header>`;
+  }
+
+  function initNav() {
+    const nav = document.getElementById('nav');
+    if (!nav || nav.dataset.navInitialized === 'true') return;
+    nav.dataset.navInitialized = 'true';
+
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 48);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    const hamburger = nav.querySelector('.nav-hamburger');
+    const mobileMenu = nav.querySelector('#mobileMenu');
+    const setMenuOpen = (open) => {
+      if (!hamburger || !mobileMenu) return;
+      mobileMenu.classList.toggle('open', open);
+      mobileMenu.setAttribute('aria-hidden', String(!open));
+      hamburger.setAttribute('aria-expanded', String(open));
+      hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      document.body.classList.toggle('nav-menu-open', open);
+    };
+
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', (event) => {
+        event.stopPropagation();
+        setMenuOpen(!mobileMenu.classList.contains('open'));
+      });
+
+      mobileMenu.addEventListener('click', (event) => {
+        if (event.target.closest('a')) setMenuOpen(false);
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!nav.contains(event.target)) setMenuOpen(false);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setMenuOpen(false);
+      });
+    }
+
+    nav.querySelectorAll('.nav-item').forEach((item) => {
+      let closeTimer;
+      const trigger = item.querySelector('.nav-link--has-dropdown');
+      const setDropdownOpen = (open) => {
+        item.classList.toggle('open', open);
+        if (trigger) trigger.setAttribute('aria-expanded', String(open));
+      };
+
+      item.addEventListener('mouseenter', () => {
+        if (window.matchMedia('(hover: hover)').matches) {
+          clearTimeout(closeTimer);
+          setDropdownOpen(true);
+        }
+      });
+
+      item.addEventListener('mouseleave', () => {
+        if (window.matchMedia('(hover: hover)').matches) {
+          closeTimer = setTimeout(() => setDropdownOpen(false), 120);
+        }
+      });
+
+      if (trigger) {
+        trigger.addEventListener('click', (event) => {
+          if (window.matchMedia('(hover: none), (pointer: coarse)').matches) {
+            event.preventDefault();
+            setDropdownOpen(!item.classList.contains('open'));
+          }
+        });
+      }
+    });
   }
 
   function buildFooter() {
@@ -144,7 +227,9 @@
 
     const footerSlot = document.getElementById('site-footer');
     if (footerSlot) footerSlot.outerHTML = buildFooter();
+
+    initNav();
   });
 
-  window.CRNav = { buildNav, buildFooter };
+  window.CRNav = { buildNav, buildFooter, initNav };
 })();
