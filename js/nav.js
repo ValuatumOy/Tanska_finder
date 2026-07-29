@@ -1,69 +1,167 @@
 (function () {
   'use strict';
 
-  const BASE   = '/en/';
-  const COMP   = 'https://companies.creditreports.dk/en/';
-  const LOGIN  = 'https://platform.creditreports.dk';
+  const LOGIN = 'https://platform.creditreports.dk';
   const SIGNUP = 'https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true';
-
+  const COMPANY_SEARCH = 'https://companies.creditreports.dk/en/';
   const CHEVRON = `<svg class="nav-chevron" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+  const COPY = {
+    en: {
+      products: 'Products',
+      allProducts: 'All Products',
+      creditRiskTool: 'Credit Risk Tool',
+      valuationTool: 'Company Valuation Tool',
+      assessmentMethods: 'Assessment Methods',
+      pricing: 'Pricing',
+      aiReport: 'AI Credit Report',
+      companySearch: 'Company Search',
+      support: 'Support',
+      supportHub: 'Support Hub',
+      getStarted: 'Get Started',
+      tutorials: 'Platform Tutorials',
+      faq: 'Credit Risk FAQ',
+      management: 'Credit Risk Management',
+      manual: 'Credit Risk Manual',
+      modelOverview: 'Model Overview',
+      contact: 'Contact',
+      login: 'Login',
+      createAccount: 'Create Account',
+      openMenu: 'Open menu',
+      closeMenu: 'Close menu',
+      footerTagline: 'Credit risk reports and financial analysis for Danish companies.',
+      poweredBy: 'Powered by Valuatum',
+      searchDanish: 'Search Danish companies',
+      directory: 'Company directory',
+      supportLabel: 'Support',
+      companyLabel: 'Company',
+      contactUs: 'Contact us',
+      privacy: 'Privacy Policy',
+      rights: 'All rights reserved.'
+    },
+    da: {
+      products: 'Produkter',
+      allProducts: 'Alle produkter',
+      creditRiskTool: 'Credit Risk Tool',
+      valuationTool: 'Company Valuation Tool',
+      assessmentMethods: 'Kreditrisikometoder',
+      pricing: 'Priser',
+      aiReport: 'AI Credit Report',
+      companySearch: 'Virksomhedssøgning',
+      support: 'Support',
+      supportHub: 'Support hub',
+      getStarted: 'Kom i gang',
+      tutorials: 'Platformsguides',
+      faq: 'Kreditrisiko FAQ',
+      management: 'Kreditrisikostyring',
+      manual: 'Manual',
+      modelOverview: 'Modeloverblik',
+      contact: 'Kontakt',
+      login: 'Login',
+      createAccount: 'Opret konto',
+      openMenu: 'Åbn menu',
+      closeMenu: 'Luk menu',
+      footerTagline: 'Kreditrapporter og finansiel analyse for danske virksomheder.',
+      poweredBy: 'Drevet af Valuatum',
+      searchDanish: 'Søg danske virksomheder',
+      directory: 'Virksomhedsregister',
+      supportLabel: 'Support',
+      companyLabel: 'Virksomhed',
+      contactUs: 'Kontakt os',
+      privacy: 'Privatlivspolitik',
+      rights: 'Alle rettigheder forbeholdes.'
+    }
+  };
+
+  function localeFromPath(path) {
+    return path === '/da' || path.startsWith('/da/') ? 'da' : 'en';
+  }
+
+  function pagePath(locale, suffix = '') {
+    return `/${locale}/${suffix}`.replace(/\/{2,}/g, '/');
+  }
+
+  function alternatePath(path, nextLocale) {
+    const normalized = path.endsWith('/') ? path : `${path}/`;
+    if (nextLocale === 'da') {
+      if (normalized.startsWith('/en/')) return normalized.replace('/en/', '/da/');
+      if (normalized === '/') return '/da/';
+      return normalized.startsWith('/da/') ? normalized : `/da${normalized}`;
+    }
+    if (normalized.startsWith('/da/')) return normalized.replace('/da/', '/en/');
+    if (normalized === '/') return '/en/';
+    return normalized.startsWith('/en/') ? normalized : `/en${normalized}`;
+  }
+
+  function supportPath(locale, suffix = '') {
+    if (locale === 'da') return pagePath('da', suffix ? `support/${suffix}` : 'support/kreditrisiko/');
+    return pagePath('en', `support/${suffix}`);
+  }
+
+  function riskManagementPath(locale) {
+    return locale === 'da' ? supportPath('da', 'kreditrisiko/') : supportPath('en', 'credit-risk-management/');
+  }
 
   function buildNav() {
     const path = window.location.pathname;
-    const prodActive = path.startsWith('/en/product') ? ' nav-link--active' : '';
-    const suppActive = path.startsWith('/en/support') ? ' nav-link--active' : '';
+    const locale = localeFromPath(path);
+    const text = COPY[locale];
+    const otherLocale = locale === 'da' ? 'en' : 'da';
+    const otherPath = alternatePath(path, otherLocale);
+    const productActive = path.startsWith(`/${locale}/product`) ? ' nav-link--active' : '';
+    const supportActive = path.startsWith(`/${locale}/support`) ? ' nav-link--active' : '';
 
     return `
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="${BASE}" class="nav-logo" aria-label="CreditReports.dk home">
+    <a href="${pagePath(locale)}" class="nav-logo" aria-label="CreditReports.dk home">
       <div class="nav-logo-icon" aria-hidden="true">CR</div>
       <span class="nav-logo-wordmark">CreditReports.dk</span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
-
       <div class="nav-item">
-        <a href="/en/product/" class="nav-link nav-link--has-dropdown${prodActive}" aria-haspopup="true" aria-expanded="false">Products ${CHEVRON}</a>
+        <a href="${pagePath(locale, 'product/')}" class="nav-link nav-link--has-dropdown${productActive}" aria-haspopup="true" aria-expanded="false">${text.products} ${CHEVRON}</a>
         <div class="nav-dropdown" role="menu">
           <div class="nav-dropdown-inner">
-          <a href="/en/product/" class="nav-dropdown-link" role="menuitem">All Products</a>
-          <div class="nav-dropdown-divider"></div>
-          <a href="/en/products/credit-risk-tool/" class="nav-dropdown-link" role="menuitem">Credit Risk Tool</a>
-          <a href="/en/products/company-valuation-tool/" class="nav-dropdown-link" role="menuitem">Company Valuation Tool</a>
-          <a href="/en/products/credit-risk-assessment-methods/" class="nav-dropdown-link" role="menuitem">Assessment Methods</a>
-          <div class="nav-dropdown-divider"></div>
-          <a href="/en/ai-credit-report/" class="nav-dropdown-link" role="menuitem" style="color:var(--blue);font-weight:500;">✦ AI Credit Report</a>
+            <a href="${pagePath(locale, 'product/')}" class="nav-dropdown-link" role="menuitem">${text.allProducts}</a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="${pagePath(locale, 'products/credit-risk-tool/')}" class="nav-dropdown-link" role="menuitem">${text.creditRiskTool}</a>
+            <a href="${pagePath(locale, 'products/company-valuation-tool/')}" class="nav-dropdown-link" role="menuitem">${text.valuationTool}</a>
+            <a href="${pagePath(locale, 'products/credit-risk-assessment-methods/')}" class="nav-dropdown-link" role="menuitem">${text.assessmentMethods}</a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="${pagePath(locale, 'ai-credit-report/')}" class="nav-dropdown-link" role="menuitem" style="color:var(--blue);font-weight:500;">${text.aiReport}</a>
           </div>
         </div>
       </div>
 
-      <a href="/en/pricing/" class="nav-link${path.startsWith('/en/pricing') ? ' nav-link--active' : ''}">Pricing</a>
-      <a href="/en/ai-credit-report/" class="nav-link${path.startsWith('/en/ai-credit-report') ? ' nav-link--active' : ''}">AI Credit Report</a>
-      <a href="${COMP}" class="nav-link">Company Search</a>
+      <a href="${pagePath(locale, 'pricing/')}" class="nav-link${path.startsWith(`/${locale}/pricing`) ? ' nav-link--active' : ''}">${text.pricing}</a>
+      <a href="${pagePath(locale, 'ai-credit-report/')}" class="nav-link${path.startsWith(`/${locale}/ai-credit-report`) ? ' nav-link--active' : ''}">${text.aiReport}</a>
+      <a href="${COMPANY_SEARCH}" class="nav-link">${text.companySearch}</a>
 
       <div class="nav-item">
-        <a href="/en/support/" class="nav-link nav-link--has-dropdown${suppActive}" aria-haspopup="true" aria-expanded="false">Support ${CHEVRON}</a>
+        <a href="${supportPath(locale)}" class="nav-link nav-link--has-dropdown${supportActive}" aria-haspopup="true" aria-expanded="false">${text.support} ${CHEVRON}</a>
         <div class="nav-dropdown" role="menu">
           <div class="nav-dropdown-inner">
-          <a href="/en/support/" class="nav-dropdown-link" role="menuitem">Support Hub</a>
-          <div class="nav-dropdown-divider"></div>
-          <a href="/en/support/get-started/" class="nav-dropdown-link" role="menuitem">Get Started</a>
-          <a href="/en/support/platform-tutorials/" class="nav-dropdown-link" role="menuitem">Platform Tutorials</a>
-          <a href="/en/support/credit-risk-faq/" class="nav-dropdown-link" role="menuitem">Credit Risk FAQ</a>
-          <a href="/en/support/credit-risk-management/" class="nav-dropdown-link" role="menuitem">Credit Risk Management</a>
-          <a href="/en/support/credit-risk-manual/" class="nav-dropdown-link" role="menuitem">Credit Risk Manual</a>
-          <a href="/en/support/credit-risk-model-overview/" class="nav-dropdown-link" role="menuitem">Model Overview</a>
+            <a href="${supportPath(locale)}" class="nav-dropdown-link" role="menuitem">${text.supportHub}</a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="${supportPath('en', 'get-started/')}" class="nav-dropdown-link" role="menuitem">${text.getStarted}</a>
+            <a href="${supportPath('en', 'platform-tutorials/')}" class="nav-dropdown-link" role="menuitem">${text.tutorials}</a>
+            <a href="${supportPath('en', 'credit-risk-faq/')}" class="nav-dropdown-link" role="menuitem">${text.faq}</a>
+            <a href="${riskManagementPath(locale)}" class="nav-dropdown-link" role="menuitem">${text.management}</a>
+            <a href="${supportPath('en', 'credit-risk-manual/')}" class="nav-dropdown-link" role="menuitem">${text.manual}</a>
+            <a href="${supportPath('en', 'credit-risk-model-overview/')}" class="nav-dropdown-link" role="menuitem">${text.modelOverview}</a>
           </div>
         </div>
       </div>
 
-      <a href="/en/contact/" class="nav-link${path.startsWith('/en/contact') ? ' nav-link--active' : ''}">Contact</a>
+      <a href="${pagePath(locale, 'contact/')}" class="nav-link${path.startsWith(`/${locale}/contact`) ? ' nav-link--active' : ''}">${text.contact}</a>
     </nav>
     <div class="nav-actions">
-      <a href="${LOGIN}" class="nav-login" target="_blank" rel="noopener">Login</a>
-      <a href="${SIGNUP}" class="nav-cta">Create Account</a>
+      <a href="${LOGIN}" class="nav-login" target="_blank" rel="noopener">${text.login}</a>
+      <a href="${pagePath(locale, 'create-account/')}" class="nav-cta">${text.createAccount}</a>
+      <a href="${otherPath}" class="nav-lang" hreflang="${otherLocale}" aria-label="${otherLocale === 'da' ? 'Dansk version' : 'English version'}">${otherLocale.toUpperCase()}</a>
     </div>
-    <button class="nav-hamburger" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+    <button class="nav-hamburger" type="button" aria-label="${text.openMenu}" aria-controls="mobileMenu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -71,29 +169,31 @@
     <nav class="nav-mobile-nav" aria-label="Mobile navigation">
       <ul class="nav-mobile-list">
         <li class="nav-mobile-group">
-          <a href="/en/product/" class="nav-mobile-link">Products</a>
+          <a href="${pagePath(locale, 'product/')}" class="nav-mobile-link">${text.products}</a>
           <ul class="nav-mobile-sublist">
-            <li><a href="/en/products/credit-risk-tool/" class="nav-mobile-link nav-mobile-link--sub">Credit Risk Tool</a></li>
-            <li><a href="/en/products/company-valuation-tool/" class="nav-mobile-link nav-mobile-link--sub">Company Valuation Tool</a></li>
-            <li><a href="/en/products/credit-risk-assessment-methods/" class="nav-mobile-link nav-mobile-link--sub">Assessment Methods</a></li>
-            <li><a href="/en/ai-credit-report/" class="nav-mobile-link nav-mobile-link--sub">AI Credit Report</a></li>
+            <li><a href="${pagePath(locale, 'products/credit-risk-tool/')}" class="nav-mobile-link nav-mobile-link--sub">${text.creditRiskTool}</a></li>
+            <li><a href="${pagePath(locale, 'products/company-valuation-tool/')}" class="nav-mobile-link nav-mobile-link--sub">${text.valuationTool}</a></li>
+            <li><a href="${pagePath(locale, 'products/credit-risk-assessment-methods/')}" class="nav-mobile-link nav-mobile-link--sub">${text.assessmentMethods}</a></li>
+            <li><a href="${pagePath(locale, 'ai-credit-report/')}" class="nav-mobile-link nav-mobile-link--sub">${text.aiReport}</a></li>
           </ul>
         </li>
-        <li><a href="/en/pricing/" class="nav-mobile-link">Pricing</a></li>
-        <li><a href="${COMP}" class="nav-mobile-link">Company Search</a></li>
+        <li><a href="${pagePath(locale, 'pricing/')}" class="nav-mobile-link">${text.pricing}</a></li>
+        <li><a href="${COMPANY_SEARCH}" class="nav-mobile-link">${text.companySearch}</a></li>
         <li class="nav-mobile-group">
-          <a href="/en/support/" class="nav-mobile-link">Support</a>
+          <a href="${supportPath(locale)}" class="nav-mobile-link">${text.support}</a>
           <ul class="nav-mobile-sublist">
-            <li><a href="/en/support/get-started/" class="nav-mobile-link nav-mobile-link--sub">Get Started</a></li>
-            <li><a href="/en/support/platform-tutorials/" class="nav-mobile-link nav-mobile-link--sub">Platform Tutorials</a></li>
-            <li><a href="/en/support/credit-risk-faq/" class="nav-mobile-link nav-mobile-link--sub">FAQ</a></li>
-            <li><a href="/en/support/credit-risk-manual/" class="nav-mobile-link nav-mobile-link--sub">Manual</a></li>
-            <li><a href="/en/support/credit-risk-model-overview/" class="nav-mobile-link nav-mobile-link--sub">Model Overview</a></li>
+            <li><a href="${supportPath('en', 'get-started/')}" class="nav-mobile-link nav-mobile-link--sub">${text.getStarted}</a></li>
+            <li><a href="${supportPath('en', 'platform-tutorials/')}" class="nav-mobile-link nav-mobile-link--sub">${text.tutorials}</a></li>
+            <li><a href="${supportPath('en', 'credit-risk-faq/')}" class="nav-mobile-link nav-mobile-link--sub">${text.faq}</a></li>
+            <li><a href="${riskManagementPath(locale)}" class="nav-mobile-link nav-mobile-link--sub">${text.management}</a></li>
+            <li><a href="${supportPath('en', 'credit-risk-manual/')}" class="nav-mobile-link nav-mobile-link--sub">${text.manual}</a></li>
+            <li><a href="${supportPath('en', 'credit-risk-model-overview/')}" class="nav-mobile-link nav-mobile-link--sub">${text.modelOverview}</a></li>
           </ul>
         </li>
-        <li><a href="/en/contact/" class="nav-mobile-link">Contact</a></li>
-        <li><a href="${LOGIN}" class="nav-mobile-link" target="_blank" rel="noopener">Login</a></li>
-        <li><a href="${SIGNUP}" class="nav-mobile-link nav-mobile-cta">Create Account</a></li>
+        <li><a href="${pagePath(locale, 'contact/')}" class="nav-mobile-link">${text.contact}</a></li>
+        <li><a href="${otherPath}" class="nav-mobile-link">${otherLocale.toUpperCase()}</a></li>
+        <li><a href="${LOGIN}" class="nav-mobile-link" target="_blank" rel="noopener">${text.login}</a></li>
+        <li><a href="${pagePath(locale, 'create-account/')}" class="nav-mobile-link nav-mobile-cta">${text.createAccount}</a></li>
       </ul>
     </nav>
   </div>
@@ -104,6 +204,7 @@
     const nav = document.getElementById('nav');
     if (!nav || nav.dataset.navInitialized === 'true') return;
     nav.dataset.navInitialized = 'true';
+    const text = COPY[localeFromPath(window.location.pathname)];
 
     const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 48);
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -116,7 +217,7 @@
       mobileMenu.classList.toggle('open', open);
       mobileMenu.setAttribute('aria-hidden', String(!open));
       hamburger.setAttribute('aria-expanded', String(open));
-      hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      hamburger.setAttribute('aria-label', open ? text.closeMenu : text.openMenu);
       document.body.classList.toggle('nav-menu-open', open);
     };
 
@@ -172,50 +273,53 @@
   }
 
   function buildFooter() {
+    const locale = localeFromPath(window.location.pathname);
+    const text = COPY[locale];
+
     return `
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
         <span class="footer-wordmark">CreditReports.dk</span>
-        <p class="footer-tagline">Credit risk reports and financial analysis for Danish companies.</p>
-        <a href="https://valuatum.com" class="footer-valuatum-link" target="_blank" rel="noopener">Powered by Valuatum ↗</a>
+        <p class="footer-tagline">${text.footerTagline}</p>
+        <a href="https://valuatum.com" class="footer-valuatum-link" target="_blank" rel="noopener">${text.poweredBy}</a>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
         <div class="footer-col">
-          <span class="footer-col-label">Products</span>
-          <a href="/en/products/credit-risk-tool/" class="footer-link">Credit Risk Tool</a>
-          <a href="/en/products/company-valuation-tool/" class="footer-link">Company Valuation Tool</a>
-          <a href="/en/ai-credit-report/" class="footer-link">AI Credit Report</a>
-          <a href="/en/pricing/" class="footer-link">Pricing</a>
+          <span class="footer-col-label">${text.products}</span>
+          <a href="${pagePath(locale, 'products/credit-risk-tool/')}" class="footer-link">${text.creditRiskTool}</a>
+          <a href="${pagePath(locale, 'products/company-valuation-tool/')}" class="footer-link">${text.valuationTool}</a>
+          <a href="${pagePath(locale, 'ai-credit-report/')}" class="footer-link">${text.aiReport}</a>
+          <a href="${pagePath(locale, 'pricing/')}" class="footer-link">${text.pricing}</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-label">Company Search</span>
-          <a href="https://companies.creditreports.dk/en/" class="footer-link">Search Danish companies</a>
-          <a href="https://companies.creditreports.dk/en/" class="footer-link">Company directory</a>
+          <span class="footer-col-label">${text.companySearch}</span>
+          <a href="${COMPANY_SEARCH}" class="footer-link">${text.searchDanish}</a>
+          <a href="${COMPANY_SEARCH}" class="footer-link">${text.directory}</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-label">Support</span>
-          <a href="/en/support/" class="footer-link">Support hub</a>
-          <a href="/en/support/get-started/" class="footer-link">Get started</a>
-          <a href="/en/support/platform-tutorials/" class="footer-link">Platform tutorials</a>
-          <a href="/en/support/credit-risk-faq/" class="footer-link">Credit risk FAQ</a>
-          <a href="/en/support/credit-risk-manual/" class="footer-link">Manual</a>
-          <a href="/en/support/credit-risk-model-overview/" class="footer-link">Model overview</a>
+          <span class="footer-col-label">${text.supportLabel}</span>
+          <a href="${supportPath(locale)}" class="footer-link">${text.supportHub}</a>
+          <a href="${supportPath('en', 'get-started/')}" class="footer-link">${text.getStarted}</a>
+          <a href="${supportPath('en', 'platform-tutorials/')}" class="footer-link">${text.tutorials}</a>
+          <a href="${supportPath('en', 'credit-risk-faq/')}" class="footer-link">${text.faq}</a>
+          <a href="${supportPath('en', 'credit-risk-manual/')}" class="footer-link">${text.manual}</a>
+          <a href="${supportPath('en', 'credit-risk-model-overview/')}" class="footer-link">${text.modelOverview}</a>
         </div>
         <div class="footer-col">
-          <span class="footer-col-label">Company</span>
-          <a href="/en/contact/" class="footer-link">Contact us</a>
-          <a href="https://platform.creditreports.dk" class="footer-link" target="_blank" rel="noopener">Login</a>
-          <a href="/en/create-account/" class="footer-link">Create Account</a>
-          <a href="/en/privacy-policy/" class="footer-link">Privacy Policy</a>
+          <span class="footer-col-label">${text.companyLabel}</span>
+          <a href="${pagePath(locale, 'contact/')}" class="footer-link">${text.contactUs}</a>
+          <a href="${LOGIN}" class="footer-link" target="_blank" rel="noopener">${text.login}</a>
+          <a href="${pagePath(locale, 'create-account/')}" class="footer-link">${text.createAccount}</a>
+          <a href="${pagePath(locale, 'privacy-policy/')}" class="footer-link">${text.privacy}</a>
           <a href="https://valuatum.com" class="footer-link" target="_blank" rel="noopener">Valuatum.com</a>
         </div>
       </nav>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">© 2025 CreditReports.dk. All rights reserved.</p>
-      <p class="footer-reg">Powered by Valuatum · Helsinki, Finland</p>
+      <p class="footer-copy">© 2026 CreditReports.dk. ${text.rights}</p>
+      <p class="footer-reg">${text.poweredBy} · Helsinki, Finland</p>
     </div>
   </div>
 </footer>`;

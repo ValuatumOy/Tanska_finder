@@ -2,7 +2,16 @@
   "cleanUrls": false,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/", "destination": "/en/", "permanent": false }
+    { "source": "/", "destination": "/en/", "permanent": true },
+    { "source": "/en/product/credit-risk-tool", "destination": "/en/products/credit-risk-tool/", "permanent": true },
+    { "source": "/en/product/credit-risk-tool/", "destination": "/en/products/credit-risk-tool/", "permanent": true },
+    { "source": "/en/product/company-valuation-tool", "destination": "/en/products/company-valuation-tool/", "permanent": true },
+    { "source": "/en/product/company-valuation-tool/", "destination": "/en/products/company-valuation-tool/", "permanent": true },
+    { "source": "/en/product/credit-risk-assessment-methods", "destination": "/en/products/credit-risk-assessment-methods/", "permanent": true },
+    { "source": "/en/product/credit-risk-assessment-methods/", "destination": "/en/products/credit-risk-assessment-methods/", "permanent": true },
+    { "source": "/en/privacy", "destination": "/en/privacy-policy/", "permanent": true },
+    { "source": "/en/privacy/", "destination": "/en/privacy-policy/", "permanent": true },
+    { "source": "/wp-content/uploads/sites/9/:path*", "destination": "/assets/wordpress-media/:path*", "permanent": true }
   ],
   "rewrites": [
     {

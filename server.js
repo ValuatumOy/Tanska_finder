@@ -12,6 +12,8 @@ const MIME = {
   '.jpeg': 'image/jpeg',
   '.gif': 'image/gif',
   '.svg': 'image/svg+xml',
+  '.txt': 'text/plain; charset=utf-8',
+  '.xml': 'application/xml; charset=utf-8',
   '.pdf': 'application/pdf',
   '.ico': 'image/x-icon',
   '.mp4': 'video/mp4',
@@ -22,9 +24,34 @@ const BASE = __dirname;
 const ASSETS_BASE = path.join(__dirname, '..', 'Tanska_sivujen_content_ja_media');
 const API_PROXY_HOST = 'sis0e9wy90.execute-api.eu-west-1.amazonaws.com';
 const PORT = 8080;
+const REDIRECTS = {
+  '/': '/en/',
+  '/en/product/credit-risk-tool': '/en/products/credit-risk-tool/',
+  '/en/product/credit-risk-tool/': '/en/products/credit-risk-tool/',
+  '/en/product/company-valuation-tool': '/en/products/company-valuation-tool/',
+  '/en/product/company-valuation-tool/': '/en/products/company-valuation-tool/',
+  '/en/product/credit-risk-assessment-methods': '/en/products/credit-risk-assessment-methods/',
+  '/en/product/credit-risk-assessment-methods/': '/en/products/credit-risk-assessment-methods/',
+  '/en/privacy': '/en/privacy-policy/',
+  '/en/privacy/': '/en/privacy-policy/',
+  '/wp-content/uploads/sites/9/2020/09/DemoReport.pdf': '/assets/wordpress-media/2020/09/DemoReport.pdf'
+};
 
 http.createServer((req, res) => {
   let urlPath = req.url.split('?')[0];
+  const normalizedPath = urlPath.endsWith('/') || path.extname(urlPath) ? urlPath : `${urlPath}/`;
+
+  if (REDIRECTS[normalizedPath]) {
+    res.writeHead(301, { Location: REDIRECTS[normalizedPath] });
+    res.end();
+    return;
+  }
+
+  if (urlPath.startsWith('/wp-content/uploads/sites/9/')) {
+    res.writeHead(301, { Location: urlPath.replace('/wp-content/uploads/sites/9/', '/assets/wordpress-media/') });
+    res.end();
+    return;
+  }
 
   if (urlPath.startsWith('/api/')) {
     const proxyPath = urlPath === '/api/create-checkout/'
