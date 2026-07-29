@@ -63,7 +63,7 @@ const cta = `
       <h2 class="section-headline reveal">Prøv CreditReports.dk gratis</h2>
       <p class="reveal" style="font-size:var(--text-lg);font-weight:300;color:var(--gray-steel);margin-bottom:2rem;">Opret en konto og få adgang til kreditvurderinger, regnskabsdata og rapporter for danske virksomheder.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="reveal">
-        <a href="/da/create-account/" class="btn btn-primary btn-large">Opret konto</a>
+        <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-primary btn-large" target="_blank" rel="noopener">Opret konto</a>
         <a href="/da/contact/" class="btn btn-outline-dark btn-large">Kontakt os</a>
       </div>
     </div>
@@ -92,7 +92,7 @@ write('da/index.html', page({
       <h1 class="hero-headline">Træf bedre<br>kreditbeslutninger</h1>
       <p class="hero-sub">Få en præcis kreditrapport, kreditvurdering, kreditscore, kreditrisiko og konkursrisiko for danske virksomheder. Drevet af Valuatums AI-understøttede machine-learning modeller og officielle CVR-data.</p>
       <div class="hero-actions">
-        <a href="/da/create-account/" class="btn btn-primary btn-large">Prøv systemet gratis</a>
+        <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-primary btn-large" target="_blank" rel="noopener">Prøv systemet gratis</a>
         <a href="/sample-reports/JYSK_A_S_luottomuistio.pdf" class="btn btn-outline btn-large" target="_blank" rel="noopener">Se eksempelrapport</a>
       </div>
     </div>
@@ -116,7 +116,6 @@ write('da/index.html', page({
           <div class="product-card-cta"><a href="/da/products/company-valuation-tool/" class="btn btn-primary">Læs mere</a><a href="/assets/wordpress-media/2020/08/valuation_report_demo.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">Eksempelrapport</a></div>
         </article>
         <article class="product-card product-card--featured reveal" data-delay="160">
-          <div class="badge badge--new" style="margin-bottom:1rem;display:inline-flex;"><span class="badge-dot" aria-hidden="true"></span>Nyhed</div>
           <h3 class="product-card-title">AI Credit Report</h3>
           <p class="product-card-body">Samme kreditdata som standardrapporten, men med AI-understøttet skriftlig analyse og en klar beslutningsklar opsummering.</p>
           <ul class="product-card-features"><li>Finansielle data og kreditrisiko</li><li>AI-understøttet analyse</li><li>Kvalitative observationer</li><li>Engangskøb - ingen abonnementskrav</li></ul>
@@ -252,8 +251,8 @@ ${hero('Priser', 'Enkle og transparente priser', 'Køb enkelte rapporter efter b
   <section class="content-section"><div class="container"><div class="pricing-grid pricing-grid--four">
     <article class="pricing-card reveal"><p class="pricing-card-label">Enkeltrapport</p><h3 class="pricing-card-title">Standard kreditrapport</h3><div class="pricing-price"><span class="pricing-amount">€1</span></div><p class="pricing-period">per basisrapport</p><ul class="pricing-features"><li>Kreditscore og rating</li><li>Konkursrisiko og kreditlimit</li><li>Regnskaber og nøgletal</li></ul><a href="https://companies.creditreports.dk/en/" class="btn btn-outline-dark">Søg virksomhed</a></article>
     <article class="pricing-card pricing-card--ai reveal"><p class="pricing-card-label">AI-analyse</p><h3 class="pricing-card-title">AI Credit Report</h3><div class="pricing-price"><span class="pricing-amount">€3</span></div><p class="pricing-period">per AI-rapport</p><ul class="pricing-features"><li>Alle standard kreditdata</li><li>AI-understøttet skriftlig analyse</li><li>Beslutningsklar PDF</li></ul><a href="/da/ai-credit-report/order/" class="btn btn-primary">Bestil AI-rapport</a></article>
-    <article class="pricing-card pricing-card--featured reveal"><p class="pricing-card-label">Pakke</p><h3 class="pricing-card-title">3 standardrapporter</h3><div class="pricing-price"><span class="pricing-amount">€2</span></div><p class="pricing-period">3 basisrapporter</p><ul class="pricing-features"><li>Tre standardrapporter</li><li>Lavere pris for hurtige checks</li><li>God til korte virksomhedslister</li></ul><a href="https://companies.creditreports.dk/en/" class="btn btn-primary">Køb pakke</a></article>
-    <article class="pricing-card reveal"><p class="pricing-card-label">Månedlig adgang</p><h3 class="pricing-card-title">Systemadgang</h3><div class="pricing-price"><span class="pricing-amount">€20</span><span class="pricing-currency">/ måned</span></div><p class="pricing-period">løbende platformadgang</p><ul class="pricing-features"><li>Adgang til CreditReports.dk-systemet</li><li>Til gentagne kreditchecks</li><li>Rapporter købes efter behov</li></ul><a href="/da/create-account/" class="btn btn-outline-dark">Start adgang</a></article>
+    <article class="pricing-card pricing-card--featured reveal"><p class="pricing-card-label">Pakke</p><h3 class="pricing-card-title">3 rapporter</h3><div class="pricing-price"><span class="pricing-amount">€2</span></div><p class="pricing-period">3 basisrapporter</p><ul class="pricing-features"><li>Tre standardrapporter</li><li>Lavere pris for hurtige checks</li><li>God til korte virksomhedslister</li></ul><a href="https://companies.creditreports.dk/en/" class="btn btn-primary">Køb pakke</a></article>
+    <article class="pricing-card reveal"><p class="pricing-card-label">Månedlig adgang</p><h3 class="pricing-card-title">Systemadgang</h3><div class="pricing-price"><span class="pricing-amount">€20</span><span class="pricing-currency">/ måned</span></div><p class="pricing-period">løbende platformadgang</p><ul class="pricing-features"><li>Adgang til CreditReports.dk-systemet</li><li>Til gentagne kreditchecks</li><li>Rapporter købes efter behov</li></ul><a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-outline-dark" target="_blank" rel="noopener">Start adgang</a></article>
   </div></div></section>
 ${cta}`
 }));
@@ -266,7 +265,7 @@ write('da/contact/index.html', page({
   scripts: ['nav', 'main'],
   body: `
 ${hero('Kontakt', 'Kontakt CreditReports.dk', 'Har du spørgsmål om kreditrapport, kreditvurdering, kreditscore, kreditrisiko, konkursrisiko, adgang eller en tilpasset løsning? Vi hjælper gerne.')}
-  <section class="content-section"><div class="container"><div class="two-col"><div><p class="section-eyebrow reveal">Salg og support</p><h2 class="prose-headline reveal">Tal med os om kreditdata for danske virksomheder</h2><p class="prose-body reveal">Kontakt os, hvis du har brug for hjælp til platformen, rapporter, priser eller en kundespecifik løsning.</p><div class="sol-features reveal"><div class="sol-feature">${check}<a href="mailto:info@creditreports.dk" style="color:var(--blue);">info@creditreports.dk</a></div><div class="sol-feature">${check}<a href="https://platform.creditreports.dk" target="_blank" rel="noopener" style="color:var(--blue);">platform.creditreports.dk</a></div><div class="sol-feature">${check}Powered by Valuatum, Helsinki</div></div></div><div class="feature-card reveal"><h3 class="feature-title">Hurtigste vej videre</h3><p class="feature-body">Hvis du vil afprøve systemet, kan du oprette en konto og søge efter danske virksomheder med det samme.</p><a href="/da/create-account/" class="btn btn-primary">Opret konto</a></div></div></div></section>`
+  <section class="content-section"><div class="container"><div class="two-col"><div><p class="section-eyebrow reveal">Salg og support</p><h2 class="prose-headline reveal">Tal med os om kreditdata for danske virksomheder</h2><p class="prose-body reveal">Kontakt os, hvis du har brug for hjælp til platformen, rapporter, priser eller en kundespecifik løsning.</p><div class="sol-features reveal"><div class="sol-feature">${check}<a href="mailto:info@creditreports.dk" style="color:var(--blue);">info@creditreports.dk</a></div><div class="sol-feature">${check}<a href="https://platform.creditreports.dk" target="_blank" rel="noopener" style="color:var(--blue);">platform.creditreports.dk</a></div><div class="sol-feature">${check}Powered by Valuatum, Helsinki</div></div></div><div class="feature-card reveal"><h3 class="feature-title">Hurtigste vej videre</h3><p class="feature-body">Hvis du vil afprøve systemet, kan du oprette en konto og søge efter danske virksomheder med det samme.</p><a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-primary" target="_blank" rel="noopener">Opret konto</a></div></div></div></section>`
 }));
 
 write('da/privacy-policy/index.html', page({
@@ -287,7 +286,7 @@ write('da/create-account/index.html', page({
   cssDepth: 2,
   scripts: ['nav', 'main'],
   body: `
-  <section style="min-height:60vh;display:flex;align-items:center;justify-content:center;padding:var(--section-py) var(--page-x);"><div style="max-width:520px;text-align:center;"><div class="badge badge--blue" style="margin-bottom:1.5rem;display:inline-flex;"><span class="badge-dot" aria-hidden="true"></span>Beta - gratis adgang</div><h1 style="font-size:var(--text-2xl);font-weight:300;color:var(--charcoal);margin-bottom:1rem;line-height:1.2;">Opret din gratis konto</h1><p style="font-size:var(--text-base);font-weight:300;color:var(--gray-steel);line-height:1.7;margin-bottom:2rem;">Du bliver sendt videre til registreringen på platform.creditreports.dk.</p><a href="https://platform.creditreports.dk/register" class="btn btn-primary btn-large">Gå til registrering</a></div></section>`
+  <section style="min-height:60vh;display:flex;align-items:center;justify-content:center;padding:var(--section-py) var(--page-x);"><div style="max-width:520px;text-align:center;"><h1 style="font-size:var(--text-2xl);font-weight:300;color:var(--charcoal);margin-bottom:1rem;line-height:1.2;">Opret din gratis konto</h1><p style="font-size:var(--text-base);font-weight:300;color:var(--gray-steel);line-height:1.7;margin-bottom:2rem;">Du bliver sendt videre til registreringen på platform.creditreports.dk.</p><a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-primary btn-large" target="_blank" rel="noopener">Gå til registrering</a></div></section>`
 }));
 
 write('da/login/index.html', page({

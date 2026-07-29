@@ -2125,6 +2125,8 @@ button.search-dropdown-link {
   font-weight: 300;
   color: var(--charcoal);
   margin-bottom: 0.75rem;
+  overflow-wrap: anywhere;
+  line-height: 1.2;
 }
 
 .pricing-card--featured .pricing-card-title { color: var(--white); }
