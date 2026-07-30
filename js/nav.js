@@ -115,8 +115,7 @@
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="${pagePath(locale)}" class="nav-logo" aria-label="CreditReports.dk home">
-      <div class="nav-logo-icon" aria-hidden="true">CR</div>
-      <span class="nav-logo-wordmark">CreditReports.dk</span>
+      <img class="nav-logo-image" src="/assets/brand/creditreportsdklogo.svg" alt="CreditReports.dk">
     </a>
     <nav class="nav-links" aria-label="Main navigation">
       <div class="nav-item">

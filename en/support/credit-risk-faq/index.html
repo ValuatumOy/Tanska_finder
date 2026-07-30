@@ -1,13 +1,105 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Credit Risk FAQ – CreditReports.dk</title>
+  <title>Credit Risk FAQ â€“ CreditReports.dk</title>
   <meta name="description" content="Credit Risk FAQ: learn how ratings are calculated, which factors matter, and how to interpret or improve a Danish company's credit rating.">
+  <meta name="keyword-target" content="credit risk FAQ Denmark">
   <link rel="canonical" href="https://creditreports.dk/en/support/credit-risk-faq/">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://creditreports.dk/en/support/credit-risk-faq/#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can I estimate what kind of credit rating my company would typically fall into?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can estimate the likely credit rating by reviewing key indicators such as profitability, solvency, equity ratio, liquidity, and how the company compares with other Danish companies in Valuatum's model."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why can Valuatum's rating be lower than a competitor's rating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Valuatum calibrates ratings so that only about one-third of companies fall into A categories. Some competing services place a much larger share of companies in A categories, so ratings may look higher even when the underlying risk is similar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can the same company receive different credit ratings from different providers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Different providers use different models, weighting methods, and data sources. A credit rating is a model-based estimate of how a company compares with others and with historical risk patterns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Valuatum's credit rating calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Valuatum's credit rating is based on a statistical risk model trained on historical data including financial statements, payment default records, and bankruptcy data. It considers solvency, profitability, liquidity, balance sheet structure, industry risk, and other indicators using XGBoost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which factors have the greatest impact on the credit rating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Important factors typically include solvency, equity ratio, profitability, liquidity, balance sheet structure, and industry risk. Strong ratings usually require both healthy profitability and sufficient financial buffers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is industry risk more important than company-specific factors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Company-specific factors remain very important. Industry risk influences the level of financial strength needed to achieve a strong rating, but it does not determine the rating by itself."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How should a credit rating be interpreted in practice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A credit rating should be treated as a condensed risk signal, not a final judgment. It indicates how a company statistically compares with other companies and which financial factors affect its risk profile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do cash reserves and liquidity affect a credit rating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cash reserves and liquidity show how well a company can withstand disruptions, delays, and unexpected events. Strong liquidity supports the rating because it improves resilience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why might my company's credit rating be weak even if the business is profitable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Profitability matters, but it is not enough on its own. A company may receive a weaker rating if equity is small, cash buffers are thin, the industry is risky, or the balance sheet does not provide sufficient protection against disruptions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a company improve its credit rating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A company can improve its rating by strengthening equity, profitability, liquidity, and balance sheet resilience, and by reducing financial vulnerabilities relative to the risks of its business and industry."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <div id="site-nav"></div>
@@ -16,10 +108,14 @@
   <section class="page-hero" style="min-height:clamp(260px,34vw,380px);">
     <div class="page-hero-overlay"></div>
     <div class="page-hero-content">
-      <span class="page-category"><a href="/en/support/" style="color:rgba(255,255,255,0.6);text-decoration:none;">Support</a> › Credit Risk FAQ</span>
+      <span class="page-category"><a href="/en/support/" style="color:rgba(255,255,255,0.6);text-decoration:none;">Support</a> â€º Credit Risk FAQ</span>
       <h1 class="page-hero-title">Credit Risk FAQ</h1>
       <p class="page-hero-sub">Answers to common questions about credit ratings, how they are calculated, and how to interpret the results.</p>
     </div>
+  </section>
+
+  <section class="content-section" style="padding-bottom:0;">
+    <div class="container"><p class="last-updated">Last updated: July 30, 2026</p></div>
   </section>
 
   <section class="content-section">
@@ -52,7 +148,7 @@
                   <img src="/assets/wordpress-media/external-www-valuatum-com/sites/10/2026/04/bankruptcy_risk_visualization.png" alt="Scatter chart showing Danish companies plotted by profitability and solvency, colored by credit rating" style="width:100%;display:block;">
                   <figcaption style="padding:0.6rem 1rem;font-size:0.75rem;color:var(--gray-steel);background:var(--off-white);">Background color areas indicate the most typical credit rating for companies with those financial metrics.</figcaption>
                 </figure>
-                <p>For typical situations, achieving an "A"-level rating — placing a company among the top 20% of Danish companies — usually requires an equity ratio of 75–100% and positive return on equity.</p>
+                <p>For typical situations, achieving an "A"-level rating â€” placing a company among the top 20% of Danish companies â€” usually requires an equity ratio of 75â€“100% and positive return on equity.</p>
               </div>
             </div>
           </div>
@@ -63,7 +159,7 @@
               <svg class="faq-chevron" viewBox="0 0 18 18" fill="none"><path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="faq-answer"><div class="faq-answer-inner">
-              <p>In Valuatum's model, ratings are calibrated so that only about one-third of companies fall into "A" categories — consistent with the distributions used by international credit rating agencies such as Standard &amp; Poor's. By contrast, some competing services classify around 90% of companies into "A" categories.</p>
+              <p>In Valuatum's model, ratings are calibrated so that only about one-third of companies fall into "A" categories â€” consistent with the distributions used by international credit rating agencies such as Standard &amp; Poor's. By contrast, some competing services classify around 90% of companies into "A" categories.</p>
               <p style="margin-top:0.75rem;">The difference does not reflect a different assessment of actual risk, but rather how ratings are distributed across the overall population of companies.</p>
               <p style="font-weight:600;margin:1rem 0 0.5rem;color:var(--charcoal);">Valuatum's credit rating distribution</p>
               <figure style="margin:0.75rem 0;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--color-border);">
@@ -84,7 +180,7 @@
               <svg class="faq-chevron" viewBox="0 0 18 18" fill="none"><path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="faq-answer"><div class="faq-answer-inner">
-              Yes. Different providers use different models, weightings, and data sources, so the same company may receive different ratings across different services. These differences don't indicate one assessment is wrong — they reflect varying risk evaluation approaches. A credit rating is always a model-based estimate of how a company compares with others and with observed historical risk patterns.
+              Yes. Different providers use different models, weightings, and data sources, so the same company may receive different ratings across different services. These differences don't indicate one assessment is wrong â€” they reflect varying risk evaluation approaches. A credit rating is always a model-based estimate of how a company compares with others and with observed historical risk patterns.
             </div></div>
           </div>
         </div>
@@ -102,7 +198,7 @@
               <svg class="faq-chevron" viewBox="0 0 18 18" fill="none"><path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="faq-answer"><div class="faq-answer-inner">
-              Valuatum's credit rating is based on a statistical risk model trained on extensive historical data including financial statements, payment default records, and bankruptcy data. The rating is not based on a single financial metric, but on an overall assessment considering solvency, profitability, liquidity, balance sheet structure, industry risk level, and several other indicators — using the XGBoost machine-learning algorithm.
+              Valuatum's credit rating is based on a statistical risk model trained on extensive historical data including financial statements, payment default records, and bankruptcy data. The rating is not based on a single financial metric, but on an overall assessment considering solvency, profitability, liquidity, balance sheet structure, industry risk level, and several other indicators â€” using the XGBoost machine-learning algorithm.
             </div></div>
           </div>
 
@@ -116,9 +212,9 @@
               <ul style="margin:0.75rem 0;padding-left:1.25rem;line-height:1.9;">
                 <li>Solvency, especially the equity ratio</li>
                 <li>Profitability, such as return on capital</li>
-                <li>Liquidity — the size of cash reserves relative to business volume and short-term liabilities</li>
-                <li>Balance sheet structure — how assets are distributed between cash, receivables, and other items</li>
-                <li>Industry risk — how frequently companies in that industry fail on average</li>
+                <li>Liquidity â€” the size of cash reserves relative to business volume and short-term liabilities</li>
+                <li>Balance sheet structure â€” how assets are distributed between cash, receivables, and other items</li>
+                <li>Industry risk â€” how frequently companies in that industry fail on average</li>
               </ul>
               A strong rating usually requires that a company has both healthy profitability and sufficient financial buffers relative to the risks of its business operations.
             </div></div>
@@ -130,7 +226,7 @@
               <svg class="faq-chevron" viewBox="0 0 18 18" fill="none"><path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="faq-answer"><div class="faq-answer-inner">
-              Not on its own. Company-specific factors remain very important. However, industry risk influences how high the bar is for achieving a strong rating — companies in higher-risk industries need stronger financial metrics to reach the same credit rating as those in lower-risk industries. Every industry contains both highly rated and weakly rated companies.
+              Not on its own. Company-specific factors remain very important. However, industry risk influences how high the bar is for achieving a strong rating â€” companies in higher-risk industries need stronger financial metrics to reach the same credit rating as those in lower-risk industries. Every industry contains both highly rated and weakly rated companies.
             </div></div>
           </div>
 
@@ -205,7 +301,7 @@
               <svg class="faq-chevron" viewBox="0 0 18 18" fill="none"><path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="faq-answer"><div class="faq-answer-inner">
-              Not necessarily. A weak or below-average rating does not automatically mean that the company's business is poor or that it is in immediate danger. It usually means that statistically the company's risk level is higher than that of better-rated companies — due to factors such as a higher-risk industry, small absolute equity, limited cash buffers, or the size of the balance sheet relative to business scale.
+              Not necessarily. A weak or below-average rating does not automatically mean that the company's business is poor or that it is in immediate danger. It usually means that statistically the company's risk level is higher than that of better-rated companies â€” due to factors such as a higher-risk industry, small absolute equity, limited cash buffers, or the size of the balance sheet relative to business scale.
             </div></div>
           </div>
         </div>
@@ -251,14 +347,14 @@
               <svg class="faq-chevron" viewBox="0 0 18 18" fill="none"><path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="faq-answer"><div class="faq-answer-inner">
-              Yes. In addition to the credit rating, many other factors influence access to financing — banks' own risk policies, regulation, collateral requirements, market conditions, and industry cycles. A well-managed company may face stricter financing terms than its operational quality alone would suggest. A credit rating is an important part of the assessment, but not the only factor in lending decisions.
+              Yes. In addition to the credit rating, many other factors influence access to financing â€” banks' own risk policies, regulation, collateral requirements, market conditions, and industry cycles. A well-managed company may face stricter financing terms than its operational quality alone would suggest. A credit rating is an important part of the assessment, but not the only factor in lending decisions.
             </div></div>
           </div>
         </div>
 
         <!-- Back link -->
         <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--color-border);display:flex;gap:1rem;flex-wrap:wrap;align-items:center;" class="reveal">
-          <a href="/en/support/" class="btn-ghost">← Back to Support hub</a>
+          <a href="/en/support/" class="btn-ghost">â† Back to Support hub</a>
           <a href="/en/support/credit-risk-model-overview/" class="btn btn-outline-dark btn-sm">Model overview</a>
         </div>
 

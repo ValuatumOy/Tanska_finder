@@ -1,14 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danish Company Search – CreditReports.dk</title>
+  <title>Danish Company Search â€“ CreditReports.dk</title>
   <meta name="description" content="Search 400,000+ Danish companies. Access company profiles, financials, credit risk indicators, and order credit risk reports.">
-  <meta property="og:title" content="Danish Company Search – CreditReports.dk">
+  <meta name="keyword-target" content="Danish company directory">
+  <meta property="og:title" content="Danish Company Search â€“ CreditReports.dk">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://companies.creditreports.dk/en/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css">
@@ -72,14 +75,38 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "CreditReports.dk Company Directory",
-    "url": "https://companies.creditreports.dk/en/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://companies.creditreports.dk/en/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://companies.creditreports.dk/en/#website",
+        "name": "CreditReports.dk Company Directory",
+        "url": "https://companies.creditreports.dk/en/",
+        "publisher": { "@id": "https://creditreports.dk/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://companies.creditreports.dk/en/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://companies.creditreports.dk/en/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "CreditReports.dk",
+            "item": "https://creditreports.dk/en/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Company Search",
+            "item": "https://companies.creditreports.dk/en/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -89,8 +116,7 @@
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="https://creditreports.dk/en/" class="nav-logo" aria-label="CreditReports.dk home">
-      <div class="nav-logo-icon" aria-hidden="true">CR</div>
-      <span class="nav-logo-wordmark">CreditReports.dk</span>
+      <img class="nav-logo-image" src="../../assets/brand/creditreportsdklogo.svg" alt="CreditReports.dk">
     </a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="https://companies.creditreports.dk/en/" class="nav-link nav-link--active">Company Search</a>
@@ -160,16 +186,16 @@
           <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 15.5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
           <h3 class="feature-title">1. Free company view</h3>
           <p class="feature-body">
-            Start with company-level information and key financial indicators, available for every company in the database — no account required.
+            Start with company-level information and key financial indicators, available for every company in the database â€” no account required.
           </p>
         </div>
         <div class="feature-card reveal" data-delay="80">
           <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 18V9m4 9V5m4 13V8m4 10V3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
           <h3 class="feature-title">2. Credit Risk Report</h3>
           <p class="feature-body">
-            Order a structured report with credit rating, bankruptcy risk, financial ratios, and credit limit recommendation — automatically generated as a PDF.
+            Order a structured report with credit rating, bankruptcy risk, financial ratios, and credit limit recommendation â€” automatically generated as a PDF.
           </p>
-          <a href="https://creditreports.dk/en/product/" class="feature-link">Learn more <span aria-hidden="true">→</span></a>
+          <a href="https://creditreports.dk/en/product/" class="feature-link">Learn more <span aria-hidden="true">â†’</span></a>
         </div>
         <div class="feature-card reveal" data-delay="160">
           <div class="feature-icon" style="background:var(--blue);color:var(--white);">
@@ -179,7 +205,7 @@
           <p class="feature-body">
             Add AI-assisted written analysis and qualitative observations to the same core financial and credit risk data. One-off purchase.
           </p>
-          <a href="https://creditreports.dk/en/ai-credit-report/" class="feature-link">Learn more <span aria-hidden="true">→</span></a>
+          <a href="https://creditreports.dk/en/ai-credit-report/" class="feature-link">Learn more <span aria-hidden="true">â†’</span></a>
         </div>
       </div>
     </div>
@@ -227,7 +253,7 @@
             </a>
           </div>
           <div class="highlight-card-footer">
-            <a href="#" class="btn-ghost" style="font-size:var(--text-sm);">See full list <span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a href="#" class="btn-ghost" style="font-size:var(--text-sm);">See full list <span class="btn-arrow" aria-hidden="true">â†’</span></a>
           </div>
         </div>
 
@@ -264,7 +290,7 @@
             </a>
           </div>
           <div class="highlight-card-footer">
-            <a href="#" class="btn-ghost" style="font-size:var(--text-sm);">See full list <span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a href="#" class="btn-ghost" style="font-size:var(--text-sm);">See full list <span class="btn-arrow" aria-hidden="true">â†’</span></a>
           </div>
         </div>
 
@@ -301,7 +327,7 @@
             </a>
           </div>
           <div class="highlight-card-footer">
-            <a href="#" class="btn-ghost" style="font-size:var(--text-sm);">See full list <span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a href="#" class="btn-ghost" style="font-size:var(--text-sm);">See full list <span class="btn-arrow" aria-hidden="true">â†’</span></a>
           </div>
         </div>
 
@@ -319,7 +345,7 @@
         <div>
           <h2 class="ai-banner-title" id="ai-banner-heading">Need more than numbers?</h2>
           <p class="ai-banner-body">
-            Order an AI Credit Report for any Danish company and get a clearer written analysis built on financial and credit risk data. One-off purchase — no subscription required.
+            Order an AI Credit Report for any Danish company and get a clearer written analysis built on financial and credit risk data. One-off purchase â€” no subscription required.
           </p>
         </div>
         <div class="ai-banner-actions">
@@ -339,7 +365,7 @@
       <div class="footer-brand">
         <span class="footer-wordmark">CreditReports.dk</span>
         <p class="footer-tagline">Danish company credit risk data and financial analysis.</p>
-        <a href="https://valuatum.com" class="footer-valuatum-link" target="_blank" rel="noopener">Powered by Valuatum ↗</a>
+        <a href="https://valuatum.com" class="footer-valuatum-link" target="_blank" rel="noopener">Powered by Valuatum â†—</a>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
         <div class="footer-col">
@@ -367,8 +393,8 @@
       </nav>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">© 2025 CreditReports.dk. All rights reserved.</p>
-      <p class="footer-reg">Powered by Valuatum · Helsinki, Finland</p>
+      <p class="footer-copy">Â© 2025 CreditReports.dk. All rights reserved.</p>
+      <p class="footer-reg">Powered by Valuatum Â· Helsinki, Finland</p>
     </div>
   </div>
 </footer>

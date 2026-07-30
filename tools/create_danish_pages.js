@@ -7,7 +7,7 @@ function ensureDir(filePath) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
 }
 
-function page({ title, description, canonical, cssDepth, body, scripts = ['main'] }) {
+function page({ title, description, canonical, cssDepth, body, scripts = ['main'], headExtra = '' }) {
   const cssPrefix = '../'.repeat(cssDepth);
   const scriptTags = scripts.map((script) => `<script src="${cssPrefix}js/${script}.js"></script>`).join('\n');
   return `<!DOCTYPE html>
@@ -18,12 +18,15 @@ function page({ title, description, canonical, cssDepth, body, scripts = ['main'
   <title>${title}</title>
   <meta name="description" content="${description}">
   <link rel="canonical" href="${canonical}">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="alternate" hreflang="da" href="${canonical}">
   <link rel="alternate" hreflang="en" href="${canonical.replace('/da/', '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${cssPrefix}css/style.css">
+  ${headExtra}
 </head>
 <body>
 <div id="site-nav"></div>
@@ -44,6 +47,112 @@ function write(relativePath, content) {
 }
 
 const check = '<svg class="sol-feature-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+const organizationSchemaDa = `<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://creditreports.dk/#organization",
+        "name": "CreditReports.dk",
+        "url": "https://creditreports.dk/da/",
+        "logo": "https://creditreports.dk/assets/brand/creditreportsdklogo.svg",
+        "description": "CreditReports.dk leverer kreditrapporter, kreditvurderinger, konkursrisiko og finansiel analyse for danske virksomheder.",
+        "parentOrganization": {
+          "@type": "Organization",
+          "@id": "https://www.valuatum.com/#organization",
+          "name": "Valuatum Oy",
+          "url": "https://www.valuatum.com/",
+          "logo": "https://creditreports.dk/assets/wordpress-media/2018/06/valuatum_logo__.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Linnanrakentajantie 6-8 C, Suite 15",
+            "postalCode": "00880",
+            "addressLocality": "Helsinki",
+            "addressCountry": "FI"
+          },
+          "sameAs": [
+            "https://www.valuatum.com/",
+            "https://www.linkedin.com/company/valuatum-oy"
+          ]
+        },
+        "sameAs": [
+          "https://www.valuatum.com/",
+          "https://www.linkedin.com/company/valuatum-oy",
+          "https://companies.creditreports.dk/en/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://creditreports.dk/da/#website",
+        "name": "CreditReports.dk",
+        "url": "https://creditreports.dk/da/",
+        "publisher": { "@id": "https://creditreports.dk/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://companies.creditreports.dk/en/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>`;
+
+const aiProductSchemaDa = `<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": "https://creditreports.dk/da/ai-credit-report/#product",
+    "name": "AI Credit Report",
+    "description": "AI-understøttet kreditrapport for danske virksomheder med kreditvurdering, kreditscore, kreditrisiko, konkursrisiko og skriftlig analyse.",
+    "brand": { "@type": "Brand", "name": "CreditReports.dk" },
+    "category": "Business credit report",
+    "url": "https://creditreports.dk/da/ai-credit-report/",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://creditreports.dk/da/ai-credit-report/order/",
+      "price": "3.00",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "3.00",
+        "priceCurrency": "EUR",
+        "unitText": "REPORT"
+      },
+      "seller": { "@id": "https://creditreports.dk/#organization" }
+    }
+  }
+  </script>`;
+
+const creditRiskSoftwareSchemaDa = `<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://creditreports.dk/da/products/credit-risk-tool/#software",
+    "name": "Credit Risk Tool",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://creditreports.dk/da/products/credit-risk-tool/",
+    "description": "Credit Risk Tool leverer kreditvurdering, kreditscore, konkursrisiko, kreditlimitforslag, regnskaber og branchebenchmark for danske virksomheder.",
+    "publisher": { "@id": "https://creditreports.dk/#organization" },
+    "featureList": [
+      "Kreditscore",
+      "Kreditvurdering",
+      "Konkursrisiko",
+      "Kreditlimitforslag",
+      "Regnskaber og nøgletal",
+      "Branchebenchmark"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://creditreports.dk/da/pricing/",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>`;
 
 const hero = (category, title, sub, actions = '') => `
   <section class="page-hero">
@@ -75,6 +184,7 @@ write('da/index.html', page({
   canonical: 'https://creditreports.dk/da/',
   cssDepth: 1,
   scripts: ['nav', 'main', 'search'],
+  headExtra: organizationSchemaDa,
   body: `
   <section class="hero" id="hero" aria-label="Forside" style="background:var(--navy);background-image:linear-gradient(rgba(11,31,58,0.80),rgba(11,31,58,0.88)),url('https://images.unsplash.com/photo-1454366946088-1492c0fef995?auto=format&fit=crop&w=1920&q=80');background-size:cover;background-position:center;min-height:100vh;">
     <div class="hero-overlay" aria-hidden="true"></div>
@@ -88,7 +198,7 @@ write('da/index.html', page({
           </div>
         </form>
       </div>
-      <p class="hero-eyebrow">Dansk virksomhedsdata · 300.000+ virksomheder</p>
+      <p class="hero-eyebrow">Dansk virksomhedsdata · 400.000+ virksomheder</p>
       <h1 class="hero-headline">Træf bedre<br>kreditbeslutninger</h1>
       <p class="hero-sub">Få en præcis kreditrapport, kreditvurdering, kreditscore, kreditrisiko og konkursrisiko for danske virksomheder. Drevet af Valuatums AI-understøttede machine-learning modeller og officielle CVR-data.</p>
       <div class="hero-actions">
@@ -112,7 +222,7 @@ write('da/index.html', page({
         <article class="product-card reveal" data-delay="80">
           <h3 class="product-card-title">Company Valuation Tool</h3>
           <p class="product-card-body">Virksomhedsværdi med automatiske prognoser, redigerbare antagelser og scenarier til ejerskifte, finansiering og strategiske beslutninger.</p>
-          <ul class="product-card-features"><li>Automatiske finansielle prognoser</li><li>Redigerbare estimater</li><li>Flere værdiansættelsesmetoder</li><li>Data fra 300.000+ virksomheder</li></ul>
+          <ul class="product-card-features"><li>Automatiske finansielle prognoser</li><li>Redigerbare estimater</li><li>Flere værdiansættelsesmetoder</li><li>Data fra 400.000+ virksomheder</li></ul>
           <div class="product-card-cta"><a href="/da/products/company-valuation-tool/" class="btn btn-primary">Læs mere</a><a href="/assets/wordpress-media/2020/08/valuation_report_demo.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">Eksempelrapport</a></div>
         </article>
         <article class="product-card product-card--featured reveal" data-delay="160">
@@ -133,10 +243,10 @@ write('da/index.html', page({
           <h2 class="prose-headline reveal">Fra søgning til rapport på få minutter</h2>
           <p class="prose-body reveal">Søg efter en dansk virksomhed, se de vigtigste regnskabs- og kreditindikatorer, og hent en rapport når du har brug for et mere detaljeret beslutningsgrundlag.</p>
           <div class="sol-features reveal">
-            <div class="sol-feature">${check}Søg i 300.000+ danske virksomheder</div>
+            <div class="sol-feature">${check}Søg i 400.000+ danske virksomheder</div>
             <div class="sol-feature">${check}Se kreditrating, konkursrisiko og nøgletal</div>
             <div class="sol-feature">${check}Download standard- eller AI-rapport</div>
-            <div class="sol-feature">${check}Brug platformen gratis i beta-perioden</div>
+            <div class="sol-feature">${check}Bestil rapporter direkte fra virksomhedssider</div>
           </div>
         </div>
         <div class="reveal" data-delay="100">
@@ -180,6 +290,7 @@ write('da/products/credit-risk-tool/index.html', page({
   canonical: 'https://creditreports.dk/da/products/credit-risk-tool/',
   cssDepth: 3,
   scripts: ['nav', 'main'],
+  headExtra: creditRiskSoftwareSchemaDa,
   body: `
 ${hero('<a href="/da/product/" style="color:rgba(255,255,255,0.6);text-decoration:none;">Produkter</a> › Credit Risk Tool', 'Credit Risk Tool', 'Præcise kreditvurderinger, konkursrisiko og kreditrapporter for danske virksomheder.')}
   <section class="content-section"><div class="container"><p class="section-eyebrow reveal" style="text-align:center;">Rapportindhold</p><h2 class="section-headline reveal" style="text-align:center;">Hvad kreditrapporten indeholder</h2><div class="cards-grid">
@@ -223,6 +334,7 @@ write('da/ai-credit-report/index.html', page({
   canonical: 'https://creditreports.dk/da/ai-credit-report/',
   cssDepth: 2,
   scripts: ['nav', 'main', 'search'],
+  headExtra: aiProductSchemaDa,
   body: `
 ${hero('AI Credit Report', 'AI Credit Report<br>for danske virksomheder', 'En beslutningsklar PDF, der kombinerer regnskabsdata, kreditrisiko og AI-understøttet skriftlig analyse.', '<div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;"><a href="/da/ai-credit-report/order/" class="btn btn-primary btn-large">Søg virksomhed</a><a href="/sample-reports/ai-credit-report-sample.pdf" class="btn btn-outline btn-large" target="_blank" rel="noopener">Se eksempelrapport</a></div>')}
   <section class="content-section"><div class="container"><div class="two-col"><div><p class="section-eyebrow reveal">Hvad det er</p><h2 class="prose-headline reveal">Samme kreditdata.<br>Stærkere AI-analyse.</h2><p class="prose-body reveal">AI Credit Report bygger på de samme finansielle data og kreditrisikomål som standardrapporten, men tilføjer en skriftlig analyse, kvalitative observationer og en mere klar konklusion.</p><p class="prose-body reveal">Rapporten er velegnet, når tallene skal forklares tydeligt for kreditkomité, salg, ledelse eller eksterne interessenter.</p><a href="/da/ai-credit-report/order/" class="btn btn-primary">Bestil AI Credit Report</a></div><div class="feature-card reveal"><h3 class="feature-title">Indhold</h3><div class="sol-features"><div class="sol-feature">${check}Regnskaber og nøgletal</div><div class="sol-feature">${check}Kreditscore, rating og konkursrisiko</div><div class="sol-feature">${check}AI-understøttet skriftlig analyse</div><div class="sol-feature">${check}Beslutningsklar opsummering</div><div class="sol-feature">${check}Engangskøb til €3 per rapport</div></div></div></div></div></section>

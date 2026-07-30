@@ -341,8 +341,14 @@ body::before {
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   text-decoration: none;
+}
+
+.nav-logo-image {
+  display: block;
+  width: 170px;
+  height: auto;
+  max-height: 32px;
 }
 
 .nav-logo-icon {
@@ -366,6 +372,67 @@ body::before {
   color: var(--white);
   transition: color var(--trs-md);
   white-space: nowrap;
+}
+
+.keyword-target,
+.last-updated {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--gray-steel);
+}
+
+.keyword-target {
+  margin-top: 1rem;
+}
+
+.last-updated {
+  margin: 0 0 2rem;
+}
+
+.pricing-note,
+.compliance-note {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--r-md);
+  background: var(--off-white);
+  color: var(--gray-steel);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+}
+
+.report-example-image {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-soft);
+  background: var(--white);
+}
+
+.sample-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.sample-image-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.sample-image-caption {
+  font-size: var(--text-sm);
+  color: var(--gray-steel);
+  line-height: 1.6;
+}
+
+.analysis-scope-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 /* Nav links */
@@ -2078,6 +2145,7 @@ button.search-dropdown-link {
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
+  min-width: 0;
   position: relative;
   transition: border-color var(--trs-md), box-shadow var(--trs-md), transform var(--trs-md);
 }
@@ -2125,6 +2193,7 @@ button.search-dropdown-link {
   font-weight: 300;
   color: var(--charcoal);
   margin-bottom: 0.75rem;
+  min-width: 0;
   overflow-wrap: anywhere;
   line-height: 1.2;
 }
@@ -3036,6 +3105,7 @@ button.search-dropdown-link {
   .ai-banner        { grid-template-columns: 1fr; }
   .ai-banner-actions { flex-direction: row; }
   .report-sales-grid { grid-template-columns: 1fr; }
+  .analysis-scope-grid { grid-template-columns: 1fr; }
   .report-preview-card { padding: 0; }
 }
 
@@ -3200,6 +3270,7 @@ button.search-dropdown-link {
   .pricing-grid         { grid-template-columns: 1fr; }
   .similar-grid         { grid-template-columns: 1fr; }
   .kpi-grid             { grid-template-columns: 1fr; }
+  .sample-image-grid    { grid-template-columns: 1fr; }
   .footer-nav           { grid-template-columns: 1fr; }
   .footer-bottom        { flex-direction: column; align-items: flex-start; }
 

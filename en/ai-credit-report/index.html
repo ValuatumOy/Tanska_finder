@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Credit Report – CreditReports.dk</title>
+  <title>AI Credit Report â€“ CreditReports.dk</title>
   <meta name="description" content="The AI Credit Report combines financial statement data, credit risk metrics, and AI-assisted written analysis into one decision-ready PDF. Available for any Danish company.">
-  <meta property="og:title" content="AI Credit Report – CreditReports.dk">
+  <meta name="keyword-target" content="AI Credit Report Denmark">
+  <meta property="og:title" content="AI Credit Report â€“ CreditReports.dk">
   <meta property="og:description" content="Same credit risk data. Better AI-assisted analysis. One-off purchase. No subscription.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://creditreports.dk/en/ai-credit-report/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css">
@@ -18,13 +21,25 @@
   {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": "https://creditreports.dk/en/ai-credit-report/#product",
     "name": "AI Credit Report",
     "description": "AI-assisted credit risk report for Danish companies. Includes financial statements, credit score, credit rating, bankruptcy risk, and written AI analysis.",
     "brand": { "@type": "Brand", "name": "CreditReports.dk" },
+    "category": "Business credit report",
+    "url": "https://creditreports.dk/en/ai-credit-report/",
     "offers": {
       "@type": "Offer",
-      "priceCurrency": "DKK",
-      "priceSpecification": { "@type": "UnitPriceSpecification", "unitText": "REPORT" }
+      "url": "https://creditreports.dk/en/ai-credit-report/order/",
+      "price": "3.00",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "3.00",
+        "priceCurrency": "EUR",
+        "unitText": "REPORT"
+      },
+      "seller": { "@id": "https://creditreports.dk/#organization" }
     }
   }
   </script>
@@ -35,8 +50,7 @@
 <header class="nav" id="nav" style="background:rgba(11,31,58,0.95);">
   <div class="nav-inner">
     <a href="/en/" class="nav-logo" aria-label="CreditReports.dk home">
-      <div class="nav-logo-icon" aria-hidden="true">CR</div>
-      <span class="nav-logo-wordmark">CreditReports.dk</span>
+      <img class="nav-logo-image" src="/assets/brand/creditreportsdklogo.svg" alt="CreditReports.dk">
     </a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="/en/product/" class="nav-link">Product</a>
@@ -97,7 +111,7 @@
             The AI Credit Report builds on the same financial and credit risk data as the standard Credit Risk Report. The difference is the AI-assisted analysis layer: clearer written interpretation, qualitative observations, and a more decision-ready summary.
           </p>
           <p class="prose-body reveal">
-            The report is designed for users who want more than raw figures — a clearer explanation of what the numbers mean, what risks matter, and what should be checked before making a credit decision.
+            The report is designed for users who want more than raw figures â€” a clearer explanation of what the numbers mean, what risks matter, and what should be checked before making a credit decision.
           </p>
           <p class="prose-body reveal">
             It is delivered as a downloadable PDF and purchased on a per-report basis. No subscription required.
@@ -156,6 +170,30 @@
     </div>
   </section>
 
+  <section class="content-section content-section--mist" aria-labelledby="ai-scope-heading">
+    <div class="container">
+      <p class="section-eyebrow reveal" style="text-align:center;">Analysis scope</p>
+      <h2 class="section-headline reveal" id="ai-scope-heading" style="text-align:center;">What the AI analyses and what it does not decide</h2>
+      <div class="analysis-scope-grid">
+        <article class="feature-card reveal">
+          <h3 class="feature-title">What the AI analyses</h3>
+          <p class="feature-body">The report reviews company information, CVR data, financial statements, key ratios, credit rating, credit score, bankruptcy risk, credit limit indicators, and relevant business context for the Danish company being checked.</p>
+        </article>
+        <article class="feature-card reveal" data-delay="80">
+          <h3 class="feature-title">What it does not do</h3>
+          <p class="feature-body">It does not replace a credit policy, guarantee payment, automate the final credit decision, provide legal or financial advice, or assess personal consumer credit reports. It is for B2B company checks only.</p>
+        </article>
+        <article class="feature-card reveal" data-delay="160">
+          <h3 class="feature-title">How sources are handled</h3>
+          <p class="feature-body">The analysis is grounded in available company and report data. Web-supported observations are treated as contextual signals and checked for consistency with the financial and credit risk data before they are summarized.</p>
+        </article>
+      </div>
+      <div class="compliance-note reveal">
+        The AI Credit Report is decision-support material for B2B credit risk assessment. It does not make or automate the final credit decision. The user remains responsible for credit policy, due diligence, legal and compliance review, and final decisions.
+      </div>
+    </div>
+  </section>
+
   <!-- COMPARISON TABLE -->
   <section class="content-section content-section--alt" aria-labelledby="compare-heading">
     <div class="container">
@@ -189,7 +227,7 @@
               <td class="col-ai-cell"><span class="check-yes" aria-label="Yes"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
             </tr>
             <tr>
-              <td>Credit rating (AAA–C)</td>
+              <td>Credit rating (AAAâ€“C)</td>
               <td><span class="check-yes" aria-label="Yes"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
               <td class="col-ai-cell"><span class="check-yes" aria-label="Yes"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
             </tr>
@@ -213,32 +251,32 @@
             </tr>
             <tr>
               <td>Fraud checks</td>
-              <td><span class="check-no" aria-label="No">—</span></td>
+              <td><span class="check-no" aria-label="No">â€”</span></td>
               <td class="col-ai-cell"><span class="check-yes" aria-label="Yes"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
             </tr>
             <tr>
               <td>Repayment analysis</td>
-              <td><span class="check-no" aria-label="No">—</span></td>
+              <td><span class="check-no" aria-label="No">â€”</span></td>
               <td class="col-ai-cell"><span class="check-yes" aria-label="Yes"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
             </tr>
             <tr>
               <td>Collateral assessment</td>
-              <td><span class="check-no" aria-label="No">—</span></td>
+              <td><span class="check-no" aria-label="No">â€”</span></td>
               <td class="col-ai-cell"><span class="check-yes" aria-label="Yes"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
             </tr>
             <tr>
               <td>Business &amp; market analysis</td>
-              <td><span class="check-no" aria-label="No">—</span></td>
+              <td><span class="check-no" aria-label="No">â€”</span></td>
               <td class="col-ai-cell"><span class="check-yes" aria-label="Yes"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
             </tr>
             <tr>
               <td>Qualitative risk analysis</td>
-              <td><span class="check-no" aria-label="No">—</span></td>
+              <td><span class="check-no" aria-label="No">â€”</span></td>
               <td class="col-ai-cell"><span class="check-yes" aria-label="Yes"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
             </tr>
             <tr>
               <td>AI-generated credit memo</td>
-              <td><span class="check-no" aria-label="No">—</span></td>
+              <td><span class="check-no" aria-label="No">â€”</span></td>
               <td class="col-ai-cell"><span class="check-yes" aria-label="Yes"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
             </tr>
           </tbody>
@@ -280,7 +318,7 @@
           <span class="report-section-num">04</span>
           <div>
             <p class="report-section-title">Credit score and credit rating</p>
-            <p class="report-section-desc">Quantitative credit score (0–100) and credit rating based on Valuatum's risk models.</p>
+            <p class="report-section-desc">Quantitative credit score (0â€“100) and credit rating based on Valuatum's risk models.</p>
           </div>
         </div>
         <div class="report-section-item">
@@ -301,7 +339,7 @@
           <span class="report-section-num">07</span>
           <div>
             <p class="report-section-title">Written credit risk analysis</p>
-            <p class="report-section-desc">A clear, AI-written interpretation of the financial and credit risk data — explaining what the numbers mean.</p>
+            <p class="report-section-desc">A clear, AI-written interpretation of the financial and credit risk data â€” explaining what the numbers mean.</p>
           </div>
         </div>
         <div class="report-section-item">
@@ -319,23 +357,8 @@
   <section class="content-section content-section--mist" aria-labelledby="sample-heading">
     <div class="container">
       <div class="sample-report-card reveal">
-        <div class="sample-report-preview" aria-hidden="true">
-          <div class="sample-report-preview-header">
-            <div class="sample-line sample-line--title"></div>
-            <div class="sample-line sample-line--sub"></div>
-            <div style="margin-top:0.75rem;">
-              <div class="sample-line" style="width:100%;margin-bottom:0.4rem;"></div>
-              <div class="sample-line" style="width:80%;margin-bottom:0.4rem;"></div>
-              <div class="sample-line" style="width:60%;"></div>
-            </div>
-          </div>
-          <div class="sample-report-preview-body">
-            <div class="sample-body-line sample-body-line--blue" style="margin-bottom:0.35rem;width:90%;"></div>
-            <div class="sample-body-line" style="margin-bottom:0.35rem;width:100%;"></div>
-            <div class="sample-body-line" style="margin-bottom:0.35rem;width:75%;"></div>
-            <div class="sample-body-line sample-body-line--blue" style="margin-bottom:0.35rem;width:85%;"></div>
-            <div class="sample-body-line" style="width:60%;"></div>
-          </div>
+        <div class="sample-report-preview">
+          <img class="report-example-image" src="/assets/report-examples/ai-credit-report-example.png" alt="AI Credit Report example preview showing written credit risk analysis">
         </div>
         <div class="sample-report-content">
           <h2 class="sample-report-title" id="sample-heading">See what the AI Credit Report looks like before ordering</h2>
@@ -365,18 +388,18 @@
         <div class="reveal" style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);padding:3rem;text-align:center;position:relative;overflow:hidden;margin-bottom:2rem;">
           <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue);"></div>
           <div style="display:flex;align-items:baseline;gap:0.35em;justify-content:center;margin-bottom:0.5rem;">
-            <span style="font-size:clamp(2.5rem,6vw,4rem);font-weight:300;color:var(--charcoal);letter-spacing:-0.025em;line-height:1;">€3</span>
+            <span style="font-size:clamp(2.5rem,6vw,4rem);font-weight:300;color:var(--charcoal);letter-spacing:-0.025em;line-height:1;">â‚¬3</span>
           </div>
-          <p style="font-size:0.875rem;color:var(--gray-steel);margin-bottom:2rem;">per report · One-off payment · No subscription</p>
+          <p style="font-size:0.875rem;color:var(--gray-steel);margin-bottom:2rem;">per report Â· One-off payment Â· No subscription</p>
           <a href="/en/ai-credit-report/order/" class="btn btn-primary btn-large" style="width:100%;justify-content:center;text-align:center;">
             Order AI Credit Report
           </a>
           <p style="margin-top:1rem;font-size:0.75rem;color:var(--gray-mid);font-style:italic;">
-            Search the company and pay securely with Stripe — the report is emailed to you after payment.
+            Search the company and pay securely with Stripe â€” the report is emailed to you after payment.
           </p>
         </div>
         <p class="reveal" style="font-size:0.8125rem;color:var(--gray-steel);line-height:1.6;font-style:italic;">
-          The AI Credit Report is intended to support financial and credit risk assessment. Final credit decisions and further due diligence remain the user's responsibility.
+          The AI Credit Report is intended to support financial and credit risk assessment. It does not make or automate the final credit decision. Final credit decisions, credit policy, compliance checks, and further due diligence remain the user's responsibility.
         </p>
       </div>
     </div>
@@ -397,7 +420,7 @@
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                The standard Credit Risk Report provides automated financial and credit risk data in a structured PDF. The AI Credit Report contains the same core data, but adds AI-assisted written analysis, qualitative observations, and a decision-ready narrative summary — making it more useful for complex credit decisions.
+                The standard Credit Risk Report provides automated financial and credit risk data in a structured PDF. The AI Credit Report contains the same core data, but adds AI-assisted written analysis, qualitative observations, and a decision-ready narrative summary â€” making it more useful for complex credit decisions.
               </div>
             </div>
           </div>
@@ -464,7 +487,7 @@
       <div class="footer-brand">
         <span class="footer-wordmark">CreditReports.dk</span>
         <p class="footer-tagline">Credit risk reports and financial analysis for Danish companies.</p>
-        <a href="https://valuatum.com" class="footer-valuatum-link" target="_blank" rel="noopener">Powered by Valuatum ↗</a>
+        <a href="https://valuatum.com" class="footer-valuatum-link" target="_blank" rel="noopener">Powered by Valuatum â†—</a>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
         <div class="footer-col">
@@ -492,8 +515,8 @@
       </nav>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">© 2025 CreditReports.dk. All rights reserved.</p>
-      <p class="footer-reg">Powered by Valuatum · Helsinki, Finland</p>
+      <p class="footer-copy">Â© 2025 CreditReports.dk. All rights reserved.</p>
+      <p class="footer-reg">Powered by Valuatum Â· Helsinki, Finland</p>
     </div>
   </div>
 </footer>
@@ -512,7 +535,7 @@
   <div class="modal-body">
     <div class="modal-price-display">
       <span class="modal-price-label">Price</span>
-      <span class="modal-price-value" id="modalPrice">€3 / report</span>
+      <span class="modal-price-value" id="modalPrice">â‚¬3 / report</span>
     </div>
     <div class="modal-integration-note">
       Automatic online payment is being prepared. This order form is ready for Stripe checkout integration. Until the payment flow is connected, orders can be routed through the sales process.
@@ -536,7 +559,7 @@
       </div>
       <div class="form-group">
         <label for="modalMessage" class="form-label">Message <span class="optional">(optional)</span></label>
-        <textarea id="modalMessage" class="form-textarea" placeholder="Any additional information…"></textarea>
+        <textarea id="modalMessage" class="form-textarea" placeholder="Any additional informationâ€¦"></textarea>
       </div>
     </form>
   </div>
