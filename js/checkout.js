@@ -8,7 +8,7 @@
     'use strict';
 
     const REPORT_TYPE = 'dk_ai_credit_risk';
-    const LANG = 'en';
+    const locale = () => window.location.pathname.startsWith('/da/') ? 'da' : 'en';
 
     function init() {
         const overlay = document.getElementById('orderModalOverlay');
@@ -40,7 +40,9 @@
         function setSubmitting(isSubmitting) {
             submitting = isSubmitting;
             submitBtn.disabled = isSubmitting;
-            submitBtn.textContent = isSubmitting ? 'Processing…' : defaultLabel;
+            submitBtn.textContent = isSubmitting
+                ? (locale() === 'da' ? 'Behandler…' : 'Processing…')
+                : defaultLabel;
         }
 
         function open(details) {
@@ -76,7 +78,7 @@
                 businessId: current.businessId || '',
                 fiscalYear: current.fiscalYear || '',
                 companyName: current.companyName || '',
-                lang: LANG,
+                lang: locale(),
                 cancelPath: window.location.pathname,
             };
 
@@ -106,7 +108,9 @@
                 .catch((err) => {
                     console.error('create-checkout failed', err);
                     setSubmitting(false);
-                    showError('Something went wrong starting the payment. Please try again in a moment.');
+                    showError(locale() === 'da'
+                        ? 'Betalingen kunne ikke startes. Prøv igen om et øjeblik.'
+                        : 'Something went wrong starting the payment. Please try again in a moment.');
                 });
         }
 

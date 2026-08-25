@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kreditrapport og kreditvurdering af danske virksomheder | CreditReports.dk</title>
-  <meta name="description" content="F&aring; kreditrapport, kreditvurdering, kreditscore, kreditrisiko og konkursrisiko for danske virksomheder baseret p&aring; CVR-data og AI-model.">
+  <title>K&oslash;b kreditrapport for dansk virksomhed - &euro;3 | CreditReports.dk</title>
+  <meta name="description" content="S&oslash;g en dansk virksomhed, betal &euro;3 og modtag en AI-underst&oslash;ttet kreditrapport som PDF. Intet abonnement eller konto p&aring;kr&aelig;vet.">
   <meta name="keyword-target" content="kreditrapport danske virksomheder">
   <link rel="canonical" href="https://www.creditreports.dk/da/">
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -70,97 +70,104 @@
 <div id="site-nav"></div>
 <main>
 
-  <section class="hero" id="hero" aria-label="Forside" style="background:var(--navy);background-image:linear-gradient(rgba(11,31,58,0.80),rgba(11,31,58,0.88)),url('https://images.unsplash.com/photo-1454366946088-1492c0fef995?auto=format&fit=crop&w=1920&q=80');background-size:cover;background-position:center;min-height:100vh;">
+  <section class="hero purchase-hero" id="hero" aria-label="K&oslash;b kreditrapport" style="background:var(--navy);background-image:linear-gradient(90deg,rgba(7,24,47,0.96),rgba(7,24,47,0.80)),url('https://images.unsplash.com/photo-1454366946088-1492c0fef995?auto=format&fit=crop&w=1920&q=82');background-size:cover;background-position:center;">
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content">
-      <div class="hero-search">
-        <form class="search-bar-form" role="search" aria-label="S&oslash;g virksomhed" data-search-base="https://companies.creditreports.dk/da/">
+      <p class="hero-eyebrow">AI Credit Report &middot; &euro;3 &middot; engangsk&oslash;b</p>
+      <h1 class="hero-headline">K&oslash;b en kreditrapport<br>p&aring; en dansk virksomhed</h1>
+      <p class="hero-sub">S&oslash;g p&aring; virksomhedsnavn eller CVR-nummer. Betal sikkert med Stripe, og modtag den beslutningsklare PDF p&aring; e-mail. Ingen konto og intet abonnement.</p>
+      <div class="hero-search" id="koeb-rapport">
+        <p class="purchase-search-label">Hvilken virksomhed vil du unders&oslash;ge?</p>
+        <form class="search-bar-form" role="search" aria-label="S&oslash;g virksomhed og k&oslash;b kreditrapport" data-search-action="order">
           <div class="search-bar">
             <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M14 14l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <input class="search-input" type="search" name="q" placeholder="S&oslash;g efter virksomhedsnavn eller CVR-nummer" aria-label="S&oslash;g danske virksomheder" autocomplete="off">
+            <input class="search-input" type="search" name="q" placeholder="Fx JYSK A/S eller 13590400" aria-label="S&oslash;g danske virksomheder" autocomplete="off">
             <button type="submit" class="search-btn">S&oslash;g</button>
           </div>
         </form>
+        <p class="purchase-search-hint">V&aelig;lg virksomheden i resultatlisten for at forts&aelig;tte til betaling.</p>
       </div>
-      <p class="hero-eyebrow">Dansk virksomhedsdata &middot; 400.000+ virksomheder</p>
-      <h1 class="hero-headline">Tr&aelig;f bedre<br>kreditbeslutninger</h1>
-      <p class="hero-sub">F&aring; en pr&aelig;cis kreditrapport, kreditvurdering, kreditscore, kreditrisiko og konkursrisiko for danske virksomheder. Drevet af Valuatums AI-underst&oslash;ttede machine-learning modeller og officielle CVR-data.</p>
       <div class="hero-actions">
-        <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-primary btn-large" target="_blank" rel="noopener">Pr&oslash;v systemet gratis</a>
-        <a href="/sample-reports/JYSK_A_S_luottomuistio.pdf" class="btn btn-outline btn-large" target="_blank" rel="noopener">Se eksempelrapport</a>
+        <a href="/sample-reports/ai-credit-report-sample.pdf" class="purchase-text-link" target="_blank" rel="noopener">Se en eksempelrapport</a>
+        <a href="https://companies.creditreports.dk/da/" class="purchase-text-link">Brug den gratis virksomhedss&oslash;gning</a>
       </div>
     </div>
   </section>
 
-  <section class="content-section" aria-labelledby="products-heading">
+  <section class="trust-strip" aria-label="K&oslash;bsfordele">
+    <div class="container trust-strip-inner">
+      <div class="trust-item"><strong>400.000+</strong>&nbsp; danske virksomheder</div>
+      <div class="trust-item"><strong>&euro;3</strong>&nbsp; fast pris</div>
+      <div class="trust-item">Sikker betaling med Stripe</div>
+      <div class="trust-item">PDF leveret p&aring; e-mail</div>
+    </div>
+  </section>
+
+  <section class="content-section" id="saadan-virker-det" aria-labelledby="steps-heading">
     <div class="container">
-      <p class="section-eyebrow reveal" style="text-align:center;">Produkter</p>
-      <h2 class="section-headline reveal" style="text-align:center;" id="products-heading">Kreditrisiko og v&aelig;rdians&aelig;ttelse<br>for danske virksomheder</h2>
-      <div class="cards-grid">
-        <article class="product-card reveal">
-          <h3 class="product-card-title">Credit Risk Tool</h3>
-          <p class="product-card-body">Kreditrapport med kreditvurdering, kreditscore, kreditrisiko, konkursrisiko, kreditlimitforslag, regnskaber og branchebenchmark for danske virksomheder.</p>
-          <ul class="product-card-features"><li>Kreditscore og kreditvurdering (AAA-C)</li><li>Konkursrisiko for de n&aelig;ste 24 m&aring;neder</li><li>Automatisk kreditlimitforslag</li><li>Regnskaber og n&oslash;gletal</li></ul>
-          <div class="product-card-cta"><a href="/da/products/credit-risk-tool/" class="btn btn-primary">L&aelig;s mere</a><a href="/assets/wordpress-media/2023/06/Credit_Risk_Report_Demo.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">Eksempelrapport</a></div>
-        </article>
-        <article class="product-card reveal" data-delay="80">
-          <h3 class="product-card-title">Company Valuation Tool</h3>
-          <p class="product-card-body">Virksomhedsv&aelig;rdi med automatiske prognoser, redigerbare antagelser og scenarier til ejerskifte, finansiering og strategiske beslutninger.</p>
-          <ul class="product-card-features"><li>Automatiske finansielle prognoser</li><li>Redigerbare estimater</li><li>Flere v&aelig;rdians&aelig;ttelsesmetoder</li><li>Data fra 400.000+ virksomheder</li></ul>
-          <div class="product-card-cta"><a href="/da/products/company-valuation-tool/" class="btn btn-primary">L&aelig;s mere</a><a href="/assets/wordpress-media/2020/08/valuation_report_demo.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">Eksempelrapport</a></div>
-        </article>
-        <article class="product-card product-card--featured reveal" data-delay="160">
-          <h3 class="product-card-title">AI Credit Report</h3>
-          <p class="product-card-body">Samme kreditdata som standardrapporten, men med AI-underst&oslash;ttet skriftlig analyse og en klar beslutningsklar opsummering.</p>
-          <ul class="product-card-features"><li>Finansielle data og kreditrisiko</li><li>AI-underst&oslash;ttet analyse</li><li>Kvalitative observationer</li><li>Engangsk&oslash;b - ingen abonnementskrav</li></ul>
-          <div class="product-card-cta"><a href="/da/ai-credit-report/" class="btn btn-primary">L&aelig;s mere</a><a href="/sample-reports/ai-credit-report-sample.pdf" class="btn btn-outline" target="_blank" rel="noopener">Eksempelrapport</a></div>
-        </article>
+      <p class="section-eyebrow reveal" style="text-align:center;">S&aring;dan virker det</p>
+      <h2 class="section-headline reveal" style="text-align:center;" id="steps-heading">Fra virksomhedsnavn til f&aelig;rdig rapport</h2>
+      <div class="purchase-steps reveal">
+        <article><span>01</span><h3>S&oslash;g virksomheden</h3><p>Find virksomheden med navn eller CVR-nummer.</p></article>
+        <article><span>02</span><h3>Betal &euro;3</h3><p>Bekr&aelig;ft virksomheden og betal sikkert med Stripe.</p></article>
+        <article><span>03</span><h3>Modtag PDF'en</h3><p>Rapporten genereres og sendes til din e-mail.</p></article>
       </div>
     </div>
   </section>
 
   <section class="content-section content-section--alt">
     <div class="container">
-      <div class="two-col">
-        <div>
-          <p class="section-eyebrow reveal">S&aring;dan virker det</p>
-          <h2 class="prose-headline reveal">Fra s&oslash;gning til rapport p&aring; f&aring; minutter</h2>
-          <p class="prose-body reveal">S&oslash;g efter en dansk virksomhed, se de vigtigste regnskabs- og kreditindikatorer, og hent en kreditrapport n&aring;r du har brug for et mere detaljeret beslutningsgrundlag for kreditrisiko.</p>
-          <div class="sol-features reveal">
-            <div class="sol-feature"><svg class="sol-feature-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>S&oslash;g i 400.000+ danske virksomheder</div>
-            <div class="sol-feature"><svg class="sol-feature-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Se kreditvurdering, kreditscore, kreditrisiko, konkursrisiko og n&oslash;gletal</div>
-            <div class="sol-feature"><svg class="sol-feature-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Download standard- eller AI-rapport</div>
-            <div class="sol-feature"><svg class="sol-feature-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Opret konto og få adgang til platformen</div>
-          </div>
+      <div class="report-value-grid">
+        <div class="reveal">
+          <p class="section-eyebrow">Det f&aring;r du</p>
+          <h2 class="section-headline">Et klart beslutningsgrundlag, ikke bare flere tal</h2>
+          <p class="prose-body">Rapporten samler officielle regnskabsdata, kreditrisikom&aring;l og en skriftlig AI-underst&oslash;ttet analyse i &eacute;n PDF.</p>
+          <a href="/sample-reports/ai-credit-report-sample.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">Se eksempelrapport</a>
         </div>
-        <div class="reveal" data-delay="100">
-          <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);padding:2rem;box-shadow:0 8px 32px rgba(11,31,58,0.07);">
-            <p style="font-size:var(--text-sm);font-weight:500;color:var(--charcoal);margin-bottom:1rem;">S&oslash;g efter virksomhed</p>
-            <form class="search-bar-form" role="search" data-search-base="https://companies.creditreports.dk/da/">
-              <div class="search-bar" style="border-radius:var(--r-md);"><input class="search-input" type="search" name="q" placeholder="fx Jysk A/S eller CVR-nummer" aria-label="S&oslash;g" autocomplete="off"><button type="submit" class="search-btn">S&oslash;g</button></div>
-            </form>
-            <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.6;margin-top:1.25rem;">Virksomhedss&oslash;gningen ligger p&aring; companies.creditreports.dk, hvorfra du kan &aring;bne rapporter og platformen.</p>
-          </div>
+        <div class="report-checklist reveal" data-delay="100">
+          <div><strong>Kreditscore og kreditvurdering</strong><span>Et hurtigt overblik over virksomhedens risikoniveau.</span></div>
+          <div><strong>Konkursrisiko og kreditlimit</strong><span>Konkrete indikatorer til din kreditbeslutning.</span></div>
+          <div><strong>Regnskaber og n&oslash;gletal</strong><span>De vigtigste finansielle data samlet og forklaret.</span></div>
+          <div><strong>AI-underst&oslash;ttet konklusion</strong><span>Styrker, risici og observationer skrevet i klart sprog.</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="content-section content-section--alt">
-    <div class="container" style="text-align:center;max-width:720px;">
-      <p class="section-eyebrow reveal">Kom i gang</p>
-      <h2 class="section-headline reveal">Pr&oslash;v CreditReports.dk gratis</h2>
-      <p class="reveal" style="font-size:var(--text-lg);font-weight:300;color:var(--gray-steel);margin-bottom:2rem;">Opret en konto og f&aring; adgang til kreditvurderinger, regnskabsdata og rapporter for danske virksomheder.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="reveal">
-        <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-primary btn-large" target="_blank" rel="noopener">Opret konto</a>
-        <a href="/da/contact/" class="btn btn-outline-dark btn-large">Kontakt os</a>
+  <section class="content-section" aria-labelledby="faq-heading">
+    <div class="container faq-layout">
+      <div>
+        <p class="section-eyebrow reveal">F&oslash;r du k&oslash;ber</p>
+        <h2 class="section-headline reveal" id="faq-heading">Enkelt, hurtigt og uden binding</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item"><button class="faq-question" type="button"><span class="faq-question-text">Skal jeg oprette en konto?</span><span class="faq-chevron" aria-hidden="true">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Nej. Du betaler for &eacute;n rapport ad gangen og angiver din e-mail ved betalingen.</div></div></div>
+        <div class="faq-item"><button class="faq-question" type="button"><span class="faq-question-text">Hvorn&aring;r modtager jeg rapporten?</span><span class="faq-chevron" aria-hidden="true">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Rapporten genereres efter betalingen og sendes normalt til din e-mail inden for f&aring; minutter.</div></div></div>
+        <div class="faq-item"><button class="faq-question" type="button"><span class="faq-question-text">Hvilke data bygger rapporten p&aring;?</span><span class="faq-chevron" aria-hidden="true">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Rapporten kombinerer officielle danske virksomheds- og regnskabsdata med Valuatums kreditrisikomodeller og AI-underst&oslash;ttet analyse.</div></div></div>
       </div>
     </div>
   </section>
+
+  <section class="purchase-cta" aria-labelledby="final-cta-heading">
+    <div class="container purchase-cta-inner">
+      <div><p class="section-eyebrow">Klar til at tjekke en virksomhed?</p><h2 id="final-cta-heading">Find virksomheden og k&oslash;b rapporten for &euro;3</h2><p>Ingen konto. Intet abonnement. PDF sendt til din e-mail.</p></div>
+      <form class="search-bar-form" role="search" aria-label="S&oslash;g virksomhed og k&oslash;b kreditrapport" data-search-action="order"><div class="search-bar"><svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M14 14l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><input class="search-input" type="search" name="q" placeholder="Virksomhedsnavn eller CVR-nummer" aria-label="S&oslash;g danske virksomheder" autocomplete="off"><button type="submit" class="search-btn">S&oslash;g</button></div></form>
+    </div>
+  </section>
+
+  <section class="business-solutions" aria-label="L&oslash;sninger til virksomheder"><div class="container business-solutions-inner"><p>Har du brug for l&oslash;bende kreditchecks eller virksomhedsv&aelig;rdians&aelig;ttelse?</p><div><a href="/da/product/">Se erhvervsl&oslash;sninger</a><a href="https://platform.creditreports.dk" target="_blank" rel="noopener">Erhvervslogin</a></div></div></section>
 </main>
+
+<div class="modal-overlay" id="orderModalOverlay" aria-hidden="true"></div>
+<div class="modal-container" id="orderConfirmModal" role="dialog" aria-labelledby="orderConfirmTitle" aria-modal="true" tabindex="-1">
+  <div class="modal-header"><h2 class="modal-title" id="orderConfirmTitle">K&oslash;b AI-kreditrapport</h2><button type="button" class="modal-close" id="orderConfirmClose" aria-label="Luk"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></div>
+  <div class="modal-body"><div class="modal-price-display"><span class="modal-price-label">Virksomhed</span><span class="modal-price-value" id="orderConfirmCompany">&mdash;</span></div><div class="modal-price-display"><span class="modal-price-label">Pris</span><span class="modal-price-value">&euro;3</span></div><p class="modal-explanation">Efter betalingen genererer vi rapporten og sender PDF'en til den e-mailadresse, du angiver hos Stripe.</p><p class="modal-error" id="orderConfirmError" hidden></p></div>
+  <div class="modal-footer"><button type="button" class="modal-submit" id="orderConfirmSubmit">Forts&aelig;t til sikker betaling</button></div>
+</div>
 <div id="site-footer"></div>
 <script src="../js/nav.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/search.js"></script>
+<script src="../js/checkout.js"></script>
 </body>
 </html>

@@ -30,8 +30,14 @@
       
     </div>
   </section>
-  <section class="content-section"><div class="container" style="max-width:760px;"><form class="search-bar-form reveal" role="search" data-search-base="https://companies.creditreports.dk/da/"><div class="search-bar"><input class="search-input" type="search" name="q" placeholder="S&oslash;g efter virksomhedsnavn eller CVR-nummer" aria-label="S&oslash;g virksomhed" autocomplete="off"><button type="submit" class="search-btn">S&oslash;g</button></div></form><div class="feature-card reveal" style="margin-top:2rem;"><h2 class="feature-title">Pris: &euro;3 per rapport</h2><p class="feature-body">Rapporten leveres som PDF og indeholder finansielle data, kreditrisiko, AI-underst&oslash;ttet analyse og en beslutningsklar konklusion.</p><a href="https://companies.creditreports.dk/da/" class="btn btn-primary">&Aring;bn virksomhedss&oslash;gning</a></div></div></section>
+  <section class="content-section"><div class="container" style="max-width:760px;"><form class="search-bar-form reveal" role="search" aria-label="S&oslash;g virksomhed og k&oslash;b kreditrapport" data-search-action="order"><div class="search-bar"><input class="search-input" type="search" name="q" placeholder="S&oslash;g efter virksomhedsnavn eller CVR-nummer" aria-label="S&oslash;g virksomhed" autocomplete="off"><button type="submit" class="search-btn">S&oslash;g</button></div></form><div class="feature-card reveal" style="margin-top:2rem;"><h2 class="feature-title">Pris: &euro;3 per rapport</h2><p class="feature-body">V&aelig;lg virksomheden i s&oslash;geresultatet, betal sikkert med Stripe, og modtag rapporten som PDF p&aring; e-mail. Ingen konto eller abonnement.</p></div></div></section>
 </main>
+<div class="modal-overlay" id="orderModalOverlay" aria-hidden="true"></div>
+<div class="modal-container" id="orderConfirmModal" role="dialog" aria-labelledby="orderConfirmTitle" aria-modal="true" tabindex="-1">
+  <div class="modal-header"><h2 class="modal-title" id="orderConfirmTitle">K&oslash;b AI-kreditrapport</h2><button type="button" class="modal-close" id="orderConfirmClose" aria-label="Luk"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></div>
+  <div class="modal-body"><div class="modal-price-display"><span class="modal-price-label">Virksomhed</span><span class="modal-price-value" id="orderConfirmCompany">&mdash;</span></div><div class="modal-price-display"><span class="modal-price-label">Pris</span><span class="modal-price-value">&euro;3</span></div><p class="modal-explanation">Efter betalingen genererer vi rapporten og sender PDF'en til den e-mailadresse, du angiver hos Stripe.</p><p class="modal-error" id="orderConfirmError" hidden></p></div>
+  <div class="modal-footer"><button type="button" class="modal-submit" id="orderConfirmSubmit">Forts&aelig;t til sikker betaling</button></div>
+</div>
 <div id="site-footer"></div>
 <script src="../../../js/nav.js"></script>
 <script src="../../../js/main.js"></script>

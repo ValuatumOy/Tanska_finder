@@ -134,14 +134,12 @@
     const otherPath = alternatePath(path, otherLocale);
     const productActive = path.startsWith(`/${locale}/product`) ? ' nav-link--active' : '';
     const supportActive = path.startsWith(`/${locale}/support`) ? ' nav-link--active' : '';
-
-    return `
-<header class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="${pagePath(locale)}" class="nav-logo" aria-label="CreditReports.dk home">
-      <img class="nav-logo-image" src="/assets/brand/creditreportsdklogo.svg" alt="CreditReports.dk">
-    </a>
-    <nav class="nav-links" aria-label="Main navigation">
+    const desktopLinks = locale === 'da' ? `
+      <a href="${companySearch(locale)}" class="nav-link">Virksomhedssøgning</a>
+      <a href="${pagePath(locale, 'ai-credit-report/')}" class="nav-link${path.startsWith('/da/ai-credit-report') ? ' nav-link--active' : ''}">AI-kreditrapport</a>
+      <a href="${pagePath(locale)}#saadan-virker-det" class="nav-link">Sådan virker det</a>
+      <a href="${pagePath(locale, 'product/')}" class="nav-link${productActive}">Erhvervsløsninger</a>
+      <a href="${pagePath(locale, 'contact/')}" class="nav-link${path.startsWith('/da/contact') ? ' nav-link--active' : ''}">Hjælp</a>` : `
       <div class="nav-item">
         <a href="${pagePath(locale, 'product/')}" class="nav-link nav-link--has-dropdown${productActive}" aria-haspopup="true" aria-expanded="false">${text.products} ${CHEVRON}</a>
         <div class="nav-dropdown" role="menu">
@@ -156,11 +154,9 @@
           </div>
         </div>
       </div>
-
-      <a href="${pagePath(locale, 'pricing/')}" class="nav-link${path.startsWith(`/${locale}/pricing`) ? ' nav-link--active' : ''}">${text.pricing}</a>
-      <a href="${pagePath(locale, 'ai-credit-report/')}" class="nav-link${path.startsWith(`/${locale}/ai-credit-report`) ? ' nav-link--active' : ''}">${text.aiReport}</a>
+      <a href="${pagePath(locale, 'pricing/')}" class="nav-link${path.startsWith('/en/pricing') ? ' nav-link--active' : ''}">${text.pricing}</a>
+      <a href="${pagePath(locale, 'ai-credit-report/')}" class="nav-link${path.startsWith('/en/ai-credit-report') ? ' nav-link--active' : ''}">${text.aiReport}</a>
       <a href="${companySearch(locale)}" class="nav-link">${text.companySearch}</a>
-
       <div class="nav-item">
         <a href="${supportPath(locale)}" class="nav-link nav-link--has-dropdown${supportActive}" aria-haspopup="true" aria-expanded="false">${text.support} ${CHEVRON}</a>
         <div class="nav-dropdown" role="menu">
@@ -171,21 +167,14 @@
           </div>
         </div>
       </div>
+      <a href="${pagePath(locale, 'contact/')}" class="nav-link${path.startsWith('/en/contact') ? ' nav-link--active' : ''}">${text.contact}</a>`;
 
-      <a href="${pagePath(locale, 'contact/')}" class="nav-link${path.startsWith(`/${locale}/contact`) ? ' nav-link--active' : ''}">${text.contact}</a>
-    </nav>
-    <div class="nav-actions">
-      <a href="${LOGIN}" class="nav-login" target="_blank" rel="noopener">${text.login}</a>
-      <a href="${pagePath(locale, 'create-account/')}" class="nav-cta">${text.createAccount}</a>
-      <a href="${otherPath}" class="nav-lang" hreflang="${otherLocale}" aria-label="${otherLocale === 'da' ? 'Dansk version' : 'English version'}">${otherLocale.toUpperCase()}</a>
-    </div>
-    <button class="nav-hamburger" type="button" aria-label="${text.openMenu}" aria-controls="mobileMenu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <div class="nav-mobile-menu" id="mobileMenu" aria-hidden="true">
-    <nav class="nav-mobile-nav" aria-label="Mobile navigation">
-      <ul class="nav-mobile-list">
+    const mobileLinks = locale === 'da' ? `
+        <li><a href="${companySearch(locale)}" class="nav-mobile-link">Virksomhedssøgning</a></li>
+        <li><a href="${pagePath(locale, 'ai-credit-report/')}" class="nav-mobile-link">AI-kreditrapport</a></li>
+        <li><a href="${pagePath(locale)}#saadan-virker-det" class="nav-mobile-link">Sådan virker det</a></li>
+        <li><a href="${pagePath(locale, 'product/')}" class="nav-mobile-link">Erhvervsløsninger</a></li>
+        <li><a href="${pagePath(locale, 'contact/')}" class="nav-mobile-link">Hjælp</a></li>` : `
         <li class="nav-mobile-group">
           <a href="${pagePath(locale, 'product/')}" class="nav-mobile-link">${text.products}</a>
           <ul class="nav-mobile-sublist">
@@ -199,14 +188,38 @@
         <li><a href="${companySearch(locale)}" class="nav-mobile-link">${text.companySearch}</a></li>
         <li class="nav-mobile-group">
           <a href="${supportPath(locale)}" class="nav-mobile-link">${text.support}</a>
-          <ul class="nav-mobile-sublist">
-            ${supportDetailLinks(locale, text, 'nav-mobile-link nav-mobile-link--sub')}
-          </ul>
+          <ul class="nav-mobile-sublist">${supportDetailLinks(locale, text, 'nav-mobile-link nav-mobile-link--sub')}</ul>
         </li>
-        <li><a href="${pagePath(locale, 'contact/')}" class="nav-mobile-link">${text.contact}</a></li>
+        <li><a href="${pagePath(locale, 'contact/')}" class="nav-mobile-link">${text.contact}</a></li>`;
+    const actionHref = locale === 'da' ? '/da/#koeb-rapport' : pagePath(locale, 'create-account/');
+    const actionLabel = locale === 'da' ? 'Køb rapport' : text.createAccount;
+    const loginLabel = locale === 'da' ? 'Erhvervslogin' : text.login;
+
+    return `
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="${pagePath(locale)}" class="nav-logo" aria-label="CreditReports.dk home">
+      <img class="nav-logo-image" src="/assets/brand/creditreportsdklogo.svg" alt="CreditReports.dk">
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      ${desktopLinks}
+    </nav>
+    <div class="nav-actions">
+      <a href="${LOGIN}" class="nav-login" target="_blank" rel="noopener">${loginLabel}</a>
+      <a href="${actionHref}" class="nav-cta">${actionLabel}</a>
+      <a href="${otherPath}" class="nav-lang" hreflang="${otherLocale}" aria-label="${otherLocale === 'da' ? 'Dansk version' : 'English version'}">${otherLocale.toUpperCase()}</a>
+    </div>
+    <button class="nav-hamburger" type="button" aria-label="${text.openMenu}" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="nav-mobile-nav" aria-label="Mobile navigation">
+      <ul class="nav-mobile-list">
+        ${mobileLinks}
         <li><a href="${otherPath}" class="nav-mobile-link">${otherLocale.toUpperCase()}</a></li>
-        <li><a href="${LOGIN}" class="nav-mobile-link" target="_blank" rel="noopener">${text.login}</a></li>
-        <li><a href="${pagePath(locale, 'create-account/')}" class="nav-mobile-link nav-mobile-cta">${text.createAccount}</a></li>
+        <li><a href="${LOGIN}" class="nav-mobile-link" target="_blank" rel="noopener">${loginLabel}</a></li>
+        <li><a href="${actionHref}" class="nav-mobile-link nav-mobile-cta">${actionLabel}</a></li>
       </ul>
     </nav>
   </div>

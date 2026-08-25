@@ -2,6 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
+const MANUALLY_MAINTAINED_PAGES = new Set([
+  'da/index.html',
+  'da/ai-credit-report/order/index.html',
+]);
 
 function ensureDir(filePath) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
@@ -41,6 +45,7 @@ ${scriptTags}
 }
 
 function write(relativePath, content) {
+  if (MANUALLY_MAINTAINED_PAGES.has(relativePath)) return;
   const filePath = path.join(ROOT, relativePath);
   ensureDir(filePath);
   fs.writeFileSync(filePath, content, 'utf8');
@@ -336,8 +341,8 @@ write('da/ai-credit-report/index.html', page({
   scripts: ['nav', 'main', 'search'],
   headExtra: aiProductSchemaDa,
   body: `
-${hero('AI Credit Report', 'AI Credit Report<br>for danske virksomheder', 'En beslutningsklar PDF, der kombinerer regnskabsdata, kreditrisiko og AI-understøttet skriftlig analyse.', '<div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;"><a href="/da/ai-credit-report/order/" class="btn btn-primary btn-large">Søg virksomhed</a><a href="/sample-reports/ai-credit-report-sample.pdf" class="btn btn-outline btn-large" target="_blank" rel="noopener">Se eksempelrapport</a></div>')}
-  <section class="content-section"><div class="container"><div class="two-col"><div><p class="section-eyebrow reveal">Hvad det er</p><h2 class="prose-headline reveal">Samme kreditdata.<br>Stærkere AI-analyse.</h2><p class="prose-body reveal">AI Credit Report bygger på de samme finansielle data og kreditrisikomål som standardrapporten, men tilføjer en skriftlig analyse, kvalitative observationer og en mere klar konklusion.</p><p class="prose-body reveal">Rapporten er velegnet, når tallene skal forklares tydeligt for kreditkomité, salg, ledelse eller eksterne interessenter.</p><a href="/da/ai-credit-report/order/" class="btn btn-primary">Bestil AI Credit Report</a></div><div class="feature-card reveal"><h3 class="feature-title">Indhold</h3><div class="sol-features"><div class="sol-feature">${check}Regnskaber og nøgletal</div><div class="sol-feature">${check}Kreditscore, rating og konkursrisiko</div><div class="sol-feature">${check}AI-understøttet skriftlig analyse</div><div class="sol-feature">${check}Beslutningsklar opsummering</div><div class="sol-feature">${check}Engangskøb til €3 per rapport</div></div></div></div></div></section>
+${hero('AI Credit Report', 'AI Credit Report<br>for danske virksomheder', 'En beslutningsklar PDF, der kombinerer regnskabsdata, kreditrisiko og AI-understøttet skriftlig analyse.', '<div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;"><a href="/da/#koeb-rapport" class="btn btn-primary btn-large">Køb rapport</a><a href="/sample-reports/ai-credit-report-sample.pdf" class="btn btn-outline btn-large" target="_blank" rel="noopener">Se eksempelrapport</a></div>')}
+  <section class="content-section"><div class="container"><div class="two-col"><div><p class="section-eyebrow reveal">Hvad det er</p><h2 class="prose-headline reveal">Samme kreditdata.<br>Stærkere AI-analyse.</h2><p class="prose-body reveal">AI Credit Report bygger på de samme finansielle data og kreditrisikomål som standardrapporten, men tilføjer en skriftlig analyse, kvalitative observationer og en mere klar konklusion.</p><p class="prose-body reveal">Rapporten er velegnet, når tallene skal forklares tydeligt for kreditkomité, salg, ledelse eller eksterne interessenter.</p><a href="/da/#koeb-rapport" class="btn btn-primary">Køb AI-kreditrapport</a></div><div class="feature-card reveal"><h3 class="feature-title">Indhold</h3><div class="sol-features"><div class="sol-feature">${check}Regnskaber og nøgletal</div><div class="sol-feature">${check}Kreditscore, rating og konkursrisiko</div><div class="sol-feature">${check}AI-understøttet skriftlig analyse</div><div class="sol-feature">${check}Beslutningsklar opsummering</div><div class="sol-feature">${check}Engangskøb til €3 per rapport</div></div></div></div></div></section>
 ${cta}`
 }));
 
@@ -362,7 +367,7 @@ write('da/pricing/index.html', page({
 ${hero('Priser', 'Enkle og transparente priser', 'Køb enkelte rapporter efter behov, vælg en lille pakke til hurtige checks, eller brug månedlig systemadgang.')}
   <section class="content-section"><div class="container"><div class="pricing-grid pricing-grid--four">
     <article class="pricing-card reveal"><p class="pricing-card-label">Enkeltrapport</p><h3 class="pricing-card-title">Standard kreditrapport</h3><div class="pricing-price"><span class="pricing-amount">€1</span></div><p class="pricing-period">per basisrapport</p><ul class="pricing-features"><li>Kreditscore og rating</li><li>Konkursrisiko og kreditlimit</li><li>Regnskaber og nøgletal</li></ul><a href="https://companies.creditreports.dk/da/" class="btn btn-outline-dark">Søg virksomhed</a></article>
-    <article class="pricing-card pricing-card--ai reveal"><p class="pricing-card-label">AI-analyse</p><h3 class="pricing-card-title">AI Credit Report</h3><div class="pricing-price"><span class="pricing-amount">€3</span></div><p class="pricing-period">per AI-rapport</p><ul class="pricing-features"><li>Alle standard kreditdata</li><li>AI-understøttet skriftlig analyse</li><li>Beslutningsklar PDF</li></ul><a href="/da/ai-credit-report/order/" class="btn btn-primary">Bestil AI-rapport</a></article>
+    <article class="pricing-card pricing-card--ai reveal"><p class="pricing-card-label">AI-analyse</p><h3 class="pricing-card-title">AI Credit Report</h3><div class="pricing-price"><span class="pricing-amount">€3</span></div><p class="pricing-period">per AI-rapport</p><ul class="pricing-features"><li>Alle standard kreditdata</li><li>AI-understøttet skriftlig analyse</li><li>Beslutningsklar PDF</li></ul><a href="/da/#koeb-rapport" class="btn btn-primary">Køb AI-rapport</a></article>
     <article class="pricing-card pricing-card--featured reveal"><p class="pricing-card-label">Pakke</p><h3 class="pricing-card-title">3 rapporter</h3><div class="pricing-price"><span class="pricing-amount">€2</span></div><p class="pricing-period">3 basisrapporter</p><ul class="pricing-features"><li>Tre standardrapporter</li><li>Lavere pris for hurtige checks</li><li>God til korte virksomhedslister</li></ul><a href="https://companies.creditreports.dk/da/" class="btn btn-primary">Køb pakke</a></article>
     <article class="pricing-card reveal"><p class="pricing-card-label">Månedlig adgang</p><h3 class="pricing-card-title">Systemadgang</h3><div class="pricing-price"><span class="pricing-amount">€20</span><span class="pricing-currency">/ måned</span></div><p class="pricing-period">løbende platformadgang</p><ul class="pricing-features"><li>Adgang til CreditReports.dk-systemet</li><li>Til gentagne kreditchecks</li><li>Rapporter købes efter behov</li></ul><a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-outline-dark" target="_blank" rel="noopener">Start adgang</a></article>
   </div></div></section>

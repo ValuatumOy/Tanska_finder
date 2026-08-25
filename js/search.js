@@ -10,6 +10,14 @@
     const MIN_QUERY_LENGTH = 3;
     const MAX_RESULTS = 10;
 
+    function locale() {
+        return window.location.pathname.startsWith('/da/') ? 'da' : 'en';
+    }
+
+    function localized(english, danish) {
+        return locale() === 'da' ? danish : english;
+    }
+
     function buildSearchQuery(rawQuery) {
         const query = String(rawQuery || '').trim();
         if (!query) return '';
@@ -90,7 +98,7 @@
 
         const text = document.createElement('span');
         text.className = 'sr-only';
-        text.textContent = 'Loading search results';
+        text.textContent = localized('Loading search results', 'Indlæser søgeresultater');
 
         loading.append(spinner, text);
         return loading;
@@ -128,7 +136,9 @@
         const meta = document.createElement('span');
         meta.className = 'search-dropdown-meta';
         const companyCode = formatCompanyCode(result.companyCode);
-        meta.textContent = companyCode ? `CVR: ${companyCode}` : 'Company profile';
+        meta.textContent = companyCode
+            ? `CVR: ${companyCode}`
+            : localized('Company profile', 'Virksomhedsprofil');
 
         link.append(company, meta);
         return link;
@@ -156,8 +166,8 @@
         const meta = document.createElement('span');
         meta.className = 'search-dropdown-meta';
         meta.textContent = companyCode
-            ? `CVR: ${companyCode} · Buy AI Credit Report — €3`
-            : 'Buy AI Credit Report — €3';
+            ? `CVR: ${companyCode} · ${localized('Buy AI Credit Report', 'Køb AI-kreditrapport')} · €3`
+            : `${localized('Buy AI Credit Report', 'Køb AI-kreditrapport')} · €3`;
 
         button.append(company, meta);
 
@@ -213,7 +223,12 @@
         state.activeResultIndex = -1;
 
         if (!results.length) {
-            renderMessage(input, dropdown, 'search-dropdown-empty', 'No companies found');
+            renderMessage(
+                input,
+                dropdown,
+                'search-dropdown-empty',
+                localized('No companies found', 'Ingen virksomheder fundet'),
+            );
             return;
         }
 
@@ -313,7 +328,7 @@
                         input,
                         dropdown,
                         'search-dropdown-error',
-                        'Search is temporarily unavailable',
+                        localized('Search is temporarily unavailable', 'Søgningen er midlertidigt utilgængelig'),
                     );
                 }
             } finally {

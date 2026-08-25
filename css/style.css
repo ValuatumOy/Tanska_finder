@@ -3092,9 +3092,224 @@ button.search-dropdown-link {
 
 .pillar--dark .pillar-body { color: rgba(255,255,255,0.50); }
 
+/* Danish report purchase funnel */
+.purchase-hero {
+  min-height: min(760px, 88svh);
+}
+
+.purchase-hero .hero-content {
+  padding-bottom: 4rem;
+}
+
+.purchase-hero .hero-headline {
+  max-width: 820px;
+  letter-spacing: 0;
+}
+
+.purchase-hero .hero-sub {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.purchase-hero .hero-search {
+  width: min(100%, 720px);
+  max-width: 720px;
+  margin: 0 0 1.25rem;
+}
+
+.purchase-search-label {
+  margin-bottom: 0.65rem;
+  color: var(--white);
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.purchase-search-hint {
+  margin-top: 0.6rem;
+  color: rgba(255,255,255,0.58);
+  font-size: var(--text-xs);
+}
+
+.purchase-hero .hero-actions {
+  gap: 1.5rem;
+}
+
+.purchase-text-link {
+  color: rgba(255,255,255,0.82);
+  font-size: var(--text-sm);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.purchase-text-link:hover {
+  color: var(--white);
+}
+
+.purchase-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 3rem;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.purchase-steps article {
+  min-width: 0;
+  padding: 2rem clamp(1rem, 3vw, 2.5rem);
+  border-right: 1px solid var(--color-border);
+}
+
+.purchase-steps article:first-child { padding-left: 0; }
+.purchase-steps article:last-child { padding-right: 0; border-right: 0; }
+
+.purchase-steps span {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--blue);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+.purchase-steps h3 {
+  margin-bottom: 0.5rem;
+  color: var(--charcoal);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.purchase-steps p {
+  color: var(--gray-steel);
+  font-size: var(--text-sm);
+  line-height: 1.65;
+}
+
+.report-value-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: center;
+}
+
+.report-value-grid .section-headline {
+  letter-spacing: 0;
+}
+
+.report-checklist {
+  border-top: 1px solid var(--color-border);
+}
+
+.report-checklist > div {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.9fr) minmax(0, 1.1fr);
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.report-checklist strong {
+  color: var(--charcoal);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.report-checklist span {
+  color: var(--gray-steel);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: start;
+}
+
+.faq-layout .section-headline {
+  letter-spacing: 0;
+}
+
+.purchase-cta {
+  padding: clamp(3rem, 7vw, 5.5rem) 0;
+  background: var(--navy);
+}
+
+.purchase-cta-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  gap: clamp(2rem, 7vw, 6rem);
+  align-items: center;
+}
+
+.purchase-cta h2 {
+  margin-bottom: 0.75rem;
+  color: var(--white);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.purchase-cta p:not(.section-eyebrow) {
+  color: rgba(255,255,255,0.58);
+  font-size: var(--text-sm);
+}
+
+.business-solutions {
+  padding: 1.5rem 0;
+  background: var(--off-white);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.business-solutions-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.business-solutions p {
+  color: var(--gray-steel);
+  font-size: var(--text-sm);
+}
+
+.business-solutions-inner > div {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.business-solutions a {
+  color: var(--blue);
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.modal-explanation {
+  color: var(--gray-steel);
+  font-size: var(--text-sm);
+  line-height: 1.65;
+}
+
+.modal-error {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #f5c2c2;
+  border-radius: var(--r-md);
+  background: #fdecec;
+  color: #a1262d;
+  font-size: var(--text-xs);
+}
+
 /* =====================================================
    28. RESPONSIVE
 ===================================================== */
+@media (max-width: 1180px) {
+  .nav-links, .nav-actions { display: none; }
+  .nav-hamburger { display: flex; margin-left: auto; }
+  .nav-mobile-menu.open { display: flex; }
+}
+
 @media (max-width: 1024px) {
   .highlights-grid  { grid-template-columns: 1fr 1fr; }
   .steps-grid       { grid-template-columns: 1fr 1fr; }
@@ -3107,6 +3322,8 @@ button.search-dropdown-link {
   .report-sales-grid { grid-template-columns: 1fr; }
   .analysis-scope-grid { grid-template-columns: 1fr; }
   .report-preview-card { padding: 0; }
+  .report-value-grid,
+  .faq-layout { gap: 3rem; }
 }
 
 @media (max-width: 768px) {
@@ -3186,6 +3403,18 @@ button.search-dropdown-link {
   .footer-top       { grid-template-columns: 1fr; gap: 2rem; }
   .footer-nav       { grid-template-columns: repeat(2, 1fr); }
   .report-sections-grid { grid-template-columns: 1fr; }
+  .purchase-steps,
+  .report-value-grid,
+  .faq-layout,
+  .purchase-cta-inner { grid-template-columns: 1fr; }
+  .purchase-steps article {
+    padding: 1.5rem 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .purchase-steps article:last-child { border-bottom: 0; }
+  .report-checklist > div { grid-template-columns: 1fr; gap: 0.4rem; }
+  .business-solutions-inner { align-items: flex-start; flex-direction: column; }
   .pillars-grid     { grid-template-columns: 1fr; }
   .sample-report-card { flex-direction: column; }
   .sample-report-preview { width: 100%; max-width: 180px; margin: 0 auto; }
@@ -3273,6 +3502,7 @@ button.search-dropdown-link {
   .sample-image-grid    { grid-template-columns: 1fr; }
   .footer-nav           { grid-template-columns: 1fr; }
   .footer-bottom        { flex-direction: column; align-items: flex-start; }
+  .business-solutions-inner > div { flex-direction: column; gap: 0.75rem; }
 
   .stat-strip           { grid-template-columns: 1fr; }
   .stat-item            { align-items: flex-start; text-align: left; }
