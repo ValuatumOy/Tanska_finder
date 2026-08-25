@@ -54,17 +54,17 @@ const organizationSchemaDa = `<script type="application/ld+json">
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://creditreports.dk/#organization",
+        "@id": "https://www.creditreports.dk/#organization",
         "name": "CreditReports.dk",
-        "url": "https://creditreports.dk/da/",
-        "logo": "https://creditreports.dk/assets/brand/creditreportsdklogo.svg",
+        "url": "https://www.creditreports.dk/da/",
+        "logo": "https://www.creditreports.dk/assets/brand/creditreportsdklogo.svg",
         "description": "CreditReports.dk leverer kreditrapporter, kreditvurderinger, konkursrisiko og finansiel analyse for danske virksomheder.",
         "parentOrganization": {
           "@type": "Organization",
           "@id": "https://www.valuatum.com/#organization",
           "name": "Valuatum Oy",
           "url": "https://www.valuatum.com/",
-          "logo": "https://creditreports.dk/assets/wordpress-media/2018/06/valuatum_logo__.png",
+          "logo": "https://www.creditreports.dk/assets/wordpress-media/2018/06/valuatum_logo__.png",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Linnanrakentajantie 6-8 C, Suite 15",
@@ -80,18 +80,18 @@ const organizationSchemaDa = `<script type="application/ld+json">
         "sameAs": [
           "https://www.valuatum.com/",
           "https://www.linkedin.com/company/valuatum-oy",
-          "https://companies.creditreports.dk/en/"
+          "https://companies.creditreports.dk/da/"
         ]
       },
       {
         "@type": "WebSite",
-        "@id": "https://creditreports.dk/da/#website",
+        "@id": "https://www.creditreports.dk/da/#website",
         "name": "CreditReports.dk",
-        "url": "https://creditreports.dk/da/",
-        "publisher": { "@id": "https://creditreports.dk/#organization" },
+        "url": "https://www.creditreports.dk/da/",
+        "publisher": { "@id": "https://www.creditreports.dk/#organization" },
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://companies.creditreports.dk/en/?q={search_term_string}",
+          "target": "https://companies.creditreports.dk/da/?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       }
@@ -103,15 +103,15 @@ const aiProductSchemaDa = `<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Product",
-    "@id": "https://creditreports.dk/da/ai-credit-report/#product",
+    "@id": "https://www.creditreports.dk/da/ai-credit-report/#product",
     "name": "AI Credit Report",
     "description": "AI-understøttet kreditrapport for danske virksomheder med kreditvurdering, kreditscore, kreditrisiko, konkursrisiko og skriftlig analyse.",
     "brand": { "@type": "Brand", "name": "CreditReports.dk" },
     "category": "Business credit report",
-    "url": "https://creditreports.dk/da/ai-credit-report/",
+    "url": "https://www.creditreports.dk/da/ai-credit-report/",
     "offers": {
       "@type": "Offer",
-      "url": "https://creditreports.dk/da/ai-credit-report/order/",
+      "url": "https://www.creditreports.dk/da/ai-credit-report/order/",
       "price": "3.00",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
@@ -121,7 +121,7 @@ const aiProductSchemaDa = `<script type="application/ld+json">
         "priceCurrency": "EUR",
         "unitText": "REPORT"
       },
-      "seller": { "@id": "https://creditreports.dk/#organization" }
+      "seller": { "@id": "https://www.creditreports.dk/#organization" }
     }
   }
   </script>`;
@@ -130,13 +130,13 @@ const creditRiskSoftwareSchemaDa = `<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "@id": "https://creditreports.dk/da/products/credit-risk-tool/#software",
+    "@id": "https://www.creditreports.dk/da/products/credit-risk-tool/#software",
     "name": "Credit Risk Tool",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
-    "url": "https://creditreports.dk/da/products/credit-risk-tool/",
+    "url": "https://www.creditreports.dk/da/products/credit-risk-tool/",
     "description": "Credit Risk Tool leverer kreditvurdering, kreditscore, konkursrisiko, kreditlimitforslag, regnskaber og branchebenchmark for danske virksomheder.",
-    "publisher": { "@id": "https://creditreports.dk/#organization" },
+    "publisher": { "@id": "https://www.creditreports.dk/#organization" },
     "featureList": [
       "Kreditscore",
       "Kreditvurdering",
@@ -147,7 +147,7 @@ const creditRiskSoftwareSchemaDa = `<script type="application/ld+json">
     ],
     "offers": {
       "@type": "Offer",
-      "url": "https://creditreports.dk/da/pricing/",
+      "url": "https://www.creditreports.dk/da/pricing/",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock"
     }
@@ -181,7 +181,7 @@ const cta = `
 write('da/index.html', page({
   title: 'Kreditrapport og kreditvurdering af danske virksomheder | CreditReports.dk',
   description: 'Få kreditrapport, kreditvurdering, kreditscore, kreditrisiko og konkursrisiko for danske virksomheder baseret på CVR-data og AI-model.',
-  canonical: 'https://creditreports.dk/da/',
+  canonical: 'https://www.creditreports.dk/da/',
   cssDepth: 1,
   scripts: ['nav', 'main', 'search'],
   headExtra: organizationSchemaDa,
@@ -190,7 +190,7 @@ write('da/index.html', page({
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content">
       <div class="hero-search">
-        <form class="search-bar-form" role="search" aria-label="Søg virksomhed" data-search-base="https://companies.creditreports.dk/en/">
+        <form class="search-bar-form" role="search" aria-label="Søg virksomhed" data-search-base="https://companies.creditreports.dk/da/">
           <div class="search-bar">
             <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M14 14l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             <input class="search-input" type="search" name="q" placeholder="Søg efter virksomhedsnavn eller CVR-nummer" aria-label="Søg danske virksomheder" autocomplete="off">
@@ -252,7 +252,7 @@ write('da/index.html', page({
         <div class="reveal" data-delay="100">
           <div style="background:var(--white);border:1px solid var(--color-border);border-radius:var(--r-xl);padding:2rem;box-shadow:0 8px 32px rgba(11,31,58,0.07);">
             <p style="font-size:var(--text-sm);font-weight:500;color:var(--charcoal);margin-bottom:1rem;">Søg efter virksomhed</p>
-            <form class="search-bar-form" role="search" data-search-base="https://companies.creditreports.dk/en/">
+            <form class="search-bar-form" role="search" data-search-base="https://companies.creditreports.dk/da/">
               <div class="search-bar" style="border-radius:var(--r-md);"><input class="search-input" type="search" name="q" placeholder="fx Jysk A/S eller CVR-nummer" aria-label="Søg" autocomplete="off"><button type="submit" class="search-btn">Søg</button></div>
             </form>
             <p style="font-size:var(--text-sm);font-weight:300;color:var(--gray-steel);line-height:1.6;margin-top:1.25rem;">Virksomhedssøgningen ligger på companies.creditreports.dk, hvorfra du kan åbne rapporter og platformen.</p>
@@ -267,7 +267,7 @@ ${cta}`
 write('da/product/index.html', page({
   title: 'Kreditrapport, kreditvurdering og kreditscore | CreditReports.dk',
   description: 'Se produkter til kreditrapport, kreditvurdering, kreditscore, kreditrisiko, konkursrisiko og værdiansættelse af danske virksomheder.',
-  canonical: 'https://creditreports.dk/da/product/',
+  canonical: 'https://www.creditreports.dk/da/product/',
   cssDepth: 2,
   scripts: ['nav', 'main'],
   body: `
@@ -287,7 +287,7 @@ ${cta}`
 write('da/products/credit-risk-tool/index.html', page({
   title: 'Credit Risk Tool - CreditReports.dk',
   description: 'Få kreditrapport, kreditvurdering, kreditscore, kreditrisiko, konkursrisiko, kreditlimit og regnskabsanalyse for danske virksomheder.',
-  canonical: 'https://creditreports.dk/da/products/credit-risk-tool/',
+  canonical: 'https://www.creditreports.dk/da/products/credit-risk-tool/',
   cssDepth: 3,
   scripts: ['nav', 'main'],
   headExtra: creditRiskSoftwareSchemaDa,
@@ -307,7 +307,7 @@ ${cta}`
 write('da/products/company-valuation-tool/index.html', page({
   title: 'Company Valuation Tool - CreditReports.dk',
   description: 'Værdiansættelse af danske virksomheder med automatiske prognoser, scenarier og redigerbare estimater.',
-  canonical: 'https://creditreports.dk/da/products/company-valuation-tool/',
+  canonical: 'https://www.creditreports.dk/da/products/company-valuation-tool/',
   cssDepth: 3,
   scripts: ['nav', 'main'],
   body: `
@@ -319,7 +319,7 @@ ${cta}`
 write('da/products/credit-risk-assessment-methods/index.html', page({
   title: 'Kreditrisikometoder - CreditReports.dk',
   description: 'Læs om metoderne bag CreditReports.dk kreditvurderinger, kreditscore og konkursrisiko.',
-  canonical: 'https://creditreports.dk/da/products/credit-risk-assessment-methods/',
+  canonical: 'https://www.creditreports.dk/da/products/credit-risk-assessment-methods/',
   cssDepth: 3,
   scripts: ['nav', 'main'],
   body: `
@@ -331,7 +331,7 @@ ${cta}`
 write('da/ai-credit-report/index.html', page({
   title: 'AI Credit Report - CreditReports.dk',
   description: 'AI-understøttet kreditrapport for danske virksomheder med kreditvurdering, kreditscore, kreditrisiko, konkursrisiko og skriftlig analyse.',
-  canonical: 'https://creditreports.dk/da/ai-credit-report/',
+  canonical: 'https://www.creditreports.dk/da/ai-credit-report/',
   cssDepth: 2,
   scripts: ['nav', 'main', 'search'],
   headExtra: aiProductSchemaDa,
@@ -344,26 +344,26 @@ ${cta}`
 write('da/ai-credit-report/order/index.html', page({
   title: 'Bestil AI Credit Report - CreditReports.dk',
   description: 'Søg en dansk virksomhed og bestil en AI-understøttet kreditrapport.',
-  canonical: 'https://creditreports.dk/da/ai-credit-report/order/',
+  canonical: 'https://www.creditreports.dk/da/ai-credit-report/order/',
   cssDepth: 3,
   scripts: ['nav', 'main', 'search', 'checkout'],
   body: `
 ${hero('Bestil rapport', 'Søg virksomhed og bestil<br>AI Credit Report', 'Find den danske virksomhed, du vil analysere, og gå videre til rapportbestilling.')}
-  <section class="content-section"><div class="container" style="max-width:760px;"><form class="search-bar-form reveal" role="search" data-search-base="https://companies.creditreports.dk/en/"><div class="search-bar"><input class="search-input" type="search" name="q" placeholder="Søg efter virksomhedsnavn eller CVR-nummer" aria-label="Søg virksomhed" autocomplete="off"><button type="submit" class="search-btn">Søg</button></div></form><div class="feature-card reveal" style="margin-top:2rem;"><h2 class="feature-title">Pris: €3 per rapport</h2><p class="feature-body">Rapporten leveres som PDF og indeholder finansielle data, kreditrisiko, AI-understøttet analyse og en beslutningsklar konklusion.</p><a href="https://companies.creditreports.dk/en/" class="btn btn-primary">Åbn virksomhedssøgning</a></div></div></section>`
+  <section class="content-section"><div class="container" style="max-width:760px;"><form class="search-bar-form reveal" role="search" data-search-base="https://companies.creditreports.dk/da/"><div class="search-bar"><input class="search-input" type="search" name="q" placeholder="Søg efter virksomhedsnavn eller CVR-nummer" aria-label="Søg virksomhed" autocomplete="off"><button type="submit" class="search-btn">Søg</button></div></form><div class="feature-card reveal" style="margin-top:2rem;"><h2 class="feature-title">Pris: €3 per rapport</h2><p class="feature-body">Rapporten leveres som PDF og indeholder finansielle data, kreditrisiko, AI-understøttet analyse og en beslutningsklar konklusion.</p><a href="https://companies.creditreports.dk/da/" class="btn btn-primary">Åbn virksomhedssøgning</a></div></div></section>`
 }));
 
 write('da/pricing/index.html', page({
   title: 'Priser - CreditReports.dk',
   description: 'Enkle priser for kreditrapport, kreditvurdering, kreditscore, kreditrisiko, konkursrisiko, AI Credit Reports og platformadgang.',
-  canonical: 'https://creditreports.dk/da/pricing/',
+  canonical: 'https://www.creditreports.dk/da/pricing/',
   cssDepth: 2,
   scripts: ['nav', 'main'],
   body: `
 ${hero('Priser', 'Enkle og transparente priser', 'Køb enkelte rapporter efter behov, vælg en lille pakke til hurtige checks, eller brug månedlig systemadgang.')}
   <section class="content-section"><div class="container"><div class="pricing-grid pricing-grid--four">
-    <article class="pricing-card reveal"><p class="pricing-card-label">Enkeltrapport</p><h3 class="pricing-card-title">Standard kreditrapport</h3><div class="pricing-price"><span class="pricing-amount">€1</span></div><p class="pricing-period">per basisrapport</p><ul class="pricing-features"><li>Kreditscore og rating</li><li>Konkursrisiko og kreditlimit</li><li>Regnskaber og nøgletal</li></ul><a href="https://companies.creditreports.dk/en/" class="btn btn-outline-dark">Søg virksomhed</a></article>
+    <article class="pricing-card reveal"><p class="pricing-card-label">Enkeltrapport</p><h3 class="pricing-card-title">Standard kreditrapport</h3><div class="pricing-price"><span class="pricing-amount">€1</span></div><p class="pricing-period">per basisrapport</p><ul class="pricing-features"><li>Kreditscore og rating</li><li>Konkursrisiko og kreditlimit</li><li>Regnskaber og nøgletal</li></ul><a href="https://companies.creditreports.dk/da/" class="btn btn-outline-dark">Søg virksomhed</a></article>
     <article class="pricing-card pricing-card--ai reveal"><p class="pricing-card-label">AI-analyse</p><h3 class="pricing-card-title">AI Credit Report</h3><div class="pricing-price"><span class="pricing-amount">€3</span></div><p class="pricing-period">per AI-rapport</p><ul class="pricing-features"><li>Alle standard kreditdata</li><li>AI-understøttet skriftlig analyse</li><li>Beslutningsklar PDF</li></ul><a href="/da/ai-credit-report/order/" class="btn btn-primary">Bestil AI-rapport</a></article>
-    <article class="pricing-card pricing-card--featured reveal"><p class="pricing-card-label">Pakke</p><h3 class="pricing-card-title">3 rapporter</h3><div class="pricing-price"><span class="pricing-amount">€2</span></div><p class="pricing-period">3 basisrapporter</p><ul class="pricing-features"><li>Tre standardrapporter</li><li>Lavere pris for hurtige checks</li><li>God til korte virksomhedslister</li></ul><a href="https://companies.creditreports.dk/en/" class="btn btn-primary">Køb pakke</a></article>
+    <article class="pricing-card pricing-card--featured reveal"><p class="pricing-card-label">Pakke</p><h3 class="pricing-card-title">3 rapporter</h3><div class="pricing-price"><span class="pricing-amount">€2</span></div><p class="pricing-period">3 basisrapporter</p><ul class="pricing-features"><li>Tre standardrapporter</li><li>Lavere pris for hurtige checks</li><li>God til korte virksomhedslister</li></ul><a href="https://companies.creditreports.dk/da/" class="btn btn-primary">Køb pakke</a></article>
     <article class="pricing-card reveal"><p class="pricing-card-label">Månedlig adgang</p><h3 class="pricing-card-title">Systemadgang</h3><div class="pricing-price"><span class="pricing-amount">€20</span><span class="pricing-currency">/ måned</span></div><p class="pricing-period">løbende platformadgang</p><ul class="pricing-features"><li>Adgang til CreditReports.dk-systemet</li><li>Til gentagne kreditchecks</li><li>Rapporter købes efter behov</li></ul><a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-outline-dark" target="_blank" rel="noopener">Start adgang</a></article>
   </div></div></section>
 ${cta}`
@@ -372,7 +372,7 @@ ${cta}`
 write('da/contact/index.html', page({
   title: 'Kontakt - CreditReports.dk',
   description: 'Kontakt CreditReports.dk om kreditrapport, kreditvurdering, kreditscore, kreditrisiko, konkursrisiko, AI Credit Reports og platformadgang.',
-  canonical: 'https://creditreports.dk/da/contact/',
+  canonical: 'https://www.creditreports.dk/da/contact/',
   cssDepth: 2,
   scripts: ['nav', 'main'],
   body: `
@@ -383,7 +383,7 @@ ${hero('Kontakt', 'Kontakt CreditReports.dk', 'Har du spørgsmål om kreditrappo
 write('da/privacy-policy/index.html', page({
   title: 'Privatlivspolitik - CreditReports.dk',
   description: 'Privatlivspolitik for CreditReports.dk.',
-  canonical: 'https://creditreports.dk/da/privacy-policy/',
+  canonical: 'https://www.creditreports.dk/da/privacy-policy/',
   cssDepth: 2,
   scripts: ['nav', 'main'],
   body: `
@@ -394,7 +394,7 @@ ${hero('Privatlivspolitik', 'Privatlivspolitik', 'Information om hvordan CreditR
 write('da/create-account/index.html', page({
   title: 'Opret konto - CreditReports.dk',
   description: 'Opret en konto til CreditReports.dk-platformen.',
-  canonical: 'https://creditreports.dk/da/create-account/',
+  canonical: 'https://www.creditreports.dk/da/create-account/',
   cssDepth: 2,
   scripts: ['nav', 'main'],
   body: `
@@ -404,7 +404,7 @@ write('da/create-account/index.html', page({
 write('da/login/index.html', page({
   title: 'Login - CreditReports.dk',
   description: 'Login til CreditReports.dk-platformen.',
-  canonical: 'https://creditreports.dk/da/login/',
+  canonical: 'https://www.creditreports.dk/da/login/',
   cssDepth: 2,
   scripts: ['nav', 'main'],
   body: `

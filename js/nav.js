@@ -3,7 +3,6 @@
 
   const LOGIN = 'https://platform.creditreports.dk';
   const SIGNUP = 'https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true';
-  const COMPANY_SEARCH = 'https://companies.creditreports.dk/en/';
   const CHEVRON = `<svg class="nav-chevron" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
   const COPY = {
@@ -81,6 +80,31 @@
     return `/${locale}/${suffix}`.replace(/\/{2,}/g, '/');
   }
 
+  function companySearch(locale) {
+    return `https://companies.creditreports.dk/${locale}/`;
+  }
+
+  function supportDetailLinks(locale, text, className) {
+    const links = locale === 'da'
+      ? [[riskManagementPath(locale), text.management]]
+      : [
+          [supportPath('en', 'get-started/'), text.getStarted],
+          [supportPath('en', 'platform-tutorials/'), text.tutorials],
+          [supportPath('en', 'credit-risk-faq/'), text.faq],
+          [riskManagementPath(locale), text.management],
+          [supportPath('en', 'credit-risk-manual/'), text.manual],
+          [supportPath('en', 'credit-risk-model-overview/'), text.modelOverview],
+        ];
+    const mobile = className.includes('nav-mobile-link');
+    const role = className === 'nav-dropdown-link' ? ' role="menuitem"' : '';
+    return links
+      .map(([href, label]) => {
+        const link = `<a href="${href}" class="${className}"${role}>${label}</a>`;
+        return mobile ? `<li>${link}</li>` : link;
+      })
+      .join('\n');
+  }
+
   function alternatePath(path, nextLocale) {
     const normalized = path.endsWith('/') ? path : `${path}/`;
     if (nextLocale === 'da') {
@@ -135,7 +159,7 @@
 
       <a href="${pagePath(locale, 'pricing/')}" class="nav-link${path.startsWith(`/${locale}/pricing`) ? ' nav-link--active' : ''}">${text.pricing}</a>
       <a href="${pagePath(locale, 'ai-credit-report/')}" class="nav-link${path.startsWith(`/${locale}/ai-credit-report`) ? ' nav-link--active' : ''}">${text.aiReport}</a>
-      <a href="${COMPANY_SEARCH}" class="nav-link">${text.companySearch}</a>
+      <a href="${companySearch(locale)}" class="nav-link">${text.companySearch}</a>
 
       <div class="nav-item">
         <a href="${supportPath(locale)}" class="nav-link nav-link--has-dropdown${supportActive}" aria-haspopup="true" aria-expanded="false">${text.support} ${CHEVRON}</a>
@@ -143,12 +167,7 @@
           <div class="nav-dropdown-inner">
             <a href="${supportPath(locale)}" class="nav-dropdown-link" role="menuitem">${text.supportHub}</a>
             <div class="nav-dropdown-divider"></div>
-            <a href="${supportPath('en', 'get-started/')}" class="nav-dropdown-link" role="menuitem">${text.getStarted}</a>
-            <a href="${supportPath('en', 'platform-tutorials/')}" class="nav-dropdown-link" role="menuitem">${text.tutorials}</a>
-            <a href="${supportPath('en', 'credit-risk-faq/')}" class="nav-dropdown-link" role="menuitem">${text.faq}</a>
-            <a href="${riskManagementPath(locale)}" class="nav-dropdown-link" role="menuitem">${text.management}</a>
-            <a href="${supportPath('en', 'credit-risk-manual/')}" class="nav-dropdown-link" role="menuitem">${text.manual}</a>
-            <a href="${supportPath('en', 'credit-risk-model-overview/')}" class="nav-dropdown-link" role="menuitem">${text.modelOverview}</a>
+            ${supportDetailLinks(locale, text, 'nav-dropdown-link')}
           </div>
         </div>
       </div>
@@ -177,16 +196,11 @@
           </ul>
         </li>
         <li><a href="${pagePath(locale, 'pricing/')}" class="nav-mobile-link">${text.pricing}</a></li>
-        <li><a href="${COMPANY_SEARCH}" class="nav-mobile-link">${text.companySearch}</a></li>
+        <li><a href="${companySearch(locale)}" class="nav-mobile-link">${text.companySearch}</a></li>
         <li class="nav-mobile-group">
           <a href="${supportPath(locale)}" class="nav-mobile-link">${text.support}</a>
           <ul class="nav-mobile-sublist">
-            <li><a href="${supportPath('en', 'get-started/')}" class="nav-mobile-link nav-mobile-link--sub">${text.getStarted}</a></li>
-            <li><a href="${supportPath('en', 'platform-tutorials/')}" class="nav-mobile-link nav-mobile-link--sub">${text.tutorials}</a></li>
-            <li><a href="${supportPath('en', 'credit-risk-faq/')}" class="nav-mobile-link nav-mobile-link--sub">${text.faq}</a></li>
-            <li><a href="${riskManagementPath(locale)}" class="nav-mobile-link nav-mobile-link--sub">${text.management}</a></li>
-            <li><a href="${supportPath('en', 'credit-risk-manual/')}" class="nav-mobile-link nav-mobile-link--sub">${text.manual}</a></li>
-            <li><a href="${supportPath('en', 'credit-risk-model-overview/')}" class="nav-mobile-link nav-mobile-link--sub">${text.modelOverview}</a></li>
+            ${supportDetailLinks(locale, text, 'nav-mobile-link nav-mobile-link--sub')}
           </ul>
         </li>
         <li><a href="${pagePath(locale, 'contact/')}" class="nav-mobile-link">${text.contact}</a></li>
@@ -294,17 +308,13 @@
         </div>
         <div class="footer-col">
           <span class="footer-col-label">${text.companySearch}</span>
-          <a href="${COMPANY_SEARCH}" class="footer-link">${text.searchDanish}</a>
-          <a href="${COMPANY_SEARCH}" class="footer-link">${text.directory}</a>
+          <a href="${companySearch(locale)}" class="footer-link">${text.searchDanish}</a>
+          <a href="${companySearch(locale)}" class="footer-link">${text.directory}</a>
         </div>
         <div class="footer-col">
           <span class="footer-col-label">${text.supportLabel}</span>
           <a href="${supportPath(locale)}" class="footer-link">${text.supportHub}</a>
-          <a href="${supportPath('en', 'get-started/')}" class="footer-link">${text.getStarted}</a>
-          <a href="${supportPath('en', 'platform-tutorials/')}" class="footer-link">${text.tutorials}</a>
-          <a href="${supportPath('en', 'credit-risk-faq/')}" class="footer-link">${text.faq}</a>
-          <a href="${supportPath('en', 'credit-risk-manual/')}" class="footer-link">${text.manual}</a>
-          <a href="${supportPath('en', 'credit-risk-model-overview/')}" class="footer-link">${text.modelOverview}</a>
+          ${supportDetailLinks(locale, text, 'footer-link')}
         </div>
         <div class="footer-col">
           <span class="footer-col-label">${text.companyLabel}</span>

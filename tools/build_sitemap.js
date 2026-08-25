@@ -43,7 +43,7 @@ const entriesByUrl = new Map(
       file,
       url: canonicalFromHtml(fs.readFileSync(file, "utf8")),
     }))
-    .filter(({ url }) => url && url.startsWith("https://creditreports.dk/"))
+    .filter(({ url }) => url && url.startsWith("https://www.creditreports.dk/"))
     .map(({ file, url }) => [url, { url, lastmod: lastmodFromGit(file) }]),
 );
 

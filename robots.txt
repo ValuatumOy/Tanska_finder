@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://creditreports.dk/sitemap.xml
+Sitemap: https://www.creditreports.dk/sitemap.xml

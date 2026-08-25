@@ -6,7 +6,6 @@
     'use strict';
 
     const SEARCH_ENDPOINT = 'https://api.creditreports.dk';
-    const COMPANY_BASE_URL = 'https://companies.creditreports.dk/en/companies/';
     const SEARCH_DELAY = 500;
     const MIN_QUERY_LENGTH = 3;
     const MAX_RESULTS = 10;
@@ -109,7 +108,8 @@
     }
 
     function buildCompanyUrl(result) {
-        return `${COMPANY_BASE_URL}${encodeURIComponent(result.followedModelId)}/${encodeURIComponent(result.nameSlug)}/`;
+        const locale = window.location.pathname.startsWith('/da/') ? 'da' : 'en';
+        return `https://companies.creditreports.dk/${locale}/companies/${encodeURIComponent(result.followedModelId)}/${encodeURIComponent(result.nameSlug)}/`;
     }
 
     function buildResultLink(result, index, dropdownId) {

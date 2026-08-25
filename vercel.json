@@ -2,7 +2,7 @@
   "cleanUrls": false,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/", "destination": "/en/", "permanent": true },
+    { "source": "/", "destination": "/da/", "permanent": true },
     { "source": "/en/product/credit-risk-tool", "destination": "/en/products/credit-risk-tool/", "permanent": true },
     { "source": "/en/product/credit-risk-tool/", "destination": "/en/products/credit-risk-tool/", "permanent": true },
     { "source": "/en/product/company-valuation-tool", "destination": "/en/products/company-valuation-tool/", "permanent": true },
