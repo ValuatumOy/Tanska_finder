@@ -216,21 +216,21 @@ const guides = [
     slug: "kreditvurdering-af-virksomhed",
     title: "Kreditvurdering af virksomhed: sådan gør du",
     description:
-      "Lær at kreditvurdere en dansk virksomhed med CVR-data, regnskab, nøgletal, udvikling og konkursrisiko før du giver kredit.",
+      "Sådan kreditvurderer du en dansk virksomhed med CVR-data, regnskaber og nøgletal, før du giver kredit.",
     answer:
-      "En kreditvurdering af en virksomhed bør samle identitet og status fra CVR, de seneste årsregnskaber, udviklingen i indtjening og likviditet samt virksomhedens gæld og kapitalberedskab. Vurder altid flere år samlet, sammenlign med branchen, og fastsæt først derefter betalingsvilkår og en kreditlimit, der passer til din egen risiko.",
+      "Begynd med at kontrollere virksomheden i CVR. Se derefter på de seneste årsregnskaber, især udviklingen i indtjening, likviditet, gæld og egenkapital. Ét regnskabsår fortæller sjældent nok, så sammenlign flere år og hold tallene op mod branchen, før du vælger betalingsvilkår og kreditlimit.",
     sections: [
       [
         "Start med identitet og status",
-        "Kontrollér navn, CVR-nummer, selskabsform, adresse, branche, status og seneste registreringsændringer. Det sikrer, at vurderingen gælder den rigtige juridiske enhed. Se også ledelse og ejerforhold, når relationens størrelse eller varighed gør det relevant.",
+        "Kontrollér først navn og CVR-nummer, så du ved, at du ser på den rigtige juridiske enhed. Tjek også selskabsform, adresse, branche og virksomhedens aktuelle status. Ved større eller længerevarende aftaler er det relevant at se på ledelse, ejere og nyere ændringer i registreringerne.",
       ],
       [
         "Læs udviklingen, ikke kun seneste tal",
-        "Se mindst tre regnskabsår, når de findes. Omsætning og EBIT viser aktivitet og indtjening, mens egenkapital, gæld, likviditetsgrad og pengestrømme siger mere om modstandskraften. Et enkelt stærkt år kan dække over en svag trend.",
+        "Brug gerne mindst tre regnskabsår. Omsætning og EBIT viser, hvordan driften går, mens egenkapital, gæld og likviditet fortæller mere om virksomhedens økonomiske buffer. Et godt seneste år kan se mindre overbevisende ud, hvis de foregående år var svage.",
       ],
       [
         "Omsæt analysen til en beslutning",
-        "Saml observationerne i en begrundet risikoklasse. Fastlæg derefter kreditlimit, betalingsfrist og tidspunkt for næste kontrol. En score eller model er beslutningsstøtte; den bør vurderes sammen med ordrevolumen, sikkerheder, betalingshistorik og aktuelle oplysninger.",
+        "Afslut vurderingen med en risikoklasse, som du kan begrunde ud fra tallene. Brug den til at fastsætte kreditlimit, betalingsfrist og datoen for næste kontrol. En score er et hjælpemiddel, ikke hele beslutningen. Ordrestørrelse, sikkerheder, betalingshistorik og nye oplysninger skal også med.",
       ],
     ],
     checklist: [
@@ -256,21 +256,21 @@ const guides = [
     slug: "kreditrapport-for-virksomheder",
     title: "Kreditrapport for virksomheder: indhold og brug",
     description:
-      "Se hvad en kreditrapport for en dansk virksomhed bør indeholde, og hvordan den bruges til kreditlimit, betalingsvilkår og risikokontrol.",
+      "Se, hvad en kreditrapport for en dansk virksomhed indeholder, og hvordan du bruger den, når du fastsætter kredit og betalingsvilkår.",
     answer:
-      "En kreditrapport samler virksomhedsidentitet, regnskaber, nøgletal og en vurdering af kreditrisiko i ét beslutningsgrundlag. Den er mest nyttig, når rapportens score og anbefaling kan spores tilbage til konkrete tal, perioder og datakilder. Rapporten bør bruges sammen med din egen eksponering, betalingshistorik og kreditpolitik.",
+      "En kreditrapport samler virksomhedens stamdata, regnskaber, nøgletal og vurderede kreditrisiko. En score er kun nyttig, hvis du kan se, hvilke tal, regnskabsperioder og datakilder den bygger på. Sammenhold derfor rapporten med jeres udestående, erfaringer med kunden og egen kreditpolitik.",
     sections: [
       [
         "Hvad rapporten bør vise",
-        "En brugbar rapport viser den juridiske enhed, CVR-status, branche, seneste regnskabsperiode og centrale tal for flere år. Den bør forklare kreditscore, rating, estimeret konkursrisiko og kreditlimit, ikke kun vise en farve eller et bogstav.",
+        "Start med det grundlæggende: juridisk navn, CVR-status, branche og seneste regnskabsperiode. Rapporten bør også vise de vigtigste tal over flere år og forklare, hvad kreditscore, rating, konkursrisiko og den foreslåede kreditlimit bygger på. En farve eller et bogstav alene er ikke nok.",
       ],
       [
         "Standardrapport eller AI-analyse",
-        "En standardrapport egner sig til et hurtigt, dokumenteret check. En AI-understøttet rapport kan gøre udvikling, styrker og risikofaktorer lettere at læse. Datagrundlaget skal være tydeligt i begge produkter, og automatisk tekst bør ikke stå alene ved store beslutninger.",
+        "En standardrapport er velegnet, når du hurtigt skal dokumentere et kredittjek. En AI-understøttet rapport forklarer udviklingen og risikofaktorerne i tekst. I begge tilfælde skal datagrundlaget være synligt. Ved store kreditbeslutninger bør en automatisk analyse aldrig stå alene.",
       ],
       [
         "Sådan bruger du rapporten",
-        "Kontrollér først at CVR-nummer og regnskabsperiode er rigtige. Læs derefter udviklingen bag scoren, og sammenhold den foreslåede kredit med det beløb, du faktisk risikerer. Gem beslutningen og datoen, så den kan revurderes konsekvent.",
+        "Kontrollér først CVR-nummeret og regnskabsperioden. Læs så tallene bag scoren, og sammenlign den foreslåede kreditlimit med det beløb, I reelt kan miste. Gem både beslutningen og datoen, så det er klart, hvornår sagen skal vurderes igen.",
       ],
     ],
     checklist: [
@@ -296,21 +296,21 @@ const guides = [
     slug: "tjek-virksomhed-cvr",
     title: "Tjek virksomhed og CVR-nummer før en aftale",
     description:
-      "Tjek en dansk virksomhed med CVR-nummer, status, branche, ledelse, ejerforhold og regnskab før køb, salg eller samarbejde.",
+      "Tjek navn, CVR-nummer, status og regnskab, før du handler med en dansk virksomhed eller indgår et samarbejde.",
     answer:
-      "Tjek først, at virksomhedens ottecifrede CVR-nummer matcher navnet på tilbuddet, fakturaen eller aftalen. Kontrollér derefter aktiv status, selskabsform, adresse, branche, tegningsberettigede og relevante ejerforhold. Ved kredit eller større aftaler bør du også læse seneste årsrapport og undersøge, om økonomien har udviklet sig stabilt.",
+      "Tjek, at det ottecifrede CVR-nummer passer til navnet på tilbuddet, fakturaen eller aftalen. Se derefter, om virksomheden er aktiv, og kontrollér selskabsform, adresse, branche og ledelse. Hvis aftalen er stor eller indebærer kredit, bør du også læse den seneste årsrapport og se, hvordan økonomien har udviklet sig.",
     sections: [
       [
         "Hvorfor CVR-nummeret er afgørende",
-        "Navne kan ligne hinanden og ændres over tid, mens CVR-nummeret identificerer den juridiske enhed. Brug nummeret på kontrakter og i interne kundedata. Hvis virksomheden opererer gennem flere selskaber, skal du afklare præcis hvilket selskab der hæfter.",
+        "To virksomheder kan have næsten samme navn, og et navn kan ændre sig. CVR-nummeret peger på den juridiske enhed, så brug det både i kontrakten og i jeres kundedata. Indgår virksomheden i en koncern, skal det stå klart, hvilket selskab der hæfter for aftalen.",
       ],
       [
         "Oplysninger du bør kontrollere",
-        "Se om virksomheden er aktiv, under likvidation, tvangsopløsning eller konkurs. Kontrollér adresse, stiftelsesdato, selskabsform, branche og registreret ledelse. Ejeroplysninger kan være relevante ved kundekendskab og større forretningsforhold.",
+        "Se, om virksomheden er aktiv eller eksempelvis under likvidation, tvangsopløsning eller konkurs. Kontrollér også adresse, stiftelsesdato, selskabsform, branche og registreret ledelse. Ved større forretningsforhold kan ejeroplysninger være relevante.",
       ],
       [
         "Når et CVR-tjek ikke er nok",
-        "CVR-oplysninger fortæller hvem virksomheden er, men ikke alene hvor stor betalingsrisikoen er. Kombinér derfor stamdata med årsregnskab, nøgletal, betalingshistorik, aftalens størrelse og eventuelle aktuelle ændringer.",
+        "CVR-oplysninger fortæller, hvem virksomheden er. De fortæller ikke i sig selv, om virksomheden kan betale. Skal du give kredit, må du også se på regnskab, nøgletal, betalingshistorik, aftalens størrelse og nyere ændringer i virksomheden.",
       ],
     ],
     checklist: [
@@ -336,21 +336,21 @@ const guides = [
     slug: "konkursrisiko",
     title: "Konkursrisiko: signaler og vurdering",
     description:
-      "Forstå konkursrisiko for danske virksomheder, de vigtigste faresignaler og hvorfor en model skal vurderes sammen med aktuelle oplysninger.",
+      "Læs om konkursrisiko, typiske faresignaler og hvordan du bruger et risikoestimat i vurderingen af en dansk virksomhed.",
     answer:
-      "Konkursrisiko er et estimat af sandsynligheden for, at en virksomhed går konkurs inden for en bestemt periode. Vurderingen bør bygge på flere finansielle signaler, eksempelvis svag likviditet, tab, faldende egenkapital og høj gæld. Den bør suppleres med aktuelle CVR-hændelser, brancheforhold og din egen betalingshistorik.",
+      "Konkursrisiko er et estimat, ikke en forudsigelse. Det angiver sandsynligheden for konkurs inden for en bestemt periode og bygger typisk på flere økonomiske signaler. Svag likviditet, underskud, faldende egenkapital og høj gæld kan trække risikoen op. Tjek også nye CVR-hændelser, forhold i branchen og jeres egne betalingserfaringer.",
     sections: [
       [
         "Finansielle faresignaler",
-        "Gentagne underskud, negativ eller hurtigt faldende egenkapital, presset likviditet og voksende gæld kan øge risikoen. Signalerne skal læses samlet: høj gæld kan være håndterbar ved stabil indtjening, mens lav gæld ikke hjælper, hvis driften ikke skaber likviditet.",
+        "Gentagne underskud, negativ eller hurtigt faldende egenkapital og presset likviditet er klare advarselstegn. Det samme gælder gæld, der vokser uden en tilsvarende forbedring i indtjeningen. Tallene skal dog læses samlet. Høj gæld kan være håndterbar i en stabil virksomhed, mens lav gæld ikke hjælper meget, hvis driften ikke skaber likviditet.",
       ],
       [
         "Status er ikke det samme som et estimat",
-        "Et konkursdekret er en juridisk hændelse. En beregnet konkursrisiko forsøger derimod at vurdere fremtidig sandsynlighed, før en eventuel konkurs sker. Derfor er tallet usikkert og bør altid have en angivet tidshorisont og forklaring.",
+        "Et konkursdekret er en juridisk hændelse, som allerede har fundet sted. En beregnet konkursrisiko ser fremad og er derfor usikker. Når du læser tallet, skal du vide, hvilken periode det gælder for, og hvilke oplysninger vurderingen bygger på.",
       ],
       [
         "Hvad gør du ved høj risiko?",
-        "Reducer eller afvis usikret kredit, forkort betalingsfristen, bed om forudbetaling eller relevant sikkerhed, og fastsæt en tættere opfølgningsrytme. Beslutningen bør afspejle både sandsynligheden for misligholdelse og størrelsen på dit mulige tab.",
+        "Ved høj risiko kan du sænke eller afvise usikret kredit, forkorte betalingsfristen eller bede om forudbetaling eller sikkerhed. Følg virksomheden tættere end normalt. Hvor stramt du reagerer, afhænger både af risikoen for manglende betaling og af, hvor stort et tab I kan få.",
       ],
     ],
     checklist: [
@@ -376,21 +376,21 @@ const guides = [
     slug: "kreditlimit",
     title: "Kreditlimit: fastsæt en forsvarlig grænse",
     description:
-      "Sådan fastsætter og følger du en kreditlimit for en virksomhed ud fra økonomi, risiko, ordrevolumen og din egen tabsramme.",
+      "Sådan fastsætter og følger du en kreditlimit ud fra kundens økonomi, jeres udestående og det tab, I kan acceptere.",
     answer:
-      "En kreditlimit er det højeste samlede beløb, du vil have udestående hos en kunde på én gang. Grænsen bør tage højde for kundens betalingsevne, kreditscore, likviditet og egenkapital, men også din ordrestørrelse, betalingsfrist, sikkerheder og hvor stort et tab din egen virksomhed kan bære.",
+      "En kreditlimit er det største beløb, I vil have udestående hos en kunde på samme tid. Se på kundens betalingsevne, likviditet, egenkapital og kreditscore, men begynd ikke og slut ikke med modellen. Ordrestørrelse, betalingsfrist, sikkerheder og jeres egen tabsgrænse er mindst lige så vigtige.",
     sections: [
       [
         "Beregn den faktiske eksponering",
-        "Medtag åbne fakturaer, leverede men endnu ikke fakturerede varer og godkendte ordrer. En lav fakturasaldo kan skjule en langt større samlet risiko. Sammenhold eksponeringen med den kreditlimit, der er godkendt for den juridiske enhed.",
+        "Læg åbne fakturaer, leverede men ikke fakturerede varer og godkendte ordrer sammen. Ellers kan en lav fakturasaldo skjule en langt større risiko. Sammenlign det samlede beløb med den kreditlimit, der er godkendt for netop denne juridiske enhed.",
       ],
       [
         "Brug økonomi og risiko som ramme",
-        "En modelbaseret kreditlimit kan give et ensartet udgangspunkt. Justér den efter datakvalitet, regnskabets alder, virksomhedens udvikling, din betalingshistorik og eventuelle garantier eller sikkerheder. Dokumentér altid manuelle afvigelser.",
+        "En modelberegnet kreditlimit giver et ensartet udgangspunkt. Justér den, hvis regnskabet er gammelt, data er mangelfulde, økonomien har ændret sig, eller I har særlige betalingserfaringer eller sikkerheder. Skriv ned, hvorfor I afviger fra modellens forslag.",
       ],
       [
         "Følg og revurdér",
-        "Sæt automatiske stop eller godkendelseskrav, når ordren vil overskride grænsen. Revurdér ved nyt regnskab, forsinkede betalinger, væsentlige CVR-ændringer eller større ordrevolumen. En limit er en løbende kontrol, ikke en engangsbeslutning.",
+        "En ordre, der overskrider grænsen, bør stoppe eller kræve ny godkendelse. Vurder kreditlimiten igen, når der kommer et nyt regnskab, betalinger forsinkes, CVR-oplysninger ændres væsentligt eller ordremængden vokser. Kreditlimiten skal holdes ajour.",
       ],
     ],
     checklist: [
@@ -416,21 +416,21 @@ const guides = [
     slug: "finansielle-noegletal",
     title: "Finansielle nøgletal i en kreditvurdering",
     description:
-      "Forstå likviditetsgrad, soliditet, EBIT-margin, gæld og andre finansielle nøgletal, når du vurderer en dansk virksomhed.",
+      "Forstå likviditetsgrad, soliditet, EBIT-margin og gæld, når du vurderer økonomien i en dansk virksomhed.",
     answer:
-      "Finansielle nøgletal gør regnskaber lettere at sammenligne over tid og med en branche. I kreditvurdering er likviditet, soliditet, gæld og driftsindtjening centrale, fordi de belyser betalingsevne og modstandskraft. Intet enkelt nøgletal giver svaret; definitioner, regnskabspraksis, virksomhedstype og udvikling skal altid med.",
+      "Finansielle nøgletal gør det lettere at sammenligne en virksomhed med tidligere år og med resten af branchen. Ved en kreditvurdering er likviditet, soliditet, gæld og driftsindtjening særligt relevante. Ingen af dem giver svaret alene. Se på udviklingen, og kontrollér altid, hvordan tallene er beregnet.",
     sections: [
       [
         "Likviditet og kortsigtet betalingsevne",
-        "Likviditetsgrad sammenholder typisk omsætningsaktiver med kortfristede forpligtelser. En højere værdi kan indikere mere kortsigtet buffer, men lagerets kvalitet, bundne tilgodehavender og sæsonudsving kan ændre billedet væsentligt.",
+        "Likviditetsgraden sammenholder normalt omsætningsaktiver med kortfristede forpligtelser. En høj værdi tyder ofte på en bedre kortsigtet buffer, men se nærmere på, hvad aktiverne består af. Lager, langsomme tilgodehavender og store sæsonudsving kan få likviditeten til at se bedre ud, end den reelt er.",
       ],
       [
         "Soliditet, gæld og robusthed",
-        "Soliditet viser egenkapitalens andel af aktiverne og siger noget om evnen til at absorbere tab. Se samtidig på nettogæld og rentebærende forpligtelser. Kapitaltunge brancher kan have et andet normalt gældsniveau end konsulentvirksomheder.",
+        "Soliditeten viser, hvor stor en del af aktiverne der er finansieret med egenkapital. Den siger dermed noget om virksomhedens buffer mod tab. Se også på nettogæld og rentebærende forpligtelser. Et normalt gældsniveau ser meget forskelligt ud i en kapitaltung virksomhed og i et konsulenthus.",
       ],
       [
         "Indtjening og udvikling",
-        "EBIT og EBIT-margin beskriver driftsindtjening før renter og skat. Sammenlign flere år og se efter stabilitet. Vækst uden tilsvarende indtjening eller likviditet kan øge finansieringsbehovet og dermed kreditrisikoen.",
+        "EBIT og EBIT-margin viser driftsindtjeningen før renter og skat. Sammenlign flere år, og undersøg store udsving. Hurtig vækst er ikke nødvendigvis et godt tegn, hvis indtjeningen og likviditeten ikke følger med, fordi virksomheden så kan få brug for mere finansiering.",
       ],
     ],
     checklist: [
@@ -456,21 +456,21 @@ const guides = [
     slug: "aarsregnskab",
     title: "Årsregnskab: sådan læser du virksomhedens økonomi",
     description:
-      "Guide til danske årsrapporter: resultatopgørelse, balance, egenkapital, likviditet, noter, regnskabsklasser og kreditrisiko.",
+      "Sådan læser du resultatopgørelse, balance og noter i en dansk årsrapport, når du skal vurdere en virksomheds økonomi.",
     answer:
-      "Læs et årsregnskab i tre lag: resultatopgørelsen viser årets aktivitet og indtjening, balancen viser aktiver, gæld og egenkapital på balancedagen, og noter samt ledelsesberetning forklarer væsentlige forhold. Sammenlign flere år og kontrollér regnskabsperiode, revisionsoplysninger og regnskabsklasse, før du bruger tallene i en kreditbeslutning.",
+      "Begynd med resultatopgørelsen, som viser årets aktivitet og indtjening. Gå derefter til balancen for at se aktiver, gæld og egenkapital på balancedagen. Noterne og ledelsesberetningen forklarer ofte de poster, der ellers er svære at forstå. Sammenlign flere år, og kontrollér periode, revisionsoplysninger og regnskabsklasse, før du træffer en kreditbeslutning.",
     sections: [
       [
         "Resultatopgørelsen",
-        "Følg omsætning, bruttoresultat og driftsresultat over flere år. Spørg om indtjeningen er stabil, om marginen forbedres, og om engangsposter påvirker resultatet. Mindre virksomheder kan lovligt offentliggøre færre detaljer, så manglende omsætning er ikke nødvendigvis en fejl.",
+        "Følg omsætning, bruttoresultat og driftsresultat over flere år. Er indtjeningen stabil? Bliver marginen bedre eller dårligere? Se også efter engangsposter, som kan få et enkelt år til at skille sig ud. Mindre virksomheder må offentliggøre færre detaljer, så en manglende omsætning er ikke nødvendigvis en fejl.",
       ],
       [
         "Balancen",
-        "Se hvordan virksomheden er finansieret. Egenkapital giver en buffer mod tab, mens kortfristede forpligtelser skal ses i forhold til omsætningsaktiver og løbende pengestrømme. Store tilgodehavender eller lagerposter kan kræve nærmere vurdering.",
+        "Balancen viser, hvordan virksomheden er finansieret. Egenkapitalen er en buffer mod tab, mens kortfristet gæld skal ses i forhold til omsætningsaktiver og pengestrømme. Kig nærmere på store tilgodehavender og lagre. De har ikke nødvendigvis samme værdi som det beløb, der står i balancen.",
       ],
       [
         "Noter, påtegninger og periode",
-        "Kontrollér om perioden er længere eller kortere end 12 måneder, og læs anvendt regnskabspraksis, eventualforpligtelser og revisors erklæring. Erhvervsstyrelsen opdeler virksomheder i regnskabsklasse A, B, C og D med forskellige krav til indhold.",
+        "Se først, om regnskabsperioden er 12 måneder. En kortere eller længere periode gør direkte sammenligning vanskeligere. Læs også anvendt regnskabspraksis, eventualforpligtelser og revisors erklæring. Kravene til årsrapportens indhold afhænger af, om virksomheden tilhører regnskabsklasse A, B, C eller D.",
       ],
     ],
     checklist: [
@@ -496,21 +496,21 @@ const guides = [
     slug: "leverandoer-og-kundekontrol",
     title: "Leverandør- og kundekontrol: praktisk tjekliste",
     description:
-      "En praktisk proces til kontrol af danske kunder og leverandører med CVR, ejere, økonomi, kreditrisiko og løbende overvågning.",
+      "En praktisk tjekliste til kontrol af danske kunder og leverandører før en aftale og under et længere samarbejde.",
     answer:
-      "Leverandør- og kundekontrol begynder med at identificere den rigtige juridiske enhed og fortsætter med status, ejerforhold, regnskaber, kreditrisiko og aftalens størrelse. Kontrollen bør være risikobaseret: en lille kontant handel kræver mindre dokumentation end en kritisk leverandør eller en kunde med stor, usikret kredit.",
+      "Start med at finde den rigtige juridiske enhed. Kontrollér derefter virksomhedens status, ejere og økonomi i det omfang, aftalen kræver. En lille handel med kontant betaling behøver ikke samme gennemgang som en kritisk leverandør eller en kunde, der får en stor usikret kredit.",
     sections: [
       [
         "Grundkontrol før aftalen",
-        "Match navn, CVR-nummer, adresse og bankoplysninger med aftaledokumenterne. Kontrollér aktiv status, selskabsform, ledelse og relevante ejere. Afklar hvilket selskab der leverer, fakturerer eller hæfter, især i koncerner.",
+        "Sammenlign navn, CVR-nummer, adresse og bankoplysninger med aftaledokumenterne. Kontrollér, at virksomheden er aktiv, og se på selskabsform, ledelse og relevante ejere. I en koncern skal det være tydeligt, hvilket selskab der leverer, fakturerer og hæfter.",
       ],
       [
         "Økonomisk kontrol efter risiko",
-        "Ved kredit eller driftskritiske leverancer bør du læse flere års regnskaber, centrale nøgletal og en begrundet kreditvurdering. Jo større mulig påvirkning, desto mere aktuelle og uafhængige oplysninger bør du kræve.",
+        "Hvis kunden får kredit, bør du læse flere års regnskaber og de vigtigste nøgletal. Det samme gælder en leverandør, som driften er afhængig af. Jo større et muligt tab eller driftsstop er, desto nyere og mere grundige oplysninger har du brug for.",
       ],
       [
         "Løbende kontrol",
-        "Definér hvilke hændelser der udløser ny vurdering: forsinkede betalinger, nyt årsregnskab, ændret ledelse eller ejerforhold, statusændringer og usædvanlig ordreudvikling. Registrér ansvarlig, dato og beslutning, så processen kan dokumenteres.",
+        "Aftal på forhånd, hvornår virksomheden skal vurderes igen. Det kan være ved forsinkede betalinger, et nyt årsregnskab, ændringer i ledelse eller ejerskab eller en usædvanlig stor ordre. Registrér, hvem der foretog kontrollen, hvornår den blev lavet, og hvad I besluttede.",
       ],
     ],
     checklist: [
@@ -546,7 +546,7 @@ function guideSchema(guide, canonical) {
       inLanguage: "da-DK",
       author: {
         "@type": "Organization",
-        name: "Valuatum Oy’s credit analysis team",
+        name: "Valuatum Oy's kreditanalyseteam",
         url: "https://www.valuatum.com/",
       },
       publisher: { "@id": "https://www.creditreports.dk/#organization" },
@@ -604,15 +604,15 @@ ${hero('<a href="/da/guides/">Guides</a>', guide.title, guide.description)}
     <div class="guide-layout container">
       <div class="guide-main">
         <p class="guide-answer">${guide.answer}</p>
-        <p class="guide-byline">Udarbejdet af Valuatum Oy’s credit analysis team · Sidst opdateret 25. august 2026</p>
+        <p class="guide-byline">Udarbejdet af Valuatum Oy's kreditanalyseteam · Sidst opdateret 25. august 2026</p>
         ${guide.sections.map(([heading, text]) => `<section><h2>${heading}</h2><p>${text}</p></section>`).join("\n")}
         <section><h2>Tjekliste</h2><ul class="guide-checklist">${guide.checklist.map((item) => `<li>${item}</li>`).join("")}</ul></section>
         <section><h2>Ofte stillede spørgsmål</h2>${guide.faqs.map(([question, answer]) => `<details class="guide-faq"><summary>${question}</summary><p>${answer}</p></details>`).join("")}</section>
-        <section class="guide-sources"><h2>Kilder og metode</h2><p>Guiden er redaktionel beslutningsstøtte. CreditReports.dk kombinerer officielle virksomheds- og regnskabsdata med Valuatums beregnede nøgletal og kreditrisikomodeller.</p><ul>${sources.map(([label, href]) => `<li><a href="${href}" target="_blank" rel="noopener">${label}</a></li>`).join("")}</ul></section>
+        <section class="guide-sources"><h2>Kilder og metode</h2><p>Guiden bygger på officielle virksomheds- og regnskabsdata. CreditReports.dk bruger desuden nøgletal og kreditrisikomodeller beregnet af Valuatum. Indholdet er lavet som støtte til jeres egen vurdering.</p><ul>${sources.map(([label, href]) => `<li><a href="${href}" target="_blank" rel="noopener">${label}</a></li>`).join("")}</ul></section>
       </div>
       <aside class="guide-aside" aria-label="Virksomhedssøgning">
         <h2>Undersøg en virksomhed</h2>
-        <p>Find CVR-oplysninger, regnskaber, nøgletal og kreditrapport på virksomhedens profil.</p>
+        <p>Søg efter navn eller CVR-nummer, og se regnskaber, nøgletal og kreditrapport på virksomhedens profil.</p>
         <form class="guide-search search-bar-form" role="search" data-search-base="https://companies.creditreports.dk/da/"><input class="search-input" type="search" name="q" placeholder="Navn eller CVR" aria-label="Søg virksomhed"><button type="submit" class="search-btn">Søg</button></form>
         <a href="/da/guides/" class="guide-hub-link">Se alle guides</a>
       </aside>
@@ -631,13 +631,13 @@ write(
   page({
     title: "Guides til kreditvurdering og virksomhedsdata | CreditReports.dk",
     description:
-      "Praktiske danske guides om kreditvurdering, CVR-tjek, kreditrapporter, konkursrisiko, kreditlimit, nøgletal og årsregnskaber.",
+      "Danske guides om kreditvurdering, CVR-tjek, konkursrisiko, kreditlimit, nøgletal og årsregnskaber.",
     canonical: "https://www.creditreports.dk/da/guides/",
     cssDepth: 2,
     scripts: ["nav", "main"],
     englishAlternate: false,
     headExtra: organizationSchemaDa,
-    body: `${hero("Viden", "Guides til sikrere virksomhedsbeslutninger", "Korte, praktiske forklaringer på CVR-data, regnskaber og kreditrisiko for danske kunder og leverandører.")}
+    body: `${hero("Viden", "Guides til kreditvurdering", "Læs, hvad du bør tjekke i CVR, regnskaber og nøgletal, før du giver kredit eller indgår en vigtig aftale.")}
   <section class="content-section"><div class="container"><div class="guide-grid">${guides.map((guide) => `<article class="guide-card"><h2><a href="/da/guides/${guide.slug}/">${guide.title}</a></h2><p>${guide.description}</p><a href="/da/guides/${guide.slug}/" class="guide-card-link">Læs guiden</a></article>`).join("")}</div></div></section>`,
   }),
 );
