@@ -192,7 +192,7 @@
         </li>
         <li><a href="${pagePath(locale, 'contact/')}" class="nav-mobile-link">${text.contact}</a></li>`;
     const actionHref = locale === 'da' ? '/da/#koeb-rapport' : pagePath(locale, 'create-account/');
-    const actionLabel = locale === 'da' ? 'Køb rapport' : text.createAccount;
+    const actionLabel = locale === 'da' ? 'Find virksomhed' : text.createAccount;
     const loginLabel = locale === 'da' ? 'Erhvervslogin' : text.login;
 
     return `
