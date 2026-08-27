@@ -125,6 +125,9 @@ const aiProductSchemaDa = `<script type="application/ld+json">
     "description": "AI-understøttet kreditrapport for danske virksomheder med kreditvurdering, kreditscore, kreditrisiko, konkursrisiko og skriftlig analyse.",
     "brand": { "@type": "Brand", "name": "CreditReports.dk" },
     "category": "Business credit report",
+    "image": [
+      "https://www.creditreports.dk/assets/report-examples/ai-credit-report-example.png"
+    ],
     "url": "https://www.creditreports.dk/da/ai-credit-report/",
     "offers": {
       "@type": "Offer",
