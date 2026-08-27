@@ -141,6 +141,11 @@ const aiProductSchemaDa = `<script type="application/ld+json">
         "priceCurrency": "EUR",
         "unitText": "REPORT"
       },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "DK",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+      },
       "seller": { "@id": "https://www.creditreports.dk/#organization" }
     }
   }
