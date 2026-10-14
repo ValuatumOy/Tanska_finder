@@ -8,6 +8,7 @@
     'use strict';
 
     const REPORT_TYPE = 'dk_ai_credit_risk';
+    const INDICATIVE_EUR_DKK = 7.4753; // ECB reference, 2026-10-13; checkout charges EUR.
     const locale = () => window.location.pathname.startsWith('/da/') ? 'da' : 'en';
 
     function init() {
@@ -50,7 +51,8 @@
 
         function open(details) {
             current = details || {};
-            if (companyEl) companyEl.textContent = current.companyName || 'Selected company';
+            if (companyEl) companyEl.textContent = (current.companyName || 'Selected company') +
+                (current.businessId ? ' · CVR: ' + current.businessId : '');
             hideError();
             setSubmitting(false);
             priceReady = false;
@@ -66,9 +68,16 @@
                     if (request !== priceRequest) return;
                     if (quote.reportType !== REPORT_TYPE || !Number.isInteger(quote.unitAmount) ||
                         quote.unitAmount <= 0 || quote.currency !== 'eur') throw new Error('Invalid price');
-                    if (priceEl) priceEl.textContent = new Intl.NumberFormat(locale(), {
-                        style: 'currency', currency: quote.currency,
-                    }).format(quote.unitAmount / 100);
+                    if (priceEl) {
+                        const eur = quote.unitAmount / 100;
+                        const price = new Intl.NumberFormat(locale(), {
+                            style: 'currency', currency: quote.currency,
+                        }).format(eur);
+                        const dkk = Math.round(eur * INDICATIVE_EUR_DKK);
+                        priceEl.textContent = price + (locale() === 'da'
+                            ? ' · ca. ' + dkk + ' kr. (DKK)'
+                            : ' · approx. DKK ' + dkk);
+                    }
                     priceReady = true;
                     submitBtn.disabled = false;
                 })

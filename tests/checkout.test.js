@@ -6,7 +6,7 @@ const vm = require('node:vm');
 const source = fs.readFileSync(path.join(__dirname, '../js/checkout.js'), 'utf8');
 const flush = () => new Promise(resolve => setImmediate(resolve));
 
-function run(quote) {
+function run(quote, lang = 'en') {
   const nodes = {}, listeners = {}, requests = [];
   for (const id of ['orderModalOverlay', 'orderConfirmModal', 'orderConfirmClose', 'orderConfirmSubmit', 'orderConfirmCompany', 'orderConfirmPrice', 'orderConfirmError']) {
     nodes[id] = {
@@ -16,7 +16,7 @@ function run(quote) {
       addEventListener: (name, callback) => { listeners[id + ':' + name] = callback; },
     };
   }
-  const window = { location: { pathname: '/en/ai-credit-report/order/' }, setTimeout() {}, addEventListener() {} };
+  const window = { location: { pathname: '/' + lang + '/ai-credit-report/order/' }, setTimeout() {}, addEventListener() {} };
   vm.runInNewContext(source, {
     window, Intl, console,
     document: { getElementById: id => nodes[id], body: { style: {} }, addEventListener: (name, callback) => { listeners[name] = callback; } },
@@ -37,16 +37,33 @@ test('confirmation blocks checkout until the actual Stripe price is loaded', asy
   result.submit();
   assert.equal(result.requests.length, 1);
   await flush();
-  assert.equal(result.nodes.orderConfirmPrice.textContent, '€7.50');
+  assert.equal(result.nodes.orderConfirmPrice.textContent, '€7.50 · approx. DKK 56');
   assert.equal(result.nodes.orderConfirmSubmit.disabled, false);
   result.submit();
   await flush();
   assert.equal(result.requests.length, 2);
   const payload = JSON.parse(result.requests[1].options.body);
   assert.equal(payload.reportType, 'dk_ai_credit_risk');
+  assert.equal(payload.businessId, '12345678');
+  assert.equal(payload.fid, '123');
+  assert.equal(result.nodes.orderConfirmCompany.textContent, 'Example · CVR: 12345678');
   assert.equal(payload.reportLang, 'en');
   assert.equal(payload.cancelPath, '/en/ai-credit-report/order/');
   assert.equal(result.window.location.href, 'https://checkout.example/mock');
+});
+
+test('Danish confirmation shows the exact EUR quote and indicative DKK without changing payment', async () => {
+  const result = run({ reportType: 'dk_ai_credit_risk', unitAmount: 300, currency: 'eur' }, 'da');
+  result.open();
+  await flush();
+  assert.equal(result.nodes.orderConfirmPrice.textContent, '3,00 € · ca. 22 kr. (DKK)');
+  result.submit();
+  await flush();
+  const payload = JSON.parse(result.requests[1].options.body);
+  assert.equal(payload.lang, 'da');
+  assert.equal(payload.reportType, 'dk_ai_credit_risk');
+  assert.equal(payload.currency, undefined);
+  assert.equal(payload.unitAmount, undefined);
 });
 
 test('failed or invalid price lookup keeps payment blocked with a recovery message', async () => {

@@ -18,8 +18,14 @@
     return locale() === "da" ? danish : english;
   }
 
+  function normalizeCvr(value) {
+    const trimmed = String(value || "").trim();
+    const digits = trimmed.replace(/^(?:CVR(?:[- ]?nummer)?\s*:?\s*|DK\s*)/i, "").replace(/[\s-]/g, "").replace(/K$/i, "");
+    return /^\d{8}$/.test(digits) ? digits : trimmed;
+  }
+
   function buildSearchQuery(rawQuery) {
-    const query = String(rawQuery || "").trim();
+    const query = normalizeCvr(rawQuery);
     if (!query) return "";
     return encodeURIComponent(`${query}*|${query}`);
   }
@@ -125,7 +131,7 @@
   }
 
   function formatCompanyCode(companyCode) {
-    return companyCode.endsWith("K") ? companyCode.slice(0, -1) : companyCode;
+    return normalizeCvr(companyCode);
   }
 
   function buildCompanyUrl(result) {
@@ -189,8 +195,8 @@
     const meta = document.createElement("span");
     meta.className = "search-dropdown-meta";
     meta.textContent = companyCode
-      ? `CVR: ${companyCode} · ${localized("Buy AI Credit Report", "Køb AI-kreditrapport")} · €3`
-      : `${localized("Buy AI Credit Report", "Køb AI-kreditrapport")} · €3`;
+      ? `CVR: ${companyCode} · ${localized("Buy AI Credit Report", "Køb AI-kreditrapport")} · €3 (ca. 22 kr.)`
+      : `${localized("Buy AI Credit Report", "Køb AI-kreditrapport")} · €3 (ca. 22 kr.)`;
 
     button.append(company, meta);
 
