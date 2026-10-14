@@ -16,12 +16,15 @@
         const closeBtn = document.getElementById('orderConfirmClose');
         const submitBtn = document.getElementById('orderConfirmSubmit');
         const companyEl = document.getElementById('orderConfirmCompany');
+        const priceEl = document.getElementById('orderConfirmPrice');
         const errorEl = document.getElementById('orderConfirmError');
 
         if (!overlay || !modal || !submitBtn) return;
 
         let current = null;
         let submitting = false;
+        let priceReady = false;
+        let priceRequest = 0;
         let lastFocused = null;
         const defaultLabel = submitBtn.textContent;
 
@@ -50,6 +53,32 @@
             if (companyEl) companyEl.textContent = current.companyName || 'Selected company';
             hideError();
             setSubmitting(false);
+            priceReady = false;
+            const request = ++priceRequest;
+            submitBtn.disabled = true;
+            if (priceEl) priceEl.textContent = locale() === 'da' ? 'Henter pris…' : 'Loading price…';
+            fetch('/api/create-checkout?reportType=' + REPORT_TYPE, { cache: 'no-store' })
+                .then((res) => {
+                    if (!res.ok) throw new Error('Price unavailable');
+                    return res.json();
+                })
+                .then((quote) => {
+                    if (request !== priceRequest) return;
+                    if (quote.reportType !== REPORT_TYPE || !Number.isInteger(quote.unitAmount) ||
+                        quote.unitAmount <= 0 || quote.currency !== 'eur') throw new Error('Invalid price');
+                    if (priceEl) priceEl.textContent = new Intl.NumberFormat(locale(), {
+                        style: 'currency', currency: quote.currency,
+                    }).format(quote.unitAmount / 100);
+                    priceReady = true;
+                    submitBtn.disabled = false;
+                })
+                .catch(() => {
+                    if (request !== priceRequest) return;
+                    if (priceEl) priceEl.textContent = '—';
+                    showError(locale() === 'da'
+                        ? 'Prisen kunne ikke hentes. Luk vinduet og vælg virksomheden igen.'
+                        : 'The price could not be loaded. Close this window and select the company again.');
+                });
             lastFocused = document.activeElement;
             overlay.classList.add('open');
             modal.classList.add('open');
@@ -68,7 +97,7 @@
         }
 
         function startCheckout() {
-            if (submitting || !current) return;
+            if (submitting || !current || !priceReady) return;
             setSubmitting(true);
             hideError();
 
@@ -79,6 +108,7 @@
                 fiscalYear: current.fiscalYear || '',
                 companyName: current.companyName || '',
                 lang: locale(),
+                reportLang: 'en',
                 cancelPath: window.location.pathname,
             };
 

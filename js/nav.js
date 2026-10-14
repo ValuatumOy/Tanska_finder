@@ -235,10 +235,10 @@
         <li><a href="${pagePath(locale, "contact/")}" class="nav-mobile-link">${text.contact}</a></li>`;
     const actionHref =
       locale === "da"
-        ? "/da/#koeb-rapport"
-        : pagePath(locale, "create-account/");
+        ? "/da/ai-credit-report/order/"
+        : pagePath(locale, "ai-credit-report/order/");
     const actionLabel =
-      locale === "da" ? "Find virksomhed" : text.createAccount;
+      locale === "da" ? "Køb AI-rapport" : "Order AI report";
     const loginLabel = locale === "da" ? "Erhvervslogin" : text.login;
 
     return `

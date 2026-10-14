@@ -15,6 +15,14 @@
   ],
   "rewrites": [
     {
+      "source": "/api/checkout-summary/",
+      "destination": "https://sis0e9wy90.execute-api.eu-west-1.amazonaws.com/api/checkout-summary"
+    },
+    {
+      "source": "/api/checkout-summary",
+      "destination": "https://sis0e9wy90.execute-api.eu-west-1.amazonaws.com/api/checkout-summary"
+    },
+    {
       "source": "/api/create-checkout/",
       "destination": "https://sis0e9wy90.execute-api.eu-west-1.amazonaws.com/api/create-checkout"
     },

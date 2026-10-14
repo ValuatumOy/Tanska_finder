@@ -15,6 +15,7 @@
   };
 
   let loaded = false;
+  window.CRAnalytics = { isEnabled: () => loaded };
 
   function currentConsent() {
     try {
@@ -57,6 +58,7 @@
       cookie_flags: "SameSite=None;Secure",
       send_page_view: true,
     });
+    window.dispatchEvent(new Event("creditreports:analytics-ready"));
 
     const source = aiReferrer();
     if (source) {

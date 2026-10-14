@@ -70,7 +70,7 @@
     </nav>
     <div class="nav-actions">
       <a href="https://platform.creditreports.dk" class="nav-login" target="_blank" rel="noopener">Login</a>
-      <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="nav-cta" target="_blank" rel="noopener">Create Account</a>
+      <a href="/en/ai-credit-report/order/" class="nav-cta">Order AI report</a>
       <a href="/da/ai-credit-report/" class="nav-lang" hreflang="da" aria-label="Dansk version">DA</a>
     </div>
     <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
@@ -85,7 +85,7 @@
     <a href="/en/support/" class="nav-mobile-link">Support</a>
     <a href="/en/contact/" class="nav-mobile-link">Contact</a>
     <a href="/da/ai-credit-report/" class="nav-mobile-link">DA</a>
-    <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="nav-mobile-link nav-mobile-cta" target="_blank" rel="noopener">Create Account</a>
+    <a href="/en/ai-credit-report/order/" class="nav-mobile-link nav-mobile-cta">Order AI report</a>
   </div>
 </header>
 
@@ -529,55 +529,8 @@
   </div>
 </footer>
 
-<!-- ORDER MODAL -->
-<div class="modal-overlay" id="modalOverlay" aria-hidden="true"></div>
-<div class="modal-container" id="orderModal" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
-  <div class="modal-header">
-    <div>
-      <h2 class="modal-title" id="modalTitle">Order AI Credit Report</h2>
-    </div>
-    <button class="modal-close" aria-label="Close modal">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    </button>
-  </div>
-  <div class="modal-body">
-    <div class="modal-price-display">
-      <span class="modal-price-label">Price</span>
-      <span class="modal-price-value" id="modalPrice">&euro;3 / report</span>
-    </div>
-    <div class="modal-integration-note">
-      Automatic online payment is being prepared. This order form is ready for Stripe checkout integration. Until the payment flow is connected, orders can be routed through the sales process.
-    </div>
-    <form id="orderForm" novalidate>
-      <div class="form-group">
-        <label for="modalCompanyName" class="form-label">Company name</label>
-        <input type="text" id="modalCompanyName" class="form-input" placeholder="e.g. LOWENCO A/S" autocomplete="organization">
-      </div>
-      <div class="form-group">
-        <label for="modalCompanyId" class="form-label">CVR / Company ID</label>
-        <input type="text" id="modalCompanyId" class="form-input" placeholder="8-digit CVR number" inputmode="numeric">
-      </div>
-      <div class="form-group">
-        <label for="modalEmail" class="form-label">Your email <span class="optional">(required)</span></label>
-        <input type="email" id="modalEmail" class="form-input" placeholder="you@company.com" autocomplete="email" required>
-      </div>
-      <div class="form-group">
-        <label for="modalBillingEmail" class="form-label">Billing email <span class="optional">(if different)</span></label>
-        <input type="email" id="modalBillingEmail" class="form-input" placeholder="billing@company.com" autocomplete="billing email">
-      </div>
-      <div class="form-group">
-        <label for="modalMessage" class="form-label">Message <span class="optional">(optional)</span></label>
-        <textarea id="modalMessage" class="form-textarea" placeholder="Any additional information&hellip;"></textarea>
-      </div>
-    </form>
-  </div>
-  <div class="modal-footer">
-    <button type="submit" form="orderForm" class="modal-submit" id="modalSubmit">Continue to payment</button>
-  </div>
-</div>
-
 <script src="../../js/main.js"></script>
 <script src="../../js/search.js"></script>
-<script src="../../js/modal.js"></script>
+<script src="../../js/nav.js"></script>
 </body>
 </html>

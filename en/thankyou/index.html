@@ -104,28 +104,20 @@
 
 <main>
   <section class="ty-shell" aria-labelledby="ty-title">
-    <div class="ty-card">
+    <div class="ty-card" data-checkout-status>
       <a class="ty-close" href="/en/" aria-label="Close">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
       </a>
 
-      <div class="ty-badge" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-          <path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </div>
-
-      <h1 class="ty-title" id="ty-title">Payment received</h1>
-      <p class="ty-lead" data-ty-lead
-         data-lead-default="Thank you for your order. We're generating your AI Credit Report now."
-         data-lead-company="Thank you for ordering the AI Credit Report for {company}. We're generating it now.">
-        Thank you for your order. We're generating your AI Credit Report now.
+<h1 class="ty-title" id="ty-title" data-checkout-title>Checking payment…</h1>
+      <p class="ty-lead" data-checkout-message>
+        We are checking your payment status with Stripe.
       </p>
 
-      <div class="ty-panel">
+      <div class="ty-panel" data-checkout-next hidden>
         <h2 class="ty-panel-title">What happens next</h2>
-        <p class="ty-text">Your report is generated automatically after payment and is usually ready within a few minutes.</p>
-        <p class="ty-text">We'll email the PDF to the address you entered at checkout. Questions? Contact us at
+        <p class="ty-text">Check your inbox and spam folder for the report delivery email.</p>
+        <p class="ty-text">The PDF is sent to the address you entered at checkout. Questions? Contact us at
           <a href="mailto:info@creditreports.dk">info@creditreports.dk</a>.
         </p>
       </div>
@@ -139,49 +131,6 @@
 
 <script src="../../js/main.js"></script>
 <script src="../../js/nav.js"></script>
-<script>
-  (function () {
-    var params = new URLSearchParams(window.location.search);
-    var report = params.get('report') || 'dk_ai_credit_risk';
-    var company = params.get('company');
-
-    var leadEl = document.querySelector('[data-ty-lead]');
-    if (leadEl && company) {
-      var template = leadEl.getAttribute('data-lead-company') || '';
-      if (template) {
-        leadEl.textContent = template.replace('{company}', company);
-      }
-    }
-
-    // Conversion tracking: this page is only reached via Stripe's success_url,
-    // so a session_id means the payment succeeded. Dedupe per session so a
-    // refresh/bookmark can't recount it.
-    var sessionId = params.get('session_id');
-    if (!sessionId) return;
-
-    var alreadyTracked = false;
-    try {
-      var key = 'report_purchase_tracked:' + sessionId;
-      alreadyTracked = sessionStorage.getItem(key) === '1';
-      if (!alreadyTracked) sessionStorage.setItem(key, '1');
-    } catch (e) {
-      /* sessionStorage blocked (private mode etc.) &mdash; track anyway. */
-    }
-
-    if (alreadyTracked) return;
-    try {
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'ai_report_purchase_success', {
-          report_type: report,
-          transaction_id: sessionId,
-          value: 3,
-          currency: 'EUR',
-        });
-      }
-    } catch (e) {
-      /* analytics must never break the page */
-    }
-  })();
-</script>
+<script src="../../js/checkout-return.js"></script>
 </body>
 </html>

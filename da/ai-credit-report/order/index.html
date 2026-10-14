@@ -19,6 +19,7 @@
 <body>
 <div id="site-nav"></div>
 <main>
+<section class="content-section" data-checkout-status hidden aria-live="polite"><div class="container" style="max-width:760px;"><h2 class="prose-headline" data-checkout-title>Tjekker betaling…</h2><p class="prose-body" data-checkout-message>Vi tjekker din ordre hos Stripe.</p></div></section>
 
 
   <section class="page-hero">
@@ -35,7 +36,7 @@
 <div class="modal-overlay" id="orderModalOverlay" aria-hidden="true"></div>
 <div class="modal-container" id="orderConfirmModal" role="dialog" aria-labelledby="orderConfirmTitle" aria-modal="true" tabindex="-1">
   <div class="modal-header"><h2 class="modal-title" id="orderConfirmTitle">K&oslash;b AI-kreditrapport</h2><button type="button" class="modal-close" id="orderConfirmClose" aria-label="Luk"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></div>
-  <div class="modal-body"><div class="modal-price-display"><span class="modal-price-label">Virksomhed</span><span class="modal-price-value" id="orderConfirmCompany">&mdash;</span></div><div class="modal-price-display"><span class="modal-price-label">Pris</span><span class="modal-price-value">&euro;3</span></div><p class="modal-explanation">Efter betalingen genererer vi rapporten og sender PDF'en til den e-mailadresse, du angiver hos Stripe.</p><p class="modal-error" id="orderConfirmError" hidden></p></div>
+  <div class="modal-body"><div class="modal-price-display"><span class="modal-price-label">Virksomhed</span><span class="modal-price-value" id="orderConfirmCompany">&mdash;</span></div><div class="modal-price-display"><span class="modal-price-label">Pris</span><span class="modal-price-value" id="orderConfirmPrice">&euro;3</span></div><p class="modal-explanation">Rapportsprog: engelsk. Prisen er i EUR. Beløbet reserveres ved bestilling og trækkes, når rapporten er genereret. Efter bestilling genererer vi rapporten og sender PDF'en til den e-mailadresse, du angiver hos Stripe.</p><p class="modal-error" id="orderConfirmError" hidden></p></div>
   <div class="modal-footer"><button type="button" class="modal-submit" id="orderConfirmSubmit">Forts&aelig;t til sikker betaling</button></div>
 </div>
 <div id="site-footer"></div>
@@ -43,5 +44,6 @@
 <script src="../../../js/main.js"></script>
 <script src="../../../js/search.js"></script>
 <script src="../../../js/checkout.js"></script>
+<script src="../../../js/checkout-return.js"></script>
 </body>
 </html>
