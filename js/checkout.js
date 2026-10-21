@@ -105,7 +105,7 @@
             if (lastFocused instanceof HTMLElement) lastFocused.focus();
         }
 
-        function startCheckout() {
+        async function startCheckout() {
             if (submitting || !current || !priceReady) return;
             setSubmitting(true);
             hideError();
@@ -121,6 +121,9 @@
                 cancelPath: window.location.pathname,
             };
 
+            let analytics = null;
+            try { analytics = await window.CRAnalytics?.purchaseContext?.(); } catch (_) {}
+            if (analytics) payload.analytics = analytics;
             fetch('/api/create-checkout/', {
                 method: 'POST',
                 headers: { 'content-type': 'application/json' },

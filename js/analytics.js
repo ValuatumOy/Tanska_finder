@@ -15,7 +15,26 @@
   };
 
   let loaded = false;
-  window.CRAnalytics = { isEnabled: () => loaded };
+  window.CRAnalytics = { isEnabled: () => loaded, purchaseContext };
+
+  function purchaseContext() {
+    if (!loaded || currentConsent() !== 'granted') return Promise.resolve(null);
+    return new Promise(resolve => {
+      let clientId, sessionId, finished = false;
+      function finish() {
+        if (finished) return;
+        finished = true;
+        resolve(currentConsent() === 'granted' && /^\d+\.\d+$/.test(clientId || '') && /^\d+$/.test(sessionId || '')
+          ? { consent: 'granted', clientId: String(clientId), sessionId: String(sessionId), measurementId: MEASUREMENT_ID }
+          : null);
+      }
+      window.setTimeout(finish, 800);
+      try {
+        window.gtag('get', MEASUREMENT_ID, 'client_id', value => { clientId = value; if (sessionId) finish(); });
+        window.gtag('get', MEASUREMENT_ID, 'session_id', value => { sessionId = value; if (clientId) finish(); });
+      } catch (_) { finish(); }
+    });
+  }
 
   function currentConsent() {
     try {

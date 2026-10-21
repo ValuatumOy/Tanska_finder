@@ -20,7 +20,7 @@
   }
 
   function trackPurchase() {
-    if (emitted || !summary || !summary.paid || summary.livemode !== true ||
+    if (emitted || !summary || !summary.paid || summary.analyticsDelivery === 'server' || summary.livemode !== true ||
         summary.internalTest !== false || !window.CRAnalytics?.isEnabled() ||
         typeof window.gtag !== 'function') return;
     const key = 'report_purchase_tracked:' + summary.transactionId;

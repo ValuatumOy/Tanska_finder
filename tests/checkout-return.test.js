@@ -70,6 +70,14 @@ test('authorization stays pending; captured payment emits once after polling', a
   assert.equal(result.timers.length, 0);
 });
 
+test('server-managed purchase remains confirmed without sending a second browser purchase', async () => {
+  const result = run([{ ...paid, analyticsDelivery: 'server' }]);
+  await flush();
+  assert.equal(result.nodes.title.textContent, 'Payment confirmed');
+  assert.equal(result.events.length, 0);
+  assert.equal(result.storage.size, 0);
+});
+
 test('purchase waits for consent and does not mark before analytics is ready', async () => {
   const result = run([paid], { consent: false });
   await flush();
