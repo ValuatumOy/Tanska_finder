@@ -682,7 +682,7 @@ write(
       <p class="hero-sub">Få en præcis kreditrapport, kreditvurdering, kreditscore, kreditrisiko og konkursrisiko for danske virksomheder. Drevet af Valuatums AI-understøttede machine-learning modeller og officielle CVR-data.</p>
       <div class="hero-actions">
         <a href="https://platform.creditreports.dk/AspAndUserCreation.action?templateAspQueryKey=CreditAnalysis&popup=true" class="btn btn-primary btn-large" target="_blank" rel="noopener">Prøv systemet gratis</a>
-        <a href="/sample-reports/JYSK_A_S_luottomuistio.pdf" class="btn btn-outline btn-large" target="_blank" rel="noopener">Se eksempelrapport</a>
+        <a href="/sample-reports/ai-credit-report-sample.pdf" class="btn btn-outline btn-large" target="_blank" rel="noopener">Se eksempelrapport</a>
       </div>
     </div>
   </section>
